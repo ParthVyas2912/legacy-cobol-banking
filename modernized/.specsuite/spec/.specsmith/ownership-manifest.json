@@ -1,0 +1,96 @@
+{
+  "manifestVersion": "1.0.0",
+  "generatedAt": "2026-06-12T18:02:35.304Z",
+  "mode": "managed",
+  "entries": [
+    {
+      "entityId": "ent-config-9c42d5189a05",
+      "entityPath": "configuration",
+      "specPath": "#/configuration",
+      "mode": "managed",
+      "confidence": 0.9,
+      "files": [
+        "appsettings.json",
+        ".env.example"
+      ],
+      "symbols": [],
+      "plannerNodes": [
+        "config:environment"
+      ],
+      "source": "specsmith",
+      "sourceRef": "planner-node:config:environment",
+      "fingerprints": [
+        "b9cc5cb21bd8"
+      ]
+    },
+    {
+      "entityId": "ent-config-a3e3e99f9dfc",
+      "entityPath": "planModifications.integration:hangfire",
+      "specPath": "#/planModifications/integration:hangfire",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "Integrations/HangfireIntegration.cs",
+        "Interfaces/IIntegrationHangfireService.cs"
+      ],
+      "symbols": [
+        "IntegrationHangfireService",
+        "IIntegrationHangfireService"
+      ],
+      "plannerNodes": [
+        "integration:hangfire"
+      ],
+      "source": "specsmith",
+      "sourceRef": "Integrations/HangfireIntegration.cs#IntegrationHangfireService",
+      "fingerprints": [
+        "6fe6289643b2"
+      ]
+    },
+    {
+      "entityId": "ent-config-8bbcac92cf2d",
+      "entityPath": "planModifications.service:batch-processing",
+      "specPath": "#/planModifications/service:batch-processing",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "Services/BatchProcessingService.cs",
+        "Interfaces/IServiceBatchProcessingService.cs"
+      ],
+      "symbols": [
+        "ServiceBatchProcessingService",
+        "IServiceBatchProcessingService"
+      ],
+      "plannerNodes": [
+        "service:batch-processing"
+      ],
+      "source": "specsmith",
+      "sourceRef": "Services/BatchProcessingService.cs#ServiceBatchProcessingService",
+      "fingerprints": [
+        "1ca138486b7e"
+      ]
+    },
+    {
+      "entityId": "ent-config-50998cf7ffc7",
+      "entityPath": "planModifications.service:cache-service",
+      "specPath": "#/planModifications/service:cache-service",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "Services/CacheService.cs",
+        "Interfaces/IServiceCacheServiceService.cs"
+      ],
+      "symbols": [
+        "ServiceCacheServiceService",
+        "IServiceCacheServiceService"
+      ],
+      "plannerNodes": [
+        "service:cache-service"
+      ],
+      "source": "specsmith",
+      "sourceRef": "Services/CacheService.cs#ServiceCacheServiceService",
+      "fingerprints": [
+        "ef30893a28ac"
+      ]
+    }
+  ]
+}
