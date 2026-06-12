@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "The paragraph serves as the main control flow driver for the program, orchestrating the execution of opening files, processing transactions, and closing files.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Invoke 1000-OPEN-FILES to initialize resources."
+    },
+    {
+      "action": "perform-until",
+      "details": "Process transactions iteratively via 2000-PROCESS-TXNS."
+    },
+    {
+      "action": "perform",
+      "details": "Invoke 3000-CLOSE-FILES to finalize and clean up resources."
+    },
+    {
+      "action": "display",
+      "details": "Provide runtime feedback or logging."
+    },
+    {
+      "action": "goback",
+      "details": "Terminate the program and return control to the caller."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "runtime feedback"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

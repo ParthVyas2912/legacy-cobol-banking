@@ -1,0 +1,15 @@
+{
+  "name": "9000-MARK-START",
+  "description": "This paragraph marks the start of a process related to batch infrastructure operations.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "execute a command block",
+      "details": "Executes the single exec-block statement to initialize or prepare for subsequent processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

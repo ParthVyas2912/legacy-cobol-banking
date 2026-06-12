@@ -1,0 +1,4 @@
+# AUDITSRV
+This program appears to handle audit-related operations and interacts with CICS to write records and return control.
+Business domain: reporting
+Architectural role: online

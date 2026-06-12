@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph appears to handle a step in an infrastructure-oriented batch process with unclear specifics due to the presence of an unknown statement.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "invoke external routine",
+      "details": "Calls an external program or subprogram."
+    },
+    {
+      "action": "unknown operation",
+      "details": "Details about this operation are not identifiable due to insufficient information."
+    },
+    {
+      "action": "transfer control",
+      "details": "Jumps to a different paragraph using a GO TO statement."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

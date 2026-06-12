@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "The 0000-MAIN paragraph initializes resources, delegates to a customer-fetching process, and ensures proper closure and termination.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open file for processing",
+      "details": "Prepares necessary file for further operations"
+    },
+    {
+      "action": "perform customer-fetch procedure",
+      "details": "Delegates control to 1000-FETCH-CUSTOMERS"
+    },
+    {
+      "action": "close file",
+      "details": "Ensures the file is properly closed after processing"
+    },
+    {
+      "action": "terminate program",
+      "details": "Ends program execution gracefully with GOBACK"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file",
+      "description": "The program opens and closes a file, implying potential writes or readiness for writes"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

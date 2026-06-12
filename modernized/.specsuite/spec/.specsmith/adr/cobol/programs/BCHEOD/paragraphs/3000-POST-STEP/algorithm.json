@@ -1,0 +1,21 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph performs a set of actions including a call, an unknown operation, and redirects control to another step.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "redirect control",
+      "details": "Transfers program flow to 1000-NEXT-STEP using GO TO."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "control flow",
+      "description": "Redirecting execution to 1000-NEXT-STEP."
+    }
+  ],
+  "enrichmentConfidence": 0.75
+}

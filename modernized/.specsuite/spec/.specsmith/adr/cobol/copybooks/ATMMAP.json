@@ -1,0 +1,9 @@
+{
+  "name": "ATMMAP",
+  "usedBy": [
+    "ATMTXN"
+  ],
+  "isDclgen": false,
+  "description": "This copybook defines the data structure used for managing ATM transaction data in COBOL programs.",
+  "businessMeaning": "ATM transaction communication area (commarea) layout used between application modules."
+}

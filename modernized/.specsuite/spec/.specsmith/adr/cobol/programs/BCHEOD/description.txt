@@ -1,0 +1,4 @@
+# BCHEOD
+This program performs end-of-day processing, interacting with a database to track and update EOD runs.
+Business domain: infrastructure
+Architectural role: batch

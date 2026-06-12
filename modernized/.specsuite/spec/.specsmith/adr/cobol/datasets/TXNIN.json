@@ -1,0 +1,7 @@
+{
+  "ddname": "TXNIN",
+  "usedBy": [
+    "TXNPOST"
+  ],
+  "organization": "sequential"
+}

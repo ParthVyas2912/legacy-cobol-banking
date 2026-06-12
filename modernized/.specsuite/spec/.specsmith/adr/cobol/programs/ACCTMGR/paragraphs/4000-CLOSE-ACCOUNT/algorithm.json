@@ -1,0 +1,26 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph handles the finalization of account-related operations in the program.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "finalize account closure process",
+      "details": "Transfers data, executes a database or system command, and conditionally handles any specific logic."
+    }
+  ],
+  "inputs": [
+    "account-details"
+  ],
+  "outputs": [
+    "status-flag"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-database",
+      "description": "Updates the account status to indicate closure."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

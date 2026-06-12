@@ -1,0 +1,21 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initiates the program's main flow, executing three tasks sequentially and transitioning control to subsequent paragraphs.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute initialization routines",
+      "details": "Executes three blocks of logic using perform and exec-block statements."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "sub-paragraphs",
+      "description": "Delegates control and logic processing to subsequent paragraphs using perform statements."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

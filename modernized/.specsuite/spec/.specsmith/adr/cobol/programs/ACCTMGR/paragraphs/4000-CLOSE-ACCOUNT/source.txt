@@ -1,0 +1,7 @@
+Paragraph: 4000-CLOSE-ACCOUNT (section MAIN-ROUTINE)
+Lines: 114-122
+Statements: 3
+
+1. move
+2. exec-block
+3. if

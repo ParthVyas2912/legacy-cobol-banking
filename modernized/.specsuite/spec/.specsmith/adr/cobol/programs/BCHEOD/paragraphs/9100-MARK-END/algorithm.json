@@ -1,0 +1,21 @@
+{
+  "name": "9100-MARK-END",
+  "description": "Marks the end of a process or operation, primarily for infrastructure purposes.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "execute infrastructure-specific command block",
+      "details": "Handles marking the process end via an EXEC block."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "infrastructure signaling system",
+      "description": "Notifies the system that the process has completed or reached the end state."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

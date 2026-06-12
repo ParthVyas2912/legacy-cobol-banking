@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "This paragraph handles a fatal error condition.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute a block of code",
+      "details": "Executes a specific COBOL EXEC block that manages fatal errors."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "program",
+      "description": "Terminates the program due to a fatal condition."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

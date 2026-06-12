@@ -1,0 +1,72 @@
+[
+  {
+    "id": "txnpost/comp-3-decimal/_/33",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "TXNPOST",
+    "location": {
+      "line": 33
+    },
+    "title": "COMP-3 field WS-RECORD-COUNT → DECIMAL(9,0)",
+    "description": "Packed-decimal COMP-3 field WS-RECORD-COUNT PIC 9(09). Modern equivalent: SQL DECIMAL(9,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-RECORD-COUNT PIC 9(09) COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-record-count DECIMAL(9,0)\n// Java:  BigDecimal wsRecordCount;\n// C#:    decimal WsRecordCount;\n// Python: wsRecordCount: Decimal",
+    "detail": {
+      "precision": 9,
+      "scale": 0,
+      "sqlType": "DECIMAL(9,0)",
+      "picture": "9(09)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "txnpost/comp-3-decimal/_/34",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "TXNPOST",
+    "location": {
+      "line": 34
+    },
+    "title": "COMP-3 field WS-FAIL-COUNT → DECIMAL(9,0)",
+    "description": "Packed-decimal COMP-3 field WS-FAIL-COUNT PIC 9(09). Modern equivalent: SQL DECIMAL(9,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-FAIL-COUNT PIC 9(09) COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-fail-count DECIMAL(9,0)\n// Java:  BigDecimal wsFailCount;\n// C#:    decimal WsFailCount;\n// Python: wsFailCount: Decimal",
+    "detail": {
+      "precision": 9,
+      "scale": 0,
+      "sqlType": "DECIMAL(9,0)",
+      "picture": "9(09)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "txnpost/file-read-loop/_/40",
+    "category": "io",
+    "kind": "file-read-loop",
+    "severity": "low",
+    "programId": "TXNPOST",
+    "location": {
+      "line": 40,
+      "column": 5
+    },
+    "title": "Sequential READ-loop — candidate for SQL query",
+    "description": "PERFORM-UNTIL containing a READ is the classic COBOL \"read each record\" loop. When backed by a database, replace with a single SELECT and result-set iteration; when backed by a file, consider streaming with explicit termination handling.",
+    "currentCode": "PERFORM 2000-PROCESS-TXNS UNTIL ...\n*  -- 2000-PROCESS-TXNS contains READ 2000-PROCESS-TXNS.",
+    "suggestedReplacement": "EXEC SQL DECLARE CUR CURSOR FOR\n    SELECT * FROM <table> WHERE ... END-EXEC.\nEXEC SQL OPEN CUR END-EXEC.\nPERFORM UNTIL SQLCODE = 100\n    EXEC SQL FETCH CUR INTO :record END-EXEC\nEND-PERFORM.",
+    "tags": [
+      "io",
+      "sql",
+      "pattern"
+    ]
+  }
+]

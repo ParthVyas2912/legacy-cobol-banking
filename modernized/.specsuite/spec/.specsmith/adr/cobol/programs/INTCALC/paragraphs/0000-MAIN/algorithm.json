@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes resources, starts processing, and ensures proper closure before terminating execution.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open a resource",
+      "details": "Opens a file or resource for processing"
+    },
+    {
+      "action": "perform a loop",
+      "details": "Transfers control to a looping structure for iterative processing"
+    },
+    {
+      "action": "close resources",
+      "details": "Closes any open file or resource to prevent issues"
+    },
+    {
+      "action": "end execution",
+      "details": "Transfers control back to the caller or terminates processing"
+    }
+  ],
+  "inputs": [
+    "file-handle"
+  ],
+  "outputs": [
+    "none"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file-handle",
+      "description": "Modifies or writes to an open file resource"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

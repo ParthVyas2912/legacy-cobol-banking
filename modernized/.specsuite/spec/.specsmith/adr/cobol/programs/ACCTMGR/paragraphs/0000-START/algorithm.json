@@ -1,0 +1,26 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "Initializes or performs setup and evaluates a condition to determine further processing.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Determines the next step through conditional logic."
+    },
+    {
+      "action": "execute code block",
+      "details": "Executes platform-dependent code (e.g., a CICS call or system operation)."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "platform-dependent behavior",
+      "description": "Executes a specific block of platform-dependent logic."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

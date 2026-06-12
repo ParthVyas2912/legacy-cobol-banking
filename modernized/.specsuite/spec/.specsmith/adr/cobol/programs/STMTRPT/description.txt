@@ -1,0 +1,4 @@
+# STMTRPT
+This program generates a statement report by fetching data from an IMS database and a SQL table using cursors.
+Business domain: reporting
+Architectural role: reporting

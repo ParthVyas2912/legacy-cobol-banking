@@ -1,0 +1,30 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph processes the freezing of an account, involving setting status flags and triggering external system interactions.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "set account status to frozen",
+      "details": "uses MOVE statements to update internal variables"
+    },
+    {
+      "action": "trigger external system update",
+      "details": "uses EXEC block for system-specific operations"
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "external-system-handle"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external system",
+      "description": "Triggers an update to notify the account freeze"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

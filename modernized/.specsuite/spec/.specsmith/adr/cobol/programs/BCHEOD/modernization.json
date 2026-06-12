@@ -1,0 +1,160 @@
+[
+  {
+    "id": "bcheod/alter-usage/_/19",
+    "category": "control-flow",
+    "kind": "alter-usage",
+    "severity": "critical",
+    "programId": "BCHEOD",
+    "location": {
+      "line": 19,
+      "column": 5
+    },
+    "title": "ALTER statement detected",
+    "description": "ALTER mutates GO TO targets at runtime and is deprecated in COBOL 85 and forbidden in modern style guides. Replace with explicit IF/EVALUATE branching or restructure the dispatching logic.",
+    "currentCode": "ALTER <paragraph> TO PROCEED TO <target>",
+    "suggestedReplacement": "// Replace ALTER with an EVALUATE-based dispatch table",
+    "tags": [
+      "deprecated",
+      "goto",
+      "alter"
+    ]
+  },
+  {
+    "id": "bcheod/alter-usage/_/28",
+    "category": "control-flow",
+    "kind": "alter-usage",
+    "severity": "critical",
+    "programId": "BCHEOD",
+    "location": {
+      "line": 28,
+      "column": 5
+    },
+    "title": "ALTER statement detected",
+    "description": "ALTER mutates GO TO targets at runtime and is deprecated in COBOL 85 and forbidden in modern style guides. Replace with explicit IF/EVALUATE branching or restructure the dispatching logic.",
+    "currentCode": "ALTER <paragraph> TO PROCEED TO <target>",
+    "suggestedReplacement": "// Replace ALTER with an EVALUATE-based dispatch table",
+    "tags": [
+      "deprecated",
+      "goto",
+      "alter"
+    ]
+  },
+  {
+    "id": "bcheod/alter-usage/_/33",
+    "category": "control-flow",
+    "kind": "alter-usage",
+    "severity": "critical",
+    "programId": "BCHEOD",
+    "location": {
+      "line": 33,
+      "column": 5
+    },
+    "title": "ALTER statement detected",
+    "description": "ALTER mutates GO TO targets at runtime and is deprecated in COBOL 85 and forbidden in modern style guides. Replace with explicit IF/EVALUATE branching or restructure the dispatching logic.",
+    "currentCode": "ALTER <paragraph> TO PROCEED TO <target>",
+    "suggestedReplacement": "// Replace ALTER with an EVALUATE-based dispatch table",
+    "tags": [
+      "deprecated",
+      "goto",
+      "alter"
+    ]
+  },
+  {
+    "id": "bcheod/dead-paragraph/3000-post-step/0",
+    "category": "control-flow",
+    "kind": "dead-paragraph",
+    "severity": "medium",
+    "programId": "BCHEOD",
+    "paragraph": "3000-POST-STEP",
+    "title": "Dead paragraph 3000-POST-STEP",
+    "description": "Paragraph 3000-POST-STEP is unreachable from any program entry point. Modernized code should not include unreachable branches; remove or document why this paragraph must remain.",
+    "currentCode": "3000-POST-STEP.",
+    "suggestedReplacement": "// Remove 3000-POST-STEP — confirmed unreachable from entry",
+    "tags": [
+      "dead-code",
+      "cfg"
+    ]
+  },
+  {
+    "id": "bcheod/dead-paragraph/4000-done/0",
+    "category": "control-flow",
+    "kind": "dead-paragraph",
+    "severity": "medium",
+    "programId": "BCHEOD",
+    "paragraph": "4000-DONE",
+    "title": "Dead paragraph 4000-DONE",
+    "description": "Paragraph 4000-DONE is unreachable from any program entry point. Modernized code should not include unreachable branches; remove or document why this paragraph must remain.",
+    "currentCode": "4000-DONE.",
+    "suggestedReplacement": "// Remove 4000-DONE — confirmed unreachable from entry",
+    "tags": [
+      "dead-code",
+      "cfg"
+    ]
+  },
+  {
+    "id": "bcheod/goto-cluster/_/0",
+    "category": "control-flow",
+    "kind": "goto-cluster",
+    "severity": "high",
+    "programId": "BCHEOD",
+    "title": "Spaghetti GO TO cluster (2 paragraphs)",
+    "description": "Paragraphs 1000-NEXT-STEP ↔ 2000-INT-STEP form a GO TO cycle. Restructure as PERFORM / structured loop / state machine for maintainability.",
+    "currentCode": "1000-NEXT-STEP.\n    GO TO ...\n2000-INT-STEP.\n    GO TO ...",
+    "suggestedReplacement": "// Refactor as a structured state machine or PERFORM UNTIL loop",
+    "detail": {
+      "paragraphs": [
+        "1000-NEXT-STEP",
+        "2000-INT-STEP"
+      ]
+    },
+    "tags": [
+      "cfg",
+      "goto",
+      "spaghetti"
+    ]
+  },
+  {
+    "id": "bcheod/microservice-candidate/_/0",
+    "category": "cross-program",
+    "kind": "microservice-candidate",
+    "severity": "info",
+    "programId": "BCHEOD",
+    "title": "BCHEOD: microservice candidate",
+    "description": "BCHEOD has 7 paragraph(s), 0 LINKAGE parameter(s), 0 file(s), 3 SQL block(s). Small surface + clear boundary suggests this could be split into a standalone service during modernization.",
+    "detail": {
+      "paragraphs": 7,
+      "usingParams": 0,
+      "files": 0,
+      "sqlBlocks": 3,
+      "cicsBlocks": 0,
+      "imsCalls": 0,
+      "callTargets": [
+        "INTCALC",
+        "TXNPOST"
+      ]
+    },
+    "tags": [
+      "cross-program",
+      "architecture"
+    ]
+  },
+  {
+    "id": "bcheod/missing-sqlca-check/_/41",
+    "category": "io",
+    "kind": "missing-sqlca-check",
+    "severity": "medium",
+    "programId": "BCHEOD",
+    "location": {
+      "line": 41,
+      "column": 5
+    },
+    "title": "EXEC SQL without SQLCODE / SQLSTATE check",
+    "description": "Embedded SQL with no SQLCODE / SQLSTATE inspection after the call and no WHENEVER directive in effect. Unhandled SQL errors are a common source of silent data corruption in COBOL.",
+    "currentCode": "EXEC SQL ... END-EXEC.",
+    "suggestedReplacement": "EXEC SQL ... END-EXEC.\n    IF SQLCODE NOT = ZERO\n        PERFORM HANDLE-SQL-ERROR\n    END-IF.",
+    "tags": [
+      "sql",
+      "error-handling"
+    ]
+  }
+]

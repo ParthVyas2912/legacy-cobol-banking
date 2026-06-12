@@ -1,0 +1,24 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "Evaluates risk by applying conditional checks and potentially prepares the system for further actions based on the fraud-detection logic.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Performs three conditional checks using IF statements to determine risk factors."
+    },
+    {
+      "action": "assign value",
+      "details": "Uses a MOVE statement to set or update a value based on conditions."
+    }
+  ],
+  "inputs": [
+    "risk-score",
+    "transaction-data"
+  ],
+  "outputs": [
+    "updated-risk-level"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

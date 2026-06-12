@@ -1,0 +1,4 @@
+# ATMTXN
+This program handles ATM transactions, validating input data, processing the transaction, and sending responses to the user.
+Business domain: infrastructure
+Architectural role: online

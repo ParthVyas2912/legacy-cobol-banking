@@ -1,0 +1,29 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes the program, displays a message, and begins processing by performing the FETCH loop.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize some variables or state",
+      "details": "explicit Move statement"
+    },
+    {
+      "action": "display program start message",
+      "details": "Display statement provides program start context"
+    },
+    {
+      "action": "start a loop of processing steps",
+      "details": "Handled via Perform to 1000-FETCH-LOOP"
+    }
+  ],
+  "inputs": [
+    "none-explicitly)"
+  ],
+  "outputs": [
+    13,
+    null,
+    null
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph sends the next data or message based on previously executed logic, handling any errors that may occur.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data into a variable",
+      "details": "Prepares data for sending or display"
+    },
+    {
+      "action": "execute block of code",
+      "details": "Likely sends or interacts with an external system"
+    }
+  ],
+  "inputs": [
+    "working-storage variable"
+  ],
+  "outputs": [
+    "screen or message queue"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "screen or terminal",
+      "description": "Sends output to a user screen or terminal"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

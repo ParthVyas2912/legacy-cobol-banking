@@ -1,0 +1,33 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes some variables and performs two external procedure calls with specific conditions.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "using MOVE statements"
+    },
+    {
+      "action": "execute external logic",
+      "details": "via EXEC blocks"
+    },
+    {
+      "action": "conditional processing",
+      "details": "using an IF statement"
+    }
+  ],
+  "inputs": [
+    "working-storage-variables"
+  ],
+  "outputs": [
+    "working-storage-variables"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external procedure calls",
+      "description": "Potential side effects depend on EXEC block behavior"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

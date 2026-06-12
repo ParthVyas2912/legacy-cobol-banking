@@ -1,0 +1,36 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes account-related variables, performs a database operation, and makes a conditional decision.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "Initialize account data",
+      "details": "Set variables to starting values"
+    },
+    {
+      "action": "Execute a database operation",
+      "details": "Interface with an external database"
+    },
+    {
+      "action": "Evaluate a condition",
+      "details": "Make a decision based on a specific condition"
+    }
+  ],
+  "inputs": [
+    "account-data",
+    "database-cursor"
+  ],
+  "outputs": [
+    "status-indicator",
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts-table",
+      "description": "Inserts a new account record into the database"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

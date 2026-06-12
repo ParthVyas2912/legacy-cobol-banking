@@ -1,0 +1,33 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "Processes a single transaction by performing data movements and one or more computations, and writes the result to an output file.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Transfer values between working storage fields for processing."
+    },
+    {
+      "action": "add values",
+      "details": "Perform a numeric computation on one or more fields."
+    },
+    {
+      "action": "write data",
+      "details": "Output the processed transaction to a file."
+    }
+  ],
+  "inputs": [
+    "transaction-details"
+  ],
+  "outputs": [
+    "output-file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output-file",
+      "description": "Writes the transaction data to the output file after processing."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

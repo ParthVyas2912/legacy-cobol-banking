@@ -1,0 +1,29 @@
+{
+  "name": "3000-FETCH-LOOP",
+  "description": "This paragraph fetches a record from a database cursor and conditionally processes it based on certain criteria.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch a record from a SQL cursor",
+      "details": "Attempt to retrieve the next record in the result set."
+    },
+    {
+      "action": "conditionally process the fetched record",
+      "details": "Evaluate a condition and decide the next steps based on its result."
+    }
+  ],
+  "inputs": [
+    "SQL-CURSOR-NAME"
+  ],
+  "outputs": [
+    "FETCH-RESULT"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "database",
+      "description": "Advances the cursor position in the database result set."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

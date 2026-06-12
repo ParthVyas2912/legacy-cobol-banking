@@ -1,0 +1,21 @@
+{
+  "name": "3000-CLOSE-FILES",
+  "description": "Closes files used in the program.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close files",
+      "details": "Closes all files opened during the program's execution to release resources."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "files used in the program",
+      "description": "Releases resources by closing files."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

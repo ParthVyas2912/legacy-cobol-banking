@@ -1,0 +1,29 @@
+{
+  "name": "1000-VALIDATE",
+  "description": "This paragraph performs basic data validation and prepares for further processing.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "validate input data",
+      "details": "checks or manipulates variables for correctness"
+    },
+    {
+      "action": "prepare for next step",
+      "details": "ensures necessary values are set"
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "validation-flag"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": null,
+      "description": "no external side effects"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

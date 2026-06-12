@@ -1,0 +1,4 @@
+# ACCTMGR
+Manages customer account data by performing operations such as creating, updating, reading, and closing accounts.
+Business domain: customer-management
+Architectural role: online

@@ -1,0 +1,23 @@
+{
+  "name": "4000-CLOSE-CURSOR",
+  "description": "Closes an SQL cursor, typically as part of cleanup operations after database interactions.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close cursor",
+      "details": "Executes an SQL statement to close the open cursor."
+    }
+  ],
+  "inputs": [
+    "SQL cursor"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "commit",
+      "target": "database",
+      "description": "Ensures the cursor is closed and resources are released."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

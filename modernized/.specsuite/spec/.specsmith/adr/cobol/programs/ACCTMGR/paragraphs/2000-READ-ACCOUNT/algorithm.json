@@ -1,0 +1,31 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph reads customer account details, processes them, and passes control to the next operation.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "read account data",
+      "details": "Retrieve account information from a database or data store"
+    },
+    {
+      "action": "check or process conditions",
+      "details": "Perform an IF condition based on retrieved data"
+    }
+  ],
+  "inputs": [
+    "customer-account-id",
+    "account-record"
+  ],
+  "outputs": [
+    "processed-account-info"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-table",
+      "description": "The processing might involve updating certain fields in the account record"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

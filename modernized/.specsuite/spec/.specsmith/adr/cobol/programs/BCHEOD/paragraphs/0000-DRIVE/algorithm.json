@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph initiates control flow by performing a startup routine and transferring execution to the next operational step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform-startup",
+      "details": "Executes 9000-MARK-START as part of the initialization process."
+    },
+    {
+      "action": "transfer-execution",
+      "details": "Transfers control to 1000-NEXT-STEP using GO TO."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

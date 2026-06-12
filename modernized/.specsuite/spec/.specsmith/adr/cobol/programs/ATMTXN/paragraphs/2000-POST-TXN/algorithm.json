@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes transaction data by moving values and executing a COBOL block, preparing data for the next step in the process.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Assigns values to variables for further processing."
+    },
+    {
+      "action": "exec-block",
+      "details": "Executes a logical block, likely interfacing with an external system or utility."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "processed-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "3000-SEND-NEXT",
+      "description": "Sends the processed data to the next paragraph for further handling."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

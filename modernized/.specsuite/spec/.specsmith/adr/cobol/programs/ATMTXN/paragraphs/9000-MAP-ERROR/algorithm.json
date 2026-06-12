@@ -1,0 +1,19 @@
+{
+  "name": "9000-MAP-ERROR",
+  "description": "This paragraph moves error-related data to an appropriate location or variable for handling.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Assigns error information to a specific variable or structure."
+    }
+  ],
+  "inputs": [
+    "error-information"
+  ],
+  "outputs": [
+    "mapped-error"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

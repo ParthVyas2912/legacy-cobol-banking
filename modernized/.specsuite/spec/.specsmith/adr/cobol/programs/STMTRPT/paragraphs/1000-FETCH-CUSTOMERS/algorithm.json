@@ -1,0 +1,23 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "This paragraph fetches customer-related data and prepares to process it in a loop.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move customer data into a variable",
+      "details": "Moves fetched data into a working storage variable."
+    },
+    {
+      "action": "perform a loop",
+      "details": "Begins processing fetched customers by transferring control."
+    }
+  ],
+  "inputs": [
+    "incoming customer data"
+  ],
+  "outputs": [
+    "processed customer data"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

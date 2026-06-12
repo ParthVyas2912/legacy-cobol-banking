@@ -1,0 +1,21 @@
+{
+  "name": "4000-DONE",
+  "description": "The paragraph performs a specific operation and terminates the program by returning control to the calling environment.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform another paragraph",
+      "details": "Performs 9100-MARK-END"
+    },
+    {
+      "action": "terminate program",
+      "details": "Executes goback to return control"
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "program control"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

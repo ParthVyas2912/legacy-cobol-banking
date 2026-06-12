@@ -1,0 +1,23 @@
+{
+  "name": "0000-START",
+  "description": "Initializes the fraud detection process and triggers subsequent computation and decision-making steps.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform computation of velocity",
+      "details": "Calls 1000-COMPUTE-VELOCITY"
+    },
+    {
+      "action": "score risk",
+      "details": "Calls 2000-SCORE-RISK"
+    },
+    {
+      "action": "freeze account if condition met",
+      "details": "Conditional execution of 3000-FREEZE-ACCOUNT"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

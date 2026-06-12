@@ -1,0 +1,5 @@
+{
+  "name": "KYCSYNCP",
+  "pcbCount": 2,
+  "description": "The PSB defines access to the CUSTDB database with read-only operations for two program control blocks (PCBs), each specifying sensitivity to two segments with a key length of 80."
+}

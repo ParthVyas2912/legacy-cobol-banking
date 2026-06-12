@@ -1,0 +1,25 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph iterates in a fetch loop, performing operations on data that is likely used for updating or synchronizing KYC information.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch-record",
+      "details": "Retrieve records for processing within a loop."
+    }
+  ],
+  "inputs": [
+    "KYC-CURSOR"
+  ],
+  "outputs": [
+    "WORKING-VARIABLES"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "KYC-TABLE",
+      "description": "The fetched data is likely processed and upserted into the KYC table or a related database structure"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

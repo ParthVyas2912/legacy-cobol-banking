@@ -1,0 +1,6 @@
+Paragraph: 3100-APPLY-UPDATES (section MAIN-ROUTINE)
+Lines: 110-112
+Statements: 2
+
+1. move
+2. move

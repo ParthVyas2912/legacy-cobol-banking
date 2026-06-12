@@ -1,0 +1,35 @@
+{
+  "name": "3000-UPDATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "Updates account data based on conditions and prepares for further processing.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "check conditions",
+      "details": "Evaluates conditions using IF statements to determine next steps."
+    },
+    {
+      "action": "modify data",
+      "details": "Moves data to a target variable as part of the update process."
+    },
+    {
+      "action": "execute external operation",
+      "details": "Runs an EXEC block, possibly linked to external resources like a database or CICS system."
+    }
+  ],
+  "inputs": [
+    "account-record",
+    "update-criteria"
+  ],
+  "outputs": [
+    "updated-account"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "ACCOUNT_TABLE",
+      "description": "Updates the database record for the account."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}
