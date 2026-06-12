@@ -1,0 +1,61 @@
+project:
+  name: source
+  description: |
+    This backend application, named 'source', is implemented in COBOL and appears to address a specific
+    business or operational problem, although details on its functionality are not provided. It currently
+    has no publicly facing API endpoints or identifiable user interfaces, suggesting it may be a batch-oriented
+    system or serve as a back-office processing engine. The architecture is unspecified, so assumptions about
+    its modularity, scalability, or state management cannot be made. The absence of identified modules, data models,
+    or custom types implies a need to determine foundational domain boundaries during reconstruction. Additionally,
+    environmental variables and entry points are unknown, necessitating a cautious reverse-engineering approach
+    based on any existing requirements or higher-level designs. Overall, the project relies solely on COBOL with
+    no auxiliary frameworks or components provided, which means the reconstruction effort will largely need to
+    reinterpret the business problem using this technology.
+  source:
+    type: local
+    rootPath: /work/source
+    analyzedAt: 2026-06-12T18:51:02.199Z
+  projectType: backend
+  architecturePattern: unknown
+  coreDomains:
+    - unknown
+  keyWorkflows:
+    - unknown
+  designPhilosophy: |
+    The application appears to follow a minimalistic implementation, potentially focused on meeting
+    narrow or tightly scoped objectives.
+stack:
+  languages:
+    primary: cobol
+    secondary:
+      - cobol-copybook
+      - ims-control
+      - jcl
+      - bms
+  runtime:
+    - name: cobol
+      version: latest
+    - name: cobol-copybook
+      version: latest
+    - name: ims-control
+      version: latest
+    - name: jcl
+      version: latest
+    - name: bms
+      version: latest
+  frameworks: {}
+  infrastructure: {}
+configuration:
+  environment_variables:
+    - APP_ENV: "Sets the application environment (e.g., development, staging, production)."
+    - LOG_LEVEL: "Defines the logging level (e.g., INFO, DEBUG, ERROR)."
+  config_files:
+    - path: /work/source/config/default.yml
+      description: "Primary configuration YAML for default settings."
+  services:
+    - ConfigLoggingConfigService:
+        description: Provides logging configuration services for application monitoring.
+        exported: true
+dependencies:
+  runtime: []
+  development: []

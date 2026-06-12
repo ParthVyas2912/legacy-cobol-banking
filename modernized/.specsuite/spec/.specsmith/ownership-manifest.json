@@ -1,0 +1,90 @@
+{
+  "manifestVersion": "1.0.0",
+  "generatedAt": "2026-06-12T18:53:27.897Z",
+  "mode": "managed",
+  "entries": [
+    {
+      "entityId": "ent-config-9c42d5189a05",
+      "entityPath": "configuration",
+      "specPath": "#/configuration",
+      "mode": "managed",
+      "confidence": 0.9,
+      "files": [
+        "src/config/index.java",
+        ".env.example"
+      ],
+      "symbols": [],
+      "plannerNodes": [
+        "config:environment"
+      ],
+      "source": "specsmith",
+      "sourceRef": "planner-node:config:environment",
+      "fingerprints": [
+        "98c080fc7c6a"
+      ]
+    },
+    {
+      "entityId": "ent-config-f335fbab2264",
+      "entityPath": "planModifications.config:logging-config",
+      "specPath": "#/planModifications/config:logging-config",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "src/main/resources/application.yml"
+      ],
+      "symbols": [
+        "ConfigLoggingConfigService"
+      ],
+      "plannerNodes": [
+        "config:logging-config"
+      ],
+      "source": "specsmith",
+      "sourceRef": "src/main/resources/application.yml#ConfigLoggingConfigService",
+      "fingerprints": [
+        "4327161eebfc"
+      ]
+    },
+    {
+      "entityId": "ent-config-32ab132cd9cb",
+      "entityPath": "planModifications.service:batch-processing-service",
+      "specPath": "#/planModifications/service:batch-processing-service",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "src/main/java/com/source/service/BatchProcessingService.java"
+      ],
+      "symbols": [
+        "ServiceBatchProcessingServiceService"
+      ],
+      "plannerNodes": [
+        "service:batch-processing-service"
+      ],
+      "source": "specsmith",
+      "sourceRef": "src/main/java/com/source/service/BatchProcessingService.java#ServiceBatchProcessingServiceService",
+      "fingerprints": [
+        "a38c9d8c409e"
+      ]
+    },
+    {
+      "entityId": "ent-config-7d5b7e16fb2c",
+      "entityPath": "planModifications.service:global-exception-handler",
+      "specPath": "#/planModifications/service:global-exception-handler",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "src/main/java/com/source/service/GlobalExceptionHandler.java"
+      ],
+      "symbols": [
+        "ServiceGlobalExceptionHandlerService"
+      ],
+      "plannerNodes": [
+        "service:global-exception-handler"
+      ],
+      "source": "specsmith",
+      "sourceRef": "src/main/java/com/source/service/GlobalExceptionHandler.java#ServiceGlobalExceptionHandlerService",
+      "fingerprints": [
+        "61b87f32dd94"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+specforge_knowledge_graph: 1.0.0
+project: source
+entities:
+  - id: project:root
+    name: source
+    type: project
+    description: A backend COBOL application named 'source', likely serving a business domain in back-office processing,
+      potentially batch-oriented and targeting operational or business workflows. Appears isolated due to the lack of
+      external API or UI, requiring further investigation into its data flows, state management, and broader system
+      interactions.
+    sourceFiles: []
+    domain: back-office processing
+    properties:
+      type: backend
+      totalFiles: 20
+      sourceFiles: 19
+    tags:
+      - project
+    confidence: 1
+relationships: []
+metadata:
+  totalEntities: 1
+  totalRelationships: 0
+  entityTypeCounts:
+    project: 1
+  relationshipTypeCounts: {}
+  averageConfidence: 1
+  generatedAt: 2026-06-12T18:51:03.657Z
