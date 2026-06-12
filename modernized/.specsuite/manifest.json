@@ -1,0 +1,9 @@
+{
+  "build_id": "40",
+  "source_repo": "legacy-cobol-banking",
+  "source_branch": "main",
+  "target_stack": "csharp-aspnet-efcore",
+  "target_subdir": "modernized/csharp-aspnet-efcore",
+  "generated_at": "2026-06-12T18:18:53Z",
+  "pipeline": "specsuite-modernization-pipeline"
+}

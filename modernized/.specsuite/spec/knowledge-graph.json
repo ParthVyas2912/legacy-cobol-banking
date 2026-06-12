@@ -1,0 +1,34 @@
+{
+  "specforge_knowledge_graph": "1.0.0",
+  "project": "source",
+  "entities": [
+    {
+      "id": "project:root",
+      "name": "source",
+      "type": "project",
+      "description": "The backend COBOL system 'source' is likely a monolithic application focusing on data-intensive workflows or business logic important for legacy operations. The lack of modular design and reliance on procedural programming suggest challenges in scalability and maintainability. Its role is primarily to support and provide critical processing capabilities to other systems or end-users indirectly, with potential integration points using batch processing or COBOL runtime interaction mechanisms. Migrating or modernizing this system would require a thorough understanding of its legacy workflows and environment dependencies.",
+      "sourceFiles": [],
+      "domain": "Legacy backend system",
+      "properties": {
+        "type": "backend",
+        "totalFiles": 20,
+        "sourceFiles": 19
+      },
+      "tags": [
+        "project"
+      ],
+      "confidence": 1
+    }
+  ],
+  "relationships": [],
+  "metadata": {
+    "totalEntities": 1,
+    "totalRelationships": 0,
+    "entityTypeCounts": {
+      "project": 1
+    },
+    "relationshipTypeCounts": {},
+    "averageConfidence": 1,
+    "generatedAt": "2026-06-12T18:13:10.478Z"
+  }
+}

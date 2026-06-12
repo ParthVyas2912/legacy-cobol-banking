@@ -1,0 +1,29 @@
+//DB2TXNLJOB (ACCT,MIGR),'DB2 EXTRACT',CLASS=A,MSGCLASS=X,
+//             NOTIFY=&SYSUID
+//*
+//* MainframeForge — Unload DB2 table TXN_LEDGER
+//*
+//* NOTE: Adjust DSNLOAD, SSID, and creator/table names for your site.
+//*
+//STEP010  EXEC PGM=IKJEFT01,DYNAMNBR=20
+//STEPLIB  DD  DSN=DB2.DSNLOAD,DISP=SHR
+//SYSTSPRT DD  SYSOUT=*
+//SYSTSIN  DD  *
+  DSN SYSTEM(DB2P)
+  RUN PROGRAM(DSNTIAUL) PLAN(DSNTIAUL) -
+      PARM('SQL') -
+      LIB('DB2.DSNLOAD')
+  END
+/*
+//SYSREC00 DD  DSN=MIGR.UNLOAD.DB2.TXNLEDGE.UNLOAD,
+//             DISP=(NEW,CATLG,DELETE),
+//             UNIT=SYSDA,
+//             SPACE=(CYL,(50,25))
+//SYSPUNCH DD  DSN=MIGR.UNLOAD.DB2.TXNLEDGE.UNLOAD.CTRL,
+//             DISP=(NEW,CATLG,DELETE),
+//             UNIT=SYSDA,
+//             SPACE=(TRK,(1,1))
+//SYSIN    DD  *
+  SELECT * FROM TXN_LEDGER
+/*
+//

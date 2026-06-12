@@ -1,0 +1,119 @@
+{
+  "manifestVersion": "1.0.0",
+  "generatedAt": "2026-06-12T18:15:34.712Z",
+  "mode": "managed",
+  "entries": [
+    {
+      "entityId": "ent-config-9c42d5189a05",
+      "entityPath": "configuration",
+      "specPath": "#/configuration",
+      "mode": "managed",
+      "confidence": 0.9,
+      "files": [
+        "appsettings.json",
+        ".env.example"
+      ],
+      "symbols": [],
+      "plannerNodes": [
+        "config:environment"
+      ],
+      "source": "specsmith",
+      "sourceRef": "planner-node:config:environment",
+      "fingerprints": [
+        "b9cc5cb21bd8"
+      ]
+    },
+    {
+      "entityId": "ent-config-a3e3e99f9dfc",
+      "entityPath": "planModifications.integration:hangfire",
+      "specPath": "#/planModifications/integration:hangfire",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "Integrations/HangfireIntegration.cs",
+        "Interfaces/IIntegrationHangfireService.cs"
+      ],
+      "symbols": [
+        "IntegrationHangfireService",
+        "IIntegrationHangfireService"
+      ],
+      "plannerNodes": [
+        "integration:hangfire"
+      ],
+      "source": "specsmith",
+      "sourceRef": "Integrations/HangfireIntegration.cs#IntegrationHangfireService",
+      "fingerprints": [
+        "6fe6289643b2"
+      ]
+    },
+    {
+      "entityId": "ent-config-50998cf7ffc7",
+      "entityPath": "planModifications.service:cache-service",
+      "specPath": "#/planModifications/service:cache-service",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "Services/CacheService.cs",
+        "Interfaces/IServiceCacheServiceService.cs"
+      ],
+      "symbols": [
+        "ServiceCacheServiceService",
+        "IServiceCacheServiceService"
+      ],
+      "plannerNodes": [
+        "service:cache-service"
+      ],
+      "source": "specsmith",
+      "sourceRef": "Services/CacheService.cs#ServiceCacheServiceService",
+      "fingerprints": [
+        "ef30893a28ac"
+      ]
+    },
+    {
+      "entityId": "ent-config-2a6311cebc8f",
+      "entityPath": "planModifications.service:data-processing",
+      "specPath": "#/planModifications/service:data-processing",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "Services/DataProcessingService.cs",
+        "Interfaces/IServiceDataProcessingService.cs"
+      ],
+      "symbols": [
+        "ServiceDataProcessingService",
+        "IServiceDataProcessingService"
+      ],
+      "plannerNodes": [
+        "service:data-processing"
+      ],
+      "source": "specsmith",
+      "sourceRef": "Services/DataProcessingService.cs#ServiceDataProcessingService",
+      "fingerprints": [
+        "82e8d1770aa7"
+      ]
+    },
+    {
+      "entityId": "ent-config-ea5cf4abc89a",
+      "entityPath": "planModifications.service:workflow-management",
+      "specPath": "#/planModifications/service:workflow-management",
+      "mode": "managed",
+      "confidence": 1,
+      "files": [
+        "Services/WorkflowManagementService.cs",
+        "Interfaces/IServiceWorkflowManagementService.cs"
+      ],
+      "symbols": [
+        "ServiceWorkflowManagementService",
+        "IServiceWorkflowManagementService"
+      ],
+      "plannerNodes": [
+        "service:workflow-management"
+      ],
+      "source": "specsmith",
+      "sourceRef": "Services/WorkflowManagementService.cs#ServiceWorkflowManagementService",
+      "fingerprints": [
+        "431bab1fc3a6"
+      ]
+    }
+  ]
+}

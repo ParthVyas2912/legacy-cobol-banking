@@ -1,0 +1,15 @@
+//AUDITOUTJOB (ACCT,MIGR),'DATA EXTRACT',CLASS=A,MSGCLASS=X,
+//             NOTIFY=&SYSUID
+//*
+//* MainframeForge — Extract AUDITOUT (sequential flat file) to staging
+//*
+//STEP010  EXEC PGM=IEBGENER
+//SYSPRINT DD  SYSOUT=*
+//SYSUT1   DD  DSN=MIGR.UNLOAD.AUDITOUT,DISP=SHR
+//SYSUT2   DD  DSN=MIGR.UNLOAD.AUDITOUT.UNLOAD,
+//             DISP=(NEW,CATLG,DELETE),
+//             UNIT=SYSDA,
+//             SPACE=(CYL,(50,25)),
+//             DCB=(RECFM=FB,LRECL=200,BLKSIZE=20000)
+//SYSIN    DD  DUMMY
+//
