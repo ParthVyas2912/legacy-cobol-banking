@@ -1,0 +1,20 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "The paragraph evaluates control conditions and executes a specific block of code, likely as part of starting the program's operation flow.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate control conditions",
+      "details": "Processes an EVALUATE statement to determine execution flow."
+    },
+    {
+      "action": "execute block",
+      "details": "Executes a block of code as specified within the EVALUATE."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

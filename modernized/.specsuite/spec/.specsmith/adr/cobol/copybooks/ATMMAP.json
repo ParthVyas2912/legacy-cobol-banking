@@ -1,0 +1,9 @@
+{
+  "name": "ATMMAP",
+  "usedBy": [
+    "ATMTXN"
+  ],
+  "isDclgen": false,
+  "description": "This copybook defines the data structure layout for ATM transaction mapping, containing fields necessary for processing ATM-related operations.",
+  "businessMeaning": "ATM transaction communication area (commarea) used to facilitate data exchange during ATM transactions."
+}

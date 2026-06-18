@@ -1,0 +1,35 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes processing by opening resources, starts a looping operation, and ensures proper cleanup before program termination.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open resources",
+      "details": "Opens necessary files or connections."
+    },
+    {
+      "action": "perform loop",
+      "details": "Transfers control to 1000-LOOP for repeated actions."
+    },
+    {
+      "action": "close resources",
+      "details": "Closes any open resources to ensure cleanup."
+    },
+    {
+      "action": "terminate program",
+      "details": "GOBACK to indicate program has completed work."
+    }
+  ],
+  "inputs": [
+    "files or resources"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "files or logs",
+      "description": "Resources may be modified as part of processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

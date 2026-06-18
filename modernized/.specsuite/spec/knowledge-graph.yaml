@@ -1,0 +1,28 @@
+specforge_knowledge_graph: 1.0.0
+project: source
+entities:
+  - id: project:root
+    name: source
+    type: project
+    description: The 'source' project is a monolithic COBOL-based backend system used for handling critical legacy business
+      processes, focusing on batch processing, data transformation, and applying business rules within a mainframe
+      environment. Modernization efforts require aligning legacy workflows with contemporary practices for seamless
+      integration.
+    sourceFiles: []
+    domain: enterprise software
+    properties:
+      type: backend
+      totalFiles: 20
+      sourceFiles: 19
+    tags:
+      - project
+    confidence: 1
+relationships: []
+metadata:
+  totalEntities: 1
+  totalRelationships: 0
+  entityTypeCounts:
+    project: 1
+  relationshipTypeCounts: {}
+  averageConfidence: 1
+  generatedAt: 2026-06-18T04:28:33.403Z

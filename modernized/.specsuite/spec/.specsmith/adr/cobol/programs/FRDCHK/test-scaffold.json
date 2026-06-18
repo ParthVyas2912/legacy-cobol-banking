@@ -1,0 +1,58 @@
+{
+  "programId": "FRDCHK",
+  "sourceFile": "programs/FRDCHK.cbl",
+  "inputs": [
+    {
+      "kind": "sql-row",
+      "name": "TXN_LEDGER",
+      "sampleValue": {
+        "__placeholder": "<row of TXN_LEDGER>"
+      },
+      "resource": "TXN_LEDGER"
+    }
+  ],
+  "expectedOutputs": [
+    {
+      "kind": "sql-row",
+      "name": "FRAUD_FLAGS",
+      "expectedValue": {
+        "__placeholder": "<expected row(s) in FRAUD_FLAGS>"
+      },
+      "resource": "FRAUD_FLAGS"
+    },
+    {
+      "kind": "cics-send",
+      "name": "WS-CALL-AREA",
+      "expectedValue": {
+        "__placeholder": "<COMMAREA passed to ACCTMGR>"
+      },
+      "resource": "ACCTMGR"
+    }
+  ],
+  "expectedSideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "FRAUD_FLAGS",
+      "description": "INSERT / UPDATE / DELETE on FRAUD_FLAGS."
+    },
+    {
+      "kind": "cics-link",
+      "target": "ACCTMGR",
+      "description": "CICS LINK to ACCTMGR with COMMAREA(WS-CALL-AREA)."
+    }
+  ],
+  "setupSteps": [
+    "Insert at least one row into TXN_LEDGER before running."
+  ],
+  "teardownSteps": [
+    "Truncate TXN_LEDGER after the test."
+  ],
+  "cases": [
+    {
+      "id": "frdchk-happy-path",
+      "title": "FRDCHK: happy path"
+    }
+  ],
+  "confidence": 1,
+  "notes": []
+}

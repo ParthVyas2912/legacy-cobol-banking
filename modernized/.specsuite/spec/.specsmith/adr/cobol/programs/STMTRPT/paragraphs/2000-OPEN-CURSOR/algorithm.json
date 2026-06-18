@@ -1,0 +1,33 @@
+{
+  "name": "2000-OPEN-CURSOR",
+  "description": "This paragraph initializes a database cursor and transitions control to the range computation logic.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move value to variable",
+      "details": "Sets up a value for use in the subsequent operations."
+    },
+    {
+      "action": "perform a paragraph",
+      "details": "Invokes 2050-COMPUTE-RANGE for further processing."
+    },
+    {
+      "action": "execute SQL block",
+      "details": "Opens a database cursor for subsequent data retrieval."
+    }
+  ],
+  "inputs": [
+    "SQL cursor"
+  ],
+  "outputs": [
+    "SQL cursor"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "cursor state",
+      "description": "Modifies database state by opening a cursor for query execution."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

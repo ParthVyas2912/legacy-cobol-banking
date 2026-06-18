@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph coordinates control flow by initiating a process and redirecting execution to the appropriate step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform subroutine",
+      "details": "Executes 9000-MARK-START to initiate a preparatory process."
+    },
+    {
+      "action": "redirect control",
+      "details": "Transfers execution to 1000-NEXT-STEP for further processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

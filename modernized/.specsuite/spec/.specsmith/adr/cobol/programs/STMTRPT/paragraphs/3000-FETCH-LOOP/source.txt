@@ -1,0 +1,11 @@
+Paragraph: 3000-FETCH-LOOP
+Lines: 91-98
+Statements: 2
+
+1. EXEC SQL  FETCH STMT-CSR
+             INTO :STMT-ACCT-NUM,
+                  :STMT-AMOUNT,
+                  :STMT-BALANCE,
+                  :STMT-DESCRIPTION
+     END-EXEC
+2. IF SQLCODE = 0 WRITE STMT-LINE END-IF

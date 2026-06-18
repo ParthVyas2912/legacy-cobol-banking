@@ -1,0 +1,29 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph performs a step in the program execution involving a procedure call and a conditional transfer of control.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call external procedure",
+      "details": "Calls another program or routine for processing"
+    },
+    {
+      "action": "conditional go-to",
+      "details": "Transfers control based on program logic"
+    }
+  ],
+  "inputs": [
+    "control variable"
+  ],
+  "outputs": [
+    "control state"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external procedure",
+      "description": "Execution of statements within the called external procedure"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,34 @@
+{
+  "name": "3000-UPDATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph updates account information and prepares for the next processing step.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move account data",
+      "details": "Move values into account fields for update."
+    },
+    {
+      "action": "execute SQL or CICS block",
+      "details": "Perform database or transactional operation."
+    },
+    {
+      "action": "check conditions",
+      "details": "Evaluate account update success and subsequent needed actions."
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-REC"
+  ],
+  "outputs": [
+    "ACCOUNT-REC"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "database",
+      "description": "Write updated information to account table."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

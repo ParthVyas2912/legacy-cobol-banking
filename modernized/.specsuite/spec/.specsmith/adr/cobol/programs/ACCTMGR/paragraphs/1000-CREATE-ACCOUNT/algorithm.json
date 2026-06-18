@@ -1,0 +1,30 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "Creates and initializes a new customer account, then prepares for subsequent account validation or reading.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize account details",
+      "details": "Moves initial values into account fields."
+    },
+    {
+      "action": "prepare for further processing",
+      "details": "Executes a block of code, likely to interact with external systems or perform setup tasks."
+    }
+  ],
+  "inputs": [
+    "customer-details"
+  ],
+  "outputs": [
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "Accounts table",
+      "description": "Potentially inserts or prepares to insert a new account record into the database."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

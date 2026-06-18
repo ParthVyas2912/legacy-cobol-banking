@@ -1,0 +1,27 @@
+{
+  "name": "0000-START",
+  "description": "Initializes fraud detection processing by performing key operational tasks for velocity computation, risk scoring, and account freezing based on predefined criteria.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Transfer control to 1000-COMPUTE-VELOCITY."
+    },
+    {
+      "action": "perform",
+      "details": "Transfer control to 2000-SCORE-RISK."
+    },
+    {
+      "action": "perform",
+      "details": "Transfer control to 3000-FREEZE-ACCOUNT."
+    },
+    {
+      "action": "evaluate",
+      "details": "Check conditions for additional processing or fallthrough to 1000-COMPUTE-VELOCITY."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

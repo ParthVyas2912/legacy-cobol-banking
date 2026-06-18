@@ -1,0 +1,23 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "This paragraph assesses risk scores and transfers control flow for further account actions based on specific conditions.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Checks three conditional statements to determine risk."
+    },
+    {
+      "action": "move data",
+      "details": "Moves data based on the evaluation results."
+    }
+  ],
+  "inputs": [
+    "risk-related variables"
+  ],
+  "outputs": [
+    "risk-output"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

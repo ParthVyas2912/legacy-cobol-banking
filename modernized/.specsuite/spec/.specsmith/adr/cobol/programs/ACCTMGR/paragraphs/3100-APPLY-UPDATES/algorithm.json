@@ -1,0 +1,22 @@
+{
+  "name": "3100-APPLY-UPDATES",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph performs two move operations, possibly updating variables related to customer account management.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values between variables",
+      "details": "Transfers data, likely preparing for a subsequent process."
+    }
+  ],
+  "inputs": [
+    "source-variable-1",
+    "source-variable-2"
+  ],
+  "outputs": [
+    "target-variable-1",
+    "target-variable-2"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

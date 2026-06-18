@@ -1,0 +1,15 @@
+{
+  "name": "1000-NEXT-STEP",
+  "description": "The paragraph redirects control flow to the 2000-INT-STEP paragraph, acting as a loop header for controlling program execution.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "redirect execution",
+      "details": "go-to 2000-INT-STEP"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

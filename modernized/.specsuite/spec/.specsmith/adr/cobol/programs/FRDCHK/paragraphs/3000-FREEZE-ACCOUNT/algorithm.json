@@ -1,0 +1,29 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph handles the freezing of an account in the context of fraud detection by updating account status and performing necessary system calls.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "update account status",
+      "details": "Sets the account's status to 'frozen' using a variable move operation."
+    },
+    {
+      "action": "invoke system services",
+      "details": "Executes system or database-specific operations through COBOL exec-blocks."
+    }
+  ],
+  "inputs": [
+    "account-status"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account table",
+      "description": "Updates account information in the database to mark the account as frozen."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

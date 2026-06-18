@@ -1,0 +1,25 @@
+{
+  "name": "9000-MAP-ERROR",
+  "description": "This paragraph maps an error condition before passing control to a fatal error handler.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "move value to a variable",
+      "details": "Set an error code or message to indicate the failure condition"
+    }
+  ],
+  "inputs": [
+    "error-code"
+  ],
+  "outputs": [
+    "mapped-error"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "program flow",
+      "description": "Passes control to a fatal error handling paragraph"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

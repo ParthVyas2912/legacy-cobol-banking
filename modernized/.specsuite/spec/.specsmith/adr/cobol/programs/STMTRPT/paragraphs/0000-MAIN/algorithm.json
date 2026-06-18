@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes resources, invokes a customer data fetching routine, and handles cleanup before terminating.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "open a resource",
+      "details": "Opens a file or resource needed for processing"
+    },
+    {
+      "action": "invoke a routine",
+      "details": "Performs the 1000-FETCH-CUSTOMERS paragraph"
+    },
+    {
+      "action": "close a resource",
+      "details": "Closes the opened resource"
+    },
+    {
+      "action": "terminate processing",
+      "details": "Ends the program execution with GOBACK"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file",
+      "description": "Handles file operations as part of the open/close steps"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

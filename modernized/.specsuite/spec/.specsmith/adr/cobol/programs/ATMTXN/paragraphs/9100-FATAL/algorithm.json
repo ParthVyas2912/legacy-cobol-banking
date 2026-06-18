@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "This paragraph handles a fatal error scenario by executing a critical action to terminate or halt processing.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute system-level abend operation",
+      "details": "Invokes an EXEC block to signal a fatal system error."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "system",
+      "description": "Triggers an abnormal termination of the program."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

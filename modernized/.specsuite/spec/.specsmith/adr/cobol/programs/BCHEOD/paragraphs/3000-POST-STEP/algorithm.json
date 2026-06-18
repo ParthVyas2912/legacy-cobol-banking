@@ -1,0 +1,29 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph performs a set of operations with unclear functionality and transitions control to another step in the program.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "make external call",
+      "details": "Performs one call statement whose purpose is unclear."
+    },
+    {
+      "action": "execute unknown operation",
+      "details": "Contains one unknown statement whose function cannot be determined."
+    },
+    {
+      "action": "transfer control",
+      "details": "Transfers execution to 1000-NEXT-STEP using a GO TO statement."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "1000-NEXT-STEP",
+      "description": "GO TO statement transfers control to another paragraph."
+    }
+  ],
+  "enrichmentConfidence": 0.75
+}

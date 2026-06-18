@@ -1,0 +1,38 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "This paragraph processes a transaction, likely applying it to an account, and writes an output.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values",
+      "details": "Sets up data for processing the transaction."
+    },
+    {
+      "action": "perform calculation",
+      "details": "Adds values as part of the transaction logic."
+    },
+    {
+      "action": "write output",
+      "details": "Records the result of processing the transaction."
+    },
+    {
+      "action": "call subroutine",
+      "details": "Invokes a subroutine for additional processing or validation."
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "account-records"
+  ],
+  "outputs": [
+    "updated-account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "account-records",
+      "description": "Updates the account records file with new transaction data."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

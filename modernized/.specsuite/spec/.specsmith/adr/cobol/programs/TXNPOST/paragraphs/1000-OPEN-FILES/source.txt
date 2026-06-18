@@ -1,0 +1,5 @@
+Paragraph: 1000-OPEN-FILES
+Lines: 46-47
+Statements: 1
+
+1. OPEN INPUT TXN-IN OUTPUT AUDIT-OUT

@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes a transaction by performing data movement and an external action.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values into operational variables",
+      "details": "the paragraph uses MOVE statements to transfer data into target variables"
+    },
+    {
+      "action": "execute an external service or operation",
+      "details": "executes a COBOL EXEC block, indicating interaction with an external resource or API"
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "processed-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "next-processing-step",
+      "description": "sends data or control to the next processing stage in the system"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

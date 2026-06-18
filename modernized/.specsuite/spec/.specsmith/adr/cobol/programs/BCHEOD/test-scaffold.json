@@ -1,0 +1,37 @@
+{
+  "programId": "BCHEOD",
+  "sourceFile": "programs/BCHEOD.cbl",
+  "inputs": [],
+  "expectedOutputs": [
+    {
+      "kind": "sql-row",
+      "name": "EOD_RUNS",
+      "expectedValue": {
+        "__placeholder": "<expected row(s) in EOD_RUNS>"
+      },
+      "resource": "EOD_RUNS"
+    }
+  ],
+  "expectedSideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "EOD_RUNS",
+      "description": "INSERT / UPDATE / DELETE on EOD_RUNS."
+    }
+  ],
+  "setupSteps": [],
+  "teardownSteps": [],
+  "cases": [
+    {
+      "id": "bcheod-happy-path",
+      "title": "BCHEOD: happy path"
+    },
+    {
+      "id": "bcheod-abend",
+      "title": "BCHEOD: expected abend (critical modernization finding present)",
+      "expectAbend": true
+    }
+  ],
+  "confidence": 1,
+  "notes": []
+}

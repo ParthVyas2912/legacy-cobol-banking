@@ -1,0 +1,15 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes control flow by invoking other paragraphs related to transaction validation, posting, and sending the next transaction.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initiate control flow through performs",
+      "details": "Invokes 1000-VALIDATE, 2000-POST-TXN, and 3000-SEND-NEXT in sequence"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph sends the next screen or transaction and handles any potential errors.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Sets up data for the next screen or transaction."
+    },
+    {
+      "action": "exec-block",
+      "details": "Performs a CICS or similar operation to send the screen or transaction."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "screen-output"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "screen",
+      "description": "Sends the next screen to the user interface."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

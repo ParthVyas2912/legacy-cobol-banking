@@ -1,0 +1,4 @@
+# AUDITSRV
+This program processes audit data and interacts with CICS to write responses and return control.
+Business domain: infrastructure
+Architectural role: online

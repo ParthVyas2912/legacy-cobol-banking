@@ -1,0 +1,23 @@
+{
+  "name": "1000-LOOP",
+  "description": "The paragraph reads a record from a file and directs control to process the read data or handle end-of-file.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a record from a file",
+      "details": "Handles data input for processing"
+    }
+  ],
+  "inputs": [
+    "input-file"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "pointer or buffer",
+      "description": "Updates internal file pointer or buffer after reading"
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

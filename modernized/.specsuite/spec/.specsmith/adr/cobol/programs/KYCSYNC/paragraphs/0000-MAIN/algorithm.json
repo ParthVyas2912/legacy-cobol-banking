@@ -1,0 +1,35 @@
+{
+  "name": "0000-MAIN",
+  "description": "Initializes the program, provides a confirmation message, and begins processing customer data by delegating to another paragraph.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "move initial values to variables",
+      "details": "Sets up initial state by moving values to working storage variables"
+    },
+    {
+      "action": "display program status",
+      "details": "Outputs a confirmation message to indicate program start"
+    },
+    {
+      "action": "perform a paragraph",
+      "details": "Transfers control to the 1000-FETCH-LOOP paragraph for further processing"
+    },
+    {
+      "action": "return",
+      "details": "Ends the program execution"
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "screen"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "customer-data-processing",
+      "description": "Delegates control to the 1000-FETCH-LOOP paragraph"
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

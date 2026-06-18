@@ -1,0 +1,19 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph appears to process data in a loop, invoking an external operation and handling unknown additional logic.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "invoke external operation",
+      "details": "using the CALL statement"
+    },
+    {
+      "action": "perform unknown operation",
+      "details": "details are not available"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

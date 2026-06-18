@@ -1,0 +1,30 @@
+{
+  "name": "1000-VALIDATE",
+  "description": "This paragraph validates input or state and prepares for subsequent processing steps.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Assign values to variables or settings for validation."
+    },
+    {
+      "action": "exec-block",
+      "details": "Execute an inline block or an external command related to validation."
+    }
+  ],
+  "inputs": [
+    "input-var-1",
+    "input-var-2"
+  ],
+  "outputs": [
+    "validation-flag"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "control-flow",
+      "description": "Potentially affects flow by directing to the next processing step or halting on failure."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}
