@@ -1,0 +1,30 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph is responsible for marking an account as frozen and initiating associated processing.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "set account status to frozen",
+      "details": "updates a variable to indicate the account is frozen"
+    },
+    {
+      "action": "log or notify the freezing action",
+      "details": "executes a system block for notification or logging"
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "system-control-block"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "system-control-block",
+      "description": "Executes a system block to process or log the freeze action"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

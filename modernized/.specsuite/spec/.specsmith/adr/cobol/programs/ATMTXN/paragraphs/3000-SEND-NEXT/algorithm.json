@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph sends the next transaction or message and handles execution logic for online infrastructure.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data into a variable for processing",
+      "details": "Moves a value to prepare a message or transaction."
+    },
+    {
+      "action": "execute a block of code",
+      "details": "Likely a CICS or middleware operation to send the message."
+    }
+  ],
+  "inputs": [
+    "data-to-send"
+  ],
+  "outputs": [
+    "CICS-response"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "transaction or screen",
+      "description": "Sends a message to the external system or user interface."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

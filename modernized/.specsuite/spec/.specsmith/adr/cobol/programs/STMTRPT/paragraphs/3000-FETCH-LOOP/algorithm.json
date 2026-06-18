@@ -1,0 +1,21 @@
+{
+  "name": "3000-FETCH-LOOP",
+  "description": "This paragraph retrieves data from a database cursor and conditionally processes the results.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch data from SQL cursor",
+      "details": "Retrieves the next row of data from an open database cursor."
+    },
+    {
+      "action": "conditional action based on fetched data",
+      "details": "Performs an operation if a condition based on the retrieved data is met."
+    }
+  ],
+  "inputs": [
+    "SQL cursor"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

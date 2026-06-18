@@ -1,0 +1,21 @@
+{
+  "name": "0000-START",
+  "description": "Initializes fraud-checking processes by performing tasks for velocity computation, risk scoring, and account freezing.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "invoke sub-process",
+      "details": "Perform tasks for computing velocity, scoring risk, and freezing accounts."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "sub-paragraphs",
+      "description": "Triggers execution of downstream paragraphs for fraud detection processes."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

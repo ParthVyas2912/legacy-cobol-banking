@@ -1,0 +1,23 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "The 2000-SCORE-RISK paragraph evaluates conditions to assess potential risks and prepares the necessary data for further processing.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate risk conditions",
+      "details": "performs three conditional checks using 'if' statements"
+    },
+    {
+      "action": "assign risk score",
+      "details": "moves a value to a variable based on conditions"
+    }
+  ],
+  "inputs": [
+    "RISK-CRITERIA"
+  ],
+  "outputs": [
+    "RISK-SCORE"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

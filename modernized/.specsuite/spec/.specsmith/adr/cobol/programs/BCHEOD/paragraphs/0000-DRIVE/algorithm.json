@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph initiates a process by performing a setup action and determining the next step in the program flow.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Transfers control to 9000-MARK-START for initial setup or marking."
+    },
+    {
+      "action": "go-to",
+      "details": "Redirects execution to 1000-NEXT-STEP to proceed with the next part of the process."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

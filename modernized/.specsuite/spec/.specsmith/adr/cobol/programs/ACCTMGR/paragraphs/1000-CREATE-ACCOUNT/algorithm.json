@@ -1,0 +1,34 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes and creates a new account by setting up necessary values and invoking an external process.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize account variables",
+      "details": "Assign initial values to account-related fields using MOVE statements."
+    },
+    {
+      "action": "invoke account creation logic",
+      "details": "Run an external process or custom logic via an EXEC block."
+    },
+    {
+      "action": "condition check",
+      "details": "Evaluate a condition using an IF statement to ensure post-initialization integrity or prerequisites."
+    }
+  ],
+  "inputs": [
+    "account-input-data"
+  ],
+  "outputs": [
+    "account-id"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts-table",
+      "description": "Writes the newly created account data to the database."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

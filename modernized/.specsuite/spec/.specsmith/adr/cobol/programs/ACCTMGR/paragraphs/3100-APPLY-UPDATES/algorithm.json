@@ -1,0 +1,20 @@
+{
+  "name": "3100-APPLY-UPDATES",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph updates certain variables based on provided data.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "update variables",
+      "details": "Moves values into specific variables to apply updates."
+    }
+  ],
+  "inputs": [
+    "working-storage variables"
+  ],
+  "outputs": [
+    "working-storage variables"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

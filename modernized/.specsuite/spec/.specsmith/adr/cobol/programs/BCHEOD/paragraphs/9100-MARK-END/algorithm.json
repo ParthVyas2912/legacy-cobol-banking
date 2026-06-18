@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "Marks the end of a process or operation likely related to infrastructure processing.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute infrastructure-related commands",
+      "details": "contains one EXEC block which is not detailed in the provided information"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

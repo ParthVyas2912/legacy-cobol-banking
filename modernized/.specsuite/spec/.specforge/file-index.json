@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "projectRoot": "/work/source",
+  "createdAt": "2026-06-18T04:57:11.719Z",
+  "lastUpdatedAt": "2026-06-18T04:57:55.461Z",
+  "entries": {
+    "/work/source/README.md": {
+      "hash": "2da2efade6cd59927b4db90f112145a5f1d848d58807a7a812aa39f04622548c",
+      "size": 678,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "markdown"
+    },
+    "/work/source/bms/ATMMSET.bms": {
+      "hash": "829fb7ee29da629cabdee2336f35d07fbcbafcd1c2cb73f232aa6f8b8dbb2a3c",
+      "size": 2516,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "bms"
+    },
+    "/work/source/copybooks/ACCTREC.cpy": {
+      "hash": "50288c33fd771fa40a9ea099e1b005aba8df119aacc54f503aa70650ffea07ba",
+      "size": 994,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol-copybook"
+    },
+    "/work/source/copybooks/ATMMAP.cpy": {
+      "hash": "ed46160945174dccdea22fbfe79f0a64d06a1ccc0b86bd288cc70e4459458351",
+      "size": 211,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol-copybook"
+    },
+    "/work/source/copybooks/CUSTREC.cpy": {
+      "hash": "787b07f5ab9cb115d0f9257481eef7670b72e2cd4ef529d4a4d7dca30c83bc07",
+      "size": 1012,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol-copybook"
+    },
+    "/work/source/copybooks/TXNREC.cpy": {
+      "hash": "5168cf9e899a57fcd4bfe2241ca46883c84efbe7cfbee89a8dd69cfa678c328e",
+      "size": 1216,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol-copybook"
+    },
+    "/work/source/ims/CUSTDB.dbd": {
+      "hash": "7df529854a7828113356c5b6009229c5dc069d4775697e021a8399f5a9c6bead",
+      "size": 1039,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "ims-control"
+    },
+    "/work/source/ims/KYCSYNCP.psb": {
+      "hash": "8d8558cdaf65a011f7721974f93f0cff9c91bfbc0fd0093ff688556b3c1dda04",
+      "size": 478,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "ims-control"
+    },
+    "/work/source/jcl/BANKEOD.jcl": {
+      "hash": "cde4293d5751f0fda9d3c90ff2a846d386b8fbd318d382be4feb5da2e35fc6be",
+      "size": 1016,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "jcl"
+    },
+    "/work/source/jcl/KYCSYNCJ.jcl": {
+      "hash": "df4db2cdcaae61881eba6e8a246d39e44a09ebca04de4b9551837d8b15b7190b",
+      "size": 617,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "jcl"
+    },
+    "/work/source/programs/ACCTMGR.cbl": {
+      "hash": "86d29159c77dcc7480a9cefb3059be59469f44ea4c7bf779babdaca1da5158fb",
+      "size": 4895,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol"
+    },
+    "/work/source/programs/ATMTXN.cbl": {
+      "hash": "21288f27fb334e59ff265c7be36ca726e68ab0a27e53b134a14900a5353fd636",
+      "size": 2417,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol"
+    },
+    "/work/source/programs/AUDITSRV.cbl": {
+      "hash": "ae5a7ccd81cde2a60da741c83facb77b7fb49895ffeea4e802305404c85d76ef",
+      "size": 2242,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol"
+    },
+    "/work/source/programs/BCHEOD.cbl": {
+      "hash": "82be6ba024dd78fe1fc4612af9221d38d7533670042f8692e6291f6ffc023026",
+      "size": 1707,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol"
+    },
+    "/work/source/programs/FRDCHK.cbl": {
+      "hash": "07f79ebe469ebe782123ebe013420aca0f7101097d4eb6fd5c8851899d72497f",
+      "size": 2469,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol"
+    },
+    "/work/source/programs/INTCALC.cbl": {
+      "hash": "fe1b3b28db462ad62d6203f070bb3e98682b2000b78c829723742ae83a084d62",
+      "size": 2614,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol"
+    },
+    "/work/source/programs/KYCSYNC.cbl": {
+      "hash": "ccb9b2d8f5e3118e79507321becc3cc4f78500100ef8acf8c276045e3978e351",
+      "size": 2417,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol"
+    },
+    "/work/source/programs/STMTRPT.cbl": {
+      "hash": "b1471f02d77a9bb42949626d97ca6015b4c306512448e60f68ec334de4ed28cc",
+      "size": 3847,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol"
+    },
+    "/work/source/programs/TXNPOST.cbl": {
+      "hash": "278157ab7d26f8c48b47b5f9ed416ce2fd2c254afef0620dc6f0483c78b90465",
+      "size": 2799,
+      "lastAnalyzed": "2026-06-18T04:57:55.461Z",
+      "language": "cobol"
+    }
+  }
+}

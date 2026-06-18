@@ -1,0 +1,18 @@
+Paragraph: 3000-FREEZE-ACCOUNT
+Lines: 54-62
+Statements: 4
+
+1. MOVE 'UPDT' TO CALL-FUNCTION
+2. MOVE TXN-ACCT-NUMBER TO CALL-ACCT-NUMBER
+3. EXEC CICS  LINK PROGRAM('ACCTMGR')
+                   COMMAREA(WS-CALL-AREA)
+                   LENGTH(LENGTH OF WS-CALL-AREA)
+                   RESP(WS-RESPONSE-CODE)
+     END-EXEC
+4. EXEC SQL  INSERT INTO FRAUD_FLAGS
+                (ACCT, SCORE, REASON, TS)
+             VALUES (:TXN-ACCT-NUMBER,
+                     :WS-RISK-SCORE,
+                     'AUTO-FREEZE',
+                     CURRENT_TIMESTAMP)
+     END-EXEC

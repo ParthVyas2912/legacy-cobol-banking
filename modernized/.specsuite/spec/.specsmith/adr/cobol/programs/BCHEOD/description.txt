@@ -1,0 +1,4 @@
+# BCHEOD
+This program processes end-of-day operations by performing intermediate calculations, updating end-of-day markers, and posting transactions to the database.
+Business domain: infrastructure
+Architectural role: batch

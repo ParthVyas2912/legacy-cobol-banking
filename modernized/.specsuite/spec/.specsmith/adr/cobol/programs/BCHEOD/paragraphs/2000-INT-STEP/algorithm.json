@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph performs an infrastructure-related action involving a call, potential unknown processing, and flow redirection via a GO TO statement.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "invoke external processing",
+      "details": "Calls another program or subroutine"
+    },
+    {
+      "action": "perform unknown processing",
+      "details": "Includes a statement of unknown purpose"
+    },
+    {
+      "action": "redirect control flow",
+      "details": "Transfers program control via GO TO"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

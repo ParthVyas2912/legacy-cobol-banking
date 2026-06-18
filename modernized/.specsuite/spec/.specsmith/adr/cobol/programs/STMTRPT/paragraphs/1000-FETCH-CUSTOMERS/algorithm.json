@@ -1,0 +1,23 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "The 1000-FETCH-CUSTOMERS paragraph initializes a variable and delegates to another operation for processing customer data.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize a variable",
+      "details": "Sets up initial data or context for processing."
+    },
+    {
+      "action": "delegate processing",
+      "details": "Performs 1100-IMS-GN-LOOP to fetch customer records in a loop."
+    }
+  ],
+  "inputs": [
+    "working-storage variable"
+  ],
+  "outputs": [
+    "customer records"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

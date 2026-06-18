@@ -1,0 +1,25 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "This paragraph reads a transaction record as part of processing accounts-receivable transactions.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a transaction record",
+      "details": "from a file"
+    }
+  ],
+  "inputs": [
+    "transaction file"
+  ],
+  "outputs": [
+    "transaction record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "transaction position pointer",
+      "description": "Advances the file pointer to the next transaction"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

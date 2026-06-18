@@ -1,0 +1,11 @@
+{
+  "name": "CUSTREC",
+  "usedBy": [
+    "ACCTMGR",
+    "KYCSYNC",
+    "STMTRPT"
+  ],
+  "isDclgen": false,
+  "description": "This copybook defines the structure and layout of a customer record for use across multiple COBOL programs.",
+  "businessMeaning": "Customer master record layout"
+}

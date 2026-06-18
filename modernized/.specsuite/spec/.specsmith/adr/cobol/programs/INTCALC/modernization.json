@@ -1,0 +1,173 @@
+[
+  {
+    "id": "intcalc/duplicate-paragraph/0000-main/35",
+    "category": "cross-program",
+    "kind": "duplicate-paragraph",
+    "severity": "medium",
+    "programId": "INTCALC",
+    "paragraph": "0000-MAIN",
+    "location": {
+      "line": 35
+    },
+    "title": "Paragraph 0000-MAIN resembles STMTRPT.0000-MAIN (Jaccard 100%)",
+    "description": "Paragraphs INTCALC.0000-MAIN and STMTRPT.0000-MAIN share 100% of their statement-kind structure. Candidate for extraction to a shared utility (subprogram or library).",
+    "suggestedReplacement": "// Extract shared logic to a common subprogram or utility class.",
+    "detail": {
+      "similarity": 1,
+      "otherProgram": "STMTRPT",
+      "otherParagraph": "0000-MAIN"
+    },
+    "tags": [
+      "cross-program",
+      "duplication",
+      "refactor"
+    ]
+  },
+  {
+    "id": "intcalc/microservice-candidate/_/0",
+    "category": "cross-program",
+    "kind": "microservice-candidate",
+    "severity": "info",
+    "programId": "INTCALC",
+    "title": "INTCALC: microservice candidate",
+    "description": "INTCALC has 3 paragraph(s), 0 LINKAGE parameter(s), 2 file(s), 0 SQL block(s). Small surface + clear boundary suggests this could be split into a standalone service during modernization.",
+    "detail": {
+      "paragraphs": 3,
+      "usingParams": 0,
+      "files": 2,
+      "sqlBlocks": 0,
+      "cicsBlocks": 0,
+      "imsCalls": 0,
+      "callTargets": []
+    },
+    "tags": [
+      "cross-program",
+      "architecture"
+    ]
+  },
+  {
+    "id": "intcalc/comp-3-decimal/_/29",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "INTCALC",
+    "location": {
+      "line": 29
+    },
+    "title": "COMP-3 field WS-DAILY-RATE → DECIMAL(10,8)",
+    "description": "Packed-decimal COMP-3 field WS-DAILY-RATE PIC 9(2)V9(8). Modern equivalent: SQL DECIMAL(10,8) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-DAILY-RATE PIC 9(2)V9(8) COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-daily-rate DECIMAL(10,8)\n// Java:  BigDecimal wsDailyRate;\n// C#:    decimal WsDailyRate;\n// Python: wsDailyRate: Decimal",
+    "detail": {
+      "precision": 10,
+      "scale": 8,
+      "sqlType": "DECIMAL(10,8)",
+      "picture": "9(2)V9(8)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "intcalc/comp-3-decimal/_/30",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "INTCALC",
+    "location": {
+      "line": 30
+    },
+    "title": "COMP-3 field WS-DAILY-INTEREST → DECIMAL(15,2)",
+    "description": "Packed-decimal COMP-3 field WS-DAILY-INTEREST PIC S9(13)V99. Modern equivalent: SQL DECIMAL(15,2) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-DAILY-INTEREST PIC S9(13)V99 COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-daily-interest DECIMAL(15,2)\n// Java:  BigDecimal wsDailyInterest;\n// C#:    decimal WsDailyInterest;\n// Python: wsDailyInterest: Decimal",
+    "detail": {
+      "precision": 15,
+      "scale": 2,
+      "sqlType": "DECIMAL(15,2)",
+      "picture": "S9(13)V99"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "intcalc/comp-3-decimal/_/31",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "INTCALC",
+    "location": {
+      "line": 31
+    },
+    "title": "COMP-3 field WS-NEW-BALANCE → DECIMAL(15,2)",
+    "description": "Packed-decimal COMP-3 field WS-NEW-BALANCE PIC S9(13)V99. Modern equivalent: SQL DECIMAL(15,2) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-NEW-BALANCE PIC S9(13)V99 COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-new-balance DECIMAL(15,2)\n// Java:  BigDecimal wsNewBalance;\n// C#:    decimal WsNewBalance;\n// Python: wsNewBalance: Decimal",
+    "detail": {
+      "precision": 15,
+      "scale": 2,
+      "sqlType": "DECIMAL(15,2)",
+      "picture": "S9(13)V99"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "intcalc/comp-3-decimal/_/32",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "INTCALC",
+    "location": {
+      "line": 32
+    },
+    "title": "COMP-3 field WS-NEXT-TXN-ID → DECIMAL(12,0)",
+    "description": "Packed-decimal COMP-3 field WS-NEXT-TXN-ID PIC 9(12). Modern equivalent: SQL DECIMAL(12,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-NEXT-TXN-ID PIC 9(12) COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-next-txn-id DECIMAL(12,0)\n// Java:  BigDecimal wsNextTxnId;\n// C#:    decimal WsNextTxnId;\n// Python: wsNextTxnId: Decimal",
+    "detail": {
+      "precision": 12,
+      "scale": 0,
+      "sqlType": "DECIMAL(12,0)",
+      "picture": "9(12)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "intcalc/vsam-to-relational/_/9",
+    "category": "io",
+    "kind": "vsam-to-relational",
+    "severity": "high",
+    "programId": "INTCALC",
+    "location": {
+      "line": 9
+    },
+    "title": "VSAM/KSDS file ACCT-FILE → relational table",
+    "description": "Indexed file ACCT-FILE (DD ACCTFILE) keyed on ACCT-NUMBER. Migrate to a relational table; preserve the primary key, project the COBOL record layout onto columns, and translate access patterns into SQL.",
+    "currentCode": "SELECT ACCT-FILE ASSIGN TO ACCTFILE ORGANIZATION INDEXED RECORD KEY ACCT-NUMBER",
+    "suggestedReplacement": "CREATE TABLE acct-file (\n    acct_number BIGINT PRIMARY KEY,\n    acct_customer_id BIGINT,\n    acct_opened_date BIGINT,\n    acct_type VARCHAR(2),\n    acct_status VARCHAR(1),\n    acct_balance DECIMAL(15,2),\n    acct_avail_bal DECIMAL(15,2),\n    acct_int_rate DECIMAL(6,4),\n    acct_last_txn_dt BIGINT,\n    acct_currency VARCHAR(3),\n    acct_branch_code BIGINT,\n    acct_flags VARCHAR(4),\n    acct_filler VARCHAR(50)\n);",
+    "detail": {
+      "logicalName": "ACCT-FILE",
+      "dd": "ACCTFILE",
+      "primaryKey": "ACCT-NUMBER",
+      "alternateKeys": []
+    },
+    "tags": [
+      "io",
+      "vsam",
+      "database"
+    ]
+  }
+]

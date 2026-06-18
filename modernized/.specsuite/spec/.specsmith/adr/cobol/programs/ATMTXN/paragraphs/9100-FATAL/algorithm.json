@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "Handles a fatal error scenario by executing a system-level command.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute system-level command",
+      "details": "Executes COBOL Exec Block for fatal error processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "system",
+      "description": "Triggers an abnormal termination of the program."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

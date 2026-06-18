@@ -1,0 +1,25 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph likely retrieves data and prepares for subsequent operations in a loop.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "call external module",
+      "details": "Fetch or process data within the loop."
+    }
+  ],
+  "inputs": [
+    "UnknownInput"
+  ],
+  "outputs": [
+    "UnknownOutput"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "External module side effects",
+      "description": "Possible side effects from calling an external module or system."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,19 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes variables and sets up the environment for the program.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Moves default or initial values into program variables"
+    }
+  ],
+  "inputs": [
+    "environment"
+  ],
+  "outputs": [
+    "initialized-variables"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 1
+}

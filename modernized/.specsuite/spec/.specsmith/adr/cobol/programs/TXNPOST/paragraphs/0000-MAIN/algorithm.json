@@ -1,0 +1,39 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph acts as the main entry point, orchestrating the opening of files, processing of transactions, and closing of files, with a display message for initialization.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Execute 1000-OPEN-FILES to open required files."
+    },
+    {
+      "action": "perform-until",
+      "details": "Iterate through transactions using 2000-PROCESS-TXNS."
+    },
+    {
+      "action": "perform",
+      "details": "Execute 3000-CLOSE-FILES to close opened files."
+    },
+    {
+      "action": "display",
+      "details": "Display an initialization message."
+    },
+    {
+      "action": "goback",
+      "details": "Exit the program."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "initialization message"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "opened and closed files",
+      "description": "Files are opened and closed for transaction processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes the execution environment, processes accounts receivable data in a loop, and performs cleanup before ending the program.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open file for processing",
+      "details": "Opens an accounts receivable file for reading or writing."
+    },
+    {
+      "action": "perform processing loop",
+      "details": "Transfers control to 1000-LOOP to process data until a condition is met."
+    },
+    {
+      "action": "close file after processing",
+      "details": "Closes the accounts receivable file."
+    },
+    {
+      "action": "terminate program",
+      "details": "Ends the program execution with a GOBACK statement."
+    }
+  ],
+  "inputs": [
+    "accounts-receivable-file"
+  ],
+  "outputs": [
+    "accounts-receivable-file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "accounts-receivable-file",
+      "description": "Updates the file with processed data."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

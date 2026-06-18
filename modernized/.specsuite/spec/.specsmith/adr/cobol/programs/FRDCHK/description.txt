@@ -1,0 +1,4 @@
+# FRDCHK
+Checks transaction velocity and risk, and freezes accounts if fraudulent activity is detected.
+Business domain: fraud-detection
+Architectural role: online

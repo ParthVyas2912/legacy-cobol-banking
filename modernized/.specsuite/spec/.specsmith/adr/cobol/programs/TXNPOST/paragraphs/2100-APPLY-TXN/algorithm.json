@@ -1,0 +1,39 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "This paragraph applies a transaction to the current processing context, potentially involving updates and I/O operations.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data to working storage",
+      "details": "Copies values to working storage for transaction processing."
+    },
+    {
+      "action": "call external routine",
+      "details": "Invokes a routine to handle part of the transaction application logic."
+    },
+    {
+      "action": "write to a file",
+      "details": "Logs or records transaction details to an output file."
+    },
+    {
+      "action": "perform addition",
+      "details": "Updates computed values, such as totals or balances."
+    }
+  ],
+  "inputs": [
+    "transaction-record",
+    "working-storage-fields"
+  ],
+  "outputs": [
+    "transaction-log-file",
+    "updated-working-storage-fields"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "transaction-log-file",
+      "description": "Logs the outcome of the transaction processing."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

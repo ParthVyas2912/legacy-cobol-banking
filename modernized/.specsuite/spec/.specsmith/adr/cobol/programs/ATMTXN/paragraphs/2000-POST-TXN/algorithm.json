@@ -1,0 +1,33 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "Processes a transaction by moving data to specific variables and initiating one external operation.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data between variables",
+      "details": "Assigns values to four variables."
+    },
+    {
+      "action": "execute external block",
+      "details": "Performs an operation involving an external system or resource."
+    }
+  ],
+  "inputs": [
+    "input-variable-1",
+    "input-variable-2",
+    "input-variable-3"
+  ],
+  "outputs": [
+    "output-variable-1",
+    "output-variable-2",
+    "external-system-call"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "transaction table",
+      "description": "Updates the transaction in the database."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

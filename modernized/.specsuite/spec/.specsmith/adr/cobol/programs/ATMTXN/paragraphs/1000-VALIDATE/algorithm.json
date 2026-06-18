@@ -1,0 +1,27 @@
+{
+  "name": "1000-VALIDATE",
+  "description": "This paragraph performs validation followed by a procedurally related operation within the infrastructure domain.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "move a value into a variable",
+      "details": "initialized or defaulted variable setup for validation"
+    },
+    {
+      "action": "execute a block of code",
+      "details": "possibly a conditional or external validation routine"
+    },
+    {
+      "action": "move a result into a status variable",
+      "details": "indicating validation success or failure"
+    }
+  ],
+  "inputs": [
+    "input-variable-1"
+  ],
+  "outputs": [
+    "status-variable"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

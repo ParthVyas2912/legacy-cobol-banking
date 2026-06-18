@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initiates the program by setting up necessary resources, invokes the main business process, and handles termination.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "open file",
+      "details": "Opens a file for processing"
+    },
+    {
+      "action": "perform subroutine",
+      "details": "Calls 1000-FETCH-CUSTOMERS to process customer data"
+    },
+    {
+      "action": "close file",
+      "details": "Closes the previously opened file"
+    },
+    {
+      "action": "terminate program",
+      "details": "Ends the execution of the program with GOBACK"
+    }
+  ],
+  "inputs": [
+    "InputFile"
+  ],
+  "outputs": [
+    "OutputFile"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "OutputFile",
+      "description": "Updates or generates data in an output file as part of program execution"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

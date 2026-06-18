@@ -1,0 +1,23 @@
+{
+  "name": "3000-CLOSE-FILES",
+  "description": "Closes a file that was previously used in the program.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close file",
+      "details": "Ensures all open files are properly closed at the end of processing."
+    }
+  ],
+  "inputs": [
+    "file-to-close"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file-to-close",
+      "description": "Any pending operations on the file are finalized before closing."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,32 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes processing by setting up initial conditions, displays a message, and transfers control to the main processing loop.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move data to a variable",
+      "details": "Sets up initial conditions for processing"
+    },
+    {
+      "action": "display message",
+      "details": "Outputs information or status to the user or log"
+    },
+    {
+      "action": "transfer execution flow",
+      "details": "Performs the main processing loop"
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "display-output",
+    "control-transfer"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "screen",
+      "description": "Message displayed to log or screen"
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

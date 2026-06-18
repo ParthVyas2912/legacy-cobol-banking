@@ -1,0 +1,15 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes the process and branches to subsequent paragraphs for validation, posting transactions, and sending the next response.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize process",
+      "details": "Directs flow to specific paragraphs for further processing"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,19 @@
+{
+  "name": "1000-COMPUTE-VELOCITY",
+  "description": "This paragraph performs a computation related to velocity, producing a result for subsequent processing.",
+  "purpose": "computation",
+  "algorithm": [
+    {
+      "action": "compute velocity",
+      "details": "executes a single computation block"
+    }
+  ],
+  "inputs": [
+    "input-velocity-parameters"
+  ],
+  "outputs": [
+    "computed-velocity"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

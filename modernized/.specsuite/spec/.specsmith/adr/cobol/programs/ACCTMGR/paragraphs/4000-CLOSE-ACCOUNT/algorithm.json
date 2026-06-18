@@ -1,0 +1,35 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph finalizes the process of closing a customer's account.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Transfer specific data values to finalize account closure"
+    },
+    {
+      "action": "executing a system-level or third-party function",
+      "details": "Invoke an external process or code block relevant to closure"
+    },
+    {
+      "action": "perform conditional check",
+      "details": "Evaluate conditions to determine the next action or state"
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "external-module"
+  ],
+  "outputs": [
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-database",
+      "description": "Update database to indicate the account is closed"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}
