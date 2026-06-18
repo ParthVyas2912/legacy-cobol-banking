@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph serves as the program's entry point, initializing resources and delegating control to the next section for processing.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open a file",
+      "details": "Opens a file for reading or writing."
+    },
+    {
+      "action": "perform another paragraph",
+      "details": "Transfers control to 1000-FETCH-CUSTOMERS for further processing."
+    },
+    {
+      "action": "close a file",
+      "details": "Closes the file after operations are complete."
+    },
+    {
+      "action": "return from program",
+      "details": "Ends the program and returns control to the calling process."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file being opened/closed",
+      "description": "Modifies the state of the file system."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,36 @@
+{
+  "name": "3000-UPDATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph updates account information and determines the next operational step based on conditions.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Assigns a value to a variable."
+    },
+    {
+      "action": "exec-block",
+      "details": "Executes an embedded block of code, likely interacting with an external system."
+    },
+    {
+      "action": "if",
+      "details": "Performs conditional logic to direct subsequent program flow."
+    }
+  ],
+  "inputs": [
+    "account-record",
+    "update-control-flag"
+  ],
+  "outputs": [
+    "updated-account-record",
+    "next-routine"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-database",
+      "description": "Writes updated account data to the database."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

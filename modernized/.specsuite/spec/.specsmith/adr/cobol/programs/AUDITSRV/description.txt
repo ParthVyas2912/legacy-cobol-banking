@@ -1,0 +1,4 @@
+# AUDITSRV
+Handles online audit-related services by interacting with an indexed file and responding to CICS requests.
+Business domain: infrastructure
+Architectural role: online

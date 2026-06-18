@@ -1,0 +1,34 @@
+{
+  "specforge_knowledge_graph": "1.0.0",
+  "project": "source",
+  "entities": [
+    {
+      "id": "project:root",
+      "name": "source",
+      "type": "project",
+      "description": "This COBOL backend application likely addresses a specific operational or business process within a legacy computing environment. Its use of COBOL suggests it handles procedural workflows that align with industries like finance, insurance, or government services. The lack of documentation and modular structure implies it follows a monolithic architectural design typical of COBOL systems, requiring careful reverse engineering to identify workflows, implicit data flows, and business logic.",
+      "sourceFiles": [],
+      "domain": "Legacy System Development",
+      "properties": {
+        "type": "backend",
+        "totalFiles": 20,
+        "sourceFiles": 19
+      },
+      "tags": [
+        "project"
+      ],
+      "confidence": 1
+    }
+  ],
+  "relationships": [],
+  "metadata": {
+    "totalEntities": 1,
+    "totalRelationships": 0,
+    "entityTypeCounts": {
+      "project": 1
+    },
+    "relationshipTypeCounts": {},
+    "averageConfidence": 1,
+    "generatedAt": "2026-06-18T18:27:48.776Z"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes the control flow for the program by invoking specific business operations related to fraud detection.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform operations",
+      "details": "Invokes different paragraphs for fraud detection processing sequences."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

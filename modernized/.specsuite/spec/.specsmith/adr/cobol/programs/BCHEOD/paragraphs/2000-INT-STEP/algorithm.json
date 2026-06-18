@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph involves a subroutine call, an unknown operation, and a control transfer via GO TO.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "perform subroutine",
+      "details": "Executes an external subroutine through a CALL statement"
+    },
+    {
+      "action": "unknown operation",
+      "details": "Purpose of the statement is unclear"
+    },
+    {
+      "action": "unconditional transfer",
+      "details": "Uses GO TO to transfer control to another paragraph"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

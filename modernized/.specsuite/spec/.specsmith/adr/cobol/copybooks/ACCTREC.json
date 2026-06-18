@@ -1,0 +1,10 @@
+{
+  "name": "ACCTREC",
+  "usedBy": [
+    "ACCTMGR",
+    "INTCALC"
+  ],
+  "isDclgen": false,
+  "description": "The ACCTREC copybook defines the structure of an account record, including fields used for account management and interest calculation processes.",
+  "businessMeaning": "Account record layout"
+}

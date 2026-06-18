@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "Handles a fetch operation potentially from a cursor or external service, followed by another step during loop execution.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "fetch or retrieve data",
+      "details": "Initiates a call to an external module or service."
+    },
+    {
+      "action": "unknown",
+      "details": "The second statement could not be identified but might relate to data processing."
+    }
+  ],
+  "inputs": [
+    "fetch-source"
+  ],
+  "outputs": [
+    "fetch-result"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external module or resource",
+      "description": "Potential interaction with an external system via a CALL statement."
+    }
+  ],
+  "enrichmentConfidence": 0.8500000000000001
+}

@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph drives the flow control by invoking a sub-paragraph and unconditionally transferring control to another.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform sub-paragraph",
+      "details": "Transfers control to 9000-MARK-START to execute its logic."
+    },
+    {
+      "action": "unconditional go-to",
+      "details": "Redirects execution to 1000-NEXT-STEP."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,5 @@
+Paragraph: 9000-MAP-ERROR
+Lines: 64-65
+Statements: 1
+
+1. MOVE 'INVALID MAP INPUT' TO MAP-MSG-OUT

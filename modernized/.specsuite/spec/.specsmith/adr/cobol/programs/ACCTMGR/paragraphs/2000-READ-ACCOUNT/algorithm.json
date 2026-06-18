@@ -1,0 +1,31 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph reads an account record and branches to update the account based on certain conditions.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "read account",
+      "details": "Performs a COBOL MOVE and executes a database-related block to fetch account details."
+    },
+    {
+      "action": "validate or decide",
+      "details": "Includes an IF statement to perform conditional logic after retrieving the account."
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-RECORD",
+    "DATABASE"
+  ],
+  "outputs": [
+    "ACCOUNT-RECORD"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": "",
+      "description": "This paragraph does not produce any external side effects directly."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

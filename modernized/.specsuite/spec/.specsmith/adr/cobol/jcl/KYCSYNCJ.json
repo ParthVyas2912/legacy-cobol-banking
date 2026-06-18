@@ -1,0 +1,84 @@
+{
+  "name": "KYCSYNCJ",
+  "sourceFile": "jcl/KYCSYNCJ.jcl",
+  "stepCount": 1,
+  "description": "This job performs a weekly synchronization of customer state data from the IMS CUSTDB database into the DB2 KYC audit table.",
+  "businessPurpose": "Weekly KYC data synchronization to ensure accurate and up-to-date audit tracking.",
+  "steps": [
+    {
+      "name": "STEP010",
+      "kind": "pgm",
+      "program": "DFSRRC00",
+      "parm": "DLI,KYCSYNC,KYCSYNCP,,,,,,,,,,,,N,,,,",
+      "options": {
+        "PGM": "DFSRRC00",
+        "PARM": "DLI,KYCSYNC,KYCSYNCP,,,,,,,,,,,,N,,,,"
+      },
+      "conditions": [],
+      "symbolicOverrides": {},
+      "dds": [
+        {
+          "ddname": "STEPLIB",
+          "concatenated": [
+            "IMS.SDFSRESL"
+          ],
+          "sourceLine": 9,
+          "dsn": "BANK.PROD.LOADLIB",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "DFSRESLB",
+          "concatenated": [],
+          "sourceLine": 11,
+          "dsn": "IMS.SDFSRESL",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "IMS",
+          "concatenated": [
+            "IMS.DBDLIB"
+          ],
+          "sourceLine": 12,
+          "dsn": "IMS.PSBLIB",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "CUSTDB",
+          "concatenated": [],
+          "sourceLine": 14,
+          "dsn": "IMS.CUSTDB",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "SYSPRINT",
+          "concatenated": [],
+          "sourceLine": 15,
+          "sysout": "*"
+        },
+        {
+          "ddname": "SYSUDUMP",
+          "concatenated": [],
+          "sourceLine": 16,
+          "sysout": "*"
+        }
+      ],
+      "description": "This step runs the IMS-DB2 synchronization program KYCSYNC to replicate customer state data from the IMS CUSTDB database into the DB2 KYC audit table.",
+      "intent": "synchronize weekly customer state data from IMS to DB2 for audit purposes",
+      "enrichmentConfidence": 0.95
+    }
+  ],
+  "parameters": {
+    "_POS1": "KYC SYNC",
+    "CLASS": "A",
+    "MSGCLASS": "X",
+    "NOTIFY": "&SYSUID"
+  }
+}

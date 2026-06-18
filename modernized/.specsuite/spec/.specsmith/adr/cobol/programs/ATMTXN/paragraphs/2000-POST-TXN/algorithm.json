@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes a transaction by moving values into variables and executing a block of imperative code.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move values",
+      "details": "Assign source variables to target variables"
+    },
+    {
+      "action": "invoke external logic",
+      "details": "Execute a block of code, potentially for processing"
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "processing-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "transaction-system",
+      "description": "Send status or data to an external transaction system"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

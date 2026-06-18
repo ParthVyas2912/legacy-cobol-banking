@@ -1,0 +1,4 @@
+# ATMTXN
+This program handles ATM transaction interactions and communicates with the mainframe using CICS commands.
+Business domain: infrastructure
+Architectural role: online

@@ -1,0 +1,23 @@
+{
+  "name": "9100-FATAL",
+  "description": "Handles fatal errors by executing a block of code, typically associated with error handling routines.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute a block to handle fatal conditions",
+      "details": "may involve logging, abend handling, or clean-up processes"
+    }
+  ],
+  "inputs": [
+    "error-context"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "system",
+      "description": "Triggers an abnormal termination for fatal error scenarios"
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

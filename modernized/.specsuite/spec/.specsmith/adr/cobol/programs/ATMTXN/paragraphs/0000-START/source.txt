@@ -1,0 +1,17 @@
+Paragraph: 0000-START
+Lines: 20-33
+Statements: 6
+
+1. EXEC CICS  HANDLE CONDITION
+                   MAPFAIL(9000-MAP-ERROR)
+                   ERROR(9100-FATAL)
+     END-EXEC
+2. EXEC CICS  RECEIVE MAP('ATMMAIN')
+                      MAPSET('ATMMSET')
+                      INTO(WS-MAP-DATA)
+                      RESP(WS-RESPONSE-CODE)
+     END-EXEC
+3. PERFORM 1000-VALIDATE
+4. PERFORM 2000-POST-TXN
+5. PERFORM 3000-SEND-NEXT
+6. EXEC CICS  RETURN  END-EXEC

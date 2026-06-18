@@ -1,0 +1,21 @@
+{
+  "name": "0000-START",
+  "description": "Initializes variables and prepares the program for execution.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize data",
+      "details": "Moves default values to variables"
+    },
+    {
+      "action": "external interaction",
+      "details": "Executes external blocks for setup"
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "internal variables"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

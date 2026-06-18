@@ -1,0 +1,23 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph performs a single operation and then directs control flow to another part of the program.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "execute a call statement",
+      "details": "Calls an external program or routine for a specific operation."
+    },
+    {
+      "action": "potentially performs an unknown operation",
+      "details": "Specifics of this operation are unclear and require further analysis."
+    },
+    {
+      "action": "directs program flow",
+      "details": "Uses a GO TO statement to transfer control to 1000-NEXT-STEP."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

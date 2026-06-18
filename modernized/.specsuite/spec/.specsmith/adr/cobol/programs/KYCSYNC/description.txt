@@ -1,0 +1,4 @@
+# KYCSYNC
+This program processes Know Your Customer (KYC) data by fetching records from an IMS database, merging updates into a SQL table, and performing an upsert operation.
+Business domain: customer-management
+Architectural role: batch

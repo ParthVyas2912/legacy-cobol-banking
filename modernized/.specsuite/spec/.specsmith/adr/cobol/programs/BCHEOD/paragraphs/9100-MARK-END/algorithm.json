@@ -1,0 +1,17 @@
+{
+  "name": "9100-MARK-END",
+  "description": "Marks the end of a logical section or process, likely as part of program control flow.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "mark the end of a process",
+      "details": "Potentially updates or logs the completion of a task."
+    }
+  ],
+  "inputs": [
+    "control information"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

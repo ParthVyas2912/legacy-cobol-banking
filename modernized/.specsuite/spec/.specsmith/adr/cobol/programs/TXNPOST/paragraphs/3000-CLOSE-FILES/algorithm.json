@@ -1,0 +1,21 @@
+{
+  "name": "3000-CLOSE-FILES",
+  "description": "This paragraph closes one or more files at the end of processing.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close files",
+      "details": "Closes all files explicitly mentioned in the statement."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "all open files",
+      "description": "Finalizes and closes the files that were previously opened, ensuring no further read/write operations can occur."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

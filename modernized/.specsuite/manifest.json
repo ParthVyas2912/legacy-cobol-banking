@@ -1,0 +1,9 @@
+{
+  "build_id": "47",
+  "source_repo": "legacy-cobol-banking",
+  "source_branch": "main",
+  "target_stack": "java-spring-hibernate",
+  "target_subdir": "modernized/java-spring-hibernate",
+  "generated_at": "2026-06-18T18:40:39Z",
+  "pipeline": "specsuite-modernization-pipeline"
+}

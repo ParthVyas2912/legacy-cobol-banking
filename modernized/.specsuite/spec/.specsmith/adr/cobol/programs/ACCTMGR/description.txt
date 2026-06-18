@@ -1,0 +1,4 @@
+# ACCTMGR
+Manages account-related operations including creation, reading, updating, and closing accounts in an online transaction processing environment.
+Business domain: customer-management
+Architectural role: online

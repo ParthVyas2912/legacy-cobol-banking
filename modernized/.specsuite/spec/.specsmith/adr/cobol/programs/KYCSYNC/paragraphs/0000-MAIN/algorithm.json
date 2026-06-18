@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "Initializes program execution, displays a message, and transfers control to the main processing loop.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize program",
+      "details": "Moves an initial value to a variable or sets up state"
+    },
+    {
+      "action": "display message",
+      "details": "Outputs a message to the console or operator"
+    },
+    {
+      "action": "transfer control",
+      "details": "Performs the main processing loop"
+    }
+  ],
+  "inputs": [
+    "none"
+  ],
+  "outputs": [
+    "console-message"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": "none",
+      "description": "No side effects observed in this paragraph"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

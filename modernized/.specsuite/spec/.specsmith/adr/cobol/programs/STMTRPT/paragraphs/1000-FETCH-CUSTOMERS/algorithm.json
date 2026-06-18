@@ -1,0 +1,23 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "Fetches customer data and prepares for iterative processing in a reporting context.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "move starting value to a variable",
+      "details": "Sets up an initial state or parameters."
+    },
+    {
+      "action": "perform an iterative loop",
+      "details": "Delegates control to iterate through customer data via `1100-IMS-GN-LOOP`."
+    }
+  ],
+  "inputs": [
+    "customer-record-variable"
+  ],
+  "outputs": [
+    "control-state-variable"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

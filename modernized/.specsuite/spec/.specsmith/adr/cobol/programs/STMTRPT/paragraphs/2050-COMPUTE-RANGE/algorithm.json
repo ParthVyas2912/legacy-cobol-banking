@@ -1,0 +1,17 @@
+{
+  "name": "2050-COMPUTE-RANGE",
+  "description": "This paragraph evaluates a condition and determines the next processing step based on the result.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "A single IF statement checks a condition to determine the next course of action."
+    }
+  ],
+  "inputs": [
+    "condition-variable"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,29 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "Processes a transaction by performing updates and making necessary adjustments before passing control to the next stage.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "update transaction details",
+      "details": "Updates relevant fields based on transaction processing."
+    },
+    {
+      "action": "record transaction outcome",
+      "details": "Writes a record to an output file."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "output-file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output-file",
+      "description": "Writes the evaluated transaction data to the file for persistence or downstream processing."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

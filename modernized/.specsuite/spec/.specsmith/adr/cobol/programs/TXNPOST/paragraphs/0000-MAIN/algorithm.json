@@ -1,0 +1,39 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph serves as the main entry point for the program, coordinating setup, transaction processing, and cleanup operations.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform setup operations",
+      "details": "Calls 1000-OPEN-FILES to initialize resources."
+    },
+    {
+      "action": "process transactions",
+      "details": "Calls 2000-PROCESS-TXNS in a loop to handle individual transactions."
+    },
+    {
+      "action": "perform cleanup operations",
+      "details": "Calls 3000-CLOSE-FILES to finalize and release resources."
+    },
+    {
+      "action": "display status",
+      "details": "Outputs status messages to the screen."
+    },
+    {
+      "action": "terminate program",
+      "details": "Executes a GOBACK to signal end of processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "status message"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "unknown files",
+      "description": "Operations performed within 1000-OPEN-FILES and 3000-CLOSE-FILES may involve writing to or modifying files."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

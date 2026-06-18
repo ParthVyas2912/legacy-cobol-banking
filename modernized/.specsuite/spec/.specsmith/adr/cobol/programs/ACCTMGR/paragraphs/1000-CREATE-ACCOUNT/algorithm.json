@@ -1,0 +1,30 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "Creates an account by initializing variables and executing an external operation, then transitions control to the next paragraph.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Moves values into account-related fields."
+    },
+    {
+      "action": "execute external operation",
+      "details": "Performs an EXEC-block operation, potentially a transaction or database interaction."
+    }
+  ],
+  "inputs": [
+    "input-account-data"
+  ],
+  "outputs": [
+    "new-account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-database",
+      "description": "Inserts or updates the account record in the database."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

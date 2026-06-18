@@ -1,0 +1,19 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "This paragraph evaluates risk based on conditional logic and passes control to the next paragraph if the conditions are met.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions to score risk",
+      "details": "Uses if statements to perform conditional checks related to fraud detection."
+    }
+  ],
+  "inputs": [
+    "risk-indicators"
+  ],
+  "outputs": [
+    "risk-score"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

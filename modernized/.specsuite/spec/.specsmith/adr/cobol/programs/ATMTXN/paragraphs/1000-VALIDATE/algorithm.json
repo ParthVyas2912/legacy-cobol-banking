@@ -1,0 +1,23 @@
+{
+  "name": "1000-VALIDATE",
+  "description": "Validates input data and prepares it for further processing.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "move values",
+      "details": "Assign values to variables to facilitate validation."
+    },
+    {
+      "action": "execute validation logic",
+      "details": "Execution likely involves external or inline procedures for data checking."
+    }
+  ],
+  "inputs": [
+    "input-data"
+  ],
+  "outputs": [
+    "validated-data"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

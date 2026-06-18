@@ -1,0 +1,34 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "Freezes an account by updating the necessary flags and invoking system-level operations to enforce the freeze.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "update account status",
+      "details": "Set account freeze indicator to true."
+    },
+    {
+      "action": "invoke system operation",
+      "details": "Execute external process to enforce freeze."
+    }
+  ],
+  "inputs": [
+    "account-record"
+  ],
+  "outputs": [
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts-table",
+      "description": "Updates the freeze indicator in the database."
+    },
+    {
+      "kind": "cics-send",
+      "target": "transaction-monitor",
+      "description": "Notifies system monitors of the account freeze."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

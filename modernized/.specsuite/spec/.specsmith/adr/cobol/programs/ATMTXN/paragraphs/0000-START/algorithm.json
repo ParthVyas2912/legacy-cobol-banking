@@ -1,0 +1,29 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initiates the program's workflow by performing validation, posting a transaction, and preparing for the next operation.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform validation",
+      "details": "Calls 1000-VALIDATE paragraph for initial checks."
+    },
+    {
+      "action": "post transaction",
+      "details": "Transfers control to 2000-POST-TXN for processing a transaction."
+    },
+    {
+      "action": "prepare next operation",
+      "details": "Executes 3000-SEND-NEXT to handle subsequent steps."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "program control",
+      "description": "Transfers execution to other paragraphs through PERFORM statements."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,23 @@
+{
+  "name": "1000-LOOP",
+  "description": "This paragraph reads a record in a loop structure, likely as part of iterating over some dataset.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a record",
+      "details": "Reads an input file or data source in a batch processing loop."
+    }
+  ],
+  "inputs": [
+    "input-file"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "input-file",
+      "description": "Advances the read pointer to the next record in the file."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

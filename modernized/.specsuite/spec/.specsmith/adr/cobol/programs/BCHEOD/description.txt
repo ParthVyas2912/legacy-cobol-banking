@@ -1,0 +1,4 @@
+# BCHEOD
+This program processes end-of-day run steps and updates a database table with the results.
+Business domain: infrastructure
+Architectural role: batch

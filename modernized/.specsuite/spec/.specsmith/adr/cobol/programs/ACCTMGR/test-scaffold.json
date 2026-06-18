@@ -1,0 +1,602 @@
+{
+  "programId": "ACCTMGR",
+  "sourceFile": "programs/ACCTMGR.cbl",
+  "inputs": [
+    {
+      "kind": "file-record",
+      "name": "ACCT-FILE",
+      "layout": {
+        "level": 1,
+        "name": "ACCT-RECORD",
+        "usage": {
+          "kind": "display"
+        },
+        "conditionNames": [],
+        "children": [
+          {
+            "level": 5,
+            "name": "ACCT-NUMBER",
+            "picture": {
+              "raw": "9(10)",
+              "class": "numeric",
+              "integerDigits": 10,
+              "fractionalDigits": 0,
+              "length": 10,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 10
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 10,
+            "sourceFile": "",
+            "sourceLine": 2,
+            "description": "A unique identifier for the customer account, used to distinguish it from other accounts.",
+            "businessMeaning": "Account Number",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-CUSTOMER-ID",
+            "picture": {
+              "raw": "9(8)",
+              "class": "numeric",
+              "integerDigits": 8,
+              "fractionalDigits": 0,
+              "length": 8,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 8
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 3,
+            "description": "A unique identifier that links the account to the customer who owns it.",
+            "businessMeaning": "Customer ID",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-OPENED-DATE",
+            "picture": {
+              "raw": "9(8)",
+              "class": "numeric",
+              "integerDigits": 8,
+              "fractionalDigits": 0,
+              "length": 8,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 8
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 4,
+            "description": "The date on which the account was created and became active.",
+            "businessMeaning": "Account Opened Date",
+            "domainContext": "date",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-TYPE",
+            "picture": {
+              "raw": "X(02)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 2,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 2
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [
+              {
+                "name": "ACCT-CHECKING",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "CK"
+                  }
+                ],
+                "sourceLine": 6
+              },
+              {
+                "name": "ACCT-SAVINGS",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "SV"
+                  }
+                ],
+                "sourceLine": 7
+              },
+              {
+                "name": "ACCT-LOAN",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "LN"
+                  }
+                ],
+                "sourceLine": 8
+              }
+            ],
+            "children": [],
+            "byteLength": 2,
+            "sourceFile": "",
+            "sourceLine": 5,
+            "description": "Indicates the type of the account, such as checking, savings, or loan.",
+            "businessMeaning": "Account Type",
+            "domainContext": "status-code",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-STATUS",
+            "picture": {
+              "raw": "X(01)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 1,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 1
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [
+              {
+                "name": "ACCT-ACTIVE",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "A"
+                  }
+                ],
+                "sourceLine": 10
+              },
+              {
+                "name": "ACCT-FROZEN",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "F"
+                  }
+                ],
+                "sourceLine": 11
+              },
+              {
+                "name": "ACCT-CLOSED",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "C"
+                  }
+                ],
+                "sourceLine": 12
+              }
+            ],
+            "children": [],
+            "byteLength": 1,
+            "sourceFile": "",
+            "sourceLine": 9,
+            "description": "The current operational state of the account, such as active, frozen, or closed.",
+            "businessMeaning": "Account Status",
+            "domainContext": "status-code",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-BALANCE",
+            "picture": {
+              "raw": "S9(13)V99",
+              "class": "numeric",
+              "integerDigits": 13,
+              "fractionalDigits": 2,
+              "length": 15,
+              "sign": "trailing",
+              "symbols": [
+                {
+                  "char": "S",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 13
+                },
+                {
+                  "char": "V",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                }
+              ]
+            },
+            "usage": {
+              "kind": "comp-3"
+            },
+            "sign": {
+              "position": "trailing",
+              "separate": false
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 13,
+            "description": "The total monetary amount currently held in the account.",
+            "businessMeaning": "Account Balance",
+            "domainContext": "monetary-amount",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-AVAIL-BAL",
+            "picture": {
+              "raw": "S9(13)V99",
+              "class": "numeric",
+              "integerDigits": 13,
+              "fractionalDigits": 2,
+              "length": 15,
+              "sign": "trailing",
+              "symbols": [
+                {
+                  "char": "S",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 13
+                },
+                {
+                  "char": "V",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                }
+              ]
+            },
+            "usage": {
+              "kind": "comp-3"
+            },
+            "sign": {
+              "position": "trailing",
+              "separate": false
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 14,
+            "description": "The portion of the account balance available for transactions, excluding holds.",
+            "businessMeaning": "Available Balance",
+            "domainContext": "monetary-amount",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-INT-RATE",
+            "picture": {
+              "raw": "9(2)V9(4)",
+              "class": "numeric",
+              "integerDigits": 2,
+              "fractionalDigits": 4,
+              "length": 6,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 2
+                },
+                {
+                  "char": "V",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 4
+                }
+              ]
+            },
+            "usage": {
+              "kind": "comp-3"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 4,
+            "sourceFile": "",
+            "sourceLine": 15,
+            "description": "The interest rate applied to the account, expressed as a percentage.",
+            "businessMeaning": "Interest Rate",
+            "domainContext": "rate",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-LAST-TXN-DT",
+            "picture": {
+              "raw": "9(8)",
+              "class": "numeric",
+              "integerDigits": 8,
+              "fractionalDigits": 0,
+              "length": 8,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 8
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 16,
+            "description": "The date on which the last transaction was conducted on the account.",
+            "businessMeaning": "Last Transaction Date",
+            "domainContext": "date",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-CURRENCY",
+            "picture": {
+              "raw": "X(03)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 3,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 3
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 3,
+            "sourceFile": "",
+            "sourceLine": 17,
+            "description": "The 3-character ISO currency code representing the account's denominated currency.",
+            "businessMeaning": "Account Currency",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-BRANCH-CODE",
+            "picture": {
+              "raw": "9(4)",
+              "class": "numeric",
+              "integerDigits": 4,
+              "fractionalDigits": 0,
+              "length": 4,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 4
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 4,
+            "sourceFile": "",
+            "sourceLine": 18,
+            "description": "A numeric code identifying the branch where the account is managed.",
+            "businessMeaning": "Branch Code",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-FLAGS",
+            "picture": {
+              "raw": "X(04)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 4,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 4
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [
+              {
+                "name": "ACCT-OVERDRAFT-OK",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "YYYY"
+                  },
+                  {
+                    "kind": "eq",
+                    "from": "YYNN"
+                  },
+                  {
+                    "kind": "eq",
+                    "from": "YYYN"
+                  }
+                ],
+                "sourceLine": 20
+              }
+            ],
+            "children": [],
+            "byteLength": 4,
+            "sourceFile": "",
+            "sourceLine": 19,
+            "description": "Contains flags indicating special properties or configurations of the account, such as overdraft permissions.",
+            "businessMeaning": "Account Flags",
+            "domainContext": "enum-flag",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "ACCT-FILLER",
+            "picture": {
+              "raw": "X(50)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 50,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 50
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 50,
+            "sourceFile": "",
+            "sourceLine": 21,
+            "description": "Reserved space for future extensions or alignment within the record structure.",
+            "businessMeaning": "Reserved Filler",
+            "domainContext": "reserved-filler",
+            "enrichmentConfidence": 0.9
+          }
+        ],
+        "byteLength": 118,
+        "sourceFile": "",
+        "sourceLine": 1,
+        "description": "ACCT-RECORD is a comprehensive representation of a customer account, encapsulating key details like identifiers, status, financial metrics, and operational attributes required for account management in an online transaction processing system.",
+        "businessMeaning": "Customer Account Data",
+        "domainContext": "other",
+        "enrichmentConfidence": 0.9
+      },
+      "sampleValue": {
+        "ACCT-NUMBER": "0000000001",
+        "ACCT-CUSTOMER-ID": "00000001",
+        "ACCT-OPENED-DATE": "00000001",
+        "ACCT-TYPE": "AA",
+        "ACCT-STATUS": "A",
+        "ACCT-BALANCE": "1222222222222.34",
+        "ACCT-AVAIL-BAL": "1222222222222.34",
+        "ACCT-INT-RATE": "12.3444",
+        "ACCT-LAST-TXN-DT": "00000001",
+        "ACCT-CURRENCY": "AAA",
+        "ACCT-BRANCH-CODE": "0001",
+        "ACCT-FLAGS": "AAAA",
+        "ACCT-FILLER": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "resource": "ACCTFILE"
+    }
+  ],
+  "expectedOutputs": [
+    {
+      "kind": "sql-row",
+      "name": "ACCT_AUDIT",
+      "expectedValue": {
+        "__placeholder": "<expected row(s) in ACCT_AUDIT>"
+      },
+      "resource": "ACCT_AUDIT"
+    },
+    {
+      "kind": "sql-row",
+      "name": "CUSTOMER",
+      "expectedValue": {
+        "__placeholder": "<expected row(s) in CUSTOMER>"
+      },
+      "resource": "CUSTOMER"
+    }
+  ],
+  "expectedSideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "ACCT_AUDIT",
+      "description": "INSERT / UPDATE / DELETE on ACCT_AUDIT."
+    },
+    {
+      "kind": "sql-write",
+      "target": "CUSTOMER",
+      "description": "INSERT / UPDATE / DELETE on CUSTOMER."
+    }
+  ],
+  "setupSteps": [
+    "Seed indexed file ACCT-FILE (DD ACCTFILE) with at least one record."
+  ],
+  "teardownSteps": [
+    "Delete or truncate ACCT-FILE after the test."
+  ],
+  "cases": [
+    {
+      "id": "acctmgr-happy-path",
+      "title": "ACCTMGR: happy path"
+    },
+    {
+      "id": "acctmgr-empty-file",
+      "title": "ACCTMGR: empty input file",
+      "inputOverrides": {
+        "ACCT-FILE": []
+      }
+    }
+  ],
+  "confidence": 1,
+  "notes": []
+}

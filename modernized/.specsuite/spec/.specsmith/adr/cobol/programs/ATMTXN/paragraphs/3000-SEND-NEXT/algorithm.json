@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph prepares and sends the next transaction data for processing or user interaction.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data to buffer",
+      "details": "Moves required data into a working storage variable or buffer for use in the next step."
+    },
+    {
+      "action": "execute send operation",
+      "details": "Invokes an external operation to transmit data, likely a screen or terminal interaction."
+    }
+  ],
+  "inputs": [
+    "working-storage-buffer"
+  ],
+  "outputs": [
+    "user-screen"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "user-screen",
+      "description": "Sends data to a terminal or user screen via CICS EXEC call."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

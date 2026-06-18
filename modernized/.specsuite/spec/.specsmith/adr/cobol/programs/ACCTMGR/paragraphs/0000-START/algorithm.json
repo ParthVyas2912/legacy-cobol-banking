@@ -1,0 +1,20 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph evaluates an operation and executes a block of code accordingly, preparing for the creation of a customer account.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate a condition",
+      "details": "Determines the appropriate path or action based on input or system state."
+    },
+    {
+      "action": "execute block",
+      "details": "Executes a set of operations defined in the evaluated condition."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

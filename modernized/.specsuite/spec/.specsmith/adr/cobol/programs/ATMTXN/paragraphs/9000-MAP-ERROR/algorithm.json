@@ -1,0 +1,19 @@
+{
+  "name": "9000-MAP-ERROR",
+  "description": "The paragraph maps an error condition by moving a value to a target field or variable.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "move value",
+      "details": "Move a specific value to a target field to indicate an error state."
+    }
+  ],
+  "inputs": [
+    "source-field"
+  ],
+  "outputs": [
+    "target-field"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

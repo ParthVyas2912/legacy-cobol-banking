@@ -1,0 +1,15 @@
+{
+  "name": "9000-MARK-START",
+  "description": "The paragraph begins a processing step related to marking a start point in the batch workflow.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initiate marking process",
+      "details": "Sets an initial state for subsequent operations"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

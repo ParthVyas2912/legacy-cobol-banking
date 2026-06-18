@@ -1,0 +1,23 @@
+{
+  "name": "1000-OPEN-FILES",
+  "description": "Opens required files for processing transactions.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open files",
+      "details": "Opens one or more files necessary for batch processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "opened file(s)"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file system",
+      "description": "File(s) are opened and their state is prepared for read/write operations."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

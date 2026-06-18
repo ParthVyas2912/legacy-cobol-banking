@@ -1,0 +1,69 @@
+{
+  "programId": "ATMTXN",
+  "sourceFile": "programs/ATMTXN.cbl",
+  "inputs": [
+    {
+      "kind": "cics-commarea",
+      "name": "ATMMAIN",
+      "sampleValue": {
+        "__placeholder": "<CICS RECEIVE payload from ATMMAIN>"
+      },
+      "resource": "CICS"
+    }
+  ],
+  "expectedOutputs": [
+    {
+      "kind": "cics-send",
+      "name": "WS-CALL-AREA",
+      "expectedValue": {
+        "__placeholder": "<COMMAREA passed to ACCTMGR>"
+      },
+      "resource": "ACCTMGR"
+    },
+    {
+      "kind": "cics-send",
+      "name": "WS-TXN-DATA",
+      "expectedValue": {
+        "__placeholder": "<COMMAREA passed to FRDCHK>"
+      },
+      "resource": "FRDCHK"
+    },
+    {
+      "kind": "cics-send",
+      "name": "ATMNEXT",
+      "expectedValue": {
+        "__placeholder": "<CICS SEND payload to ATMNEXT>"
+      },
+      "resource": "CICS"
+    }
+  ],
+  "expectedSideEffects": [
+    {
+      "kind": "cics-link",
+      "target": "ACCTMGR",
+      "description": "CICS LINK to ACCTMGR with COMMAREA(WS-CALL-AREA)."
+    },
+    {
+      "kind": "cics-link",
+      "target": "FRDCHK",
+      "description": "CICS LINK to FRDCHK with COMMAREA(WS-TXN-DATA)."
+    },
+    {
+      "kind": "cics-send",
+      "target": "ATMNEXT",
+      "description": "CICS SEND MAP to ATMNEXT."
+    }
+  ],
+  "setupSteps": [
+    "Stage CICS RECEIVE input for ATMMAIN."
+  ],
+  "teardownSteps": [],
+  "cases": [
+    {
+      "id": "atmtxn-happy-path",
+      "title": "ATMTXN: happy path"
+    }
+  ],
+  "confidence": 1,
+  "notes": []
+}

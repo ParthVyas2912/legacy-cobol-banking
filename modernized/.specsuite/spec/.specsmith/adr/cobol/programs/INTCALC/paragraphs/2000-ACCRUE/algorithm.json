@@ -1,0 +1,17 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "Evaluates a condition found in accounts-receivable processing.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Performs validation logic using an IF statement."
+    }
+  ],
+  "inputs": [
+    "accounts-receivable-data"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}
