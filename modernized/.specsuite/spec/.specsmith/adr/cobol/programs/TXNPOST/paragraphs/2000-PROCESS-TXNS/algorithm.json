@@ -1,0 +1,17 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "This paragraph reads transaction records in preparation for processing.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read transaction records",
+      "details": "Reads input data to be processed further"
+    }
+  ],
+  "inputs": [
+    "transaction-file"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

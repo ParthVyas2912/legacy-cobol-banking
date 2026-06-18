@@ -1,0 +1,19 @@
+{
+  "name": "4000-DONE",
+  "description": "This paragraph marks the end of processing and transfers control to the next section or performs a cleanup operation.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Transfers control to paragraph 9100-MARK-END."
+    },
+    {
+      "action": "goback",
+      "details": "Returns to the caller or the operating system after processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

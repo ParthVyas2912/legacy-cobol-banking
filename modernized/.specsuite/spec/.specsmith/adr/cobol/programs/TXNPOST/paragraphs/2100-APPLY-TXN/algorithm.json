@@ -1,0 +1,38 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "Processes a transaction by performing necessary updates and outputs results.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values",
+      "details": "Assign values to target variables based on transaction data."
+    },
+    {
+      "action": "add amounts",
+      "details": "Accumulate transaction totals or balances."
+    },
+    {
+      "action": "write record",
+      "details": "Output processed data to a file or report."
+    },
+    {
+      "action": "invoke callable module",
+      "details": "Perform an external operation or service call related to transaction processing."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "output-file",
+    "updated-balances"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output-file",
+      "description": "Writes processed transaction data to the output file."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

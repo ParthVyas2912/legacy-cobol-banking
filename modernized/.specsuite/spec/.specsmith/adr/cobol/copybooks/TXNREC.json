@@ -1,0 +1,12 @@
+{
+  "name": "TXNREC",
+  "usedBy": [
+    "ATMTXN",
+    "FRDCHK",
+    "INTCALC",
+    "TXNPOST"
+  ],
+  "isDclgen": false,
+  "description": "Defines the structure for a transaction record, including fields used for processing financial or operational data across multiple programs.",
+  "businessMeaning": "Transaction record layout used for transferring and processing transactional data."
+}

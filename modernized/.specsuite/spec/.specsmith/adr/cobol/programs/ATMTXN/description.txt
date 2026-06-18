@@ -1,0 +1,4 @@
+# ATMTXN
+This COBOL program appears to handle transactions in an ATM system by validating input, posting transactions, and managing communication with users through a CICS interface.
+Business domain: banking
+Architectural role: online

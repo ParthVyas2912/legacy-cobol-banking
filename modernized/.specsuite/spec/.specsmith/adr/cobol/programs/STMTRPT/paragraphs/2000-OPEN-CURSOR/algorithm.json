@@ -1,0 +1,33 @@
+{
+  "name": "2000-OPEN-CURSOR",
+  "description": "This paragraph prepares and opens a database cursor, then transitions control to the computation section.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move a value to a cursor-related variable",
+      "details": "Sets up a variable for cursor operation."
+    },
+    {
+      "action": "perform a subparagraph",
+      "details": "Executes a specific routine in preparation for the cursor."
+    },
+    {
+      "action": "execute an SQL block to open the cursor",
+      "details": "Opens the SQL cursor for data retrieval or processing."
+    }
+  ],
+  "inputs": [
+    "cursor-control-variable"
+  ],
+  "outputs": [
+    "cursor-instance"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "database",
+      "description": "The SQL block interacts with the database to open the cursor."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "Processes a transaction by moving data into specific fields and executing a CICS operation.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data to fields",
+      "details": "Prepares fields with transaction-related data."
+    },
+    {
+      "action": "execute CICS command",
+      "details": "Handles a transactional operation via CICS."
+    }
+  ],
+  "inputs": [
+    "transaction-details"
+  ],
+  "outputs": [
+    "internal-fields"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "CICS server",
+      "description": "Executes a transactional operation against a CICS resource."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

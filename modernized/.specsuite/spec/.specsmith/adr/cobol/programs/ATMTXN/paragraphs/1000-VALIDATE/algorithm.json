@@ -1,0 +1,29 @@
+{
+  "name": "1000-VALIDATE",
+  "description": "This paragraph appears to perform validation logic and prepares data for subsequent processing.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Assigns values to variables."
+    },
+    {
+      "action": "exec-block",
+      "details": "Calls an external or embedded system function or routine."
+    }
+  ],
+  "inputs": [
+    "transaction-details"
+  ],
+  "outputs": [
+    "validation-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "system-state",
+      "description": "Potential interaction with external system or state depending on the exec-block."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

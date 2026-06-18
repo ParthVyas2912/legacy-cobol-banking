@@ -1,0 +1,23 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph performs a call, potentially executes an unknown action, and ends with a GO TO statement directing control to 1000-NEXT-STEP.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "call",
+      "details": "Makes a subroutine or program call."
+    },
+    {
+      "action": "unknown",
+      "details": "The specific operation is not identifiable."
+    },
+    {
+      "action": "control transfer",
+      "details": "Transfers control to the paragraph 1000-NEXT-STEP using GO TO."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

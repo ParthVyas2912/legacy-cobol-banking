@@ -1,0 +1,23 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph serves as the main entry point of the batch program, orchestrating the execution of key processing steps such as opening files, processing transactions, and closing files.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "calls 1000-OPEN-FILES to open required files"
+    },
+    {
+      "action": "perform-until",
+      "details": "repeatedly calls 2000-PROCESS-TXNS to process transactions"
+    },
+    {
+      "action": "perform",
+      "details": "calls 3000-CLOSE-FILES to close the files after processing"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

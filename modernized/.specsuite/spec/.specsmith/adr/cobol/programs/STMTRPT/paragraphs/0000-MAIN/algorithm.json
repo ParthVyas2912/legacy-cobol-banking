@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "The paragraph initializes processing by opening necessary resources, performs customer fetching, and prepares for termination.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open file",
+      "details": "Opens a file or other resource required for processing"
+    },
+    {
+      "action": "perform operation",
+      "details": "Invokes 1000-FETCH-CUSTOMERS to fetch customer data"
+    },
+    {
+      "action": "close file",
+      "details": "Closes the opened resource"
+    },
+    {
+      "action": "terminate program",
+      "details": "Ends the program by executing goback"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output file",
+      "description": "Handles file-related operations such as opening and closing."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

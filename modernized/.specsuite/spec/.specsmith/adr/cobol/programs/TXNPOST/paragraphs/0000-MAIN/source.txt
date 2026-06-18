@@ -1,0 +1,9 @@
+Paragraph: 0000-MAIN
+Lines: 38-44
+Statements: 5
+
+1. perform
+2. perform
+3. perform
+4. display
+5. goback

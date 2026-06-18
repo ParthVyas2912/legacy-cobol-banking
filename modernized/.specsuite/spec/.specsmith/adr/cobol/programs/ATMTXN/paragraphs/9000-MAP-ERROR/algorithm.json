@@ -1,0 +1,19 @@
+{
+  "name": "9000-MAP-ERROR",
+  "description": "This paragraph maps an error condition by moving a value to a variable, then transitions control to the error-handling routine 9100-FATAL.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "move a value to an error-related variable",
+      "details": "Prepares an error indicator or message for subsequent handling."
+    }
+  ],
+  "inputs": [
+    "variable"
+  ],
+  "outputs": [
+    "variable"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

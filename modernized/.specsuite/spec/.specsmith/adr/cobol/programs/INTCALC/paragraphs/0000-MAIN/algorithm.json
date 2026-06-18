@@ -1,0 +1,38 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes resources, performs a loop operation, and then finalizes resources before exiting the program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "open file or resource",
+      "details": "Prepares resources for subsequent processing."
+    },
+    {
+      "action": "perform loop",
+      "details": "Initiates a loop by branching to the 1000-LOOP paragraph."
+    },
+    {
+      "action": "close file or resource",
+      "details": "Releases any resources used in the program."
+    },
+    {
+      "action": "end program",
+      "details": "Exits the COBOL program cleanly."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output file",
+      "description": "May write processed data into a file."
+    },
+    {
+      "kind": "commit",
+      "target": "database",
+      "description": "Commits transactions as part of the loop processing."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

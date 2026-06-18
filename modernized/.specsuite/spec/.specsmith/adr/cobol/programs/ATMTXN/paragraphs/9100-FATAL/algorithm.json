@@ -1,0 +1,23 @@
+{
+  "name": "9100-FATAL",
+  "description": "Handles fatal errors by executing a block of code for error handling.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute fatal error handling",
+      "details": "performs operations for critical error processing"
+    }
+  ],
+  "inputs": [
+    "error-code"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "entire transaction",
+      "description": "terminates the transaction due to a critical error"
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

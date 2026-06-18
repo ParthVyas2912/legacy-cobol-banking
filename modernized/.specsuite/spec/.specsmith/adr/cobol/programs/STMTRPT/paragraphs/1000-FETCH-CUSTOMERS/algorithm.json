@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "Fetches customer records and initiates the process for iterating over them.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move data into a variable",
+      "details": "Prepares data for processing"
+    },
+    {
+      "action": "perform a loop",
+      "details": "Initiates processing of customer records"
+    }
+  ],
+  "inputs": [
+    "CUSTOMER-DATA"
+  ],
+  "outputs": [
+    "CUSTOMER-PROCESSING"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "record-processing",
+      "description": "Signals the start of customer record processing"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

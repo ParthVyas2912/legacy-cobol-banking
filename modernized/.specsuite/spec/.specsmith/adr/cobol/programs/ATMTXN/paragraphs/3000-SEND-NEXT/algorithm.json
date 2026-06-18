@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph prepares and sends transaction data to the next process or destination.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move transaction data to a buffer",
+      "details": "The move statement assigns transaction data to a specific location."
+    },
+    {
+      "action": "send data via a CICS command",
+      "details": "Executes a CICS command to transmit data."
+    }
+  ],
+  "inputs": [
+    "transaction data"
+  ],
+  "outputs": [
+    "screen or external system"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "external system or user screen",
+      "description": "Sends transaction data to be processed or displayed."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

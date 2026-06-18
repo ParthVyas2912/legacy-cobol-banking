@@ -1,0 +1,15 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "This paragraph evaluates a condition and takes action based on it.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "The paragraph contains a single IF statement to check a condition."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

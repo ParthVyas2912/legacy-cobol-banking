@@ -1,0 +1,15 @@
+{
+  "name": "0000-START",
+  "description": "Initializes the transaction process and directs control to subsequent validation, processing, and response-handling steps.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute transactional logic",
+      "details": "Invokes sections for validation, posting transaction, and sending the next response."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

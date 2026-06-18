@@ -1,0 +1,4 @@
+# KYCSYNC
+This program performs a synchronization of customer KYC data by fetching records and updating a database table.
+Business domain: customer-management
+Architectural role: batch

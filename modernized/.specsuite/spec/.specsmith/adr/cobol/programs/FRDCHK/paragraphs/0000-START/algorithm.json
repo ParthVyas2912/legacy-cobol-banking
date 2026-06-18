@@ -1,0 +1,23 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph orchestrates control flow by performing three subroutines and ends with a fallthrough to another paragraph.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform 1000-COMPUTE-VELOCITY",
+      "details": "Initial computation of velocity"
+    },
+    {
+      "action": "perform 2000-SCORE-RISK",
+      "details": "Assesses risk score for the current context"
+    },
+    {
+      "action": "perform 3000-FREEZE-ACCOUNT",
+      "details": "Executes account freeze process if necessary"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

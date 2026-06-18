@@ -1,0 +1,5 @@
+{
+  "name": "CUSTDB",
+  "segmentCount": 3,
+  "description": "The CUSTDB IMS database uses the HIDAM access method and contains three segment types: CUSTOMER as the root, with child segments ACCTLNK and ADDRESS storing account links and address details respectively."
+}

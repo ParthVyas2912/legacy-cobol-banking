@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph is part of a loop that fetches data and calls another paragraph for processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch-data",
+      "details": "likely retrieves data records iteratively"
+    },
+    {
+      "action": "invoke-procedure",
+      "details": "calls another paragraph to process or act on the fetched data"
+    }
+  ],
+  "inputs": [
+    "undefined-input"
+  ],
+  "outputs": [
+    "undefined-output"
+  ],
+  "sideEffects": [
+    {
+      "kind": "unknown",
+      "target": "2000-UPSERT-KYC",
+      "description": "Follow-through after processing is unclear but may involve database or other updates in the called paragraph."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

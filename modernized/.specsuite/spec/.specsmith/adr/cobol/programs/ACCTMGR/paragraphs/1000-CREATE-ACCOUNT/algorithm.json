@@ -1,0 +1,35 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph appears to initialize values for a new account and possibly interact with a database or external system to create it.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move values to variables",
+      "details": "Sets up account-related variables with initial data."
+    },
+    {
+      "action": "execute database or external system operation",
+      "details": "Interacts with a system to persist the account or perform validations."
+    },
+    {
+      "action": "evaluate a condition",
+      "details": "Determines the next control flow based on a condition."
+    }
+  ],
+  "inputs": [
+    "Account information",
+    "Database connection or external service"
+  ],
+  "outputs": [
+    "Account creation status or metadata"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "Accounts table",
+      "description": "Persists new account information into the database."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

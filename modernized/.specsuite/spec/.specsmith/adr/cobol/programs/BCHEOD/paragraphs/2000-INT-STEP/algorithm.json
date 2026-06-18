@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph contains a call, an unknown statement, and a go-to, and likely performs a simple unit of work within the batch infrastructure context.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "call-procedure",
+      "details": "Executes a CALL statement likely invoking another program or routine."
+    },
+    {
+      "action": "unknown-action",
+      "details": "The specific action performed by the unknown statement cannot be determined."
+    },
+    {
+      "action": "change-flow",
+      "details": "Redirects control to another paragraph via a GO TO."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

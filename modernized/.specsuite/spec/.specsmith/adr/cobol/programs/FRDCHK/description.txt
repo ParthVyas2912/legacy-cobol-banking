@@ -1,0 +1,4 @@
+# FRDCHK
+This program evaluates potential fraudulent activity based on transaction history and updates fraud-related flags in a database.
+Business domain: customer-management
+Architectural role: online

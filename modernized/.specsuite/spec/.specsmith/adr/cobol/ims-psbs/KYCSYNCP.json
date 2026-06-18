@@ -1,0 +1,5 @@
+{
+  "name": "KYCSYNCP",
+  "pcbCount": 2,
+  "description": "The program specification block KYCSYNCP defines access to the CUSTDB database for two Process Communication Blocks with read-only access."
+}

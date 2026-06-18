@@ -1,0 +1,20 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph evaluates specific conditions and executes a block of code accordingly, preparing for the creation of a customer account.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Determines the next steps based on specific conditions."
+    },
+    {
+      "action": "execute code block",
+      "details": "Performs operations needed before transitioning to account creation."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

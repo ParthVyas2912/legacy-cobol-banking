@@ -1,0 +1,34 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "Closes a customer account by performing cleanup and final update actions.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Sets a variable to indicate account is closed."
+    },
+    {
+      "action": "exec-block",
+      "details": "Invokes a system-specific feature or API related to account closure."
+    },
+    {
+      "action": "if",
+      "details": "Checks a condition to ensure proper closure logic."
+    }
+  ],
+  "inputs": [
+    "account-status"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account_table",
+      "description": "Updates the account table to mark the account as closed."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

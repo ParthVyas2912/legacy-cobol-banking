@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph initiates processing by marking a start point and transitions to the next step in the workflow.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Call 9000-MARK-START to mark a starting point."
+    },
+    {
+      "action": "go-to",
+      "details": "Unconditionally branch to 1000-NEXT-STEP to continue processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

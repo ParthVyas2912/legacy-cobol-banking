@@ -1,0 +1,25 @@
+{
+  "name": "2000-UPSERT-KYC",
+  "description": "This paragraph performs a database operation to insert or update customer KYC data.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "execute a database upsert",
+      "details": "Executes an SQL block to insert or update customer KYC records."
+    }
+  ],
+  "inputs": [
+    "customer-data"
+  ],
+  "outputs": [
+    "upsert-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "KYC table",
+      "description": "Modifies the database with new or updated KYC data."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}
