@@ -1,0 +1,20 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph evaluates a condition and executes a block of code based on it.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Determines the flow of execution based on a specific condition."
+    },
+    {
+      "action": "execute block",
+      "details": "Executes a specific block of COBOL statements based on the evaluation."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

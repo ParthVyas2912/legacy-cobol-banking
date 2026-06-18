@@ -1,0 +1,5 @@
+{
+  "name": "CUSTDB",
+  "segmentCount": 3,
+  "description": "The CUSTDB database is a HIDAM-based hierarchical structure designed to store customer data, including associated account links and addresses."
+}

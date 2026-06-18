@@ -1,0 +1,25 @@
+{
+  "name": "2000-UPSERT-KYC",
+  "description": "This paragraph performs a single database update or insert operation.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "insert-or-update",
+      "details": "Executes a SQL block to synchronize KYC-related data in the database."
+    }
+  ],
+  "inputs": [
+    "working-storage variables"
+  ],
+  "outputs": [
+    "KYC_TABLE"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "KYC_TABLE",
+      "description": "Modifies the database by inserting new records or updating existing ones."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

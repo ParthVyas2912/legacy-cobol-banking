@@ -1,0 +1,4 @@
+# TXNPOST
+Processes financial transactions from an input file, updates an SQL table, and writes audit information to an output file.
+Business domain: accounts-management
+Architectural role: batch

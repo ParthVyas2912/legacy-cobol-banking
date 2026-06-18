@@ -1,0 +1,4 @@
+# AUDITSRV
+Processes and writes audit information to the AUDIT-FILE before returning control to the CICS environment.
+Business domain: infrastructure
+Architectural role: online

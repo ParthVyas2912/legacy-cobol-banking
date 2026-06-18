@@ -1,0 +1,4 @@
+# KYCSYNC
+This program synchronizes customer data with a KYC audit table, updating or inserting records based on provided data.
+Business domain: customer-management
+Architectural role: batch

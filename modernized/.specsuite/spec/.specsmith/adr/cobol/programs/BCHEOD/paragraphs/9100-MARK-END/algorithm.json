@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "Marks the end of a processing sequence or operation, potentially signaling completion.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute a block of COBOL statements",
+      "details": "Executes an embedded block of statements to finalize a process."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

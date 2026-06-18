@@ -1,0 +1,33 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph orchestrates control flow to perform fraud detection activities by invoking specific computation and risk evaluation routines.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate a condition",
+      "details": "Determines which specific routines to invoke based on business rules."
+    },
+    {
+      "action": "invoke routines",
+      "details": "PERFORM statements transfer control to computation and risk-scoring paragraphs."
+    },
+    {
+      "action": "execute an external block",
+      "details": "Executes embedded functionality via an EXEC block."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "control-decision"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "system-state",
+      "description": "System may transition states based on control decisions made in this paragraph."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

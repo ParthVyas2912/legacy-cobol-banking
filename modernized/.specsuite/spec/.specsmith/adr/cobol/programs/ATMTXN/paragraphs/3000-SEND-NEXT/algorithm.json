@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph sends the next screen or message as part of an online transaction, handling any errors if necessary.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move value to target variable",
+      "details": "Sets up data to be sent to the screen or message queue."
+    },
+    {
+      "action": "send output via exec-block",
+      "details": "Uses a system-specific mechanism to send the prepared output."
+    }
+  ],
+  "inputs": [
+    "transaction data"
+  ],
+  "outputs": [
+    "screen output"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "user terminal",
+      "description": "Sends the prepared data to the online terminal or session."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

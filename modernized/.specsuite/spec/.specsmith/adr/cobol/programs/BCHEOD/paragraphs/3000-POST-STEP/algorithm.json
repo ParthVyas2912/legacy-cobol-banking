@@ -1,0 +1,23 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph executes a subroutine, performs an unknown operation, and transfers control to another part of the program.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "call a subroutine",
+      "details": "Name of subroutine unknown"
+    },
+    {
+      "action": "perform an unknown operation",
+      "details": "No further context available"
+    },
+    {
+      "action": "transfer control",
+      "details": "GO TO 1000-NEXT-STEP"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

@@ -1,0 +1,35 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes the program workflow by performing multiple operational tasks in sequence.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute a block of external code",
+      "details": "3 EXEC blocks are involved to initiate operational tasks"
+    },
+    {
+      "action": "perform subordinate paragraphs",
+      "details": "Performs 1000-VALIDATE, 2000-POST-TXN, and 3000-SEND-NEXT"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "1000-VALIDATE",
+      "description": "Initiates validation process"
+    },
+    {
+      "kind": "other",
+      "target": "2000-POST-TXN",
+      "description": "Handles post-transaction operations"
+    },
+    {
+      "kind": "other",
+      "target": "3000-SEND-NEXT",
+      "description": "Triggers the next step in the transaction process"
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

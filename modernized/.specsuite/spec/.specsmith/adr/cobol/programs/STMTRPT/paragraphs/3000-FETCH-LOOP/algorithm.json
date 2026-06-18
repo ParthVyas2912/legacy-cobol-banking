@@ -1,0 +1,29 @@
+{
+  "name": "3000-FETCH-LOOP",
+  "description": "This paragraph fetches a record using a SQL cursor and checks a condition to determine the next operation.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch a record from the SQL cursor",
+      "details": "Executes a SQL FETCH statement to retrieve the next row."
+    },
+    {
+      "action": "evaluate a condition on the fetched data",
+      "details": "Uses an IF statement to check specific criteria for flow control."
+    }
+  ],
+  "inputs": [
+    "SQL_CURSOR"
+  ],
+  "outputs": [
+    "WORKING-STORAGE-VARIABLES"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "none",
+      "description": "Cursor state is advanced as a result of the FETCH operation."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

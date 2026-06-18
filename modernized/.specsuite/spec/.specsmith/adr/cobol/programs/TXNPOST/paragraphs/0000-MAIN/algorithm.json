@@ -1,0 +1,39 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph serves as the main entry point of the batch program, orchestrating the execution of file operations and transaction processing in sequence.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Transfer control to 1000-OPEN-FILES for file initialization."
+    },
+    {
+      "action": "perform-until",
+      "details": "Iteratively process transactions in 2000-PROCESS-TXNS until the condition is met."
+    },
+    {
+      "action": "perform",
+      "details": "Transfer control to 3000-CLOSE-FILES for cleanup and file closure."
+    },
+    {
+      "action": "display",
+      "details": "Output status or informational message to the console."
+    },
+    {
+      "action": "goback",
+      "details": "Terminate the program and return to the operating system."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "console"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "files managed by 1000-OPEN-FILES and 3000-CLOSE-FILES",
+      "description": "Perform file operations such as opening, processing, and closing files."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

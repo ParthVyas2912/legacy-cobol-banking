@@ -1,0 +1,25 @@
+{
+  "name": "0000-MAIN",
+  "description": "The paragraph serves as the entry point of the program, setting initial conditions, displaying a message, and transferring control to a fetch loop.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize",
+      "details": "Perform an initialization by moving values to variables or preparing for processing."
+    },
+    {
+      "action": "log or notify",
+      "details": "Display a message to indicate the start or status of processing."
+    },
+    {
+      "action": "flow-control",
+      "details": "Transfer control to the fetch loop to begin core processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "output screen"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

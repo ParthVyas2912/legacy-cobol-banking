@@ -1,0 +1,10 @@
+Paragraph: 9100-MARK-END
+Lines: 45-46
+Statements: 1
+
+1. EXEC SQL  UPDATE EOD_RUNS
+                SET ENDED_AT = CURRENT_TIMESTAMP,
+                    STATUS   = :WS-STATUS-CODE
+              WHERE STARTED_AT = (SELECT MAX(STARTED_AT)
+                                    FROM EOD_RUNS)
+     END-EXEC

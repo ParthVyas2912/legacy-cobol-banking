@@ -1,0 +1,30 @@
+{
+  "name": "3000-UPDATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "Updates account information by performing validations and applying necessary updates.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "validate account data",
+      "details": "Checks preconditions to ensure account-related data integrity"
+    },
+    {
+      "action": "execute update",
+      "details": "Performs an action based on conditional account criteria"
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-RECORD"
+  ],
+  "outputs": [
+    "ACCOUNT-STATUS"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "ACCOUNT-TABLE",
+      "description": "Applies changes to the account table in the database"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

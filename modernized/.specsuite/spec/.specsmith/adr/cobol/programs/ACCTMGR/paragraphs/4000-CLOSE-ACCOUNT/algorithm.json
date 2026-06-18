@@ -1,0 +1,36 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "The paragraph finalizes the process of closing an account by executing business logic and possibly updating the database.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "move a value to a variable",
+      "details": "Assigns a specific state or value to a variable in preparation for account closure."
+    },
+    {
+      "action": "execute code block",
+      "details": "Performs domain-specific logic to finalize the closure process."
+    },
+    {
+      "action": "conditional check",
+      "details": "Evaluates a condition and possibly triggers further action."
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-STATUS",
+    "TRANSACTION-CONTEXT"
+  ],
+  "outputs": [
+    "DATABASE-UPDATE",
+    "MESSAGE-STATE"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "CUSTOMER_ACCOUNT_TABLE",
+      "description": "Records the closure of the account in the database."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

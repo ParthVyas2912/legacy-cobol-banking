@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes resources, performs a recurring operation, and ensures proper cleanup before terminating.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open files",
+      "details": "Opens required files for processing"
+    },
+    {
+      "action": "perform loop",
+      "details": "Delegates control to the 1000-LOOP paragraph for iterative processing"
+    },
+    {
+      "action": "close files",
+      "details": "Closes the files after processing is complete"
+    },
+    {
+      "action": "terminate program",
+      "details": "Ends the program execution and returns control"
+    }
+  ],
+  "inputs": [
+    "FileA"
+  ],
+  "outputs": [
+    "FileB"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "FileB",
+      "description": "Writes processed data to the output file"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

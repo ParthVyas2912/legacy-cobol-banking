@@ -1,0 +1,44 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "This paragraph applies a transaction to relevant data structures or systems and prepares for the next step in processing.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "assign values to variables or fields"
+    },
+    {
+      "action": "call subroutine",
+      "details": "invoke another program or module"
+    },
+    {
+      "action": "write to file",
+      "details": "output data to a file"
+    },
+    {
+      "action": "add data",
+      "details": "perform numeric calculation or update"
+    }
+  ],
+  "inputs": [
+    "transaction-details",
+    "accounts-data"
+  ],
+  "outputs": [
+    "updated-accounts-data",
+    "log-entry"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "accounts-data",
+      "description": "Updates account details in the data file"
+    },
+    {
+      "kind": "file-write",
+      "target": "log-file",
+      "description": "Writes a log entry for the transaction"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

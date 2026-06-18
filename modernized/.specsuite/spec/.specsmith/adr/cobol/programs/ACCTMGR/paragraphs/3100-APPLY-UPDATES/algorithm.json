@@ -1,0 +1,22 @@
+{
+  "name": "3100-APPLY-UPDATES",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph applies updates by moving data between variables, preparing for the next operation.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Transfers values between variables for update purposes"
+    }
+  ],
+  "inputs": [
+    "source-variable-1",
+    "source-variable-2"
+  ],
+  "outputs": [
+    "destination-variable-1",
+    "destination-variable-2"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

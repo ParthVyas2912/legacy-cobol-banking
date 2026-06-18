@@ -1,0 +1,23 @@
+{
+  "name": "4000-CLOSE-CURSOR",
+  "description": "This paragraph closes a database cursor, indicating the end of a database query process.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close the SQL cursor",
+      "details": "Uses an EXEC SQL block to close an open cursor."
+    }
+  ],
+  "inputs": [
+    "cursor"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "cursor state in the database",
+      "description": "Marks the cursor as closed and releases associated resources."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

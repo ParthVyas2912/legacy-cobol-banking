@@ -1,0 +1,35 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "Creates a new account record by moving data into variables and performing a single external operation.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values to variables",
+      "details": "Populates account-related fields with appropriate data."
+    },
+    {
+      "action": "execute a system or database block",
+      "details": "Performs an external operation likely involving account creation."
+    },
+    {
+      "action": "conditional check",
+      "details": "Validates data or checks success of the creation process."
+    }
+  ],
+  "inputs": [
+    "customer-data",
+    "system-environment"
+  ],
+  "outputs": [
+    "new-account"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-table",
+      "description": "Inserts the new account into the database."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

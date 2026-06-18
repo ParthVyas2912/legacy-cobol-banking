@@ -1,0 +1,25 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph iterates through a loop, performing a call and potentially executing an unknown operation.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform iterative processing",
+      "details": "Executes a loop and invokes a CALL within it, with additional unknown functionality."
+    }
+  ],
+  "inputs": [
+    "N/A"
+  ],
+  "outputs": [
+    "N/A"
+  ],
+  "sideEffects": [
+    {
+      "kind": "unknown",
+      "target": "unknown",
+      "description": "The side effects of this paragraph cannot be determined due to insufficient information."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

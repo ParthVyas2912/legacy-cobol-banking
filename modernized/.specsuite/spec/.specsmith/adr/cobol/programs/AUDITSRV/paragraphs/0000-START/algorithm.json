@@ -1,0 +1,29 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes program state with a series of assignments and executes two external operations.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Assign default or initial values to working storage variables."
+    },
+    {
+      "action": "execute external blocks",
+      "details": "Invoke external operations using EXEC statements."
+    }
+  ],
+  "inputs": [
+    "unreferenced"
+  ],
+  "outputs": [
+    "working-storage fields"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external systems",
+      "description": "Execution of external operations using EXEC statements may interact with subsystems (e.g., CICS, database)."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

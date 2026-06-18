@@ -1,0 +1,136 @@
+[
+  {
+    "id": "atmtxn/bms-to-web-form/_/0",
+    "category": "cics",
+    "kind": "bms-to-web-form",
+    "severity": "medium",
+    "programId": "ATMTXN",
+    "title": "BMS map ATMMAIN → web form",
+    "description": "Program drives the 3270 map ATMMAIN. Convert to an HTML form (or React/Blazor component) with HTTP POST equivalents for SEND MAP / RECEIVE MAP. Preserve field protection (PROT → readonly) and input validation (PICIN → input pattern).",
+    "currentCode": "EXEC CICS SEND MAP('ATMMAIN') ... END-EXEC.",
+    "suggestedReplacement": "// React equivalent:\n// <form action=\"/atmmain\" method=\"post\"> ... </form>",
+    "detail": {
+      "map": "ATMMAIN"
+    },
+    "tags": [
+      "cics",
+      "bms",
+      "ui"
+    ]
+  },
+  {
+    "id": "atmtxn/bms-to-web-form/_/0",
+    "category": "cics",
+    "kind": "bms-to-web-form",
+    "severity": "medium",
+    "programId": "ATMTXN",
+    "title": "BMS map ATMNEXT → web form",
+    "description": "Program drives the 3270 map ATMNEXT. Convert to an HTML form (or React/Blazor component) with HTTP POST equivalents for SEND MAP / RECEIVE MAP. Preserve field protection (PROT → readonly) and input validation (PICIN → input pattern).",
+    "currentCode": "EXEC CICS SEND MAP('ATMNEXT') ... END-EXEC.",
+    "suggestedReplacement": "// React equivalent:\n// <form action=\"/atmnext\" method=\"post\"> ... </form>",
+    "detail": {
+      "map": "ATMNEXT"
+    },
+    "tags": [
+      "cics",
+      "bms",
+      "ui"
+    ]
+  },
+  {
+    "id": "atmtxn/cics-handle-condition/_/21",
+    "category": "cics",
+    "kind": "cics-handle-condition",
+    "severity": "medium",
+    "programId": "ATMTXN",
+    "location": {
+      "line": 21
+    },
+    "title": "EXEC CICS HANDLE CONDITION (2 condition(s))",
+    "description": "HANDLE CONDITION dispatches to labels on CICS error conditions. Modern equivalents use typed exceptions (Java/C#) or Result types. Each condition becomes a distinct exception class catching at the call site.",
+    "currentCode": "EXEC CICS HANDLE CONDITION MAPFAIL ERROR END-EXEC.",
+    "suggestedReplacement": "// catch (MapfailException ex) { ... }\n// catch (ErrorException ex) { ... }",
+    "detail": {
+      "conditions": [
+        "MAPFAIL",
+        "ERROR"
+      ]
+    },
+    "tags": [
+      "cics",
+      "error-handling"
+    ]
+  },
+  {
+    "id": "atmtxn/microservice-candidate/_/0",
+    "category": "cross-program",
+    "kind": "microservice-candidate",
+    "severity": "info",
+    "programId": "ATMTXN",
+    "title": "ATMTXN: microservice candidate",
+    "description": "ATMTXN has 6 paragraph(s), 0 LINKAGE parameter(s), 0 file(s), 0 SQL block(s). Small surface + clear boundary suggests this could be split into a standalone service during modernization.",
+    "detail": {
+      "paragraphs": 6,
+      "usingParams": 0,
+      "files": 0,
+      "sqlBlocks": 0,
+      "cicsBlocks": 7,
+      "imsCalls": 0,
+      "callTargets": []
+    },
+    "tags": [
+      "cross-program",
+      "architecture"
+    ]
+  },
+  {
+    "id": "atmtxn/comp-3-decimal/_/6",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "ATMTXN",
+    "location": {
+      "line": 6
+    },
+    "title": "COMP-3 field TXN-AMOUNT → DECIMAL(13,2)",
+    "description": "Packed-decimal COMP-3 field TXN-AMOUNT PIC S9(11)V99. Modern equivalent: SQL DECIMAL(13,2) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 TXN-AMOUNT PIC S9(11)V99 COMP-3.",
+    "suggestedReplacement": "// SQL:   txn-amount DECIMAL(13,2)\n// Java:  BigDecimal txnAmount;\n// C#:    decimal TxnAmount;\n// Python: txnAmount: Decimal",
+    "detail": {
+      "precision": 13,
+      "scale": 2,
+      "sqlType": "DECIMAL(13,2)",
+      "picture": "S9(11)V99"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "atmtxn/comp-3-decimal/_/25",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "ATMTXN",
+    "location": {
+      "line": 25
+    },
+    "title": "COMP-3 field TXN-BALANCE-AFTER → DECIMAL(15,2)",
+    "description": "Packed-decimal COMP-3 field TXN-BALANCE-AFTER PIC S9(13)V99. Modern equivalent: SQL DECIMAL(15,2) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 TXN-BALANCE-AFTER PIC S9(13)V99 COMP-3.",
+    "suggestedReplacement": "// SQL:   txn-balance-after DECIMAL(15,2)\n// Java:  BigDecimal txnBalanceAfter;\n// C#:    decimal TxnBalanceAfter;\n// Python: txnBalanceAfter: Decimal",
+    "detail": {
+      "precision": 15,
+      "scale": 2,
+      "sqlType": "DECIMAL(15,2)",
+      "picture": "S9(13)V99"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  }
+]

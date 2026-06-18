@@ -1,0 +1,4 @@
+# BCHEOD
+This COBOL program performs end-of-day batch processing by calculating intermediate values and posting transactions to a database.
+Business domain: infrastructure
+Architectural role: batch

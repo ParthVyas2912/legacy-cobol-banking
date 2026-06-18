@@ -1,0 +1,19 @@
+{
+  "name": "1000-COMPUTE-VELOCITY",
+  "description": "This paragraph computes a velocity-related value likely used in the fraud-detection process.",
+  "purpose": "computation",
+  "algorithm": [
+    {
+      "action": "compute velocity",
+      "details": "possibly based on input parameters or variables"
+    }
+  ],
+  "inputs": [
+    "velocity-related inputs"
+  ],
+  "outputs": [
+    "computed velocity"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

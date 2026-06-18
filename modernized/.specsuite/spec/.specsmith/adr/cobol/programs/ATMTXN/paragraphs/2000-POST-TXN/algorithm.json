@@ -1,0 +1,30 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph posts the transaction by moving values to variables and performing an execution block, likely related to processing or updating transaction data.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move values",
+      "details": "Moves values across four different variables."
+    },
+    {
+      "action": "execute transaction block",
+      "details": "Performs an exec-block likely for database interaction."
+    }
+  ],
+  "inputs": [
+    "transaction-id",
+    "transaction-amount"
+  ],
+  "outputs": [
+    "txn-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "transaction-log",
+      "description": "Writes transaction details to the database."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

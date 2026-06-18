@@ -1,0 +1,34 @@
+{
+  "specforge_knowledge_graph": "1.0.0",
+  "project": "source",
+  "entities": [
+    {
+      "id": "project:root",
+      "name": "source",
+      "type": "project",
+      "description": "This project represents a legacy backend application written in COBOL, purpose-built for transactional or batch-oriented operations catering to critical enterprise, financial, or governmental domains. Its responsibilities likely include processing high-volume, business-critical data with a focus on reliability, consistency, and non-interruptive performance. The absence of APIs, user interfaces, and readily identifiable data models implies it operates independently, potentially performing batch file or scheduled task-based integrations with other systems. Its design reflects a monolithic or mainframe-based architecture typical of COBOL applications. While no frameworks, explicit environment variables, or interoperability mechanisms are specified, the architecture relies on COBOL's native tooling and paradigms. Modernization efforts would require meticulous consideration of the application's existing domain logic and constraints.",
+      "sourceFiles": [],
+      "domain": "financial/governmental/enterprise legacy systems",
+      "properties": {
+        "type": "backend",
+        "totalFiles": 20,
+        "sourceFiles": 19
+      },
+      "tags": [
+        "project"
+      ],
+      "confidence": 1
+    }
+  ],
+  "relationships": [],
+  "metadata": {
+    "totalEntities": 1,
+    "totalRelationships": 0,
+    "entityTypeCounts": {
+      "project": 1
+    },
+    "relationshipTypeCounts": {},
+    "averageConfidence": 1,
+    "generatedAt": "2026-06-18T05:25:55.487Z"
+  }
+}

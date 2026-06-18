@@ -1,0 +1,24 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "Evaluates a fraud risk score and conditionally determines follow-up actions based on specific criteria.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Uses IF statements to assess fraud risk based on predefined criteria."
+    },
+    {
+      "action": "assign value",
+      "details": "MOVE statement adjusts or sets a value based on the evaluation outcome."
+    }
+  ],
+  "inputs": [
+    "fraud-risk-metrics",
+    "transaction-data"
+  ],
+  "outputs": [
+    "risk-score"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

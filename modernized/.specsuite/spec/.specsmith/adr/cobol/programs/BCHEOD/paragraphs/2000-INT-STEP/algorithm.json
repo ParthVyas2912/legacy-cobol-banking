@@ -1,0 +1,19 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph performs a step in a batch process involving a subroutine call and control flow transfer via GO TO.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call subroutine",
+      "details": "Executes a procedure or module whose purpose is unknown"
+    },
+    {
+      "action": "transfer control",
+      "details": "Uses a GO TO statement to move control to another program location"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

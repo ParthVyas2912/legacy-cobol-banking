@@ -1,0 +1,17 @@
+{
+  "name": "2050-COMPUTE-RANGE",
+  "description": "This paragraph evaluates a condition and determines the appropriate control flow based on the result.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate a condition",
+      "details": "Uses an IF statement to control execution"
+    }
+  ],
+  "inputs": [
+    "condition-variable"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,25 @@
+{
+  "programId": "AUDITSRV",
+  "sourceFile": "programs/AUDITSRV.cbl",
+  "dialect": "enterprise",
+  "usingParameters": [],
+  "callsTo": [],
+  "filesRead": [
+    "AUDIT-FILE"
+  ],
+  "filesWritten": [],
+  "sqlTables": [],
+  "cicsVerbs": [
+    "WRITE",
+    "RETURN"
+  ],
+  "imsFunctionCodes": [],
+  "copybooksUsed": [],
+  "paragraphCount": 1,
+  "modernizationFindingCount": 1,
+  "controlFlow": {
+    "cyclomaticComplexity": 1,
+    "deadParagraphs": 0,
+    "goToClusters": 0
+  }
+}

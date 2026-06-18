@@ -1,0 +1,17 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "This paragraph contains a single IF statement likely making a decision based on a condition, but without changing any program flow or producing outgoing control.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Determines whether a specific condition holds true, likely for validation purposes."
+    }
+  ],
+  "inputs": [
+    "condition-variable"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

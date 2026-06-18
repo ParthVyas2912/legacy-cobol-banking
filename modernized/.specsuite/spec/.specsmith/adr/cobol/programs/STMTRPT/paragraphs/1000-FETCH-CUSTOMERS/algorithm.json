@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "This paragraph fetches customer data and prepares for processing in a reporting batch program.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Move a value into a variable to initialize it or set up for processing."
+    },
+    {
+      "action": "perform",
+      "details": "Call another paragraph to handle data retrieval and looping through customers."
+    }
+  ],
+  "inputs": [
+    "customer-data"
+  ],
+  "outputs": [
+    "customer-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "program-control",
+      "description": "Triggers the execution of a loop to fetch customer data with IMS calls."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}
