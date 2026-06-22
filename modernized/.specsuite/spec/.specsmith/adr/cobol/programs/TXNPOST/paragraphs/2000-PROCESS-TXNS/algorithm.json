@@ -1,0 +1,25 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "This paragraph processes transactions by reading records one at a time.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a record",
+      "details": "Reads a single transaction record from the input file."
+    }
+  ],
+  "inputs": [
+    "transaction-file"
+  ],
+  "outputs": [
+    "transaction-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-read",
+      "target": "transaction-file",
+      "description": "Advances the file pointer after reading a transaction record."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

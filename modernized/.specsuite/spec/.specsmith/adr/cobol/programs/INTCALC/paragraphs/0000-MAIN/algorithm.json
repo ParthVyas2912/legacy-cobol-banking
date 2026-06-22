@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes and orchestrates the main loop of the program, handling I/O and control transfer to the looping logic.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "open file",
+      "details": "Opens a file to prepare for further processing."
+    },
+    {
+      "action": "perform loop",
+      "details": "Transfers control to a looping paragraph until a specified condition is met."
+    },
+    {
+      "action": "close file",
+      "details": "Closes the file after processing is complete."
+    },
+    {
+      "action": "terminate program",
+      "details": "Ends the program execution with a goback statement."
+    }
+  ],
+  "inputs": [
+    "input-file"
+  ],
+  "outputs": [
+    "output-file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output-file",
+      "description": "Writes processed data to the output file."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

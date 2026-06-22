@@ -1,0 +1,35 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph finalizes account-related operations by moving data, executing a block of code, and conditionally triggering follow-up actions.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Moves a value to a variable or field"
+    },
+    {
+      "action": "execute block",
+      "details": "Runs an unspecified block of code"
+    },
+    {
+      "action": "conditional logic",
+      "details": "Evaluates a condition and takes action based on the result"
+    }
+  ],
+  "inputs": [
+    "account-status"
+  ],
+  "outputs": [
+    "update-log",
+    "final-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "update-log",
+      "description": "Logs the closure of the account"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,17 @@
+{
+  "name": "2050-COMPUTE-RANGE",
+  "description": "This paragraph evaluates a condition and influences control flow based on the result.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate a condition",
+      "details": null
+    }
+  ],
+  "inputs": [
+    "input-condition"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

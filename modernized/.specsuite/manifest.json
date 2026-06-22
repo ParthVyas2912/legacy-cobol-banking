@@ -1,0 +1,9 @@
+{
+  "build_id": "51",
+  "source_repo": "legacy-cobol-banking",
+  "source_branch": "main",
+  "target_stack": "typescript-nestjs-typeorm",
+  "target_subdir": "modernized/typescript-nestjs-typeorm",
+  "generated_at": "2026-06-22T17:21:10Z",
+  "pipeline": "specsuite-modernization-pipeline"
+}

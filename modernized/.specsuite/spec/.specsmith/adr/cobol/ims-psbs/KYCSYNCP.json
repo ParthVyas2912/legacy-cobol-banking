@@ -1,0 +1,5 @@
+{
+  "name": "KYCSYNCP",
+  "pcbCount": 2,
+  "description": "The PSB KYCSYNCP defines two PCBs, both accessing the CUSTDB database in read-only mode with sensitivity to segments."
+}

@@ -1,0 +1,28 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes a new account by performing data setup and validation steps, then transfers control to read the account details.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize necessary variables for account creation",
+      "details": "using move statements"
+    },
+    {
+      "action": "perform a business operation or call an external service",
+      "details": "via exec-block"
+    },
+    {
+      "action": "validate conditions related to account creation",
+      "details": "using an if statement"
+    }
+  ],
+  "inputs": [
+    "account-data"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 1
+}

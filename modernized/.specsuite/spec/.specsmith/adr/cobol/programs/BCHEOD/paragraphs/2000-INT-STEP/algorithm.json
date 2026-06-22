@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph appears to perform an undefined set of actions including a call and a branching operation, likely impacting program flow.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "call external routine",
+      "details": "The routine being called is unspecified."
+    },
+    {
+      "action": "perform an unknown operation",
+      "details": "The specific operation is not identifiable."
+    },
+    {
+      "action": "branch to another paragraph",
+      "details": "Transfers control to 1000-NEXT-STEP via GO TO."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

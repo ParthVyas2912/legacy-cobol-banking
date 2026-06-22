@@ -1,0 +1,4 @@
+# AUDITSRV
+This program processes audit data by writing to an indexed file and optionally passes control back to the CICS environment.
+Business domain: infrastructure
+Architectural role: online

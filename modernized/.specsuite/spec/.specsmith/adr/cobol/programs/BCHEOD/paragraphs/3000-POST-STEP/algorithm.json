@@ -1,0 +1,23 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph executes a subroutine, performs an unknown operation, and transfers control to the 1000-NEXT-STEP paragraph.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call subroutine",
+      "details": "Executes a subroutine for an unspecified operation."
+    },
+    {
+      "action": "unknown operation",
+      "details": "An unknown operation is performed."
+    },
+    {
+      "action": "transfer control",
+      "details": "Redirects program flow to 1000-NEXT-STEP paragraph."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

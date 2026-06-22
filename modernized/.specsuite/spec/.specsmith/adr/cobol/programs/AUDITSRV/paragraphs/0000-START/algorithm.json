@@ -1,0 +1,34 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes variables and may invoke external actions through EXEC blocks.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Sets initial values using MOVE statements."
+    },
+    {
+      "action": "execute external block",
+      "details": "Performs operations through EXEC blocks, possibly interfacing with external systems."
+    },
+    {
+      "action": "conditional logic",
+      "details": "Evaluates a condition using an IF statement."
+    }
+  ],
+  "inputs": [
+    "input-variable-1",
+    "external-resource"
+  ],
+  "outputs": [
+    "output-variable-1"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external-resource",
+      "description": "Interactions via EXEC blocks potentially impacting external systems or resources."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

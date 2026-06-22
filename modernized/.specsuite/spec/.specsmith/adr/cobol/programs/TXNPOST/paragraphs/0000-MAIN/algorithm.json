@@ -1,0 +1,31 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph coordinates the batch processing flow by opening files, processing transactions, and closing files.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Calls 1000-OPEN-FILES to initialize file handling."
+    },
+    {
+      "action": "perform-until",
+      "details": "Repeatedly calls 2000-PROCESS-TXNS to process transactions."
+    },
+    {
+      "action": "perform",
+      "details": "Calls 3000-CLOSE-FILES to finalize file handling."
+    },
+    {
+      "action": "display",
+      "details": "Displays status or debugging information."
+    },
+    {
+      "action": "goback",
+      "details": "Indicates normal completion of the program."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,33 @@
+{
+  "name": "1100-IMS-GN-LOOP",
+  "description": "1100-IMS-GN-LOOP retrieves data in a loop, processes it, and determines flow based on conditions.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "retrieve data from a database or cursor",
+      "details": "likely using a READ or GET-NEXT operation"
+    },
+    {
+      "action": "call a subroutine",
+      "details": "specific functionality within the call is unknown"
+    },
+    {
+      "action": "conditionally perform a paragraph",
+      "details": "likely based on a success or error state"
+    }
+  ],
+  "inputs": [
+    "CUSTOMER-CURSOR"
+  ],
+  "outputs": [
+    "PROCESSED-DATA"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "CUSTOMER-CURSOR",
+      "description": "moves the cursor to the next row or updates its state"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

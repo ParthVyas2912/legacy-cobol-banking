@@ -1,0 +1,4 @@
+# INTCALC
+This COBOL program calculates daily interest and updates account balances while recording transactions in a journal.
+Business domain: accounts-receivable
+Architectural role: batch

@@ -1,0 +1,21 @@
+{
+  "name": "3100-APPLY-UPDATES",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph updates certain variables and prepares for the subsequent account closure step.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values between variables",
+      "details": "updates account-related data"
+    }
+  ],
+  "inputs": [
+    "account-data",
+    "update-values"
+  ],
+  "outputs": [
+    "account-data"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

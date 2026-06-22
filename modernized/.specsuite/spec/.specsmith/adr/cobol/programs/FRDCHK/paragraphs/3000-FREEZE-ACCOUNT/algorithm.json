@@ -1,0 +1,35 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph freezes a user account by updating relevant flags and executing external procedures related to fraud detection.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values to variables or flags",
+      "details": "Sets relevant indicators to freeze the account"
+    },
+    {
+      "action": "execute an external block",
+      "details": "Calls procedures to process the freeze operation"
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "risk-score"
+  ],
+  "outputs": [
+    "updated-account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-table",
+      "description": "Updates the account record in the database"
+    },
+    {
+      "kind": "cics-send",
+      "target": "notification-system",
+      "description": "Notifies external systems of the account freeze"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

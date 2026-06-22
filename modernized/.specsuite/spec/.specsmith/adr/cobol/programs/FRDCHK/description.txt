@@ -1,0 +1,4 @@
+# FRDCHK
+This program analyzes transaction velocity and risk, and flags or freezes accounts based on potential fraud indicators.
+Business domain: fraud-detection
+Architectural role: online

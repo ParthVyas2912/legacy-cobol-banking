@@ -1,0 +1,15 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initiates the transaction processing by passing control to various logical operations such as validation, posting the transaction, and sending the next item.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform operation",
+      "details": "passes control to 1000-VALIDATE, 2000-POST-TXN, and 3000-SEND-NEXT"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

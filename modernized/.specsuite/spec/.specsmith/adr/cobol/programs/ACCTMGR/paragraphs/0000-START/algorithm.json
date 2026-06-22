@@ -1,0 +1,22 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "Initializes the process and evaluates conditions to determine further execution flow.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Analyzes inputs or flags to decide the next paragraph to execute."
+    },
+    {
+      "action": "execute business logic block",
+      "details": "Executes an inline block of COBOL statements for initialization."
+    }
+  ],
+  "inputs": [
+    "control-flags"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

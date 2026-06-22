@@ -1,0 +1,27 @@
+{
+  "name": "2000-OPEN-CURSOR",
+  "description": "This paragraph initializes a database cursor and subsequently transitions control to calculate a range.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "Open a database cursor",
+      "details": "Use EXEC SQL block to open the cursor."
+    },
+    {
+      "action": "Perform a subsequent paragraph",
+      "details": "Transition to 2050-COMPUTE-RANGE for further processing."
+    }
+  ],
+  "inputs": [
+    "SQL cursor"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "database",
+      "description": "Potential database state change due to cursor operations."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

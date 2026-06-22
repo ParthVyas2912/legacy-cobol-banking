@@ -1,0 +1,15 @@
+//STMTOUT JOB (ACCT,MIGR),'DATA EXTRACT',CLASS=A,MSGCLASS=X,
+//             NOTIFY=&SYSUID
+//*
+//* MainframeForge — Extract STMTOUT (sequential flat file) to staging
+//*
+//STEP010  EXEC PGM=IEBGENER
+//SYSPRINT DD  SYSOUT=*
+//SYSUT1   DD  DSN=MIGR.UNLOAD.STMTOUT,DISP=SHR
+//SYSUT2   DD  DSN=MIGR.UNLOAD.STMTOUT.UNLOAD,
+//             DISP=(NEW,CATLG,DELETE),
+//             UNIT=SYSDA,
+//             SPACE=(CYL,(50,25)),
+//             DCB=(RECFM=FB,LRECL=108,BLKSIZE=10800)
+//SYSIN    DD  DUMMY
+//

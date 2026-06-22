@@ -1,0 +1,11 @@
+Paragraph: 3000-SEND-NEXT
+Lines: 55-57
+Statements: 2
+
+1. MOVE 'TXN ACCEPTED' TO MAP-MSG-OUT
+2. EXEC CICS  SEND MAP('ATMNEXT')
+                   MAPSET('ATMMSET')
+                   FROM(WS-MAP-DATA)
+                   ERASE
+                   RESP(WS-RESPONSE-CODE)
+     END-EXEC

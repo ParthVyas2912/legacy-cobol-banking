@@ -1,0 +1,36 @@
+{
+  "name": "0000-MAIN",
+  "description": "The paragraph initializes key operations, displays a message for logging or diagnostic purposes, and transfers control to a fetch loop for further processing.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move data to a variable",
+      "details": "Sets up initial values needed for processing."
+    },
+    {
+      "action": "perform another paragraph",
+      "details": "Begins iterating through a fetch loop (1000-FETCH-LOOP)."
+    },
+    {
+      "action": "display a message",
+      "details": "Outputs information for logging or diagnostics."
+    },
+    {
+      "action": "return control to caller",
+      "details": "Indicates the end of the program execution for the current call."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "console",
+    "program control"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "console",
+      "description": "A message is displayed to the runtime environment."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

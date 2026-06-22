@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "This paragraph handles a fatal error condition by executing a specific procedural block.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute fatal error block",
+      "details": "Invokes an EXEC block for handling the fatal error scenario."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "system",
+      "description": "Terminates the program or session due to a critical error."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

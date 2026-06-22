@@ -1,0 +1,15 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph iterates through a loop, likely processing data for each iteration using a subprogram call.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "call subprogram",
+      "details": "Makes a call to an external routine or subprogram to perform a specific operation during each loop iteration."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

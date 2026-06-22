@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "Fetches customer records and initiates processing of the fetched data.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Assigns initial values or prepares necessary data for processing."
+    },
+    {
+      "action": "perform",
+      "details": "Triggers the execution of a loop to process customer data."
+    }
+  ],
+  "inputs": [
+    "customer-data"
+  ],
+  "outputs": [
+    "processed-customer-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": null,
+      "description": "No explicit side effects are identified in this paragraph."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

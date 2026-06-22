@@ -1,0 +1,4 @@
+# KYCSYNC
+Processes customer KYC data by fetching records and updating or inserting them into the KYC_AUDIT table.
+Business domain: customer-management
+Architectural role: batch

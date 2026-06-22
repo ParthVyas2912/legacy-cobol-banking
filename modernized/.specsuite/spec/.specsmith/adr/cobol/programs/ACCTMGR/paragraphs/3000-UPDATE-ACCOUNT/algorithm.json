@@ -1,0 +1,30 @@
+{
+  "name": "3000-UPDATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "Updates account information based on predefined business rules and prepares for subsequent updates.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "validate account conditions",
+      "details": "Decides updates based on IF conditions and account state"
+    },
+    {
+      "action": "perform external operation",
+      "details": "Executes an external process or API call via EXEC statement"
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-RECORD"
+  ],
+  "outputs": [
+    "ACCOUNT-RECORD"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "ACCOUNT-TABLE",
+      "description": "Updates the account data in the database"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,30 @@
+{
+  "programId": "TXNPOST",
+  "sourceFile": "programs/TXNPOST.cbl",
+  "dialect": "enterprise",
+  "usingParameters": [],
+  "callsTo": [
+    "ACCTMGR"
+  ],
+  "filesRead": [
+    "TXN-IN"
+  ],
+  "filesWritten": [
+    "AUDIT-OUT"
+  ],
+  "sqlTables": [
+    "TXN_LEDGER"
+  ],
+  "cicsVerbs": [],
+  "imsFunctionCodes": [],
+  "copybooksUsed": [
+    "TXNREC"
+  ],
+  "paragraphCount": 5,
+  "modernizationFindingCount": 3,
+  "controlFlow": {
+    "cyclomaticComplexity": 4,
+    "deadParagraphs": 0,
+    "goToClusters": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "TXNREC",
+  "usedBy": [
+    "ATMTXN",
+    "FRDCHK",
+    "INTCALC",
+    "TXNPOST"
+  ],
+  "isDclgen": false,
+  "description": "Defines the data structure for transaction records, including fields relevant to financial transactions.",
+  "businessMeaning": "Transaction record layout used in programs for ATM processing, fraud checking, interest calculation, and transaction posting."
+}

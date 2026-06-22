@@ -1,0 +1,5 @@
+{
+  "name": "CUSTDB",
+  "segmentCount": 3,
+  "description": "A HIDAM IMS database containing customer information with associated account links and address details, organized in a parent-child hierarchy."
+}

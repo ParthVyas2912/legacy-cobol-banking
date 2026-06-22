@@ -1,0 +1,19 @@
+{
+  "name": "9000-MARK-START",
+  "description": "This paragraph marks the start of a processing sequence in the batch infrastructure program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute a block of COBOL statements",
+      "details": "Executes an embedded block of COBOL syntax, potentially influencing subsequent operations."
+    }
+  ],
+  "inputs": [
+    "0000-DRIVE"
+  ],
+  "outputs": [
+    "9100-MARK-END"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

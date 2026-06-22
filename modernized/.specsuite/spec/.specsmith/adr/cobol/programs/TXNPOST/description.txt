@@ -1,0 +1,4 @@
+# TXNPOST
+Processes transactions from an input file, applies them to a ledger, and writes audit details to an output file.
+Business domain: accounts-receivable
+Architectural role: batch

@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "Processes a transaction by preparing and posting information for further handling.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values to multiple variables",
+      "details": "4 MOVE statements alter program state."
+    },
+    {
+      "action": "execute external routine or command",
+      "details": "1 EXEC block likely interacts with external system or service."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "processed-transaction"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "next program or terminal",
+      "description": "Triggers further processing by transferring control to the next paragraph."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

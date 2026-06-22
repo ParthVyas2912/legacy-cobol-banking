@@ -1,0 +1,19 @@
+{
+  "name": "9000-MAP-ERROR",
+  "description": "This paragraph moves an error-related value or status to a target location, preparing for subsequent error handling logic.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "move value",
+      "details": "Transfer an error-related value to another storage location."
+    }
+  ],
+  "inputs": [
+    "source-error-variable"
+  ],
+  "outputs": [
+    "target-error-variable"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

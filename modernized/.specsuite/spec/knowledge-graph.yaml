@@ -1,0 +1,26 @@
+specforge_knowledge_graph: 1.0.0
+project: source
+entities:
+  - id: project:root
+    name: source
+    type: project
+    description: A backend COBOL-based monolithic system for transactional and batch processing in finance, insurance, or
+      similar enterprise operations, emphasizing robustness and reliability.
+    sourceFiles: []
+    domain: Enterprise Backend System
+    properties:
+      type: backend
+      totalFiles: 20
+      sourceFiles: 19
+    tags:
+      - project
+    confidence: 1
+relationships: []
+metadata:
+  totalEntities: 1
+  totalRelationships: 0
+  entityTypeCounts:
+    project: 1
+  relationshipTypeCounts: {}
+  averageConfidence: 1
+  generatedAt: 2026-06-22T17:08:26.783Z

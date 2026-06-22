@@ -1,0 +1,34 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph reads account data, performs a conditional check, and prepares it for further processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "read account data",
+      "details": "Retrieve account data via an EXEC SQL statement"
+    },
+    {
+      "action": "check condition",
+      "details": "Validate retrieved account data with an IF statement"
+    },
+    {
+      "action": "move data",
+      "details": "Transfer data to another variable for subsequent use"
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-ID"
+  ],
+  "outputs": [
+    "ACCOUNT-DETAILS"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "temporary SQL cursor",
+      "description": "Temporary read of account rows from the database"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

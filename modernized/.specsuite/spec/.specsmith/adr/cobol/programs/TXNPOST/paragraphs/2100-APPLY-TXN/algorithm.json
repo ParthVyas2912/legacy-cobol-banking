@@ -1,0 +1,44 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "This paragraph applies a transaction to the accounts-receivable system, performing data manipulation and possibly triggering an external routine.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Moves values into variables or fields for processing."
+    },
+    {
+      "action": "perform addition",
+      "details": "Adds amounts related to the transaction."
+    },
+    {
+      "action": "trigger an external routine",
+      "details": "Calls a subprogram or routine for additional processing."
+    },
+    {
+      "action": "write output",
+      "details": "Outputs processed data to a file or log."
+    }
+  ],
+  "inputs": [
+    "transaction-details",
+    "accounts-receivable-file"
+  ],
+  "outputs": [
+    "accounts-receivable-updated",
+    "log-entries"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "accounts-receivable-file",
+      "description": "Updates the file with the applied transaction."
+    },
+    {
+      "kind": "file-write",
+      "target": "log-file",
+      "description": "Appends a log entry describing the transaction application."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

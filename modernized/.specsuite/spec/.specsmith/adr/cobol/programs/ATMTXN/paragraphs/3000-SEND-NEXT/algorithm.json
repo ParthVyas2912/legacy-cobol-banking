@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph sends a message or data forward, possibly involving movement of data and invoking an external routine or API.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Transfers specific data to prepare for an external interaction."
+    },
+    {
+      "action": "execute external block",
+      "details": "Invokes an external routine or API for further processing or transmission."
+    }
+  ],
+  "inputs": [
+    "data-to-send"
+  ],
+  "outputs": [
+    "response-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "external system or screen",
+      "description": "Sends data or a message to an external system or user interface."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}
