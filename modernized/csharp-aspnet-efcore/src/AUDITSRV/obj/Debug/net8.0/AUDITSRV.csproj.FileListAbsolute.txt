@@ -1,0 +1,13 @@
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/AUDITSRV.csproj.AssemblyReference.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/AUDITSRV.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/AUDITSRV.AssemblyInfoInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/AUDITSRV.AssemblyInfo.cs
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/AUDITSRV.csproj.CoreCompileInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/AUDITSRV.sourcelink.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/bin/Debug/net8.0/Auditsrv.deps.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/bin/Debug/net8.0/Auditsrv.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/bin/Debug/net8.0/Auditsrv.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/Auditsrv.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/refint/Auditsrv.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/Auditsrv.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/AUDITSRV/obj/Debug/net8.0/ref/Auditsrv.dll

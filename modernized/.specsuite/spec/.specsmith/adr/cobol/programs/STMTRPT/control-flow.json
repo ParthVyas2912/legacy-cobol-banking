@@ -1,0 +1,121 @@
+{
+  "nodes": [
+    {
+      "id": "__entry__",
+      "isEntry": true,
+      "statementCount": 0
+    },
+    {
+      "id": "0000-MAIN",
+      "isEntry": false,
+      "statementCount": 4
+    },
+    {
+      "id": "1000-FETCH-CUSTOMERS",
+      "isEntry": false,
+      "statementCount": 2
+    },
+    {
+      "id": "1100-IMS-GN-LOOP",
+      "isEntry": false,
+      "statementCount": 4
+    },
+    {
+      "id": "2000-OPEN-CURSOR",
+      "isEntry": false,
+      "statementCount": 3
+    },
+    {
+      "id": "2050-COMPUTE-RANGE",
+      "isEntry": false,
+      "statementCount": 3
+    },
+    {
+      "id": "3000-FETCH-LOOP",
+      "isEntry": false,
+      "statementCount": 3
+    },
+    {
+      "id": "4000-CLOSE-CURSOR",
+      "isEntry": false,
+      "statementCount": 1
+    }
+  ],
+  "edges": [
+    {
+      "from": "__entry__",
+      "to": "0000-MAIN",
+      "kind": "entry"
+    },
+    {
+      "from": "0000-MAIN",
+      "to": "1000-FETCH-CUSTOMERS",
+      "kind": "perform",
+      "location": {
+        "line": 60,
+        "column": 5
+      }
+    },
+    {
+      "from": "1000-FETCH-CUSTOMERS",
+      "to": "1100-IMS-GN-LOOP",
+      "kind": "perform-until",
+      "location": {
+        "line": 66,
+        "column": 5
+      }
+    },
+    {
+      "from": "1000-FETCH-CUSTOMERS",
+      "to": "1100-IMS-GN-LOOP",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "1100-IMS-GN-LOOP",
+      "to": "4000-CLOSE-CURSOR",
+      "kind": "perform",
+      "location": {
+        "line": 76,
+        "column": 9
+      }
+    },
+    {
+      "from": "1100-IMS-GN-LOOP",
+      "to": "2000-OPEN-CURSOR",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "2000-OPEN-CURSOR",
+      "to": "2050-COMPUTE-RANGE",
+      "kind": "perform",
+      "location": {
+        "line": 81,
+        "column": 5
+      }
+    },
+    {
+      "from": "2000-OPEN-CURSOR",
+      "to": "2050-COMPUTE-RANGE",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "2050-COMPUTE-RANGE",
+      "to": "3000-FETCH-LOOP",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "3000-FETCH-LOOP",
+      "to": "4000-CLOSE-CURSOR",
+      "kind": "fallthrough"
+    }
+  ],
+  "entries": [
+    "__entry__"
+  ],
+  "dead": [],
+  "loopHeaders": [
+    "1100-IMS-GN-LOOP"
+  ],
+  "goToClusters": [],
+  "cyclomaticComplexity": 4
+}

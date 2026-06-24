@@ -1,0 +1,11 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "[AI_ANALYSIS_FAILED] paragraph 2000-READ-ACCOUNT (3 statements)",
+  "purpose": "unknown",
+  "algorithm": [],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.1
+}

@@ -1,0 +1,28 @@
+{
+  "programId": "FRDCHK",
+  "sourceFile": "programs/FRDCHK.cbl",
+  "dialect": "enterprise",
+  "usingParameters": [],
+  "callsTo": [],
+  "filesRead": [],
+  "filesWritten": [],
+  "sqlTables": [
+    "TXN_LEDGER",
+    "FRAUD_FLAGS"
+  ],
+  "cicsVerbs": [
+    "RETURN",
+    "LINK"
+  ],
+  "imsFunctionCodes": [],
+  "copybooksUsed": [
+    "TXNREC"
+  ],
+  "paragraphCount": 4,
+  "modernizationFindingCount": 6,
+  "controlFlow": {
+    "cyclomaticComplexity": 4,
+    "deadParagraphs": 0,
+    "goToClusters": 0
+  }
+}

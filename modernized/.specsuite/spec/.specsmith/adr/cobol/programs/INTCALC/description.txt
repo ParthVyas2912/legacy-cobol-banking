@@ -1,0 +1,4 @@
+# INTCALC
+[AI_ANALYSIS_FAILED] COBOL program INTCALC (20 statements, 3 paragraphs)
+Business domain: unknown
+Architectural role: unknown

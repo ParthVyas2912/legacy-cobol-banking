@@ -1,0 +1,10 @@
+{
+  "name": "CUSTREC",
+  "usedBy": [
+    "ACCTMGR",
+    "KYCSYNC",
+    "STMTRPT"
+  ],
+  "isDclgen": false,
+  "description": "[AI_ANALYSIS_FAILED] CUSTREC copybook (3 programs)"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "[AI_ANALYSIS_FAILED] paragraph 1000-CREATE-ACCOUNT (5 statements)",
+  "purpose": "unknown",
+  "algorithm": [],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.1
+}

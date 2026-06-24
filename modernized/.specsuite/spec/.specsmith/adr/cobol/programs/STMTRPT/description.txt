@@ -1,0 +1,4 @@
+# STMTRPT
+[AI_ANALYSIS_FAILED] COBOL program STMTRPT (20 statements, 7 paragraphs)
+Business domain: unknown
+Architectural role: unknown

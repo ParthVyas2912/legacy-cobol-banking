@@ -1,0 +1,13 @@
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/BCHEOD.csproj.AssemblyReference.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/BCHEOD.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/BCHEOD.AssemblyInfoInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/BCHEOD.AssemblyInfo.cs
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/BCHEOD.csproj.CoreCompileInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/BCHEOD.sourcelink.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/bin/Debug/net8.0/Bcheod.deps.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/bin/Debug/net8.0/Bcheod.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/bin/Debug/net8.0/Bcheod.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/Bcheod.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/refint/Bcheod.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/Bcheod.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/BCHEOD/obj/Debug/net8.0/ref/Bcheod.dll

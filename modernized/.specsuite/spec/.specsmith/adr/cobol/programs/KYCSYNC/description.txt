@@ -1,0 +1,4 @@
+# KYCSYNC
+[AI_ANALYSIS_FAILED] COBOL program KYCSYNC (7 statements, 3 paragraphs)
+Business domain: unknown
+Architectural role: unknown

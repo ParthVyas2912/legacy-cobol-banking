@@ -1,0 +1,4 @@
+# TXNPOST
+[AI_ANALYSIS_FAILED] COBOL program TXNPOST (18 statements, 5 paragraphs)
+Business domain: unknown
+Architectural role: unknown

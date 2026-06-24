@@ -1,0 +1,11 @@
+{
+  "name": "TXNREC",
+  "usedBy": [
+    "ATMTXN",
+    "FRDCHK",
+    "INTCALC",
+    "TXNPOST"
+  ],
+  "isDclgen": false,
+  "description": "[AI_ANALYSIS_FAILED] TXNREC copybook (4 programs)"
+}

@@ -1,0 +1,13 @@
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.csproj.AssemblyReference.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.AssemblyInfoInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.AssemblyInfo.cs
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.csproj.CoreCompileInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.sourcelink.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/bin/Debug/net8.0/Atmtxn.deps.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/bin/Debug/net8.0/Atmtxn.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/bin/Debug/net8.0/Atmtxn.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/Atmtxn.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/refint/Atmtxn.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/Atmtxn.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ref/Atmtxn.dll

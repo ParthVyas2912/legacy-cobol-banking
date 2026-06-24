@@ -1,0 +1,82 @@
+{
+  "name": "KYCSYNCJ",
+  "sourceFile": "jcl/KYCSYNCJ.jcl",
+  "stepCount": 1,
+  "description": "[AI_ANALYSIS_FAILED] JCL job KYCSYNCJ (1 steps)",
+  "steps": [
+    {
+      "name": "STEP010",
+      "kind": "pgm",
+      "program": "DFSRRC00",
+      "parm": "DLI,KYCSYNC,KYCSYNCP,,,,,,,,,,,,N,,,,",
+      "options": {
+        "PGM": "DFSRRC00",
+        "PARM": "DLI,KYCSYNC,KYCSYNCP,,,,,,,,,,,,N,,,,"
+      },
+      "conditions": [],
+      "symbolicOverrides": {},
+      "dds": [
+        {
+          "ddname": "STEPLIB",
+          "concatenated": [
+            "IMS.SDFSRESL"
+          ],
+          "sourceLine": 9,
+          "dsn": "BANK.PROD.LOADLIB",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "DFSRESLB",
+          "concatenated": [],
+          "sourceLine": 11,
+          "dsn": "IMS.SDFSRESL",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "IMS",
+          "concatenated": [
+            "IMS.DBDLIB"
+          ],
+          "sourceLine": 12,
+          "dsn": "IMS.PSBLIB",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "CUSTDB",
+          "concatenated": [],
+          "sourceLine": 14,
+          "dsn": "IMS.CUSTDB",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "SYSPRINT",
+          "concatenated": [],
+          "sourceLine": 15,
+          "sysout": "*"
+        },
+        {
+          "ddname": "SYSUDUMP",
+          "concatenated": [],
+          "sourceLine": 16,
+          "sysout": "*"
+        }
+      ],
+      "description": "[AI_ANALYSIS_FAILED] step STEP010 in KYCSYNCJ",
+      "enrichmentConfidence": 0.1
+    }
+  ],
+  "parameters": {
+    "_POS1": "KYC SYNC",
+    "CLASS": "A",
+    "MSGCLASS": "X",
+    "NOTIFY": "&SYSUID"
+  }
+}

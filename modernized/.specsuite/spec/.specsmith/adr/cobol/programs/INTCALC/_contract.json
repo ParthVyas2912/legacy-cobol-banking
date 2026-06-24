@@ -1,0 +1,27 @@
+{
+  "programId": "INTCALC",
+  "sourceFile": "programs/INTCALC.cbl",
+  "dialect": "enterprise",
+  "usingParameters": [],
+  "callsTo": [],
+  "filesRead": [
+    "ACCT-FILE"
+  ],
+  "filesWritten": [
+    "INT-JOURNAL"
+  ],
+  "sqlTables": [],
+  "cicsVerbs": [],
+  "imsFunctionCodes": [],
+  "copybooksUsed": [
+    "ACCTREC",
+    "TXNREC"
+  ],
+  "paragraphCount": 3,
+  "modernizationFindingCount": 7,
+  "controlFlow": {
+    "cyclomaticComplexity": 2,
+    "deadParagraphs": 0,
+    "goToClusters": 0
+  }
+}

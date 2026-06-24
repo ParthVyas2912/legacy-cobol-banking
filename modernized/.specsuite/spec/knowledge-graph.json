@@ -1,0 +1,33 @@
+{
+  "specforge_knowledge_graph": "1.0.0",
+  "project": "source",
+  "entities": [
+    {
+      "id": "project:root",
+      "name": "source",
+      "type": "project",
+      "description": "A backend application written in cobol, cobol-copybook, ims-control, jcl, bms.",
+      "sourceFiles": [],
+      "properties": {
+        "type": "backend",
+        "totalFiles": 20,
+        "sourceFiles": 19
+      },
+      "tags": [
+        "project"
+      ],
+      "confidence": 1
+    }
+  ],
+  "relationships": [],
+  "metadata": {
+    "totalEntities": 1,
+    "totalRelationships": 0,
+    "entityTypeCounts": {
+      "project": 1
+    },
+    "relationshipTypeCounts": {},
+    "averageConfidence": 1,
+    "generatedAt": "2026-06-24T20:23:56.536Z"
+  }
+}

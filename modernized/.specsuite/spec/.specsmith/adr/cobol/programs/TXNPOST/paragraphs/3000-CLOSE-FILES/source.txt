@@ -1,0 +1,5 @@
+Paragraph: 3000-CLOSE-FILES
+Lines: 76-77
+Statements: 1
+
+1. CLOSE TXN-IN AUDIT-OUT

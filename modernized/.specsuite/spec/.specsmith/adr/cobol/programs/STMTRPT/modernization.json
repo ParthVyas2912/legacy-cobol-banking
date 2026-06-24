@@ -1,0 +1,204 @@
+[
+  {
+    "id": "stmtrpt/comp-3-decimal/_/14",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "STMTRPT",
+    "location": {
+      "line": 14
+    },
+    "title": "COMP-3 field CUST-RISK-SCORE → DECIMAL(3,0)",
+    "description": "Packed-decimal COMP-3 field CUST-RISK-SCORE PIC 9(03). Modern equivalent: SQL DECIMAL(3,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 CUST-RISK-SCORE PIC 9(03) COMP-3.",
+    "suggestedReplacement": "// SQL:   cust-risk-score DECIMAL(3,0)\n// Java:  BigDecimal custRiskScore;\n// C#:    decimal CustRiskScore;\n// Python: custRiskScore: Decimal",
+    "detail": {
+      "precision": 3,
+      "scale": 0,
+      "sqlType": "DECIMAL(3,0)",
+      "picture": "9(03)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "stmtrpt/comp-3-decimal/_/19",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "STMTRPT",
+    "location": {
+      "line": 19
+    },
+    "title": "COMP-3 field CUST-ACCT-COUNT → DECIMAL(3,0)",
+    "description": "Packed-decimal COMP-3 field CUST-ACCT-COUNT PIC 9(03). Modern equivalent: SQL DECIMAL(3,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 CUST-ACCT-COUNT PIC 9(03) COMP-3.",
+    "suggestedReplacement": "// SQL:   cust-acct-count DECIMAL(3,0)\n// Java:  BigDecimal custAcctCount;\n// C#:    decimal CustAcctCount;\n// Python: custAcctCount: Decimal",
+    "detail": {
+      "precision": 3,
+      "scale": 0,
+      "sqlType": "DECIMAL(3,0)",
+      "picture": "9(03)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "stmtrpt/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "STMTRPT",
+    "title": "IMS segment CUST-STATUS → relational table",
+    "description": "Program accesses IMS segment CUST-STATUS via PCB/SSA WS-CUST-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-CUST-PCB-MASK <io-area> 'CUST-STATUS'.",
+    "suggestedReplacement": "-- CREATE TABLE cust-status (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-CUST-PCB-MASK",
+      "segment": "CUST-STATUS"
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "stmtrpt/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "STMTRPT",
+    "title": "IMS segment    → relational table",
+    "description": "Program accesses IMS segment    via PCB/SSA WS-CUST-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-CUST-PCB-MASK <io-area> '  '.",
+    "suggestedReplacement": "-- CREATE TABLE    (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-CUST-PCB-MASK",
+      "segment": "  "
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "stmtrpt/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "STMTRPT",
+    "title": "IMS segment CUST-ID → relational table",
+    "description": "Program accesses IMS segment CUST-ID via PCB/SSA WS-CUST-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-CUST-PCB-MASK <io-area> 'CUST-ID'.",
+    "suggestedReplacement": "-- CREATE TABLE cust-id (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-CUST-PCB-MASK",
+      "segment": "CUST-ID"
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "stmtrpt/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "STMTRPT",
+    "title": "IMS segment CUST-SSA-VAL → relational table",
+    "description": "Program accesses IMS segment CUST-SSA-VAL via PCB/SSA WS-CUST-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-CUST-PCB-MASK <io-area> 'CUST-SSA-VAL'.",
+    "suggestedReplacement": "-- CREATE TABLE cust-ssa-val (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-CUST-PCB-MASK",
+      "segment": "CUST-SSA-VAL"
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "stmtrpt/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "STMTRPT",
+    "title": "IMS segment 2000-OPEN-CURSOR → relational table",
+    "description": "Program accesses IMS segment 2000-OPEN-CURSOR via PCB/SSA WS-CUST-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-CUST-PCB-MASK <io-area> '2000-OPEN-CURSOR'.",
+    "suggestedReplacement": "-- CREATE TABLE 2000-open-cursor (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-CUST-PCB-MASK",
+      "segment": "2000-OPEN-CURSOR"
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "stmtrpt/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "STMTRPT",
+    "title": "IMS segment 3000-FETCH-LOOP → relational table",
+    "description": "Program accesses IMS segment 3000-FETCH-LOOP via PCB/SSA WS-CUST-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-CUST-PCB-MASK <io-area> '3000-FETCH-LOOP'.",
+    "suggestedReplacement": "-- CREATE TABLE 3000-fetch-loop (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-CUST-PCB-MASK",
+      "segment": "3000-FETCH-LOOP"
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "stmtrpt/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "STMTRPT",
+    "title": "IMS segment SQLCODE → relational table",
+    "description": "Program accesses IMS segment SQLCODE via PCB/SSA WS-CUST-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-CUST-PCB-MASK <io-area> 'SQLCODE'.",
+    "suggestedReplacement": "-- CREATE TABLE sqlcode (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-CUST-PCB-MASK",
+      "segment": "SQLCODE"
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "stmtrpt/missing-sqlca-check/_/103",
+    "category": "io",
+    "kind": "missing-sqlca-check",
+    "severity": "medium",
+    "programId": "STMTRPT",
+    "location": {
+      "line": 103,
+      "column": 5
+    },
+    "title": "EXEC SQL without SQLCODE / SQLSTATE check",
+    "description": "Embedded SQL with no SQLCODE / SQLSTATE inspection after the call and no WHENEVER directive in effect. Unhandled SQL errors are a common source of silent data corruption in COBOL.",
+    "currentCode": "EXEC SQL ... END-EXEC.",
+    "suggestedReplacement": "EXEC SQL ... END-EXEC.\n    IF SQLCODE NOT = ZERO\n        PERFORM HANDLE-SQL-ERROR\n    END-IF.",
+    "tags": [
+      "sql",
+      "error-handling"
+    ]
+  }
+]

@@ -1,0 +1,33 @@
+{
+  "programId": "ACCTMGR",
+  "sourceFile": "programs/ACCTMGR.cbl",
+  "dialect": "enterprise",
+  "usingParameters": [],
+  "callsTo": [],
+  "filesRead": [
+    "ACCT-FILE"
+  ],
+  "filesWritten": [],
+  "sqlTables": [
+    "ACCT_AUDIT",
+    "CUSTOMER"
+  ],
+  "cicsVerbs": [
+    "RETURN",
+    "WRITE",
+    "READ",
+    "REWRITE"
+  ],
+  "imsFunctionCodes": [],
+  "copybooksUsed": [
+    "ACCTREC",
+    "CUSTREC"
+  ],
+  "paragraphCount": 6,
+  "modernizationFindingCount": 8,
+  "controlFlow": {
+    "cyclomaticComplexity": 2,
+    "deadParagraphs": 0,
+    "goToClusters": 0
+  }
+}

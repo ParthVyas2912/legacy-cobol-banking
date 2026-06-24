@@ -1,0 +1,32 @@
+{
+  "programId": "KYCSYNC",
+  "sourceFile": "programs/KYCSYNC.cbl",
+  "inputs": [],
+  "expectedOutputs": [
+    {
+      "kind": "sql-row",
+      "name": "KYC_AUDIT",
+      "expectedValue": {
+        "__placeholder": "<expected row(s) in KYC_AUDIT>"
+      },
+      "resource": "KYC_AUDIT"
+    }
+  ],
+  "expectedSideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "KYC_AUDIT",
+      "description": "INSERT / UPDATE / DELETE on KYC_AUDIT."
+    }
+  ],
+  "setupSteps": [],
+  "teardownSteps": [],
+  "cases": [
+    {
+      "id": "kycsync-happy-path",
+      "title": "KYCSYNC: happy path"
+    }
+  ],
+  "confidence": 1,
+  "notes": []
+}

@@ -1,0 +1,8 @@
+{
+  "name": "ATMMAP",
+  "usedBy": [
+    "ATMTXN"
+  ],
+  "isDclgen": false,
+  "description": "[AI_ANALYSIS_FAILED] ATMMAP copybook (1 programs)"
+}

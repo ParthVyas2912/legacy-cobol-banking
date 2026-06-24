@@ -1,0 +1,9 @@
+{
+  "name": "ACCTREC",
+  "usedBy": [
+    "ACCTMGR",
+    "INTCALC"
+  ],
+  "isDclgen": false,
+  "description": "[AI_ANALYSIS_FAILED] ACCTREC copybook (2 programs)"
+}

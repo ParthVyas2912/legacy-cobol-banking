@@ -1,0 +1,11 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "[AI_ANALYSIS_FAILED] paragraph 4000-CLOSE-ACCOUNT (3 statements)",
+  "purpose": "unknown",
+  "algorithm": [],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.1
+}

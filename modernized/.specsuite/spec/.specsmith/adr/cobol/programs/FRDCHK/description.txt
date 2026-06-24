@@ -1,0 +1,4 @@
+# FRDCHK
+[AI_ANALYSIS_FAILED] COBOL program FRDCHK (17 statements, 4 paragraphs)
+Business domain: unknown
+Architectural role: unknown

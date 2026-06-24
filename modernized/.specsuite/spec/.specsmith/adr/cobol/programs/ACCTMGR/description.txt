@@ -1,0 +1,4 @@
+# ACCTMGR
+[AI_ANALYSIS_FAILED] COBOL program ACCTMGR (42 statements, 6 paragraphs)
+Business domain: unknown
+Architectural role: unknown
