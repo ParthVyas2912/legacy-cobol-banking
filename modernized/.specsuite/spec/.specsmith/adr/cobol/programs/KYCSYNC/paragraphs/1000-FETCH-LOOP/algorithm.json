@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph fetches data iteratively in a loop and passes it for further processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch data",
+      "details": "Retrieve data in a loop, likely using a database cursor or equivalent mechanism."
+    },
+    {
+      "action": "invoke processing logic",
+      "details": "Call a subroutine to handle the fetched data."
+    }
+  ],
+  "inputs": [
+    "fetched-record"
+  ],
+  "outputs": [
+    "processed-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "database",
+      "description": "Updates or modifies the database through subsequent processing steps."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

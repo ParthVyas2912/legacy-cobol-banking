@@ -1,0 +1,4 @@
+# FRDCHK
+This program calculates transaction velocity, scores fraud risk, and potentially freezes an account based on risk thresholds.
+Business domain: fraud-management
+Architectural role: online

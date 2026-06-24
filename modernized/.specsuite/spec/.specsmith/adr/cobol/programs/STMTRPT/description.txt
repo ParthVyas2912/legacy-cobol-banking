@@ -1,0 +1,4 @@
+# STMTRPT
+The program generates a statement report by fetching customer transactions and computing summary ranges.
+Business domain: reporting
+Architectural role: reporting

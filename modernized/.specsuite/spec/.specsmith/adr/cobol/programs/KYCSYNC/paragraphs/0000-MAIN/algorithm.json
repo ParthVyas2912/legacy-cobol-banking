@@ -1,0 +1,25 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes the program, displays a startup message, and transfers control to the primary processing loop.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move initial values to variables",
+      "details": "Prepares variables for program execution"
+    },
+    {
+      "action": "display startup message",
+      "details": "Outputs a message to indicate program start"
+    },
+    {
+      "action": "perform a processing loop",
+      "details": "Transfers control to the main processing loop"
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "startup-message"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

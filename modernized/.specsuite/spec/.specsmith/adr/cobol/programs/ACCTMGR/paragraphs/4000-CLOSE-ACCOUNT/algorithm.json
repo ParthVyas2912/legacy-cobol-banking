@@ -1,0 +1,34 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph finalizes the process of closing a customer account by performing cleanup and/or applying updates.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Assigns a value to a variable, likely to finalize state or perform cleanup."
+    },
+    {
+      "action": "exec-block",
+      "details": "Executes a command or procedure, possibly interacting with CICS or a database."
+    },
+    {
+      "action": "if",
+      "details": "Performs conditional logic, possibly to check the success of prior steps or set a final status."
+    }
+  ],
+  "inputs": [
+    "account-status"
+  ],
+  "outputs": [
+    "updated-account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "application state",
+      "description": "Potentially impacts the overall state or context of the customer account, such as marking it as closed."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

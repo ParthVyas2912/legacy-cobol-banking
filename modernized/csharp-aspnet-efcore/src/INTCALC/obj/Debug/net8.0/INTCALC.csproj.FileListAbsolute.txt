@@ -1,0 +1,13 @@
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/INTCALC.csproj.AssemblyReference.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/INTCALC.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/INTCALC.AssemblyInfoInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/INTCALC.AssemblyInfo.cs
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/INTCALC.csproj.CoreCompileInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/INTCALC.sourcelink.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/bin/Debug/net8.0/Intcalc.deps.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/bin/Debug/net8.0/Intcalc.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/bin/Debug/net8.0/Intcalc.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/Intcalc.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/refint/Intcalc.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/Intcalc.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/INTCALC/obj/Debug/net8.0/ref/Intcalc.dll

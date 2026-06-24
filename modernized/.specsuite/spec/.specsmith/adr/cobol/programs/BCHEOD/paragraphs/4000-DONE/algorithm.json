@@ -1,0 +1,19 @@
+{
+  "name": "4000-DONE",
+  "description": "The paragraph performs a control transfer to another paragraph and ends the program execution.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform another paragraph",
+      "details": "Calls 9100-MARK-END for further processing."
+    },
+    {
+      "action": "end program execution",
+      "details": "Executes GOBACK to terminate processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

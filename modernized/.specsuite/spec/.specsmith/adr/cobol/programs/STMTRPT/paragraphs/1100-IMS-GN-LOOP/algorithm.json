@@ -1,0 +1,25 @@
+{
+  "name": "1100-IMS-GN-LOOP",
+  "description": "1100-IMS-GN-LOOP processes a loop operation, potentially interacting with an external system and delegating control based on some condition.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "perform a specific operation",
+      "details": "executes logic within a loop, calling other paragraphs based on conditions"
+    }
+  ],
+  "inputs": [
+    "IMS-data"
+  ],
+  "outputs": [
+    "Transformed-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external system",
+      "description": "Potential interaction with an external system"
+    }
+  ],
+  "enrichmentConfidence": 0.8500000000000001
+}

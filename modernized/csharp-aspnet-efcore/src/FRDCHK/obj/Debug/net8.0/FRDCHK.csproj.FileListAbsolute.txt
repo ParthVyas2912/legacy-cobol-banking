@@ -1,0 +1,6 @@
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/FRDCHK/obj/Debug/net8.0/FRDCHK.csproj.AssemblyReference.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/FRDCHK/obj/Debug/net8.0/FRDCHK.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/FRDCHK/obj/Debug/net8.0/FRDCHK.AssemblyInfoInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/FRDCHK/obj/Debug/net8.0/FRDCHK.AssemblyInfo.cs
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/FRDCHK/obj/Debug/net8.0/FRDCHK.csproj.CoreCompileInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/FRDCHK/obj/Debug/net8.0/FRDCHK.sourcelink.json

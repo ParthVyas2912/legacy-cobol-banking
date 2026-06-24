@@ -1,0 +1,21 @@
+{
+  "name": "3000-CLOSE-FILES",
+  "description": "This paragraph closes all open files to ensure proper cleanup after processing.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close all files",
+      "details": "Ensures resources are properly released."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "all open files",
+      "description": "Closes files which may update file metadata or unlock resources."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

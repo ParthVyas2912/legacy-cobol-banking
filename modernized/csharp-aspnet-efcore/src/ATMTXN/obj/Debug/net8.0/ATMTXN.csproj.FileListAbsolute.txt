@@ -1,0 +1,6 @@
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.csproj.AssemblyReference.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.AssemblyInfoInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.AssemblyInfo.cs
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.csproj.CoreCompileInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ATMTXN/obj/Debug/net8.0/ATMTXN.sourcelink.json

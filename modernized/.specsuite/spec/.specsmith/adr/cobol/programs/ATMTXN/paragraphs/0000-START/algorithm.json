@@ -1,0 +1,27 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initiates the control flow of the program by performing validation, posting transactions, and preparing for the next step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute a block of code",
+      "details": "Executes initialization or setup logic."
+    },
+    {
+      "action": "perform validation",
+      "details": "Calls the 1000-VALIDATE paragraph."
+    },
+    {
+      "action": "perform transaction posting",
+      "details": "Calls the 2000-POST-TXN paragraph."
+    },
+    {
+      "action": "send the next step",
+      "details": "Calls the 3000-SEND-NEXT paragraph."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

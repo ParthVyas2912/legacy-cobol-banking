@@ -1,0 +1,13 @@
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/ACCTMGR.csproj.AssemblyReference.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/ACCTMGR.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/ACCTMGR.AssemblyInfoInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/ACCTMGR.AssemblyInfo.cs
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/ACCTMGR.csproj.CoreCompileInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/ACCTMGR.sourcelink.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/bin/Debug/net8.0/Acctmgr.deps.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/bin/Debug/net8.0/Acctmgr.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/bin/Debug/net8.0/Acctmgr.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/Acctmgr.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/refint/Acctmgr.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/Acctmgr.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/ACCTMGR/obj/Debug/net8.0/ref/Acctmgr.dll

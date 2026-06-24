@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "Marks the end of a process or sequence, typically indicating finalization.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute-block",
+      "details": "Executes a block of code to mark the end state or perform final actions."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

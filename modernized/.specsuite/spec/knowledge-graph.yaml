@@ -1,0 +1,29 @@
+specforge_knowledge_graph: 1.0.0
+project: source
+entities:
+  - id: project:root
+    name: source
+    type: project
+    description: This application, named 'source,' is a backend system written in COBOL, likely used for data-centric batch
+      processing or transactional workloads. It is presumed monolithic, potentially processing large-scale legacy data
+      for specific business needs such as financial or administrative operations. Rebuilding efforts should account for
+      inferred workflows, integration points, and COBOL's strengths, with a focus on preserving any stateful or
+      transactional capabilities during modernization.
+    sourceFiles: []
+    domain: Data Processing
+    properties:
+      type: backend
+      totalFiles: 20
+      sourceFiles: 19
+    tags:
+      - project
+    confidence: 1
+relationships: []
+metadata:
+  totalEntities: 1
+  totalRelationships: 0
+  entityTypeCounts:
+    project: 1
+  relationshipTypeCounts: {}
+  averageConfidence: 1
+  generatedAt: 2026-06-24T02:49:47.367Z

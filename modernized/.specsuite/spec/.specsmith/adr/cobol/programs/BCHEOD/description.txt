@@ -1,0 +1,4 @@
+# BCHEOD
+Processes end-of-day (EOD) operations, updating necessary records and statuses in the EOD_RUNS table.
+Business domain: infrastructure
+Architectural role: batch

@@ -1,0 +1,4 @@
+# ATMTXN
+This COBOL program processes ATM transactions and handles communication with the user screen and backend systems for validations and error handling.
+Business domain: infrastructure
+Architectural role: online

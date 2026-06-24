@@ -1,0 +1,4 @@
+# AUDITSRV
+This program writes audit log entries to an indexed file and handles CICS screen I/O operations.
+Business domain: infrastructure
+Architectural role: online

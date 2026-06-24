@@ -1,0 +1,25 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph executes a series of operations including a program call and a GO TO for control transfer.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "transfer control",
+      "details": "Uses GO TO to transfer control to another paragraph."
+    },
+    {
+      "action": "invoke external functionality",
+      "details": "Calls an external program or procedure."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external call",
+      "description": "The CALL statement may invoke an external program or process with its own side effects."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "This paragraph handles fatal error conditions by executing a specific block of instructions.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute fatal error handling block",
+      "details": "Executes a single EXEC block for handling critical failures."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "program",
+      "description": "Abends the program due to a fatal error condition."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

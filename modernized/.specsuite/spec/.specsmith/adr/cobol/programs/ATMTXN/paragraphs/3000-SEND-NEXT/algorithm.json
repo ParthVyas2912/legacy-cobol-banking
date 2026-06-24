@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph prepares and sends a message, potentially for error handling or UI communication.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data to a variable or field",
+      "details": "Transfers data to prepare for sending a message."
+    },
+    {
+      "action": "execute a block of external or system-specific code",
+      "details": "Sends a message using an external system or framework (e.g., CICS call)."
+    }
+  ],
+  "inputs": [
+    "working-storage fields"
+  ],
+  "outputs": [
+    "screen or external system"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "map or system screen",
+      "description": "Communicates the message to a connected user or system module."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

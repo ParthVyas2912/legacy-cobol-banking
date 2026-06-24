@@ -1,0 +1,12 @@
+{
+  "name": "TXNREC",
+  "usedBy": [
+    "ATMTXN",
+    "FRDCHK",
+    "INTCALC",
+    "TXNPOST"
+  ],
+  "isDclgen": false,
+  "description": "This copybook defines the structure and layout of a transaction record, detailing its fields and data types.",
+  "businessMeaning": "Transaction record structure containing details used for processing and posting financial transactions."
+}

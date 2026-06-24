@@ -1,0 +1,23 @@
+{
+  "name": "3000-FETCH-LOOP",
+  "description": "Processes a fetch operation and handles conditional logic based on returned results.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch rows from SQL cursor",
+      "details": "likely iterates through database results"
+    },
+    {
+      "action": "conditional check",
+      "details": "validates or processes fetched data"
+    }
+  ],
+  "inputs": [
+    "SQL-CURSOR"
+  ],
+  "outputs": [
+    "fetched-data"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

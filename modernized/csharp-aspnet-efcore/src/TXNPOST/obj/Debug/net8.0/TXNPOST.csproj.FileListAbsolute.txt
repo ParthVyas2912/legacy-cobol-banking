@@ -1,0 +1,13 @@
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/TXNPOST.csproj.AssemblyReference.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/TXNPOST.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/TXNPOST.AssemblyInfoInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/TXNPOST.AssemblyInfo.cs
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/TXNPOST.csproj.CoreCompileInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/TXNPOST.sourcelink.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/bin/Debug/net8.0/Txnpost.deps.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/bin/Debug/net8.0/Txnpost.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/bin/Debug/net8.0/Txnpost.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/Txnpost.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/refint/Txnpost.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/Txnpost.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/TXNPOST/obj/Debug/net8.0/ref/Txnpost.dll

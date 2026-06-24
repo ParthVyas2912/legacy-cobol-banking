@@ -1,0 +1,8 @@
+{
+  "ddname": "ACCTFILE",
+  "usedBy": [
+    "ACCTMGR",
+    "INTCALC"
+  ],
+  "organization": "indexed"
+}

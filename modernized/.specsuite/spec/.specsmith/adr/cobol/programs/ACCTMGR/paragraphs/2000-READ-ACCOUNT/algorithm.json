@@ -1,0 +1,28 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph reads account data, checks a condition, and moves or processes the result.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "read account data",
+      "details": "Retrieve information about a customer account."
+    },
+    {
+      "action": "validate condition",
+      "details": "Check for a specific condition based on business logic."
+    },
+    {
+      "action": "move data",
+      "details": "Transfer retrieved or computed data to a target field."
+    }
+  ],
+  "inputs": [
+    "account-record"
+  ],
+  "outputs": [
+    "account-details"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,20 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "The paragraph initializes processing by evaluating a condition and executing a specific block of code.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate a condition",
+      "details": "Directs program flow based on the result of the EVALUATE statement."
+    },
+    {
+      "action": "execute a block",
+      "details": "Runs a specific block of procedural code under certain conditions."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

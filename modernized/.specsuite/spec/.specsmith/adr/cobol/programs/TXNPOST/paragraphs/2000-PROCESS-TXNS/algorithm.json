@@ -1,0 +1,17 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "This paragraph reads a transaction record and passes control to apply the transaction logic.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a transaction record",
+      "details": "Reads a record from the input transaction file."
+    }
+  ],
+  "inputs": [
+    "transaction file"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

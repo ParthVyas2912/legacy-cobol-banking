@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes the program by managing file operations and prepares for the main processing loop.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open files",
+      "details": "Opens necessary files for processing."
+    },
+    {
+      "action": "perform loop",
+      "details": "Transfers control to a processing loop."
+    },
+    {
+      "action": "close files",
+      "details": "Closes files once processing is complete."
+    },
+    {
+      "action": "exit program",
+      "details": "Terminates the program execution."
+    }
+  ],
+  "inputs": [
+    "file-handles"
+  ],
+  "outputs": [
+    "file-handles"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output-files",
+      "description": "Writes data to output files as part of the main processing loop."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

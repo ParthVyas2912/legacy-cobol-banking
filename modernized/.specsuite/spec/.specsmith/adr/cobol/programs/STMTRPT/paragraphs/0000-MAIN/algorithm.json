@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "Initializes processing by opening files, starts fetching customer data, and performs final cleanup operations.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "open file",
+      "details": "Opens a specified file for reading or writing."
+    },
+    {
+      "action": "perform fetch",
+      "details": "Transfers control to 1000-FETCH-CUSTOMERS to retrieve customer data."
+    },
+    {
+      "action": "close file",
+      "details": "Closes the file after operations are complete."
+    },
+    {
+      "action": "terminate program",
+      "details": "Returns control to the operating system."
+    }
+  ],
+  "inputs": [
+    "input-file"
+  ],
+  "outputs": [
+    "output-file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output-file",
+      "description": "Writes report data to the output file."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

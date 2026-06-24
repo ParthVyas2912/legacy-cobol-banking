@@ -1,0 +1,15 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes control flow by performing checks and then directing to subsequent paragraphs based on the results.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform-sequence",
+      "details": "Invokes multiple paragraphs to perform specific fraud-related computations and actions."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

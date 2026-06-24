@@ -1,0 +1,20 @@
+Paragraph: 2000-UPSERT-KYC
+Lines: 43-44
+Statements: 1
+
+1. EXEC SQL  MERGE INTO KYC_AUDIT AS T
+                USING (VALUES (:CUST-ID,
+                               :CUST-KYC-STATUS,
+                               :CUST-RISK-SCORE,
+                               CURRENT_TIMESTAMP))
+                       AS S(CUST_ID, STATUS, SCORE, TS)
+                   ON T.CUST_ID = S.CUST_ID
+                 WHEN MATCHED THEN
+                   UPDATE SET STATUS = S.STATUS,
+                              SCORE  = S.SCORE,
+                              TS     = S.TS
+                 WHEN NOT MATCHED THEN
+                   INSERT (CUST_ID, STATUS, SCORE, TS)
+                   VALUES (S.CUST_ID, S.STATUS,
+                           S.SCORE, S.TS)
+     END-EXEC

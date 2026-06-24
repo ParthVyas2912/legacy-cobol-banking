@@ -1,0 +1,34 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes a new customer account by moving data into variables and potentially executing a database operation.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data into working storage fields",
+      "details": "Populates variables with initial values"
+    },
+    {
+      "action": "execute database call",
+      "details": "Handles database-related operations for account creation"
+    },
+    {
+      "action": "conditional check",
+      "details": "Validates account creation criteria or status"
+    }
+  ],
+  "inputs": [
+    "input-account-data"
+  ],
+  "outputs": [
+    "created-account"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "customer_accounts",
+      "description": "Inserts a new account record into the database"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

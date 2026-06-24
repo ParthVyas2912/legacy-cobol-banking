@@ -1,0 +1,33 @@
+{
+  "name": "2000-OPEN-CURSOR",
+  "description": "Prepares for and initiates database cursor processing by setting up necessary parameters and invoking a cursor.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "Move a value to a variable",
+      "details": "Sets up a parameter to prepare for cursor usage."
+    },
+    {
+      "action": "Perform a subroutine",
+      "details": "Calls another paragraph or routine likely related to cursor setup or validation."
+    },
+    {
+      "action": "Execute SQL to open a cursor",
+      "details": "Uses an EXEC SQL block to open a database cursor."
+    }
+  ],
+  "inputs": [
+    "parameter used for cursor initiation"
+  ],
+  "outputs": [
+    "SQL cursor"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "database",
+      "description": "The opening of a cursor may involve updating database state related to cursor management."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

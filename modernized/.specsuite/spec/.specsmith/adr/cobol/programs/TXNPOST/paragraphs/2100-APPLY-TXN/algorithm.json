@@ -1,0 +1,39 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "Processes a transaction by applying its effects to relevant data structures or systems.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values",
+      "details": "Transfer data to appropriate variables or fields"
+    },
+    {
+      "action": "perform call",
+      "details": "Invoke a subroutine for additional processing"
+    },
+    {
+      "action": "add values",
+      "details": "Aggregate or update transaction-related totals"
+    },
+    {
+      "action": "write record",
+      "details": "Log the transaction to a file or persistent storage"
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "current-balance"
+  ],
+  "outputs": [
+    "updated-balance",
+    "log-file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "log-file",
+      "description": "Records transaction data for auditing or tracking purposes"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph initiates processing by performing an initial action and redirects control to a specific subsequent step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform 9000-MARK-START",
+      "details": "Initiates marking or preliminary setup for processing."
+    },
+    {
+      "action": "go-to 1000-NEXT-STEP",
+      "details": "Transfers control to a subsequent processing step."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

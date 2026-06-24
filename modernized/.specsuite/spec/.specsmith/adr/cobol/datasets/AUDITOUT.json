@@ -1,0 +1,7 @@
+{
+  "ddname": "AUDITOUT",
+  "usedBy": [
+    "TXNPOST"
+  ],
+  "organization": "sequential"
+}

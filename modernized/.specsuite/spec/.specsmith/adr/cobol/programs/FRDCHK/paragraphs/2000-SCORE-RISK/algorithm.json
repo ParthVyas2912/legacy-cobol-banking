@@ -1,0 +1,25 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "Evaluates risk by using conditional logic to determine account status.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Checks various risk factors using if statements."
+    }
+  ],
+  "inputs": [
+    "risk-factors"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "program flow",
+      "description": "Alters the control flow by potentially influencing subsequent paragraphs."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

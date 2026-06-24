@@ -1,0 +1,30 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph determines whether an account should be frozen based on predefined criteria, likely related to risk or fraud management.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate-risk",
+      "details": "Checks conditions to assess if an account needs to be frozen"
+    },
+    {
+      "action": "invoke-external-logic",
+      "details": "Utilizes an EXEC block to perform system-level or external logic"
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-STATUS",
+    "RISK-THRESHOLD"
+  ],
+  "outputs": [
+    "ACCOUNT-STATUS"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "system-flag",
+      "description": "May trigger system-level processes to enforce account freeze"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

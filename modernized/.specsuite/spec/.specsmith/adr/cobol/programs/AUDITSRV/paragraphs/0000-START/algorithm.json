@@ -1,0 +1,23 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes values and prepares the program for execution.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "assign initial values",
+      "details": "uses MOVE statements to initialize variables"
+    },
+    {
+      "action": "execute external code",
+      "details": "calls external services or utilities using EXEC blocks"
+    }
+  ],
+  "inputs": [
+    "input-variable-1"
+  ],
+  "outputs": [
+    "output-variable-1"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 1
+}

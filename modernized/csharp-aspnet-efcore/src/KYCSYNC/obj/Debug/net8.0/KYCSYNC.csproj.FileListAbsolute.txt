@@ -1,0 +1,13 @@
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/bin/Debug/net8.0/Kycsync.deps.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/bin/Debug/net8.0/Kycsync.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/bin/Debug/net8.0/Kycsync.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/KYCSYNC.csproj.AssemblyReference.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/KYCSYNC.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/KYCSYNC.AssemblyInfoInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/KYCSYNC.AssemblyInfo.cs
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/KYCSYNC.csproj.CoreCompileInputs.cache
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/KYCSYNC.sourcelink.json
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/Kycsync.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/refint/Kycsync.dll
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/Kycsync.pdb
+/home/runner/work/specsuite-modernize-test/specsuite-modernize-test/.specsuite-work/modernized/src/KYCSYNC/obj/Debug/net8.0/ref/Kycsync.dll

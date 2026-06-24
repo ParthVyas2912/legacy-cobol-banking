@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes a transaction by moving values into variables, potentially performing some setup, and hands control to the next module.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move values into variables",
+      "details": "Assigning specific values to variables as preparation for downstream operations."
+    },
+    {
+      "action": "execute a block",
+      "details": "A single EXEC block is performed (potentially involving external or infrastructure-related tasks)."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "prepared-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "potential infrastructure interaction",
+      "description": "The EXEC block might involve interaction with an external system or service."
+    }
+  ],
+  "enrichmentConfidence": 1
+}
