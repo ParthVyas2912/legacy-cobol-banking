@@ -1,0 +1,17 @@
+//KYCSYNCJ JOB (ACCT,BANK),'KYC SYNC',CLASS=A,MSGCLASS=X,
+//             NOTIFY=&SYSUID
+//*
+//*  Weekly KYC synchronisation — pulls customer state from the IMS
+//*  CUSTDB database and merges it into the DB2 KYC audit table.
+//*
+//STEP010  EXEC PGM=DFSRRC00,
+//             PARM='DLI,KYCSYNC,KYCSYNCP,,,,,,,,,,,,N,,,,'
+//STEPLIB  DD  DSN=BANK.PROD.LOADLIB,DISP=SHR
+//         DD  DSN=IMS.SDFSRESL,DISP=SHR
+//DFSRESLB DD  DSN=IMS.SDFSRESL,DISP=SHR
+//IMS      DD  DSN=IMS.PSBLIB,DISP=SHR
+//         DD  DSN=IMS.DBDLIB,DISP=SHR
+//CUSTDB   DD  DSN=IMS.CUSTDB,DISP=SHR
+//SYSPRINT DD  SYSOUT=*
+//SYSUDUMP DD  SYSOUT=*
+//
