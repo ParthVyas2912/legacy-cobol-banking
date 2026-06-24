@@ -1,0 +1,21 @@
+{
+  "name": "1000-OPEN-FILES",
+  "description": "Opens necessary files for subsequent transaction processing.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open files",
+      "details": "Opens files required for processing accounts-receivable transactions."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "files used in accounts-receivable processing",
+      "description": "Prepares files for reading or writing in subsequent processing steps."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

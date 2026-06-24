@@ -1,0 +1,4 @@
+# ATMTXN
+This program handles an ATM transaction workflow, including validation, processing, and communication with the user or system via CICS commands.
+Business domain: infrastructure
+Architectural role: online

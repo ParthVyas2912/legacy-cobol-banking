@@ -1,0 +1,12 @@
+{
+  "name": "TXNREC",
+  "usedBy": [
+    "ATMTXN",
+    "FRDCHK",
+    "INTCALC",
+    "TXNPOST"
+  ],
+  "isDclgen": false,
+  "description": "The TXNREC copybook defines the record structure for transaction-related data, used for processing and managing transaction information across multiple programs.",
+  "businessMeaning": "Transaction record layout"
+}

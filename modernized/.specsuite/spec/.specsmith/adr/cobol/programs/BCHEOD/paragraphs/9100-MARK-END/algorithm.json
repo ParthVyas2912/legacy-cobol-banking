@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "This paragraph marks the end of a process or operation within the program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute an embedded block of code",
+      "details": "finalize or mark completion of the process"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

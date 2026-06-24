@@ -1,0 +1,27 @@
+{
+  "name": "0000-START",
+  "description": "Initializes program-level variables and sets up the starting state for the program workflow.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move initial values",
+      "details": "Assigns default or start-up values to program variables."
+    },
+    {
+      "action": "execute blocks",
+      "details": "Calls external procedures or services for setup purposes."
+    },
+    {
+      "action": "conditional logic",
+      "details": "Performs a check or assertion to ensure a valid starting condition."
+    }
+  ],
+  "inputs": [
+    "startup-variable"
+  ],
+  "outputs": [
+    "state-variable"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 1
+}

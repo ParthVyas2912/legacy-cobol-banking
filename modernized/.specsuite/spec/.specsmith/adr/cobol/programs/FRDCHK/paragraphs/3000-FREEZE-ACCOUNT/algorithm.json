@@ -1,0 +1,30 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph freezes an account by modifying related variables and potentially interacting with external systems.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move value to variable",
+      "details": "Sets account status to frozen"
+    },
+    {
+      "action": "execute external block",
+      "details": "Performs additional processing through external calls"
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "external-system"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account table",
+      "description": "Records the account status as frozen in the database"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

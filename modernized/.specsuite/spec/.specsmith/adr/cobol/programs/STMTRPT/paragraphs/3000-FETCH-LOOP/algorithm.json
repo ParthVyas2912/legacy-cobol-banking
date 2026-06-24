@@ -1,0 +1,29 @@
+{
+  "name": "3000-FETCH-LOOP",
+  "description": "This paragraph fetches a row from a SQL cursor and conditionally evaluates its success or failure.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch a row from the SQL cursor",
+      "details": "Executes a COBOL EXEC SQL FETCH statement."
+    },
+    {
+      "action": "evaluate the result of the fetch",
+      "details": "Checks SQL status code for success or failure."
+    }
+  ],
+  "inputs": [
+    "SQL-CURSOR"
+  ],
+  "outputs": [
+    "FETCH-STATUS"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "SQL database",
+      "description": "Advances the SQL cursor position."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

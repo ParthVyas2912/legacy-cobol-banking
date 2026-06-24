@@ -1,0 +1,30 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph retrieves customer account information and prepares it for processing in subsequent steps.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "retrieve account information",
+      "details": "reads customer data from a database or other source"
+    },
+    {
+      "action": "validate retrieved information",
+      "details": "checks the validity or format of the account data"
+    }
+  ],
+  "inputs": [
+    "account-id"
+  ],
+  "outputs": [
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "log-table",
+      "description": "logs the result of the account retrieval operation"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

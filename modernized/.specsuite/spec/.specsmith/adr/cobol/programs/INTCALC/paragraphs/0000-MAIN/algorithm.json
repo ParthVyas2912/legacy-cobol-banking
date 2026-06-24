@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes processing by opening resources, performs a loop until a condition is met, and then performs cleanup before ending the program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "open resources",
+      "details": "Opens a necessary file or set of files"
+    },
+    {
+      "action": "enter loop",
+      "details": "Performs a loop by invoking 1000-LOOP until a condition is satisfied"
+    },
+    {
+      "action": "close resources",
+      "details": "Closes the opened file or set of files"
+    },
+    {
+      "action": "terminate program",
+      "details": "Explicitly returns control to the operating system"
+    }
+  ],
+  "inputs": [
+    "file-handle"
+  ],
+  "outputs": [
+    "file-handle"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file-handle",
+      "description": "Potential updates or writes to the file during processing"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

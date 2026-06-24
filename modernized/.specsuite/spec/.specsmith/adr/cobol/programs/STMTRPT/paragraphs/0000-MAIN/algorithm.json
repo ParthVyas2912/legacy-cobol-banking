@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes resources, performs processing by invoking 1000-FETCH-CUSTOMERS, and then cleans up and exits the program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "open a resource",
+      "details": "Opens a file or equivalent resource."
+    },
+    {
+      "action": "perform a paragraph",
+      "details": "Invokes the 1000-FETCH-CUSTOMERS paragraph for processing."
+    },
+    {
+      "action": "close a resource",
+      "details": "Closes the previously opened resource."
+    },
+    {
+      "action": "end program flow",
+      "details": "Returns control to the caller or ends the program with GOBACK."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "implicit from OPEN/CLOSE statements",
+      "description": "Manages file access or similar resource management."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

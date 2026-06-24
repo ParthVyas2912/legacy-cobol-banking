@@ -1,0 +1,27 @@
+specforge_knowledge_graph: 1.0.0
+project: source
+entities:
+  - id: project:root
+    name: source
+    type: project
+    description: This is a backend COBOL-based application designed for managing business-critical workflows and integrating
+      with legacy enterprise systems through batch processing, file transfers, and message queues. It likely includes
+      custom-developed business rules and system-level dependencies.
+    sourceFiles: []
+    domain: enterprise-operations
+    properties:
+      type: backend
+      totalFiles: 20
+      sourceFiles: 19
+    tags:
+      - project
+    confidence: 1
+relationships: []
+metadata:
+  totalEntities: 1
+  totalRelationships: 0
+  entityTypeCounts:
+    project: 1
+  relationshipTypeCounts: {}
+  averageConfidence: 1
+  generatedAt: 2026-06-24T21:45:15.765Z

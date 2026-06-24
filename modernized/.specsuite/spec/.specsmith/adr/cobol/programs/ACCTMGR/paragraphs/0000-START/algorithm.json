@@ -1,0 +1,20 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph begins program execution and directs control to the account creation routine based on evaluated conditions.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Determines the next steps in the control flow based on a set of conditions."
+    },
+    {
+      "action": "execute code block",
+      "details": "Executes procedural logic as part of the evaluation."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

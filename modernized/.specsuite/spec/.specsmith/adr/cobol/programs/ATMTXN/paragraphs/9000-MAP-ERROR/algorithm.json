@@ -1,0 +1,19 @@
+{
+  "name": "9000-MAP-ERROR",
+  "description": "Maps an error condition to an appropriate destination or handling path.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "map error",
+      "details": "Assigns error-specific value to a variable or context"
+    }
+  ],
+  "inputs": [
+    "error-code"
+  ],
+  "outputs": [
+    "error-destination"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

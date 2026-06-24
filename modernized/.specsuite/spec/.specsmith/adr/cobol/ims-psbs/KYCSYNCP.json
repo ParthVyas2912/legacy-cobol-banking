@@ -1,0 +1,5 @@
+{
+  "name": "KYCSYNCP",
+  "pcbCount": 2,
+  "description": "This IMS Program Specification Block (PSB) defines access to a customer database (CUSTDB) for read-only operations with two Program Communication Blocks (PCBs), both sensitive to two segments."
+}

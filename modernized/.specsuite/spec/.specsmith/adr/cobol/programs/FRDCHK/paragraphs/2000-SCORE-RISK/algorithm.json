@@ -1,0 +1,23 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "Evaluates risk based on specific criteria and sets a value accordingly.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "Evaluate risk conditions",
+      "details": "Checks multiple IF conditions to determine specific risk factors."
+    },
+    {
+      "action": "Assign risk score",
+      "details": "Moves a calculated or predetermined value to a variable based on the evaluations."
+    }
+  ],
+  "inputs": [
+    "risk-related-variable"
+  ],
+  "outputs": [
+    "risk-score"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

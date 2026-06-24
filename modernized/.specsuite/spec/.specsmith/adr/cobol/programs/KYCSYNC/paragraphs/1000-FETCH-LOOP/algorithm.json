@@ -1,0 +1,25 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph iterates through data (possibly a list or table) and processes each entry, passing control to the next paragraph for further operations.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "fetch-data",
+      "details": "Iterates over the data as part of a loop, likely preparing or processing each entry."
+    }
+  ],
+  "inputs": [
+    "fetch-cursor"
+  ],
+  "outputs": [
+    "processed-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "table identified in 2000-UPSERT-KYC",
+      "description": "Likely propagates or changes data in the database as part of further processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,39 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph serves as the entry point of the program, orchestrating the execution of file setup, transaction processing, and cleanup operations.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Call 1000-OPEN-FILES for file initialization."
+    },
+    {
+      "action": "perform-until",
+      "details": "Repeat 2000-PROCESS-TXNS for transaction processing."
+    },
+    {
+      "action": "perform",
+      "details": "Call 3000-CLOSE-FILES for file closure."
+    },
+    {
+      "action": "display",
+      "details": "Output messages or statuses."
+    },
+    {
+      "action": "goback",
+      "details": "End program execution."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "Console"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "Files referenced in file setup and cleanup routines",
+      "description": "Handles file system interactions such as opening and closing files."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

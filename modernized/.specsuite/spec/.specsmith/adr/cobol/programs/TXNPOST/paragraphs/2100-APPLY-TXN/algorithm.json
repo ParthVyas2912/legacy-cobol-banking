@@ -1,0 +1,39 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "This paragraph applies a transaction to accounts receivable data, performing necessary calculations and updates.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data into working storage variables",
+      "details": "Used to prepare input for processing."
+    },
+    {
+      "action": "invoke external processing",
+      "details": "Calls a subprogram to handle specialized logic."
+    },
+    {
+      "action": "add transaction values",
+      "details": "Updates totals related to accounts-receivable."
+    },
+    {
+      "action": "write output to file",
+      "details": "Logs transaction results or audit information."
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "accounts-receivable-record"
+  ],
+  "outputs": [
+    "accounts-receivable-record",
+    "audit-log"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "audit-log",
+      "description": "Outputs transaction details."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

@@ -1,0 +1,11 @@
+{
+  "name": "CUSTREC",
+  "usedBy": [
+    "ACCTMGR",
+    "KYCSYNC",
+    "STMTRPT"
+  ],
+  "isDclgen": false,
+  "description": "This copybook defines the data structure for customer records, including fields likely related to customer details and account information.",
+  "businessMeaning": "Customer master record layout"
+}

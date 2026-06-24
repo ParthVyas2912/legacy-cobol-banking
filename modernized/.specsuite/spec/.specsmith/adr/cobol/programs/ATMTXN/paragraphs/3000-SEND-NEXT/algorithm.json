@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph sends data to the next component or screen and handles potential errors.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move values to a target variable",
+      "details": "Prepares data for transmission"
+    },
+    {
+      "action": "executes a CICS command block",
+      "details": "Sends data to the next component or screen"
+    }
+  ],
+  "inputs": [
+    "data-to-send"
+  ],
+  "outputs": [
+    "next-screen"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "next-screen",
+      "description": "Sends prepared data to the next screen or component"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

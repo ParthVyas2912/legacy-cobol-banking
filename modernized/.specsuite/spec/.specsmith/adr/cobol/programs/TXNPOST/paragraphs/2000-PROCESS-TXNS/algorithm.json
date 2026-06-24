@@ -1,0 +1,17 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "Processes a transaction by reading input and preparing for further application logic.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a transaction record",
+      "details": "Reads a record from an input file for processing."
+    }
+  ],
+  "inputs": [
+    "transaction-input-file"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

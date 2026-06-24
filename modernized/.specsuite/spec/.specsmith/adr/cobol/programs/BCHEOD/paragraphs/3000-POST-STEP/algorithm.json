@@ -1,0 +1,29 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph performs a procedural step that includes invoking a subprogram and redirects control to a subsequent step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call a subprogram",
+      "details": "calls an external routine"
+    },
+    {
+      "action": "perform unknown operation",
+      "details": "unable to determine the specific action"
+    },
+    {
+      "action": "redirect control flow",
+      "details": "uses a GO TO to move to another paragraph"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external subprogram",
+      "description": "calls an external subprogram which may have its own side effects"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,25 @@
+{
+  "programId": "BCHEOD",
+  "sourceFile": "programs/BCHEOD.cbl",
+  "dialect": "enterprise",
+  "usingParameters": [],
+  "callsTo": [
+    "INTCALC",
+    "TXNPOST"
+  ],
+  "filesRead": [],
+  "filesWritten": [],
+  "sqlTables": [
+    "EOD_RUNS"
+  ],
+  "cicsVerbs": [],
+  "imsFunctionCodes": [],
+  "copybooksUsed": [],
+  "paragraphCount": 7,
+  "modernizationFindingCount": 8,
+  "controlFlow": {
+    "cyclomaticComplexity": 2,
+    "deadParagraphs": 2,
+    "goToClusters": 1
+  }
+}

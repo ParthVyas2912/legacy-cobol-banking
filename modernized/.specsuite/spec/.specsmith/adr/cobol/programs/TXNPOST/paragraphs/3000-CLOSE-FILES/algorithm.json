@@ -1,0 +1,21 @@
+{
+  "name": "3000-CLOSE-FILES",
+  "description": "Closes one or more files utilized in the accounts-receivable batch processing program.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close files",
+      "details": "Closes all open files to ensure proper resource finalization."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "files previously open in the program",
+      "description": "Finalizes and closes file handles to end processing."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

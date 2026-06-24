@@ -1,0 +1,4 @@
+# BCHEOD
+Processes end-of-day operations by recording run data and performing calculations and postings.
+Business domain: infrastructure
+Architectural role: batch

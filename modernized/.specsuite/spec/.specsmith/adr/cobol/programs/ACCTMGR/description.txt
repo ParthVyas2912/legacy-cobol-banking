@@ -1,0 +1,4 @@
+# ACCTMGR
+This program manages accounts by creating, reading, updating, and closing account records, and logs account activity into an audit table.
+Business domain: customer-management
+Architectural role: online

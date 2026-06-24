@@ -1,0 +1,19 @@
+{
+  "name": "4000-DONE",
+  "description": "This paragraph marks the logical end of the program and transfers control to a specific routine.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform a subsequent routine",
+      "details": "Transfers control to 9100-MARK-END using a PERFORM statement."
+    },
+    {
+      "action": "terminate the program",
+      "details": "Executes the GOBACK statement to signal the end of program execution."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

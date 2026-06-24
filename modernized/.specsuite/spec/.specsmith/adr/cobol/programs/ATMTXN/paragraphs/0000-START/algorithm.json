@@ -1,0 +1,23 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initiates the program's control flow, performing validation, processing, and determining the next step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Executes validation logic in 1000-VALIDATE"
+    },
+    {
+      "action": "perform",
+      "details": "Initiates post-transaction processing in 2000-POST-TXN"
+    },
+    {
+      "action": "perform",
+      "details": "Handles subsequent steps in 3000-SEND-NEXT"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

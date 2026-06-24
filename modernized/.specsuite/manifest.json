@@ -1,0 +1,9 @@
+{
+  "run_id": "28131576480",
+  "source_repo": "ParthVyas2912/legacy-cobol-banking",
+  "source_branch": "main",
+  "target_stack": "java-spring-hibernate",
+  "target_subdir": "modernized/java-spring-hibernate",
+  "generated_at": "2026-06-24T22:04:53Z",
+  "pipeline": "specsuite-github-actions"
+}

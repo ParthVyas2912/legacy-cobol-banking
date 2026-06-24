@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "This paragraph handles a fatal error scenario and takes necessary actions to terminate processing.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "terminate processing on fatal error",
+      "details": "optional"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "program",
+      "description": "Triggers an abnormal termination due to a fatal error"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

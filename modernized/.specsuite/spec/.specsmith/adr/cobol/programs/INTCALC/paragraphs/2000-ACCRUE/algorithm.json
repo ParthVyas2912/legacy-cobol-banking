@@ -1,0 +1,17 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "Evaluates a condition to determine the flow of processing within the accounts-receivable batch program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Executes an `IF` statement to make a decision."
+    }
+  ],
+  "inputs": [
+    "unspecified-variable"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

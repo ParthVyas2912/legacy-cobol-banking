@@ -1,0 +1,33 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes the fraud detection process by performing preliminary computations, risk assessments, and account actions.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Invoke 1000-COMPUTE-VELOCITY for velocity computation."
+    },
+    {
+      "action": "perform",
+      "details": "Invoke 2000-SCORE-RISK for risk scoring."
+    },
+    {
+      "action": "perform",
+      "details": "Invoke 3000-FREEZE-ACCOUNT for taking account freeze action if needed."
+    },
+    {
+      "action": "conditional-check",
+      "details": "Evaluate a condition to determine next operations."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "procedures",
+      "description": "Triggers other paragraphs that may perform database or business operations."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

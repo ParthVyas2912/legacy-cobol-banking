@@ -1,0 +1,4 @@
+# AUDITSRV
+This program handles audit-related operations via indexed file access and interactions with CICS to return responses.
+Business domain: infrastructure
+Architectural role: online

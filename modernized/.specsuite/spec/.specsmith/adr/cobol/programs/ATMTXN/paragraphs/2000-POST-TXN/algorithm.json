@@ -1,0 +1,35 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph updates variables and executes a transactional block to post a transaction.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "update variables with new values",
+      "details": "using MOVE statements"
+    },
+    {
+      "action": "execute a transactional operation",
+      "details": "using an EXEC-block"
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "system-state"
+  ],
+  "outputs": [
+    "updated-state"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "transaction-log",
+      "description": "logs the transaction details into the database"
+    },
+    {
+      "kind": "commit",
+      "target": "database",
+      "description": "commits the transaction to ensure persistence"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

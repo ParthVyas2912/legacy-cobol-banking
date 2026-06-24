@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph appears to perform a specific operation possibly involving a subroutine call, modify program flow, and include an unknown action.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "invoke subroutine",
+      "details": "Calls an external program or internal subroutine."
+    },
+    {
+      "action": "unknown action",
+      "details": "Details of this are not identifiable."
+    },
+    {
+      "action": "redirect flow",
+      "details": "Uses a GO TO statement to manage control flow."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

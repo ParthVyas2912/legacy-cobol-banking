@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "The paragraph acts as a driver, initiating a process by performing a setup routine and directing control to the next logical step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform 9000-MARK-START",
+      "details": "Invokes a setup or marking routine."
+    },
+    {
+      "action": "go to 1000-NEXT-STEP",
+      "details": "Transfers control to the next operational step in the workflow."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,193 @@
+[
+  {
+    "id": "acctmgr/deep-nesting/0000-start/41",
+    "category": "control-flow",
+    "kind": "deep-nesting",
+    "severity": "medium",
+    "programId": "ACCTMGR",
+    "paragraph": "0000-START",
+    "location": {
+      "line": 41,
+      "column": 1
+    },
+    "title": "Deeply nested control flow (depth 5)",
+    "description": "Paragraph 0000-START reaches nesting depth 5. Extract nested branches into helper paragraphs or invert conditions to reduce nesting.",
+    "detail": {
+      "depth": 5,
+      "threshold": 5
+    },
+    "tags": [
+      "cfg",
+      "complexity"
+    ]
+  },
+  {
+    "id": "acctmgr/comp-3-decimal/_/13",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "ACCTMGR",
+    "location": {
+      "line": 13
+    },
+    "title": "COMP-3 field MAP-ACCT-BALANCE → DECIMAL(15,2)",
+    "description": "Packed-decimal COMP-3 field MAP-ACCT-BALANCE PIC S9(13)V99. Modern equivalent: SQL DECIMAL(15,2) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 MAP-ACCT-BALANCE PIC S9(13)V99 COMP-3.",
+    "suggestedReplacement": "// SQL:   map-acct-balance DECIMAL(15,2)\n// Java:  BigDecimal mapAcctBalance;\n// C#:    decimal MapAcctBalance;\n// Python: mapAcctBalance: Decimal",
+    "detail": {
+      "precision": 15,
+      "scale": 2,
+      "sqlType": "DECIMAL(15,2)",
+      "picture": "S9(13)V99"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "acctmgr/comp-3-decimal/_/14",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "ACCTMGR",
+    "location": {
+      "line": 14
+    },
+    "title": "COMP-3 field MAP-ACCT-AVAIL-BAL → DECIMAL(15,2)",
+    "description": "Packed-decimal COMP-3 field MAP-ACCT-AVAIL-BAL PIC S9(13)V99. Modern equivalent: SQL DECIMAL(15,2) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 MAP-ACCT-AVAIL-BAL PIC S9(13)V99 COMP-3.",
+    "suggestedReplacement": "// SQL:   map-acct-avail-bal DECIMAL(15,2)\n// Java:  BigDecimal mapAcctAvailBal;\n// C#:    decimal MapAcctAvailBal;\n// Python: mapAcctAvailBal: Decimal",
+    "detail": {
+      "precision": 15,
+      "scale": 2,
+      "sqlType": "DECIMAL(15,2)",
+      "picture": "S9(13)V99"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "acctmgr/comp-3-decimal/_/14",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "ACCTMGR",
+    "location": {
+      "line": 14
+    },
+    "title": "COMP-3 field CUST-RISK-SCORE → DECIMAL(3,0)",
+    "description": "Packed-decimal COMP-3 field CUST-RISK-SCORE PIC 9(03). Modern equivalent: SQL DECIMAL(3,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 CUST-RISK-SCORE PIC 9(03) COMP-3.",
+    "suggestedReplacement": "// SQL:   cust-risk-score DECIMAL(3,0)\n// Java:  BigDecimal custRiskScore;\n// C#:    decimal CustRiskScore;\n// Python: custRiskScore: Decimal",
+    "detail": {
+      "precision": 3,
+      "scale": 0,
+      "sqlType": "DECIMAL(3,0)",
+      "picture": "9(03)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "acctmgr/comp-3-decimal/_/15",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "ACCTMGR",
+    "location": {
+      "line": 15
+    },
+    "title": "COMP-3 field MAP-ACCT-INT-RATE → DECIMAL(6,4)",
+    "description": "Packed-decimal COMP-3 field MAP-ACCT-INT-RATE PIC 9(2)V9(4). Modern equivalent: SQL DECIMAL(6,4) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 MAP-ACCT-INT-RATE PIC 9(2)V9(4) COMP-3.",
+    "suggestedReplacement": "// SQL:   map-acct-int-rate DECIMAL(6,4)\n// Java:  BigDecimal mapAcctIntRate;\n// C#:    decimal MapAcctIntRate;\n// Python: mapAcctIntRate: Decimal",
+    "detail": {
+      "precision": 6,
+      "scale": 4,
+      "sqlType": "DECIMAL(6,4)",
+      "picture": "9(2)V9(4)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "acctmgr/comp-3-decimal/_/19",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "ACCTMGR",
+    "location": {
+      "line": 19
+    },
+    "title": "COMP-3 field CUST-ACCT-COUNT → DECIMAL(3,0)",
+    "description": "Packed-decimal COMP-3 field CUST-ACCT-COUNT PIC 9(03). Modern equivalent: SQL DECIMAL(3,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 CUST-ACCT-COUNT PIC 9(03) COMP-3.",
+    "suggestedReplacement": "// SQL:   cust-acct-count DECIMAL(3,0)\n// Java:  BigDecimal custAcctCount;\n// C#:    decimal CustAcctCount;\n// Python: custAcctCount: Decimal",
+    "detail": {
+      "precision": 3,
+      "scale": 0,
+      "sqlType": "DECIMAL(3,0)",
+      "picture": "9(03)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "acctmgr/missing-sqlca-check/_/54",
+    "category": "io",
+    "kind": "missing-sqlca-check",
+    "severity": "medium",
+    "programId": "ACCTMGR",
+    "location": {
+      "line": 54,
+      "column": 5
+    },
+    "title": "EXEC SQL without SQLCODE / SQLSTATE check",
+    "description": "Embedded SQL with no SQLCODE / SQLSTATE inspection after the call and no WHENEVER directive in effect. Unhandled SQL errors are a common source of silent data corruption in COBOL.",
+    "currentCode": "EXEC SQL ... END-EXEC.",
+    "suggestedReplacement": "EXEC SQL ... END-EXEC.\n    IF SQLCODE NOT = ZERO\n        PERFORM HANDLE-SQL-ERROR\n    END-IF.",
+    "tags": [
+      "sql",
+      "error-handling"
+    ]
+  },
+  {
+    "id": "acctmgr/vsam-to-relational/_/10",
+    "category": "io",
+    "kind": "vsam-to-relational",
+    "severity": "high",
+    "programId": "ACCTMGR",
+    "location": {
+      "line": 10
+    },
+    "title": "VSAM/KSDS file ACCT-FILE → relational table",
+    "description": "Indexed file ACCT-FILE (DD ACCTFILE) keyed on ACCT-NUMBER. Migrate to a relational table; preserve the primary key, project the COBOL record layout onto columns, and translate access patterns into SQL.",
+    "currentCode": "SELECT ACCT-FILE ASSIGN TO ACCTFILE ORGANIZATION INDEXED RECORD KEY ACCT-NUMBER",
+    "suggestedReplacement": "CREATE TABLE acct-file (\n    acct_number BIGINT PRIMARY KEY,\n    acct_customer_id BIGINT,\n    acct_opened_date BIGINT,\n    acct_type VARCHAR(2),\n    acct_status VARCHAR(1),\n    acct_balance DECIMAL(15,2),\n    acct_avail_bal DECIMAL(15,2),\n    acct_int_rate DECIMAL(6,4),\n    acct_last_txn_dt BIGINT,\n    acct_currency VARCHAR(3),\n    acct_branch_code BIGINT,\n    acct_flags VARCHAR(4),\n    acct_filler VARCHAR(50)\n);",
+    "detail": {
+      "logicalName": "ACCT-FILE",
+      "dd": "ACCTFILE",
+      "primaryKey": "ACCT-NUMBER",
+      "alternateKeys": []
+    },
+    "tags": [
+      "io",
+      "vsam",
+      "database"
+    ]
+  }
+]

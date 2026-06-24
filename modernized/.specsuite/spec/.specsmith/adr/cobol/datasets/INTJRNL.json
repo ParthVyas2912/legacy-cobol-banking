@@ -1,0 +1,7 @@
+{
+  "ddname": "INTJRNL",
+  "usedBy": [
+    "INTCALC"
+  ],
+  "organization": "sequential"
+}

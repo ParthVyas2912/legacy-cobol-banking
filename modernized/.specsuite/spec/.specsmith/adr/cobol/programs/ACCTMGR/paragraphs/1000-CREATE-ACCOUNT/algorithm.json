@@ -1,0 +1,30 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes account creation by moving data into variables and executing a business logic operation.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values into variables",
+      "details": "prepare account data"
+    },
+    {
+      "action": "execute a business logic operation",
+      "details": "call an external routine or similar"
+    }
+  ],
+  "inputs": [
+    "input-fields"
+  ],
+  "outputs": [
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": "",
+      "description": "No explicit side effects detected in this code snippet"
+    }
+  ],
+  "enrichmentConfidence": 1
+}
