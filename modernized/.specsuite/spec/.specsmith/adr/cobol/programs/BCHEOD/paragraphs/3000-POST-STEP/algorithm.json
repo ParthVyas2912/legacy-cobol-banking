@@ -1,0 +1,25 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph performs specific operations including a call, an unknown operation, and directs flow to another step.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "call-external-program",
+      "details": "Executes a subroutine or external logic"
+    }
+  ],
+  "inputs": [
+    "unknown-input"
+  ],
+  "outputs": [
+    "unknown-output"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "unknown-target",
+      "description": "Details of the side effect are not available"
+    }
+  ],
+  "enrichmentConfidence": 0.8500000000000001
+}

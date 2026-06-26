@@ -1,0 +1,27 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes variables and performs basic setup operations required for program execution.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Sets initial values to program variables using MOVE statements."
+    },
+    {
+      "action": "execute blocks of logic",
+      "details": "Includes EXEC statements to execute predefined tasks."
+    },
+    {
+      "action": "conditional check",
+      "details": "Performs a single conditional logic using an IF statement."
+    }
+  ],
+  "inputs": [
+    "environment parameters"
+  ],
+  "outputs": [
+    "program variables"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 1
+}

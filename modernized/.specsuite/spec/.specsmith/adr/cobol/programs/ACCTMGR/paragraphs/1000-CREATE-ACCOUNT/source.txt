@@ -1,0 +1,9 @@
+Paragraph: 1000-CREATE-ACCOUNT (section MAIN-ROUTINE)
+Lines: 56-65
+Statements: 5
+
+1. move
+2. move
+3. move
+4. exec-block
+5. if

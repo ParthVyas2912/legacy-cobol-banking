@@ -1,0 +1,35 @@
+{
+  "name": "0000-MAIN",
+  "description": "Executes initialization steps and directs flow to a fetch loop for processing.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize-system-state",
+      "details": "Set up required initial values or resources."
+    },
+    {
+      "action": "delegate-fetch-loop",
+      "details": "Perform the fetch loop via a perform statement."
+    },
+    {
+      "action": "log-status",
+      "details": "Display relevant information to the console or log."
+    },
+    {
+      "action": "terminate-execution",
+      "details": "End program execution cleanly."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "console-output"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "control-flow-redirection",
+      "description": "Directs control to another paragraph for further processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,15 @@
+{
+  "name": "9000-MARK-START",
+  "description": "Marks the beginning of a processing block in the batch infrastructure program.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize processing state",
+      "details": "Marks the starting point for subsequent operations."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

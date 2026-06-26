@@ -1,0 +1,54 @@
+{
+  "nodes": [
+    {
+      "id": "__entry__",
+      "isEntry": true,
+      "statementCount": 0
+    },
+    {
+      "id": "0000-MAIN",
+      "isEntry": false,
+      "statementCount": 4
+    },
+    {
+      "id": "1000-FETCH-LOOP",
+      "isEntry": false,
+      "statementCount": 2
+    },
+    {
+      "id": "2000-UPSERT-KYC",
+      "isEntry": false,
+      "statementCount": 1
+    }
+  ],
+  "edges": [
+    {
+      "from": "__entry__",
+      "to": "0000-MAIN",
+      "kind": "entry"
+    },
+    {
+      "from": "0000-MAIN",
+      "to": "1000-FETCH-LOOP",
+      "kind": "perform-until",
+      "location": {
+        "line": 30,
+        "column": 5
+      }
+    },
+    {
+      "from": "1000-FETCH-LOOP",
+      "to": "2000-UPSERT-KYC",
+      "kind": "fallthrough"
+    }
+  ],
+  "entries": [
+    "__entry__"
+  ],
+  "dead": [],
+  "loopHeaders": [
+    "1000-FETCH-LOOP"
+  ],
+  "goToClusters": [],
+  "cyclomaticComplexity": 1
+}

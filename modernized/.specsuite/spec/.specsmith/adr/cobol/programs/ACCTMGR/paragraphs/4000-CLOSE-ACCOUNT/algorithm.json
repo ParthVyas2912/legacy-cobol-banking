@@ -1,0 +1,35 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "The 4000-CLOSE-ACCOUNT paragraph finalizes account updates and performs any necessary closing actions.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Move a value to finalize account closure state."
+    },
+    {
+      "action": "conditional-check",
+      "details": "Verify conditions to ensure account can be closed."
+    },
+    {
+      "action": "exec-block",
+      "details": "Perform system-level or database-specific operations to close the account."
+    }
+  ],
+  "inputs": [
+    "account-record",
+    "status-flag"
+  ],
+  "outputs": [
+    "status-flag"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts-table",
+      "description": "Updates the database to reflect the closure of the account."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "__entry__",
+      "isEntry": true,
+      "statementCount": 0
+    },
+    {
+      "id": "0000-MAIN",
+      "isEntry": false,
+      "statementCount": 4
+    },
+    {
+      "id": "1000-LOOP",
+      "isEntry": false,
+      "statementCount": 3
+    },
+    {
+      "id": "2000-ACCRUE",
+      "isEntry": false,
+      "statementCount": 15
+    }
+  ],
+  "edges": [
+    {
+      "from": "__entry__",
+      "to": "0000-MAIN",
+      "kind": "entry"
+    },
+    {
+      "from": "0000-MAIN",
+      "to": "1000-LOOP",
+      "kind": "perform-until",
+      "location": {
+        "line": 38,
+        "column": 5
+      }
+    },
+    {
+      "from": "1000-LOOP",
+      "to": "2000-ACCRUE",
+      "kind": "perform",
+      "location": {
+        "line": 45,
+        "column": 20
+      }
+    },
+    {
+      "from": "1000-LOOP",
+      "to": "2000-ACCRUE",
+      "kind": "fallthrough"
+    }
+  ],
+  "entries": [
+    "__entry__"
+  ],
+  "dead": [],
+  "loopHeaders": [
+    "1000-LOOP"
+  ],
+  "goToClusters": [],
+  "cyclomaticComplexity": 2
+}

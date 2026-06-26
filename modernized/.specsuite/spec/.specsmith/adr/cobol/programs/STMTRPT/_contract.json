@@ -1,0 +1,30 @@
+{
+  "programId": "STMTRPT",
+  "sourceFile": "programs/STMTRPT.cbl",
+  "dialect": "enterprise",
+  "usingParameters": [],
+  "callsTo": [
+    "CBLTDLI"
+  ],
+  "filesRead": [],
+  "filesWritten": [
+    "STMT-FILE"
+  ],
+  "sqlTables": [
+    "TXN_LEDGER"
+  ],
+  "cicsVerbs": [],
+  "imsFunctionCodes": [
+    "WS-IMS-FUNC"
+  ],
+  "copybooksUsed": [
+    "CUSTREC"
+  ],
+  "paragraphCount": 7,
+  "modernizationFindingCount": 10,
+  "controlFlow": {
+    "cyclomaticComplexity": 4,
+    "deadParagraphs": 0,
+    "goToClusters": 0
+  }
+}

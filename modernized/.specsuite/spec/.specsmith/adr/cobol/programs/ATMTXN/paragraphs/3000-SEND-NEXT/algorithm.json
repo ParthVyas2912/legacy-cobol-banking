@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph appears to send a response to the user or system and transitions to an error-handling routine if necessary.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move a value",
+      "details": "Prepare a data field for sending a response."
+    },
+    {
+      "action": "execute a block",
+      "details": "Perform a service or communication operation, likely sending data online."
+    }
+  ],
+  "inputs": [
+    "working-storage variable(s)"
+  ],
+  "outputs": [
+    "response-screen"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "online screen",
+      "description": "Sends data, likely to an end-user or external system."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

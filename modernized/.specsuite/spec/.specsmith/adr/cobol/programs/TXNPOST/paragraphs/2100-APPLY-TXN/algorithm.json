@@ -1,0 +1,39 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "Processes a transaction by applying it to relevant accounts and recording the results.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data into working variables",
+      "details": null
+    },
+    {
+      "action": "perform a calculation or adjustment",
+      "details": null
+    },
+    {
+      "action": "call a subroutine",
+      "details": "possibly for specialized processing"
+    },
+    {
+      "action": "write transaction results to output",
+      "details": null
+    }
+  ],
+  "inputs": [
+    "transaction-record",
+    "accounts-data"
+  ],
+  "outputs": [
+    "transaction-log",
+    "adjusted-account-total"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "transaction-log",
+      "description": "Appends a record of the processed transaction to the log file."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

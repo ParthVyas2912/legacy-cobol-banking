@@ -1,0 +1,27 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes the program workflow by invoking multiple tasks related to fraud detection.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Invokes 1000-COMPUTE-VELOCITY"
+    },
+    {
+      "action": "perform",
+      "details": "Invokes 2000-SCORE-RISK"
+    },
+    {
+      "action": "perform",
+      "details": "Invokes 3000-FREEZE-ACCOUNT"
+    },
+    {
+      "action": "conditionally execute",
+      "details": "Executes an inline exec-block based on an IF condition"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

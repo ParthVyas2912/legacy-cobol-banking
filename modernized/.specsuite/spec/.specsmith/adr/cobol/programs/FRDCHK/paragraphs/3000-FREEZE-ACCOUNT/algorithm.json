@@ -1,0 +1,30 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph freezes an account based on certain conditions and updates related state accordingly.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values to specific variables",
+      "details": "sets state or flags related to the account"
+    },
+    {
+      "action": "execute a block for further processing",
+      "details": "likely interacts with external components for account update"
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "freeze-conditions"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts table",
+      "description": "updates database records to mark the account as frozen"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

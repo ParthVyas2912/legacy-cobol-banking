@@ -1,0 +1,19 @@
+{
+  "name": "4000-DONE",
+  "description": "This paragraph marks the program as completed and transfers control to another paragraph.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "mark completion",
+      "details": "PERFORM another paragraph indicating the end of processing."
+    },
+    {
+      "action": "end program execution",
+      "details": "GOBACK to terminate the program or end execution flow."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

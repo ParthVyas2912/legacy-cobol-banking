@@ -1,0 +1,16 @@
+{
+  "specforge_gap_analysis": "1.0.0",
+  "summary": {
+    "totalGaps": 0,
+    "bySeverity": {
+      "critical": 0,
+      "high": 0,
+      "medium": 0,
+      "low": 0
+    },
+    "byCategory": {},
+    "overallFidelityScore": 100,
+    "remediationEstimate": "~0 minutes"
+  },
+  "gaps": []
+}

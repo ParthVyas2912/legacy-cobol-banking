@@ -1,0 +1,35 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes and populates an account structure and prepares it for subsequent processing or storage.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move values into variables",
+      "details": "used to populate account-related fields"
+    },
+    {
+      "action": "execute a block of external code",
+      "details": "likely a system or domain-specific API call to create account context"
+    },
+    {
+      "action": "conditional logic",
+      "details": "used to handle specific scenarios or validations during account creation"
+    }
+  ],
+  "inputs": [
+    "customer-details",
+    "creation-parameters"
+  ],
+  "outputs": [
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts-table",
+      "description": "May result in a database write to create a new account"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

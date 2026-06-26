@@ -1,0 +1,4 @@
+# KYCSYNC
+This program processes customer records by fetching data and performing upserts into a KYC audit SQL table.
+Business domain: customer-management
+Architectural role: batch

@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "Marks the end of a process or operation, typically finalizing or concluding a task in the batch program.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "mark process end",
+      "details": "Signals or flags the conclusion of a process step."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,4 @@
+# AUDITSRV
+This COBOL program writes audit records to a file and then returns control to the CICS environment.
+Business domain: infrastructure
+Architectural role: online

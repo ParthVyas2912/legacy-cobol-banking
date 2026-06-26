@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph performs a combination of control flow changes and an unknown operation, potentially with a CALL statement.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "transfer-control",
+      "details": "Uses a GO TO to redirect to another paragraph."
+    },
+    {
+      "action": "execute-procedure",
+      "details": "Calls an external program or subroutine."
+    },
+    {
+      "action": "unknown",
+      "details": "Contains an unspecified operation."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,27 @@
+specforge_knowledge_graph: 1.0.0
+project: source
+entities:
+  - id: project:root
+    name: source
+    type: project
+    description: The 'source' application is a backend system, likely monolithic, written in COBOL for legacy-oriented
+      business processes. It lacks modern architectural design and requires reconstruction to improve modularity,
+      scalability, and maintainability while rethinking business logic and ensuring modern standards compatibility.
+    sourceFiles: []
+    domain: legacy enterprise system modernization
+    properties:
+      type: backend
+      totalFiles: 20
+      sourceFiles: 19
+    tags:
+      - project
+    confidence: 1
+relationships: []
+metadata:
+  totalEntities: 1
+  totalRelationships: 0
+  entityTypeCounts:
+    project: 1
+  relationshipTypeCounts: {}
+  averageConfidence: 1
+  generatedAt: 2026-06-26T15:28:50.065Z

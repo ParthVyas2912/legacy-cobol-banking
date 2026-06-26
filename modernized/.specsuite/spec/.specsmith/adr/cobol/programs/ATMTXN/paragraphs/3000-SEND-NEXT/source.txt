@@ -1,0 +1,6 @@
+Paragraph: 3000-SEND-NEXT
+Lines: 55-57
+Statements: 2
+
+1. move
+2. exec-block

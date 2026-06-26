@@ -1,0 +1,17 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "This paragraph contains a conditional logic that determines the flow of execution based on a given condition.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Executes an IF statement to influence subsequent program execution."
+    }
+  ],
+  "inputs": [
+    "condition-variable"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

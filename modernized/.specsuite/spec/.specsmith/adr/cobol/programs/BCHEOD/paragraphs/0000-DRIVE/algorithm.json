@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph initializes processing by invoking a setup routine and redirecting control to the next logical step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Invokes 9000-MARK-START for setup or initialization."
+    },
+    {
+      "action": "go-to",
+      "details": "Transfers control unconditionally to 1000-NEXT-STEP."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

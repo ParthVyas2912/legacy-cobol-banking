@@ -1,0 +1,25 @@
+{
+  "name": "1100-IMS-GN-LOOP",
+  "description": "This paragraph processes a loop for handling IMS operations, potentially fetching or navigating database records.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "perform database operation",
+      "details": "Likely iterates over database records via an IMS GN loop."
+    }
+  ],
+  "inputs": [
+    "IMS cursor"
+  ],
+  "outputs": [
+    "Processed record data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "ims-insert",
+      "target": "IMS database system",
+      "description": "Likely engages with IMS operations such as retrieving records."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

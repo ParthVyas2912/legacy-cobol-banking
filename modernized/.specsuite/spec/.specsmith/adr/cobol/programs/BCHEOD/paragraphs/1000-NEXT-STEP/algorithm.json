@@ -1,0 +1,15 @@
+{
+  "name": "1000-NEXT-STEP",
+  "description": "Directs control flow to the 2000-INT-STEP paragraph unconditionally.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "transfer-control",
+      "details": "unconditionally jumps to 2000-INT-STEP"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

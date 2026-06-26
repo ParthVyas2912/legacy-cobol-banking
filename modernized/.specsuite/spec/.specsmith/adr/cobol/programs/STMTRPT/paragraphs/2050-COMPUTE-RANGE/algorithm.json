@@ -1,0 +1,19 @@
+{
+  "name": "2050-COMPUTE-RANGE",
+  "description": "Evaluates a condition to compute or determine a range for reporting purposes.",
+  "purpose": "computation",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Executes an IF statement to determine the range logic."
+    }
+  ],
+  "inputs": [
+    "input-variable"
+  ],
+  "outputs": [
+    "range-variable"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

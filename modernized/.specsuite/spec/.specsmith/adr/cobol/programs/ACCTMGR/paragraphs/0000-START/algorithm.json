@@ -1,0 +1,20 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "The paragraph evaluates a condition and executes a block of code, likely as part of the program's initialization or setup routine.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Branches based on the evaluated condition."
+    },
+    {
+      "action": "execute a specific block",
+      "details": "Performs actions based on the evaluation."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

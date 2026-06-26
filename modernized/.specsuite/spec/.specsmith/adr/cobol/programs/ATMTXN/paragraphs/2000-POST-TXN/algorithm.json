@@ -1,0 +1,30 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes a transaction by updating relevant variables and executing a block of code, then transitions control to the next step.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "update transaction-related variables",
+      "details": "uses MOVE statements"
+    },
+    {
+      "action": "execute a specific operation",
+      "details": "executes an exec-block likely interfacing with the external system"
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "system-status"
+  ],
+  "outputs": [
+    "updated variables"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "next screen",
+      "description": "Prepares the system for the next transaction step by sending data to the next program section."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

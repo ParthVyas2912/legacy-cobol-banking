@@ -1,0 +1,27 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "This paragraph initializes data and begins processing customer records via a perform loop.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "move a value to a variable",
+      "details": "Sets an initial value for processing."
+    },
+    {
+      "action": "perform another paragraph",
+      "details": "Transfers control to a loop for handling customer data."
+    }
+  ],
+  "inputs": [
+    "customer-data"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "program-flow",
+      "description": "Alters control flow by initiating another paragraph."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

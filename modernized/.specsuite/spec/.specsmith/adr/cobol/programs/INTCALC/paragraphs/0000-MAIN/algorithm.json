@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes file handling, performs a loop, and terminates processing in the batch program.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open files",
+      "details": "Prepare input and/or output files for processing."
+    },
+    {
+      "action": "perform loop",
+      "details": "Execute the 1000-LOOP paragraph until a condition is met."
+    },
+    {
+      "action": "close files",
+      "details": "Finalize and close all file resources used during processing."
+    },
+    {
+      "action": "terminate program",
+      "details": "End program execution and return control to the operating system."
+    }
+  ],
+  "inputs": [
+    "input-file"
+  ],
+  "outputs": [
+    "output-file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output-file",
+      "description": "Updates or writes new data to the output file as part of processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

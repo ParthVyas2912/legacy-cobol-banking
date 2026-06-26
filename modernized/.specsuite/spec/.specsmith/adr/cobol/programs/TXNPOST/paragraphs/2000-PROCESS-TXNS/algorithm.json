@@ -1,0 +1,27 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "Processes transactions by reading input and passing control to transaction application logic.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read transaction data",
+      "details": "Reads one transaction record from the input file."
+    },
+    {
+      "action": "perform transaction application",
+      "details": "Transfers control to apply transaction logic in 2100-APPLY-TXN."
+    }
+  ],
+  "inputs": [
+    "transaction-file"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-read",
+      "target": "transaction-file",
+      "description": "Reads a record from the input transaction file."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

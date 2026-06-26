@@ -1,0 +1,33 @@
+{
+  "name": "2000-OPEN-CURSOR",
+  "description": "This paragraph initializes and opens a database cursor in preparation for further processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move value to variable",
+      "details": "Prepares input values or flags before database interaction."
+    },
+    {
+      "action": "perform paragraph",
+      "details": "Handles additional prerequisite logic or operations for the cursor."
+    },
+    {
+      "action": "execute SQL to open cursor",
+      "details": "Initializes the database cursor for processing."
+    }
+  ],
+  "inputs": [
+    "SQL-CURSOR"
+  ],
+  "outputs": [
+    "SQL-CURSOR"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": null,
+      "description": "This paragraph prepares the cursor but does not yet modify the database or external systems."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}
