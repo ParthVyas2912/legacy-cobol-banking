@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "This paragraph processes a fatal error scenario, potentially logging or handling the error before halting further execution.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "handle error",
+      "details": "likely conveys or logs a fatal error condition"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "program termination",
+      "description": "The program execution halts due to a fatal error."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

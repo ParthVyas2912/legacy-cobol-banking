@@ -1,0 +1,23 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph appears to invoke a procedure, perform an unknown action, and transition control to another program step.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "invoke procedure",
+      "details": "Calls a program or subroutine."
+    },
+    {
+      "action": "perform an unknown operation",
+      "details": "Action could not be determined from provided metadata."
+    },
+    {
+      "action": "transfer control",
+      "details": "Goes to 1000-NEXT-STEP."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

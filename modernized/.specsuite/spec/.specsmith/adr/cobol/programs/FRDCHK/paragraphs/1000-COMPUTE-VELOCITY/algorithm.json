@@ -1,0 +1,19 @@
+{
+  "name": "1000-COMPUTE-VELOCITY",
+  "description": "This paragraph calculates velocity based on input parameters and provides the result for further processing.",
+  "purpose": "computation",
+  "algorithm": [
+    {
+      "action": "compute velocity",
+      "details": "perform a mathematical operation to determine velocity"
+    }
+  ],
+  "inputs": [
+    "velocity-input"
+  ],
+  "outputs": [
+    "computed-velocity"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

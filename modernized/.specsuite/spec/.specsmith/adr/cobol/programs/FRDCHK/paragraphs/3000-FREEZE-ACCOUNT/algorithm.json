@@ -1,0 +1,35 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph appears to freeze a customer's account by setting specific states and executing encapsulated operations.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "set account state to frozen",
+      "details": "move operation updates the account status or related variables"
+    },
+    {
+      "action": "execute business logic to enforce freeze",
+      "details": "exec-block operations perform context-specific actions"
+    }
+  ],
+  "inputs": [
+    "account-state",
+    "freeze-trigger"
+  ],
+  "outputs": [
+    "updated-account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-status table",
+      "description": "Updates the database with the frozen account status"
+    },
+    {
+      "kind": "cics-send",
+      "target": "user notification",
+      "description": "Sends a message to notify the user of the account freeze"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

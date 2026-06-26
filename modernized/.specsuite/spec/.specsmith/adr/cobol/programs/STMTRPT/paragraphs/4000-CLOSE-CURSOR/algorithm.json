@@ -1,0 +1,23 @@
+{
+  "name": "4000-CLOSE-CURSOR",
+  "description": "Closes an active SQL cursor for the program.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close SQL cursor",
+      "details": "Executes an embedded SQL statement to close a cursor."
+    }
+  ],
+  "inputs": [
+    "SQL cursor"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "database",
+      "description": "Closes the associated SQL cursor, releasing any resources held."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

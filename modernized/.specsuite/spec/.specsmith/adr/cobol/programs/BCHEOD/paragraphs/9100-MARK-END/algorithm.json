@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "This paragraph marks the end of processing within a specific step or phase.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute a COBOL block",
+      "details": "uses an EXEC block to signify the end of a process"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

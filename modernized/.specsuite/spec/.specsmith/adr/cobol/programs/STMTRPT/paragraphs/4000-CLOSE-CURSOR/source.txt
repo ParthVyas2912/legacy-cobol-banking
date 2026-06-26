@@ -1,0 +1,5 @@
+Paragraph: 4000-CLOSE-CURSOR
+Lines: 102-103
+Statements: 1
+
+1. exec-block

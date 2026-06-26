@@ -1,0 +1,4 @@
+# BCHEOD
+This program processes end-of-day transactions, updating records in the EOD_RUNS SQL table and invoking calculation and posting routines.
+Business domain: infrastructure
+Architectural role: batch

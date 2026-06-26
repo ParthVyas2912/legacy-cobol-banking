@@ -1,0 +1,10 @@
+Paragraph: 0000-START
+Lines: 20-33
+Statements: 6
+
+1. exec-block
+2. exec-block
+3. perform
+4. perform
+5. perform
+6. exec-block

@@ -1,0 +1,17 @@
+specforge_evaluation: 1.0.0
+project: source
+setup:
+  description: These test cases describe the expected behavior of the reconstructed application. Each test should be
+    translated into a concrete test in the target framework and executed against the rebuilt system.
+  requiredEnvVars: []
+  requiredServices: []
+  steps:
+    - Install dependencies in the reconstructed project
+    - Run the application (or its test suite) to verify each test case
+    - Compare results against the assertions listed in each test case
+test_cases: []
+summary:
+  total: 0
+  byCategory: {}
+  byPriority: {}
+  criticalCount: 0

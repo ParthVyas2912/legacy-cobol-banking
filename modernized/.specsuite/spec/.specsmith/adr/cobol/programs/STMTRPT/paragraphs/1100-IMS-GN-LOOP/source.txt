@@ -1,0 +1,8 @@
+Paragraph: 1100-IMS-GN-LOOP
+Lines: 68-77
+Statements: 4
+
+1. call
+2. unknown
+3. perform
+4. unknown

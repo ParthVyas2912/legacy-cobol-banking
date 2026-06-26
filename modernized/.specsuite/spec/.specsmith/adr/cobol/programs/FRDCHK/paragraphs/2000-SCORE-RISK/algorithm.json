@@ -1,0 +1,19 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "Evaluates risk score based on conditions and prepares for further processing.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate risk score",
+      "details": "Checks multiple conditions and moves values based on logic."
+    }
+  ],
+  "inputs": [
+    "risk-factors"
+  ],
+  "outputs": [
+    "risk-score"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,35 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph handles closing an account, performing a database action and possibly making a conditional check before finalizing.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Move a specific value to a variable."
+    },
+    {
+      "action": "conditional check",
+      "details": "Evaluate an 'if' condition for logical flow."
+    },
+    {
+      "action": "execute SQL or external block",
+      "details": "Perform a database action or external routine call."
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "account-id"
+  ],
+  "outputs": [
+    "transaction-log"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "transaction-log",
+      "description": "Records the closure action in the database."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

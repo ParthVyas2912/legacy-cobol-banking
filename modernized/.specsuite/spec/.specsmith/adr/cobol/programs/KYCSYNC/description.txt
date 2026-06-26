@@ -1,0 +1,4 @@
+# KYCSYNC
+This program synchronizes customer KYC (Know Your Customer) records by processing data through IMS and updating SQL tables.
+Business domain: customer-management
+Architectural role: batch

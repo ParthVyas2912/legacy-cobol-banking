@@ -1,0 +1,29 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph performs a procedural step with a mix of external calls and control flow navigation.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call external routine",
+      "details": "Makes a call to an unspecified external procedure or routine"
+    },
+    {
+      "action": "perform unknown operation",
+      "details": "Executes an operation whose nature is unclear from the provided information"
+    },
+    {
+      "action": "redirect control",
+      "details": "Uses a GO TO statement to navigate program flow"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external routine",
+      "description": "Invokes an external routine, potentially affecting external state or system behavior"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

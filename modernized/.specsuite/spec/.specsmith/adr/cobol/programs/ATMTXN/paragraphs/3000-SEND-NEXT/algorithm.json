@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "Sends the next transaction or displays an error if an issue occurs.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data to a target variable",
+      "details": "Populates a required field for the transaction."
+    },
+    {
+      "action": "send data through a CICS command",
+      "details": "Executes a CICS SEND operation to forward the transaction."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "send-result"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "CICS transaction queue",
+      "description": "Sends the transaction to the appropriate CICS queue for further processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

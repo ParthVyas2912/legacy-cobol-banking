@@ -1,0 +1,101 @@
+{
+  "nodes": [
+    {
+      "id": "__entry__",
+      "isEntry": true,
+      "statementCount": 0
+    },
+    {
+      "id": "0000-MAIN",
+      "isEntry": false,
+      "statementCount": 5
+    },
+    {
+      "id": "1000-OPEN-FILES",
+      "isEntry": false,
+      "statementCount": 1
+    },
+    {
+      "id": "2000-PROCESS-TXNS",
+      "isEntry": false,
+      "statementCount": 4
+    },
+    {
+      "id": "2100-APPLY-TXN",
+      "isEntry": false,
+      "statementCount": 10
+    },
+    {
+      "id": "3000-CLOSE-FILES",
+      "isEntry": false,
+      "statementCount": 1
+    }
+  ],
+  "edges": [
+    {
+      "from": "__entry__",
+      "to": "0000-MAIN",
+      "kind": "entry"
+    },
+    {
+      "from": "0000-MAIN",
+      "to": "1000-OPEN-FILES",
+      "kind": "perform",
+      "location": {
+        "line": 39,
+        "column": 5
+      }
+    },
+    {
+      "from": "0000-MAIN",
+      "to": "2000-PROCESS-TXNS",
+      "kind": "perform-until",
+      "location": {
+        "line": 40,
+        "column": 5
+      }
+    },
+    {
+      "from": "0000-MAIN",
+      "to": "3000-CLOSE-FILES",
+      "kind": "perform",
+      "location": {
+        "line": 41,
+        "column": 5
+      }
+    },
+    {
+      "from": "1000-OPEN-FILES",
+      "to": "2000-PROCESS-TXNS",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "2000-PROCESS-TXNS",
+      "to": "2100-APPLY-TXN",
+      "kind": "perform",
+      "location": {
+        "line": 55,
+        "column": 13
+      }
+    },
+    {
+      "from": "2000-PROCESS-TXNS",
+      "to": "2100-APPLY-TXN",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "2100-APPLY-TXN",
+      "to": "3000-CLOSE-FILES",
+      "kind": "fallthrough"
+    }
+  ],
+  "entries": [
+    "__entry__"
+  ],
+  "dead": [],
+  "loopHeaders": [
+    "2000-PROCESS-TXNS"
+  ],
+  "goToClusters": [],
+  "cyclomaticComplexity": 4
+}

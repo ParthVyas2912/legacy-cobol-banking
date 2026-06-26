@@ -1,0 +1,15 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "This paragraph evaluates a condition and potentially influences the program flow.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Executes an IF statement to determine next steps."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

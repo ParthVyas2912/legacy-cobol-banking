@@ -1,0 +1,31 @@
+{
+  "name": "0000-MAIN",
+  "description": "The 0000-MAIN paragraph serves as the main entry point of the program, orchestrating the sequence of operations by performing key processing paragraphs.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Invoke 1000-OPEN-FILES for file preparation."
+    },
+    {
+      "action": "perform-until",
+      "details": "Iterate through 2000-PROCESS-TXNS for transaction processing."
+    },
+    {
+      "action": "perform",
+      "details": "Invoke 3000-CLOSE-FILES to finalize file operations."
+    },
+    {
+      "action": "display",
+      "details": "Log messages or status to the display."
+    },
+    {
+      "action": "goback",
+      "details": "Return control to the calling environment."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

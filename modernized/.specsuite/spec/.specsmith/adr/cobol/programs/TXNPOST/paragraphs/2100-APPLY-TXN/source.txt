@@ -1,0 +1,14 @@
+Paragraph: 2100-APPLY-TXN
+Lines: 58-74
+Statements: 10
+
+1. move
+2. move
+3. call
+4. unknown
+5. move
+6. unknown
+7. add
+8. move
+9. unknown
+10. write

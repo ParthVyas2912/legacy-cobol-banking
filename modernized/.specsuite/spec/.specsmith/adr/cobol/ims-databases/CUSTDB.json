@@ -1,0 +1,5 @@
+{
+  "name": "CUSTDB",
+  "segmentCount": 3,
+  "description": "This is a hierarchical IMS database using the HIDAM access method, designed to store customer information with linked accounts and addresses."
+}

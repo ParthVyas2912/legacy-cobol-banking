@@ -1,0 +1,30 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes transaction data, updates specific fields, and sends it to the next step.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move data into variables",
+      "details": "Updates working-storage variables with transaction-related values."
+    },
+    {
+      "action": "execute a block",
+      "details": "Executes a specialized external routine for transaction processing."
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "processing-parameters"
+  ],
+  "outputs": [
+    "updated-fields"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "next-screen",
+      "description": "Sends transaction data to the next logical step in the application flow."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

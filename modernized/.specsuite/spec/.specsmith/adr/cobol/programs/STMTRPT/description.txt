@@ -1,0 +1,4 @@
+# STMTRPT
+This program generates a statement report by fetching customer data and processing transactions from an IMS database and SQL table.
+Business domain: reporting
+Architectural role: batch

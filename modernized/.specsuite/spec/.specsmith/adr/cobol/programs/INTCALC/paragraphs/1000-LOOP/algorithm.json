@@ -1,0 +1,17 @@
+{
+  "name": "1000-LOOP",
+  "description": "This paragraph reads a record in a file or data source and sets up control flow for further processing.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a record",
+      "details": "Reads a record from the file or input source as part of a loop"
+    }
+  ],
+  "inputs": [
+    "input-file"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

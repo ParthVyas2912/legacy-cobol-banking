@@ -1,0 +1,16 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "Initial entry point of the program, sets up control flow based on input conditions.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate conditions to determine next processing step",
+      "details": "Switches control to the appropriate paragraph based on an EVALUATE statement."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

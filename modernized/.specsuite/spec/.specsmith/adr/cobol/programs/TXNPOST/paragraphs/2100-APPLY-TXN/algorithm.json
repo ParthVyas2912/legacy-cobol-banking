@@ -1,0 +1,34 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "Processes a transaction by performing moves, calculations, and output operations.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values to specific fields",
+      "details": "Prepares transaction data for processing"
+    },
+    {
+      "action": "add values",
+      "details": "Updates totals or balances based on the transaction"
+    },
+    {
+      "action": "write record",
+      "details": "Outputs the transaction data to a file or report"
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "processing-flags"
+  ],
+  "outputs": [
+    "output-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output file",
+      "description": "Writes transaction data to a file for downstream processing"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

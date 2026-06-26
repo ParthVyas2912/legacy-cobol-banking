@@ -1,0 +1,31 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes an account creation process by setting values and potentially executing a database operation with conditional logic.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "initialize account fields",
+      "details": "set initial values using move statements"
+    },
+    {
+      "action": "conditionally execute",
+      "details": "perform an operation using IF logic"
+    }
+  ],
+  "inputs": [
+    "input-data",
+    "environment-flags"
+  ],
+  "outputs": [
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "Accounts table",
+      "description": "Stores the initialized account record"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

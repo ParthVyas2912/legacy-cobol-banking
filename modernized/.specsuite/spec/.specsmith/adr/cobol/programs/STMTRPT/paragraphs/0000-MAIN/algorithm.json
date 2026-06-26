@@ -1,0 +1,27 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes resources, performs a fetch operation, and then terminates the program or exits gracefully.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open a resource",
+      "details": "Open necessary file or resource for processing"
+    },
+    {
+      "action": "perform a fetch operation",
+      "details": "Transfer control to the FETCH-CUSTOMERS paragraph to fetch customer data"
+    },
+    {
+      "action": "close a resource",
+      "details": "Close the previously opened resource"
+    },
+    {
+      "action": "terminate the program",
+      "details": "Exit the program using GOBACK"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

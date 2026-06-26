@@ -1,0 +1,8 @@
+Paragraph: 2000-SCORE-RISK
+Lines: 42-50
+Statements: 4
+
+1. move
+2. if
+3. if
+4. if

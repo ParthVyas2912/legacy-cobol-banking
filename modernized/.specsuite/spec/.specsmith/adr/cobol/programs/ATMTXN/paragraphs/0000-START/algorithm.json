@@ -1,0 +1,27 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initiates the transaction processing by executing specific blocks and invoking other paragraphs via PERFORM statements.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute initialization blocks",
+      "details": "Sets up for transaction processing by invoking key paragraphs."
+    },
+    {
+      "action": "perform validations",
+      "details": "Transitions to 1000-VALIDATE for further checks."
+    },
+    {
+      "action": "perform posting",
+      "details": "Calls 2000-POST-TXN to handle transaction-related operations."
+    },
+    {
+      "action": "send next action",
+      "details": "Leads to 3000-SEND-NEXT for subsequent workflow handling."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

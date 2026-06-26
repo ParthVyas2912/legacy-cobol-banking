@@ -1,0 +1,25 @@
+{
+  "name": "2000-UPSERT-KYC",
+  "description": "This paragraph executes a database upsert operation related to KYC (Know Your Customer) data synchronization.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "perform upsert operation",
+      "details": "Executes a block of code to insert or update customer data in the database based on KYC information."
+    }
+  ],
+  "inputs": [
+    "customer-data"
+  ],
+  "outputs": [
+    "customer-table"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "customer-table",
+      "description": "Modifies the customer table to reflect the latest KYC data."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

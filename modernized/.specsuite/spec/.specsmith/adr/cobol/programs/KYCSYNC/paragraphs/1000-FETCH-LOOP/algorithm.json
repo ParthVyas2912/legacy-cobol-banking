@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph iterates through a loop to fetch customer-related data and invokes a processing routine.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "fetch data",
+      "details": "Facilitates retrieval of customer data in a loop."
+    },
+    {
+      "action": "invoke processing routine",
+      "details": "Calls a subroutine for further processing of fetched data."
+    }
+  ],
+  "inputs": [
+    "customer-data-source"
+  ],
+  "outputs": [
+    "processed-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "KYC database",
+      "description": "Updates or inserts KYC-related data into the database."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

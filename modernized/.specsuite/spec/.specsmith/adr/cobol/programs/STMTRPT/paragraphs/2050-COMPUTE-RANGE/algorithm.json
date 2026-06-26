@@ -1,0 +1,17 @@
+{
+  "name": "2050-COMPUTE-RANGE",
+  "description": "Evaluates a condition to determine the flow of control based on a specific range.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate-condition",
+      "details": "Performs an IF statement to decide the next processing step."
+    }
+  ],
+  "inputs": [
+    "some-condition"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

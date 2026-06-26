@@ -1,0 +1,23 @@
+{
+  "name": "3000-FETCH-LOOP",
+  "description": "This paragraph retrieves data using a SQL cursor and then conditionally directs control flow based on the retrieved result.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch-row",
+      "details": "Fetch a record from an open SQL cursor."
+    },
+    {
+      "action": "check-fetch-result",
+      "details": "Evaluate whether the fetch succeeded or failed."
+    }
+  ],
+  "inputs": [
+    "SQL_CURSOR"
+  ],
+  "outputs": [
+    "FETCH-STATUS"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

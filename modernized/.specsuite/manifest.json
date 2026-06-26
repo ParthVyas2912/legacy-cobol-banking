@@ -1,0 +1,31 @@
+{
+  "build_id": "60",
+  "source_repo": "legacy-cobol-banking",
+  "source_branch": "main",
+  "target_stack": "csharp-aspnet-efcore",
+  "target_subdir": "modernized/csharp-aspnet-efcore",
+  "generated_at": "2026-06-26T16:04:31Z",
+  "token_usage": {
+  "runId": "60",
+  "targetStack": "csharp-aspnet-efcore",
+  "costPerMillionTokensUSD": 5.0,
+  "specforge": {
+    "tokens": 0,
+    "llmCalls": 170,
+    "estimatedCostUSD": 0.0,
+    "source": "unavailable"
+  },
+  "specsmith": {
+    "tokens": 206541,
+    "llmCalls": 60,
+    "estimatedCostUSD": 1.0327,
+    "source": "specsmith.log (per-call sum)"
+  },
+  "total": {
+    "tokens": 206541,
+    "llmCalls": 230,
+    "estimatedCostUSD": 1.0327
+  }
+},
+  "pipeline": "specsuite-modernization-pipeline"
+}
