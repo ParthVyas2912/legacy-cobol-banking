@@ -1,0 +1,23 @@
+{
+  "name": "4000-CLOSE-CURSOR",
+  "description": "This paragraph closes a database cursor used in the program.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close the database cursor",
+      "details": "Terminates access to a previously opened SQL cursor."
+    }
+  ],
+  "inputs": [
+    "cursor-name"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "sql-resource",
+      "description": "Releases database resources associated with the SQL cursor."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,153 @@
+[
+  {
+    "id": "kycsync/comp-3-decimal/_/14",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "KYCSYNC",
+    "location": {
+      "line": 14
+    },
+    "title": "COMP-3 field CUST-RISK-SCORE → DECIMAL(3,0)",
+    "description": "Packed-decimal COMP-3 field CUST-RISK-SCORE PIC 9(03). Modern equivalent: SQL DECIMAL(3,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 CUST-RISK-SCORE PIC 9(03) COMP-3.",
+    "suggestedReplacement": "// SQL:   cust-risk-score DECIMAL(3,0)\n// Java:  BigDecimal custRiskScore;\n// C#:    decimal CustRiskScore;\n// Python: custRiskScore: Decimal",
+    "detail": {
+      "precision": 3,
+      "scale": 0,
+      "sqlType": "DECIMAL(3,0)",
+      "picture": "9(03)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "kycsync/comp-3-decimal/_/19",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "KYCSYNC",
+    "location": {
+      "line": 19
+    },
+    "title": "COMP-3 field CUST-ACCT-COUNT → DECIMAL(3,0)",
+    "description": "Packed-decimal COMP-3 field CUST-ACCT-COUNT PIC 9(03). Modern equivalent: SQL DECIMAL(3,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 CUST-ACCT-COUNT PIC 9(03) COMP-3.",
+    "suggestedReplacement": "// SQL:   cust-acct-count DECIMAL(3,0)\n// Java:  BigDecimal custAcctCount;\n// C#:    decimal CustAcctCount;\n// Python: custAcctCount: Decimal",
+    "detail": {
+      "precision": 3,
+      "scale": 0,
+      "sqlType": "DECIMAL(3,0)",
+      "picture": "9(03)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "kycsync/comp-3-decimal/_/24",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "KYCSYNC",
+    "location": {
+      "line": 24
+    },
+    "title": "COMP-3 field WS-NEXT-COUNT → DECIMAL(9,0)",
+    "description": "Packed-decimal COMP-3 field WS-NEXT-COUNT PIC 9(09). Modern equivalent: SQL DECIMAL(9,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-NEXT-COUNT PIC 9(09) COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-next-count DECIMAL(9,0)\n// Java:  BigDecimal wsNextCount;\n// C#:    decimal WsNextCount;\n// Python: wsNextCount: Decimal",
+    "detail": {
+      "precision": 9,
+      "scale": 0,
+      "sqlType": "DECIMAL(9,0)",
+      "picture": "9(09)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "kycsync/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "KYCSYNC",
+    "title": "IMS segment PCB-OK → relational table",
+    "description": "Program accesses IMS segment PCB-OK via PCB/SSA WS-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-PCB-MASK <io-area> 'PCB-OK'.",
+    "suggestedReplacement": "-- CREATE TABLE pcb-ok (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-PCB-MASK",
+      "segment": "PCB-OK"
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "kycsync/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "KYCSYNC",
+    "title": "IMS segment WS-NEXT-COUNT → relational table",
+    "description": "Program accesses IMS segment WS-NEXT-COUNT via PCB/SSA WS-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-PCB-MASK <io-area> 'WS-NEXT-COUNT'.",
+    "suggestedReplacement": "-- CREATE TABLE ws-next-count (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-PCB-MASK",
+      "segment": "WS-NEXT-COUNT"
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "kycsync/ims-segment-to-table/_/0",
+    "category": "ims",
+    "kind": "ims-segment-to-table",
+    "severity": "medium",
+    "programId": "KYCSYNC",
+    "title": "IMS segment 2000-UPSERT-KYC → relational table",
+    "description": "Program accesses IMS segment 2000-UPSERT-KYC via PCB/SSA WS-PCB-MASK. Migrate segment to a relational table; preserve hierarchical parent foreign keys to model the DBD hierarchy.",
+    "currentCode": "CALL 'CBLTDLI' USING <fn-code> WS-PCB-MASK <io-area> '2000-UPSERT-KYC'.",
+    "suggestedReplacement": "-- CREATE TABLE 2000-upsert-kyc (\n--   id BIGINT PRIMARY KEY,\n--   parent_id BIGINT REFERENCES <parent_segment_table>(id),\n--   ...\n-- );",
+    "detail": {
+      "dbd": "WS-PCB-MASK",
+      "segment": "2000-UPSERT-KYC"
+    },
+    "tags": [
+      "ims",
+      "database"
+    ]
+  },
+  {
+    "id": "kycsync/missing-sqlca-check/_/44",
+    "category": "io",
+    "kind": "missing-sqlca-check",
+    "severity": "medium",
+    "programId": "KYCSYNC",
+    "location": {
+      "line": 44,
+      "column": 5
+    },
+    "title": "EXEC SQL without SQLCODE / SQLSTATE check",
+    "description": "Embedded SQL with no SQLCODE / SQLSTATE inspection after the call and no WHENEVER directive in effect. Unhandled SQL errors are a common source of silent data corruption in COBOL.",
+    "currentCode": "EXEC SQL ... END-EXEC.",
+    "suggestedReplacement": "EXEC SQL ... END-EXEC.\n    IF SQLCODE NOT = ZERO\n        PERFORM HANDLE-SQL-ERROR\n    END-IF.",
+    "tags": [
+      "sql",
+      "error-handling"
+    ]
+  }
+]

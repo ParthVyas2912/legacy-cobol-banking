@@ -1,0 +1,42 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph handles initial I/O operations, performs a looping business operation, and concludes program execution.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open input/output resources",
+      "details": "Opens required files for processing"
+    },
+    {
+      "action": "perform loop operation",
+      "details": "Invokes 1000-LOOP using PERFORM UNTIL control flow"
+    },
+    {
+      "action": "close files",
+      "details": "Closes files upon completion"
+    },
+    {
+      "action": "terminate program",
+      "details": "Returns control to the operating system via GOBACK"
+    }
+  ],
+  "inputs": [
+    "file-A"
+  ],
+  "outputs": [
+    "file-B"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file-B",
+      "description": "Writes results to output file"
+    },
+    {
+      "kind": "commit",
+      "target": "file-B",
+      "description": "Places the output data in a stable state"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

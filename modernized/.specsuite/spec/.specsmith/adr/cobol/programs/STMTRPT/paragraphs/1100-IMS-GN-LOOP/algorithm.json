@@ -1,0 +1,33 @@
+{
+  "name": "1100-IMS-GN-LOOP",
+  "description": "This paragraph iterates over a set of records, performing a database fetch operation in an IMS environment, and transitions control to subsequent operations based on the flow of data.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch records from IMS database",
+      "details": "using a loop structure"
+    },
+    {
+      "action": "call external functionality",
+      "details": "specific details unknown"
+    },
+    {
+      "action": "evaluate data/context",
+      "details": "may influence control flow"
+    }
+  ],
+  "inputs": [
+    "IMS cursor"
+  ],
+  "outputs": [
+    "Processed record or status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "unknown",
+      "target": "external system or state",
+      "description": "likely due to the 'call' operation but exact details are undefined"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

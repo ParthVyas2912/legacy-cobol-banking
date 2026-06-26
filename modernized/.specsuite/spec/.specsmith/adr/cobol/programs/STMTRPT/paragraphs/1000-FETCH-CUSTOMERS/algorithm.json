@@ -1,0 +1,23 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "Fetches customer data and prepares for processing in the subsequent loop.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Initializes or sets up a working variable or parameter."
+    },
+    {
+      "action": "perform",
+      "details": "Transfers control to another paragraph for further processing."
+    }
+  ],
+  "inputs": [
+    "customer-record"
+  ],
+  "outputs": [
+    "working-storage-fields"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

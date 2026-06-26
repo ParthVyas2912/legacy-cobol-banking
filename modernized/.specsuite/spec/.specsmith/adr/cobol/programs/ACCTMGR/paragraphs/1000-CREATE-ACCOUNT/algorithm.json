@@ -1,0 +1,34 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes and prepares a new customer account for further processing.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "initialize account variables with default values",
+      "details": "Uses MOVE statements to set default values for the account."
+    },
+    {
+      "action": "validate input data",
+      "details": "Conditional processing with IF to ensure integrity."
+    },
+    {
+      "action": "execute specific business logic",
+      "details": "Executes a COBOL EXEC block for further initialization or integration."
+    }
+  ],
+  "inputs": [
+    "customer-input-data"
+  ],
+  "outputs": [
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "ACCOUNT table",
+      "description": "Potential preparation for eventual database insertion (details unclear from this context)."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

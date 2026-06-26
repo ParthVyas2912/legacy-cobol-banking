@@ -1,0 +1,15 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes processing and delegates further actions to specific routines via PERFORM statements.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize processing flow",
+      "details": "PERFORM statements direct control to successive paragraphs handling distinct operations."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

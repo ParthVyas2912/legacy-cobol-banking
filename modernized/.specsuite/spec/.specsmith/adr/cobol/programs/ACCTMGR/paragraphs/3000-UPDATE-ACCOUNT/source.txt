@@ -1,0 +1,8 @@
+Paragraph: 3000-UPDATE-ACCOUNT (section MAIN-ROUTINE)
+Lines: 89-104
+Statements: 4
+
+1. move
+2. exec-block
+3. if
+4. if

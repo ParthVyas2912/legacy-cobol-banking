@@ -1,0 +1,25 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes processing, displays a starting message, and transitions control to a main processing loop.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Assign default or starting values to program variables."
+    },
+    {
+      "action": "output starting message",
+      "details": "Display a custom message to indicate the start of processing."
+    },
+    {
+      "action": "transfer control",
+      "details": "Perform the main loop to handle the core process."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "starting message"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

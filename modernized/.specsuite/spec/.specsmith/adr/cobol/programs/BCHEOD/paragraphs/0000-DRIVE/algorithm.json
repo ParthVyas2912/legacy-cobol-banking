@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph drives the control flow by invoking a marked start and branching to the next step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform a routine",
+      "details": "Invokes 9000-MARK-START."
+    },
+    {
+      "action": "redirect control",
+      "details": "Uses GO TO to branch to 1000-NEXT-STEP."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

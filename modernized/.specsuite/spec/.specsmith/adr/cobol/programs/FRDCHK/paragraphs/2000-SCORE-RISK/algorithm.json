@@ -1,0 +1,24 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "Evaluates risk scores based on fraud-detection criteria and determines whether further action is needed.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Checks fraud risk through conditional IF statements"
+    },
+    {
+      "action": "assign value",
+      "details": "Moves computed or determined value to a target variable for further processing"
+    }
+  ],
+  "inputs": [
+    "fraud-risk-score",
+    "velocity-check"
+  ],
+  "outputs": [
+    "risk-validation-result"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

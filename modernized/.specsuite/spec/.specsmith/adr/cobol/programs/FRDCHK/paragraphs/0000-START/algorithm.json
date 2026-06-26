@@ -1,0 +1,19 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes control flow for fraud-detection steps, invoking various operations based on conditions.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "check conditions",
+      "details": "Evaluates a condition to determine which steps to perform."
+    },
+    {
+      "action": "perform operations",
+      "details": "Executes fraud-detection sub-processes through PERFORM statements."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

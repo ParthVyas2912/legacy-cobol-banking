@@ -1,0 +1,15 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph iterates through a loop to fetch data and executes a subsequent routine for processing.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform fetch",
+      "details": "likely reads data in a loop, potentially for processing or validation"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

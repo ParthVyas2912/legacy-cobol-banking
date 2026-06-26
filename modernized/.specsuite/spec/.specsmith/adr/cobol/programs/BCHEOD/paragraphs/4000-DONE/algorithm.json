@@ -1,0 +1,19 @@
+{
+  "name": "4000-DONE",
+  "description": "This paragraph marks the end of processing and directs the flow to a specific cleanup section.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform a section",
+      "details": "perform 9100-MARK-END"
+    },
+    {
+      "action": "return control",
+      "details": "goback to the caller or end the program"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

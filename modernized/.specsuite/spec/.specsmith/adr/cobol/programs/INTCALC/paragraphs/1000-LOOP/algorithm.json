@@ -1,0 +1,17 @@
+{
+  "name": "1000-LOOP",
+  "description": "Reads input data within a loop in preparation for processing.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read input",
+      "details": "Reads a record from an input file or source"
+    }
+  ],
+  "inputs": [
+    "input-record"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

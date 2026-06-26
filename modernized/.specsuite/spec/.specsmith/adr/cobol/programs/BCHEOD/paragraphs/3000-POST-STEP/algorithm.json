@@ -1,0 +1,23 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph handles a post-step operation and transitions control to the next step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "invoke external functionality",
+      "details": "Makes a CALL to another program or module."
+    },
+    {
+      "action": "execute unknown operation",
+      "details": "An unknown statement is present whose behavior is not determined."
+    },
+    {
+      "action": "transfer control",
+      "details": "Transfers control to 1000-NEXT-STEP via GO TO statement."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

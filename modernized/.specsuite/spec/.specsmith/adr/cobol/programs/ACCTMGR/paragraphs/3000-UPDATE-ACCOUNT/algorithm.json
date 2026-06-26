@@ -1,0 +1,35 @@
+{
+  "name": "3000-UPDATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph updates account information by executing some business logic and conditionally determining the next steps.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "update account data",
+      "details": "potentially using move and conditional statements"
+    },
+    {
+      "action": "execute business logic",
+      "details": "via an exec-block to interact with external systems or APIs"
+    },
+    {
+      "action": "conditionally route control",
+      "details": "based on if statements"
+    }
+  ],
+  "inputs": [
+    "account-data",
+    "external-service-response"
+  ],
+  "outputs": [
+    "updated-account-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "unknown",
+      "target": "exec-block",
+      "description": "May include external system interactions not explicitly detailed in the source"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

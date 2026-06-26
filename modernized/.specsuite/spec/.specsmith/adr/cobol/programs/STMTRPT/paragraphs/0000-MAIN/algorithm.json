@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes necessary resources, performs a fetch operation on customer data, and then cleans up and terminates the program.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open resources",
+      "details": "Open file or necessary resource for processing"
+    },
+    {
+      "action": "perform fetch operation",
+      "details": "Call the 1000-FETCH-CUSTOMERS paragraph to retrieve customer data"
+    },
+    {
+      "action": "close resources",
+      "details": "Ensure any opened resources are properly closed"
+    },
+    {
+      "action": "terminate program",
+      "details": "Return control to the operating system with a GOBACK"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output file or report",
+      "description": "May initialize or prepare an output report file during the open/close operations"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

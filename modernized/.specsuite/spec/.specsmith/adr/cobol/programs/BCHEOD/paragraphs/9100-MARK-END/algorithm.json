@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "Marks the end of a specific process or operation, likely finalizing or terminating a batch step.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "execute a block of code",
+      "details": "Executes an inline or external process through an EXEC block."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

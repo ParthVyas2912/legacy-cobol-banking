@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "The paragraph handles a fatal error scenario, likely by executing necessary system actions for termination.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute system-level termination logic",
+      "details": "Triggered during a critical error condition."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "system",
+      "description": "Triggers an abnormal termination due to a fatal error."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,30 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes a transaction by updating state and performs one external action, likely related to communication or logging.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "update variables",
+      "details": "Moves values into working storage fields"
+    },
+    {
+      "action": "perform external operation",
+      "details": "Executes a block likely tied to I/O or middleware interaction"
+    }
+  ],
+  "inputs": [
+    "var1",
+    "environmentData"
+  ],
+  "outputs": [
+    "txnState"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "middleware",
+      "description": "Communicates transaction status or updates to external system"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

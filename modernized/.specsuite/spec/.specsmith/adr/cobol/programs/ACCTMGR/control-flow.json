@@ -1,0 +1,93 @@
+{
+  "nodes": [
+    {
+      "id": "__entry__",
+      "isEntry": true,
+      "statementCount": 0
+    },
+    {
+      "id": "0000-START",
+      "isEntry": false,
+      "section": "MAIN-ROUTINE",
+      "statementCount": 11
+    },
+    {
+      "id": "1000-CREATE-ACCOUNT",
+      "isEntry": false,
+      "section": "MAIN-ROUTINE",
+      "statementCount": 8
+    },
+    {
+      "id": "2000-READ-ACCOUNT",
+      "isEntry": false,
+      "section": "MAIN-ROUTINE",
+      "statementCount": 5
+    },
+    {
+      "id": "3000-UPDATE-ACCOUNT",
+      "isEntry": false,
+      "section": "MAIN-ROUTINE",
+      "statementCount": 8
+    },
+    {
+      "id": "3100-APPLY-UPDATES",
+      "isEntry": false,
+      "section": "MAIN-ROUTINE",
+      "statementCount": 2
+    },
+    {
+      "id": "4000-CLOSE-ACCOUNT",
+      "isEntry": false,
+      "section": "MAIN-ROUTINE",
+      "statementCount": 8
+    }
+  ],
+  "edges": [
+    {
+      "from": "__entry__",
+      "to": "0000-START",
+      "kind": "entry"
+    },
+    {
+      "from": "0000-START",
+      "to": "1000-CREATE-ACCOUNT",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "1000-CREATE-ACCOUNT",
+      "to": "2000-READ-ACCOUNT",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "2000-READ-ACCOUNT",
+      "to": "3000-UPDATE-ACCOUNT",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "3000-UPDATE-ACCOUNT",
+      "to": "3100-APPLY-UPDATES",
+      "kind": "perform",
+      "location": {
+        "line": 98,
+        "column": 9
+      }
+    },
+    {
+      "from": "3000-UPDATE-ACCOUNT",
+      "to": "3100-APPLY-UPDATES",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "3100-APPLY-UPDATES",
+      "to": "4000-CLOSE-ACCOUNT",
+      "kind": "fallthrough"
+    }
+  ],
+  "entries": [
+    "__entry__"
+  ],
+  "dead": [],
+  "loopHeaders": [],
+  "goToClusters": [],
+  "cyclomaticComplexity": 2
+}

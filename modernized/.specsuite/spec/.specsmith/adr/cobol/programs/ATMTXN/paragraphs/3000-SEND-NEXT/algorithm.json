@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "The paragraph appears to send the next transactional data or message, handling potential errors.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move value to variable",
+      "details": "Assigns necessary data for processing"
+    },
+    {
+      "action": "execute CICS command or API block",
+      "details": "Sends data or message to an external system"
+    }
+  ],
+  "inputs": [
+    "transactional-data"
+  ],
+  "outputs": [
+    "response-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "external system or transaction queue",
+      "description": "Sends a message or updates a transaction"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

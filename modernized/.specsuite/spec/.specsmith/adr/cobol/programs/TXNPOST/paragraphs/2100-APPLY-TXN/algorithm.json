@@ -1,0 +1,38 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "Processes a transaction by performing updates and potentially writing the result.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Assign values to variables to prepare for processing."
+    },
+    {
+      "action": "call subroutine",
+      "details": "Execute external logic to handle part of the transaction."
+    },
+    {
+      "action": "add value",
+      "details": "Perform a computation, possibly updating totals or balances."
+    },
+    {
+      "action": "write record",
+      "details": "Output the processed transaction to a file or log."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "result-record",
+    "internal-state"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "transaction-log",
+      "description": "Writes the finalized transaction to the output log."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

@@ -1,0 +1,4 @@
+# ATMTXN
+Processes ATM transactions, validates inputs, and sends appropriate responses or errors.
+Business domain: infrastructure
+Architectural role: online

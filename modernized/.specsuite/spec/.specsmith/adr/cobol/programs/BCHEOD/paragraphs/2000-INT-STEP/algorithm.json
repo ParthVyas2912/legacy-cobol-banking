@@ -1,0 +1,29 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph performs an action, invokes another program or module, and alters the control flow of the program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call another program or module",
+      "details": "Uses the CALL statement to execute external logic"
+    },
+    {
+      "action": "unknown operation",
+      "details": "The nature of one statement could not be determined"
+    },
+    {
+      "action": "redirect control flow",
+      "details": "Uses GO TO to move to a different paragraph"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external program or module",
+      "description": "A CALL is made, potentially affecting external environments"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

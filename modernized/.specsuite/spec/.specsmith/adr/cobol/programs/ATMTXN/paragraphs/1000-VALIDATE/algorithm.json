@@ -1,0 +1,23 @@
+{
+  "name": "1000-VALIDATE",
+  "description": "The paragraph validates input or transactional conditions and prepares for the subsequent process.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Assign values to variables or flags for validation."
+    },
+    {
+      "action": "exec-block",
+      "details": "Execute a COBOL inline or external routine relevant to validation."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "validation-flag"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

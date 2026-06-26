@@ -1,0 +1,34 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph orchestrates the main flow of the batch program, performing initialization, transaction processing, and cleanup activities.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform initialization routine",
+      "details": "Calls 1000-OPEN-FILES to prepare files for processing."
+    },
+    {
+      "action": "process transactions",
+      "details": "Performs 2000-PROCESS-TXNS in a loop."
+    },
+    {
+      "action": "perform cleanup routine",
+      "details": "Calls 3000-CLOSE-FILES to finalize and release resources."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "files managed by 1000-OPEN-FILES and 3000-CLOSE-FILES",
+      "description": "File handles are opened and closed for processing."
+    },
+    {
+      "kind": "other",
+      "target": "console",
+      "description": "A message is displayed via DISPLAY statement."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

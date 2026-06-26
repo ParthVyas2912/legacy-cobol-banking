@@ -1,0 +1,26 @@
+{
+  "name": "3100-APPLY-UPDATES",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph applies updates by moving updated values to variables, preparing the program for further processing.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Moves values from calculated or updated fields to target variables."
+    },
+    {
+      "action": "move",
+      "details": "Possibly adjusts intermediate state variables for downstream processing."
+    }
+  ],
+  "inputs": [
+    "input-field-1",
+    "input-field-2"
+  ],
+  "outputs": [
+    "output-field-1",
+    "output-field-2"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

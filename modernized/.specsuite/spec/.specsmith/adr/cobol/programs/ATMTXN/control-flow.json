@@ -1,0 +1,105 @@
+{
+  "nodes": [
+    {
+      "id": "__entry__",
+      "isEntry": true,
+      "statementCount": 0
+    },
+    {
+      "id": "0000-START",
+      "isEntry": false,
+      "statementCount": 6
+    },
+    {
+      "id": "1000-VALIDATE",
+      "isEntry": false,
+      "statementCount": 3
+    },
+    {
+      "id": "2000-POST-TXN",
+      "isEntry": false,
+      "statementCount": 5
+    },
+    {
+      "id": "3000-SEND-NEXT",
+      "isEntry": false,
+      "statementCount": 2
+    },
+    {
+      "id": "9000-MAP-ERROR",
+      "isEntry": false,
+      "statementCount": 1
+    },
+    {
+      "id": "9100-FATAL",
+      "isEntry": false,
+      "statementCount": 1
+    }
+  ],
+  "edges": [
+    {
+      "from": "__entry__",
+      "to": "0000-START",
+      "kind": "entry"
+    },
+    {
+      "from": "0000-START",
+      "to": "1000-VALIDATE",
+      "kind": "perform",
+      "location": {
+        "line": 30,
+        "column": 5
+      }
+    },
+    {
+      "from": "0000-START",
+      "to": "2000-POST-TXN",
+      "kind": "perform",
+      "location": {
+        "line": 31,
+        "column": 5
+      }
+    },
+    {
+      "from": "0000-START",
+      "to": "3000-SEND-NEXT",
+      "kind": "perform",
+      "location": {
+        "line": 32,
+        "column": 5
+      }
+    },
+    {
+      "from": "0000-START",
+      "to": "1000-VALIDATE",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "1000-VALIDATE",
+      "to": "2000-POST-TXN",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "2000-POST-TXN",
+      "to": "3000-SEND-NEXT",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "3000-SEND-NEXT",
+      "to": "9000-MAP-ERROR",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "9000-MAP-ERROR",
+      "to": "9100-FATAL",
+      "kind": "fallthrough"
+    }
+  ],
+  "entries": [
+    "__entry__"
+  ],
+  "dead": [],
+  "loopHeaders": [],
+  "goToClusters": [],
+  "cyclomaticComplexity": 4
+}

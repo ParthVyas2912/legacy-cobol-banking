@@ -1,0 +1,15 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "Contains a conditional statement that likely influences program behavior or state based on certain criteria.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Executes an IF statement to make a decision."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

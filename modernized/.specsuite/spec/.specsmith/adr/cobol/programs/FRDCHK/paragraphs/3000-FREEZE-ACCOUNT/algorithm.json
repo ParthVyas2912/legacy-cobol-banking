@@ -1,0 +1,30 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph freezes a customer account based on certain conditions, likely as part of a fraud-detection process.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values into variables",
+      "details": "Assigns specific values to variables"
+    },
+    {
+      "action": "perform an exec-block",
+      "details": "Executes business logic or external calls to freeze the account"
+    }
+  ],
+  "inputs": [
+    "risk-score",
+    "account-status"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts-table",
+      "description": "Updates the database with the new account status"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}
