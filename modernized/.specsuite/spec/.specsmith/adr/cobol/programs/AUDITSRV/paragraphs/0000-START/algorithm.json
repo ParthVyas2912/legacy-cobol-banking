@@ -1,0 +1,30 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes program variables and performs setup actions required for the program's execution.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Moves default values into program variables."
+    },
+    {
+      "action": "call external service",
+      "details": "Executes code blocks to interact with infrastructure components or subsystems."
+    }
+  ],
+  "inputs": [
+    "input-variable-1",
+    "environment-config"
+  ],
+  "outputs": [
+    "output-variable-1"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external system",
+      "description": "Interaction with external system or middleware for setup purposes."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

@@ -1,0 +1,15 @@
+{
+  "name": "1000-NEXT-STEP",
+  "description": "This paragraph directs control flow to another paragraph in the program based on the GO TO statement.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "redirect control flow",
+      "details": "Transfers execution to 2000-INT-STEP based on GO TO statement."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

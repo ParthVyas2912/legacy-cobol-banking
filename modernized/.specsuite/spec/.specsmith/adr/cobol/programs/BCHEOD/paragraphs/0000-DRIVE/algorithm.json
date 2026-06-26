@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph performs an action to mark the start of a process and then transitions control to the next processing step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform operation",
+      "details": "Invokes 9000-MARK-START to mark the start of a process."
+    },
+    {
+      "action": "transfer control",
+      "details": "Uses GO TO to transition to 1000-NEXT-STEP."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

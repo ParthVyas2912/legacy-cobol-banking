@@ -1,0 +1,23 @@
+{
+  "name": "4000-CLOSE-CURSOR",
+  "description": "This paragraph closes a database cursor as part of the batch reporting process.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close SQL cursor",
+      "details": "Terminates the use of the currently open cursor."
+    }
+  ],
+  "inputs": [
+    "SQL cursor"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "SQL cursor state",
+      "description": "The cursor is no longer open and available for fetching data."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

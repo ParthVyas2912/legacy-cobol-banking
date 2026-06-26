@@ -1,0 +1,36 @@
+specforge_knowledge_graph: 1.0.0
+project: source
+entities:
+  - id: project:root
+    name: source
+    type: project
+    description: The 'source' application is a standalone legacy backend system, potentially designed to handle batch
+      processing or legacy data operations. It lacks a clear architectural definition and exposes no modern integration
+      points, suggesting a need for reverse-engineering or redevelopment.
+    sourceFiles: []
+    domain: legacy systems
+    properties:
+      type: backend
+      totalFiles: 20
+      sourceFiles: 19
+    tags:
+      - project
+    confidence: 1
+relationships:
+  - id: rel-1
+    source: project:root
+    target: project:root
+    type: conceptual-coupling
+    label: Legacy COBOL system processes unknown business domain data
+    directed: true
+    properties: {}
+    confidence: 0.7
+metadata:
+  totalEntities: 1
+  totalRelationships: 1
+  entityTypeCounts:
+    project: 1
+  relationshipTypeCounts:
+    conceptual-coupling: 1
+  averageConfidence: 1
+  generatedAt: 2026-06-26T03:38:33.269Z

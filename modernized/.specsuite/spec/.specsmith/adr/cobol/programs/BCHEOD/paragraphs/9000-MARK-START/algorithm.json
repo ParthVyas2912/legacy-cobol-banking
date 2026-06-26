@@ -1,0 +1,15 @@
+{
+  "name": "9000-MARK-START",
+  "description": "This paragraph marks the start of a process or operation by executing a specific logic block.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "mark start of operation",
+      "details": "Control flow preparation for subsequent processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

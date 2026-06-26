@@ -1,0 +1,4 @@
+# TXNPOST
+This program processes transaction records from an input file, applies them to a ledger, and writes audit records to an output file.
+Business domain: accounts-management
+Architectural role: batch

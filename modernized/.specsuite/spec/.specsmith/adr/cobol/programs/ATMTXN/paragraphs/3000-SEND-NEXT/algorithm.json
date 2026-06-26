@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph sends the next transaction data and potentially handles execution through external blocks.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Moves transaction data to the appropriate structure."
+    },
+    {
+      "action": "executes external block",
+      "details": "Executes a code block that may involve interfacing with an external system."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "external-system-response"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "external-system",
+      "description": "Sends transaction data to an external system for processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

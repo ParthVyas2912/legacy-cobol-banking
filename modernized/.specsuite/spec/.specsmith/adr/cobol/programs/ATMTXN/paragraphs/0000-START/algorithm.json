@@ -1,0 +1,44 @@
+{
+  "name": "0000-START",
+  "description": "Initializes the transaction flow and performs validation, posting, and preparation for the next steps.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize transaction",
+      "details": "Execute initialization logic via exec statements."
+    },
+    {
+      "action": "perform validation",
+      "details": "Call 1000-VALIDATE to validate input or processing prerequisites."
+    },
+    {
+      "action": "post transaction",
+      "details": "Call 2000-POST-TXN to update system with transaction details."
+    },
+    {
+      "action": "prepare for next operation",
+      "details": "Call 3000-SEND-NEXT to set up subsequent operations or outputs."
+    }
+  ],
+  "inputs": [
+    "Transaction input data",
+    "Environment context"
+  ],
+  "outputs": [
+    "Validation status",
+    "Transaction result"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "user screen or terminal",
+      "description": "Sends a response or transaction status to the user."
+    },
+    {
+      "kind": "sql-write",
+      "target": "transaction table",
+      "description": "Updates database with transaction details after execution."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

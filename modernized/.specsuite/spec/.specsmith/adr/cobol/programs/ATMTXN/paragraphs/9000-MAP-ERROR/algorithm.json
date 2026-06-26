@@ -1,0 +1,19 @@
+{
+  "name": "9000-MAP-ERROR",
+  "description": "Maps an error condition to an action or control flow transition.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "move value to variable",
+      "details": "Assigns an error-related value to a variable for further processing."
+    }
+  ],
+  "inputs": [
+    "error-status"
+  ],
+  "outputs": [
+    "mapped-action"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

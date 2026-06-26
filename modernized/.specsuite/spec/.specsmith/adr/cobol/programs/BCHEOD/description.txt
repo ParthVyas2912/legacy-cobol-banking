@@ -1,0 +1,4 @@
+# BCHEOD
+Handles end-of-day processing by recording the start and end markers, performing intermediate calculations, and posting transactions to the EOD_RUNS table.
+Business domain: infrastructure
+Architectural role: batch

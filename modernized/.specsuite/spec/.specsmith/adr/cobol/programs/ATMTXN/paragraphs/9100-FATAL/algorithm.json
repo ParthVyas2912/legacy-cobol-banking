@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "Handles a fatal error scenario by executing a critical operation block.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute a critical error operation",
+      "details": "executes a system-level command or routine related to error handling"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "system",
+      "description": "Terminates the program or transaction in response to a fatal error"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

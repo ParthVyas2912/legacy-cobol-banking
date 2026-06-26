@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes a transaction by moving values and possibly executing a block of commands.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data between variables",
+      "details": "Handles preparing transaction data."
+    },
+    {
+      "action": "execute a command block",
+      "details": "May invoke external processing or system-level interaction."
+    }
+  ],
+  "inputs": [
+    "input-variables"
+  ],
+  "outputs": [
+    "output-variables"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "system or external process",
+      "description": "Exec-block interaction or integration."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

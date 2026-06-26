@@ -1,0 +1,33 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "The 3000-POST-STEP paragraph appears to invoke a subroutine, has an unknown operation, and transitions control to another step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "invoke subroutine",
+      "details": "Calls an external program or routine"
+    },
+    {
+      "action": "unknown operation",
+      "details": "An operation is not identifiable from the information available"
+    },
+    {
+      "action": "go to next step",
+      "details": "Directs control flow to 1000-NEXT-STEP"
+    }
+  ],
+  "inputs": [
+    "Unknown"
+  ],
+  "outputs": [
+    "None"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "Unknown",
+      "description": "Potential side effects due to an unknown operation or the invoked subroutine"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

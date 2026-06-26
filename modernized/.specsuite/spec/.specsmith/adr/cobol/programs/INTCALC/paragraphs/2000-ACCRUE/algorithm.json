@@ -1,0 +1,17 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "This paragraph evaluates a condition to determine further processing or logic.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Determines whether a specific criterion is met through an IF statement."
+    }
+  ],
+  "inputs": [
+    "condition variable"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

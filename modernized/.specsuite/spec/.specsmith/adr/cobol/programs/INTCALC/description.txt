@@ -1,0 +1,4 @@
+# INTCALC
+This program calculates daily accrued interest for accounts and generates a journal of interest transactions.
+Business domain: accounts-receivable
+Architectural role: batch

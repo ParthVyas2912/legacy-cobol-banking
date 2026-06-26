@@ -1,0 +1,4 @@
+# AUDITSRV
+This program handles logging or recording information in an audit file and sends a response back to the calling terminal.
+Business domain: infrastructure
+Architectural role: online

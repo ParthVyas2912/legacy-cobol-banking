@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes system resources, transfers control to a loop, and ensures orderly termination.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open file",
+      "details": "Open a file for processing"
+    },
+    {
+      "action": "perform",
+      "details": "Transfer control to 1000-LOOP for iterative processing"
+    },
+    {
+      "action": "close file",
+      "details": "Ensure file is closed after processing"
+    },
+    {
+      "action": "return to caller",
+      "details": "Terminate the program by returning control"
+    }
+  ],
+  "inputs": [
+    "InputFile"
+  ],
+  "outputs": [
+    "OutputFile"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "OutputFile",
+      "description": "Output changes during the loop might get written"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

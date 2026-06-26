@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes resources, processes customer data, and terminates the program gracefully.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open resources",
+      "details": "Opens files or cursors required for processing."
+    },
+    {
+      "action": "invoke processing",
+      "details": "Performs the 1000-FETCH-CUSTOMERS operation."
+    },
+    {
+      "action": "close resources",
+      "details": "Closes previously opened files or cursors."
+    },
+    {
+      "action": "terminate program",
+      "details": "Executes a GOBACK to end the program."
+    }
+  ],
+  "inputs": [
+    "customer file"
+  ],
+  "outputs": [
+    "none"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "report file",
+      "description": "Results of processing may be written to a report file."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

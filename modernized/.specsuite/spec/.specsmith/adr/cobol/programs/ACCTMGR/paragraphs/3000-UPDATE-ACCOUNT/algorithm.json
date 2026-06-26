@@ -1,0 +1,31 @@
+{
+  "name": "3000-UPDATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph performs account updates, evaluates conditions, and passes control to the next step in the process.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "update account",
+      "details": "Modifies account-related data using MOVE and conditional statements."
+    },
+    {
+      "action": "conditional flow",
+      "details": "Evaluates two IF conditions to drive decisions in processing."
+    }
+  ],
+  "inputs": [
+    "account-record",
+    "update-flags"
+  ],
+  "outputs": [
+    "updated-account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account_table",
+      "description": "Persists the updated account data back to the database."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

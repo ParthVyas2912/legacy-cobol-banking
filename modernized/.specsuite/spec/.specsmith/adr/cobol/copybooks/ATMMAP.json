@@ -1,0 +1,9 @@
+{
+  "name": "ATMMAP",
+  "usedBy": [
+    "ATMTXN"
+  ],
+  "isDclgen": false,
+  "description": "This copybook appears to define the layout or data structure for an ATM transaction map.",
+  "businessMeaning": "ATM transaction communication area or mapping structure used for processing ATM-related transactions."
+}

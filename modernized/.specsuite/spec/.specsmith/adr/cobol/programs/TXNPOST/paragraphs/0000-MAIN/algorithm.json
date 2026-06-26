@@ -1,0 +1,39 @@
+{
+  "name": "0000-MAIN",
+  "description": "The 0000-MAIN paragraph orchestrates the high-level flow of the batch program by performing subparagraphs to open files, process transactions, and close files, displaying a message during execution and terminating the program gracefully.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Invoke 1000-OPEN-FILES to initialize file handling."
+    },
+    {
+      "action": "perform",
+      "details": "Iterate through 2000-PROCESS-TXNS to process transactions until condition met."
+    },
+    {
+      "action": "perform",
+      "details": "Invoke 3000-CLOSE-FILES to finalize file handling."
+    },
+    {
+      "action": "display",
+      "details": "Output runtime status or message to console."
+    },
+    {
+      "action": "goback",
+      "details": "End the program execution."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "console-message"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "files",
+      "description": "Files accessed during processing are opened, potentially updated, and closed."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

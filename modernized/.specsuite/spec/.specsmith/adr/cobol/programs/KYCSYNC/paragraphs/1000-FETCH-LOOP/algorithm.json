@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph appears to process customer-related data in a loop, fetching records and passing control to the next step for further actions.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "fetch-customer-record",
+      "details": "Fetches data likely related to customer KYC (Know Your Customer) management."
+    },
+    {
+      "action": "pass-control-to-next-step",
+      "details": "Transfers processing logic to the next paragraph 2000-UPSERT-KYC."
+    }
+  ],
+  "inputs": [
+    "UNKNOWN-VARIABLE"
+  ],
+  "outputs": [
+    "TRANSFER-CONTROL"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "control-flow",
+      "description": "Control transfers to 2000-UPSERT-KYC as part of the logic."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

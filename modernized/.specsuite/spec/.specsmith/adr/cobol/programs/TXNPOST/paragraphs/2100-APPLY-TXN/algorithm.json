@@ -1,0 +1,37 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "This paragraph processes a transaction by setting values, performing calculations, and issuing an output operation.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "set initial values for processing"
+    },
+    {
+      "action": "perform calculation",
+      "details": "add or adjust values to process transaction"
+    },
+    {
+      "action": "call routine",
+      "details": "invoke a subprogram for auxiliary processing"
+    },
+    {
+      "action": "write output",
+      "details": "write the processed transaction to an output file"
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "output-file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output-file",
+      "description": "writes processed transaction data to the output file"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

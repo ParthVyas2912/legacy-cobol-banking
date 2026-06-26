@@ -1,0 +1,32 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes the program and displays startup information before transitioning control to the primary processing loop.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move-initial-value",
+      "details": "Set initial value to a variable."
+    },
+    {
+      "action": "display-message",
+      "details": "Output startup message to log or screen."
+    },
+    {
+      "action": "perform-paragraph",
+      "details": "Execute the main processing loop."
+    },
+    {
+      "action": "terminate-program",
+      "details": "End program execution with a controlled exit."
+    }
+  ],
+  "inputs": [
+    "initial-value"
+  ],
+  "outputs": [
+    "startup-message",
+    "control-transfer"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

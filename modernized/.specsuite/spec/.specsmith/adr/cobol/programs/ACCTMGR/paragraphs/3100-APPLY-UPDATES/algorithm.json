@@ -1,0 +1,20 @@
+{
+  "name": "3100-APPLY-UPDATES",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph applies updates to account information by performing move operations.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data to target variables",
+      "details": "Moves data to relevant account-related variables for further processing."
+    }
+  ],
+  "inputs": [
+    "account-data"
+  ],
+  "outputs": [
+    "updated-account-data"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

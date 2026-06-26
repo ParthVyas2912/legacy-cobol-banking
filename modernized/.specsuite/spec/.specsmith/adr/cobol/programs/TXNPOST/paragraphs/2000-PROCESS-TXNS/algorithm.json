@@ -1,0 +1,25 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "This paragraph reads a transaction record as part of processing account management transactions.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read transaction",
+      "details": "Reads a record from the transactions file."
+    }
+  ],
+  "inputs": [
+    "transactions-file"
+  ],
+  "outputs": [
+    "transaction-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-read",
+      "target": "transactions-file",
+      "description": "Reads a record from the transactions file and makes it available for processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

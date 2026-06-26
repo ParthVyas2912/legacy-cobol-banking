@@ -1,0 +1,21 @@
+{
+  "name": "3000-CLOSE-FILES",
+  "description": "This paragraph closes one or more files as part of the program's batch processing cleanup.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close files",
+      "details": "Closes any open files managed by the program."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "files being closed",
+      "description": "Ensures file buffers are written to disk and resource handles are released."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

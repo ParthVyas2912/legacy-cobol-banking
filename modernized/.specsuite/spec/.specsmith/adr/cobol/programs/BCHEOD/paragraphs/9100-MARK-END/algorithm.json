@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "Marks the end of a process or task, likely updating a status or indicator.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute a COBOL block",
+      "details": "Executes a single statement, potentially marking or finalizing a task."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

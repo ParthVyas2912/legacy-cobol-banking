@@ -1,0 +1,4 @@
+# STMTRPT
+This program generates a statement report by fetching customer transaction data from a SQL table and performing computations for reporting purposes.
+Business domain: reporting
+Architectural role: batch

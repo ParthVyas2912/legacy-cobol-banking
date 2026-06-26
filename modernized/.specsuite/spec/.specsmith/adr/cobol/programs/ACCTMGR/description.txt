@@ -1,0 +1,4 @@
+# ACCTMGR
+Manages customer account records, including creation, updates, and closure, with auditing and database operations.
+Business domain: customer-management
+Architectural role: online

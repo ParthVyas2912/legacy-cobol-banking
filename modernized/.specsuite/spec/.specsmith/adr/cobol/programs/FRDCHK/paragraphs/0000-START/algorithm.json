@@ -1,0 +1,29 @@
+{
+  "name": "0000-START",
+  "description": "The paragraph initializes processing by performing key subroutine paragraphs potentially related to velocity computation, risk scoring, and account freezing.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform subroutine 1000-COMPUTE-VELOCITY",
+      "details": "Initializes velocity computation."
+    },
+    {
+      "action": "perform subroutine 2000-SCORE-RISK",
+      "details": "Sets up risk scoring operations."
+    },
+    {
+      "action": "perform subroutine 3000-FREEZE-ACCOUNT",
+      "details": "Handles freezing accounts if necessary."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "Program state",
+      "description": "Transfers control to external paragraphs impacting fraud detection logic."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

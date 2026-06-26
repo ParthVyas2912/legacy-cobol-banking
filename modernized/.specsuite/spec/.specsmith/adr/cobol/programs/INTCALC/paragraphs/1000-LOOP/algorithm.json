@@ -1,0 +1,17 @@
+{
+  "name": "1000-LOOP",
+  "description": "Reads data as part of a loop and transitions control to the next processing step.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read data",
+      "details": "Reads input from a file or data source, preparing for subsequent processing."
+    }
+  ],
+  "inputs": [
+    "input-file"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

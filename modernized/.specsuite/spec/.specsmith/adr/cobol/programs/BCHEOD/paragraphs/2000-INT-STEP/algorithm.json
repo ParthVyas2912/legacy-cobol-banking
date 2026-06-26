@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph appears to handle a control-flow operation, potentially delegating work through a CALL and redirecting execution with a GO TO.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call external module",
+      "details": "invokes an external component or program"
+    },
+    {
+      "action": "redirect execution",
+      "details": "transfers control to another paragraph in the program"
+    },
+    {
+      "action": "unknown operation",
+      "details": "unidentified statement type"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

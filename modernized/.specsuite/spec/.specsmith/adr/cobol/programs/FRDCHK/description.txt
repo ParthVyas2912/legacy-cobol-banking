@@ -1,0 +1,4 @@
+# FRDCHK
+This program evaluates transaction data to detect potential fraud by computing velocity, scoring risk, and freezing accounts if necessary.
+Business domain: fraud-detection
+Architectural role: online

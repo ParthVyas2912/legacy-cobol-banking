@@ -1,0 +1,96 @@
+{
+  "_comment": "Fill in expectedRows from mainframe source counts before running validation.",
+  "_generatedAt": "2026-06-26T03:38:32.365Z",
+  "tables": {
+    "acctfile": {
+      "source": "vsam",
+      "sourceId": "ACCTFILE",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for ACCTFILE"
+    },
+    "auditvsam": {
+      "source": "vsam",
+      "sourceId": "AUDITVSAM",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for AUDITVSAM"
+    },
+    "intjrnl": {
+      "source": "qsam",
+      "sourceId": "INTJRNL",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for INTJRNL"
+    },
+    "stmtout": {
+      "source": "qsam",
+      "sourceId": "STMTOUT",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for STMTOUT"
+    },
+    "txnin": {
+      "source": "qsam",
+      "sourceId": "TXNIN",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for TXNIN"
+    },
+    "auditout": {
+      "source": "qsam",
+      "sourceId": "AUDITOUT",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for AUDITOUT"
+    },
+    "custdb_customer": {
+      "source": "ims",
+      "sourceId": "CUSTDB.CUSTOMER",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for CUSTDB.CUSTOMER"
+    },
+    "custdb_acctlnk": {
+      "source": "ims",
+      "sourceId": "CUSTDB.ACCTLNK",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for CUSTDB.ACCTLNK"
+    },
+    "custdb_address": {
+      "source": "ims",
+      "sourceId": "CUSTDB.ADDRESS",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for CUSTDB.ADDRESS"
+    },
+    "acct_audit": {
+      "source": "db2",
+      "sourceId": "ACCT_AUDIT",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for ACCT_AUDIT"
+    },
+    "customer": {
+      "source": "db2",
+      "sourceId": "CUSTOMER",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for CUSTOMER"
+    },
+    "eod_runs": {
+      "source": "db2",
+      "sourceId": "EOD_RUNS",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for EOD_RUNS"
+    },
+    "txn_ledger": {
+      "source": "db2",
+      "sourceId": "TXN_LEDGER",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for TXN_LEDGER"
+    },
+    "fraud_flags": {
+      "source": "db2",
+      "sourceId": "FRAUD_FLAGS",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for FRAUD_FLAGS"
+    },
+    "kyc_audit": {
+      "source": "db2",
+      "sourceId": "KYC_AUDIT",
+      "expectedRows": "FILL_FROM_MAINFRAME",
+      "notes": "Run IDCAMS LISTCAT / DB2 RUNSTATS / IMS DBT to get actual row count for KYC_AUDIT"
+    }
+  }
+}

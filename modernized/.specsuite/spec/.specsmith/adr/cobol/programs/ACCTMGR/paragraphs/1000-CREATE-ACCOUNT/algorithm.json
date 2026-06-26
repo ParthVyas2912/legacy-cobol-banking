@@ -1,0 +1,35 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes data and executes a database operation to create a new account before transitioning control to the next paragraph.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize account variables",
+      "details": "Populates variables with initial values using MOVE statements."
+    },
+    {
+      "action": "execute database creation logic",
+      "details": "Uses an EXEC SQL block to insert account information into a database table."
+    },
+    {
+      "action": "check execution result",
+      "details": "Uses an IF statement to verify success or handle potential issues."
+    }
+  ],
+  "inputs": [
+    "account-details",
+    "environment-vars"
+  ],
+  "outputs": [
+    "creation-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts-table",
+      "description": "Inserts a new record into the accounts database table."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

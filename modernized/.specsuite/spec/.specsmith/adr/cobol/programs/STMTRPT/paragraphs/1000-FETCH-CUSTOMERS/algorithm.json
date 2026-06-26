@@ -1,0 +1,23 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "This paragraph initializes or sets up a value and then delegates further processing to another paragraph.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize a value or structure",
+      "details": "Move operation to set up a variable or state before processing"
+    },
+    {
+      "action": "perform delegated logic",
+      "details": "Pass control to 1100-IMS-GN-LOOP for further processing"
+    }
+  ],
+  "inputs": [
+    "state-variable"
+  ],
+  "outputs": [
+    "state-variable"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

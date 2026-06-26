@@ -1,0 +1,31 @@
+{
+  "name": "2000-OPEN-CURSOR",
+  "description": "Opens a database cursor and prepares for subsequent data processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move a value to a variable",
+      "details": "Initializes a variable with a specific value."
+    },
+    {
+      "action": "perform a paragraph",
+      "details": "Transfers control to another paragraph for processing."
+    },
+    {
+      "action": "execute SQL statement",
+      "details": "Opens a database cursor for data retrieval."
+    }
+  ],
+  "inputs": [
+    "cursor-name"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "database",
+      "description": "Opens a cursor on the database for subsequent data retrieval."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,28 @@
+{
+  "programId": "KYCSYNC",
+  "sourceFile": "programs/KYCSYNC.cbl",
+  "dialect": "enterprise",
+  "usingParameters": [],
+  "callsTo": [
+    "CBLTDLI"
+  ],
+  "filesRead": [],
+  "filesWritten": [],
+  "sqlTables": [
+    "KYC_AUDIT"
+  ],
+  "cicsVerbs": [],
+  "imsFunctionCodes": [
+    "WS-IMS-FUNC"
+  ],
+  "copybooksUsed": [
+    "CUSTREC"
+  ],
+  "paragraphCount": 3,
+  "modernizationFindingCount": 7,
+  "controlFlow": {
+    "cyclomaticComplexity": 1,
+    "deadParagraphs": 0,
+    "goToClusters": 0
+  }
+}
