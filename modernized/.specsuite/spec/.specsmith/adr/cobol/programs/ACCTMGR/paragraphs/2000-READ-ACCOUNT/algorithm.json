@@ -1,0 +1,35 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph reads an account record, processes it based on a condition, and potentially prepares data for further updates.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "read account record",
+      "details": "Executes a database operation to read an account record."
+    },
+    {
+      "action": "evaluate condition",
+      "details": "Uses an IF statement to determine further processing logic."
+    },
+    {
+      "action": "store data",
+      "details": "Moves data into a variable for further use or preparation for updates."
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-ID",
+    "ACCOUNT-RECORD"
+  ],
+  "outputs": [
+    "ACCOUNT-DATA"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "database",
+      "description": "Potential setup of data for subsequent update operations in the same transaction."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

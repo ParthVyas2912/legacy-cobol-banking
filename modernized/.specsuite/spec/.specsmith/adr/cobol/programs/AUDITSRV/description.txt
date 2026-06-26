@@ -1,0 +1,4 @@
+# AUDITSRV
+Processes audit information and interacts with a CICS system to write data and handle responses.
+Business domain: infrastructure
+Architectural role: online

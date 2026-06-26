@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes IO, executes a loop in a subordinate paragraph for processing, and ensures cleanup before program termination.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open file",
+      "details": "Open necessary files for processing"
+    },
+    {
+      "action": "perform until loop",
+      "details": "Transfer control to 1000-LOOP to process records"
+    },
+    {
+      "action": "close file",
+      "details": "Close files to release resources"
+    },
+    {
+      "action": "return control",
+      "details": "Terminate execution using GOBACK"
+    }
+  ],
+  "inputs": [
+    "file-input"
+  ],
+  "outputs": [
+    "file-output"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file-output",
+      "description": "Writes processed data to the output file"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

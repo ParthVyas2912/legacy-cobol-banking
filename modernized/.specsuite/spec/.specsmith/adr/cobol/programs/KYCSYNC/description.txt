@@ -1,0 +1,4 @@
+# KYCSYNC
+This program synchronizes KYC (Know Your Customer) data by fetching data in a loop and upserting it into the KYC_AUDIT SQL table.
+Business domain: customer-management
+Architectural role: batch

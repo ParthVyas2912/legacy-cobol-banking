@@ -1,0 +1,35 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes variables and prepares the program for execution.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Performs multiple MOVEs to set initial values."
+    },
+    {
+      "action": "invoke external logic",
+      "details": "Executes two external blocks using EXEC statements."
+    },
+    {
+      "action": "conditional preparation",
+      "details": "Checks a condition using an IF statement to influence subsequent behavior."
+    }
+  ],
+  "inputs": [
+    "input-variable-1",
+    "input-variable-2"
+  ],
+  "outputs": [
+    "init-variable-1",
+    "init-variable-2"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external-resource",
+      "description": "Invokes external blocks that may affect program state or environment."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

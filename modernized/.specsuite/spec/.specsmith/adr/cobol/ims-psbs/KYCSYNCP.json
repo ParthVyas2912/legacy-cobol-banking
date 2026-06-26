@@ -1,0 +1,5 @@
+{
+  "name": "KYCSYNCP",
+  "pcbCount": 2,
+  "description": "The program specification block defines access to the CUSTDB database with two program communication blocks configured for read-only access and a key length of 80."
+}

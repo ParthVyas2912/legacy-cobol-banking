@@ -1,0 +1,31 @@
+{
+  "name": "1100-IMS-GN-LOOP",
+  "description": "This paragraph iterates over data from a database cursor, performing operations or logic for each record fetched.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch next record from cursor",
+      "details": "Uses a looping construct to read through data."
+    },
+    {
+      "action": "call external routine",
+      "details": "Processes each record fetched."
+    },
+    {
+      "action": "condition-based control transfer",
+      "details": "Directs flow to another paragraph based on logic or conditions."
+    }
+  ],
+  "inputs": [
+    "IMS cursor"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "business logic call",
+      "description": "Executes processing logic by calling an external routine."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,233 @@
+{
+  "programId": "AUDITSRV",
+  "sourceFile": "programs/AUDITSRV.cbl",
+  "inputs": [
+    {
+      "kind": "file-record",
+      "name": "AUDIT-FILE",
+      "layout": {
+        "level": 1,
+        "name": "AUDIT-RECORD",
+        "usage": {
+          "kind": "display"
+        },
+        "conditionNames": [],
+        "children": [
+          {
+            "level": 5,
+            "name": "AUDIT-KEY",
+            "picture": {
+              "raw": "X(20)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 20,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 20
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 20,
+            "sourceFile": "",
+            "sourceLine": 20,
+            "description": "A unique identifier assigned to each audit record for tracking and reference purposes.",
+            "businessMeaning": "Audit Record Key",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 1
+          },
+          {
+            "level": 5,
+            "name": "AUDIT-ACCT-NUMBER",
+            "picture": {
+              "raw": "9(10)",
+              "class": "numeric",
+              "integerDigits": 10,
+              "fractionalDigits": 0,
+              "length": 10,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 10
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 10,
+            "sourceFile": "",
+            "sourceLine": 21,
+            "description": "The account number associated with the audited action, used to link the action to an account in the system.",
+            "businessMeaning": "Account Number",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 1
+          },
+          {
+            "level": 5,
+            "name": "AUDIT-ACTION",
+            "picture": {
+              "raw": "X(16)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 16,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 16
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 16,
+            "sourceFile": "",
+            "sourceLine": 22,
+            "description": "A description of the action performed during the audit event, used to document operations.",
+            "businessMeaning": "Action Performed",
+            "domainContext": "free-text",
+            "enrichmentConfidence": 1
+          },
+          {
+            "level": 5,
+            "name": "AUDIT-USER",
+            "picture": {
+              "raw": "X(08)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 8,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 8
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 23,
+            "description": "The user identifier or handle of the person or process responsible for the audited action.",
+            "businessMeaning": "User Identifier",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 1
+          },
+          {
+            "level": 5,
+            "name": "AUDIT-TS",
+            "picture": {
+              "raw": "X(26)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 26,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 26
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 26,
+            "sourceFile": "",
+            "sourceLine": 24,
+            "description": "The timestamp of when the audit event occurred, used for chronological recordkeeping.",
+            "businessMeaning": "Audit Timestamp",
+            "domainContext": "timestamp",
+            "enrichmentConfidence": 1
+          },
+          {
+            "level": 5,
+            "name": "AUDIT-DETAIL",
+            "picture": {
+              "raw": "X(120)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 120,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 120
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 120,
+            "sourceFile": "",
+            "sourceLine": 25,
+            "description": "A free-text field containing additional information or context about the audit event or action.",
+            "businessMeaning": "Detailed Description",
+            "domainContext": "free-text",
+            "enrichmentConfidence": 1
+          }
+        ],
+        "byteLength": 200,
+        "sourceFile": "",
+        "sourceLine": 19,
+        "description": "This record captures the details of an audit event, including key attributes such as the identifier, account, action, user, timestamp, and additional details. It facilitates tracking and logging of audit activity in the context of CICS operations.",
+        "businessMeaning": "Audit record for tracking system activity",
+        "domainContext": "audit-field",
+        "enrichmentConfidence": 1
+      },
+      "sampleValue": {
+        "AUDIT-KEY": "AAAAAAAAAAAAAAAAAAAA",
+        "AUDIT-ACCT-NUMBER": "0000000001",
+        "AUDIT-ACTION": "AAAAAAAAAAAAAAAA",
+        "AUDIT-USER": "AAAAAAAA",
+        "AUDIT-TS": "AAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "AUDIT-DETAIL": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      },
+      "resource": "AUDITVSAM"
+    }
+  ],
+  "expectedOutputs": [],
+  "expectedSideEffects": [],
+  "setupSteps": [
+    "Seed indexed file AUDIT-FILE (DD AUDITVSAM) with at least one record."
+  ],
+  "teardownSteps": [
+    "Delete or truncate AUDIT-FILE after the test."
+  ],
+  "cases": [
+    {
+      "id": "auditsrv-happy-path",
+      "title": "AUDITSRV: happy path"
+    },
+    {
+      "id": "auditsrv-empty-file",
+      "title": "AUDITSRV: empty input file",
+      "inputOverrides": {
+        "AUDIT-FILE": []
+      }
+    }
+  ],
+  "confidence": 1,
+  "notes": []
+}

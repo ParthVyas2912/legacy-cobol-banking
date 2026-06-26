@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph appears to direct control flow between different program components.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Invokes the 9000-MARK-START paragraph."
+    },
+    {
+      "action": "go-to",
+      "details": "Transfers control to the 1000-NEXT-STEP paragraph."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

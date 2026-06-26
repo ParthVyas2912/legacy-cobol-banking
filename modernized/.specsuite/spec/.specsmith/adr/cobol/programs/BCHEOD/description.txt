@@ -1,0 +1,4 @@
+# BCHEOD
+This program appears to handle end-of-day (EOD) processing tasks by performing calculations and posting transactions in a batch process.
+Business domain: infrastructure
+Architectural role: batch

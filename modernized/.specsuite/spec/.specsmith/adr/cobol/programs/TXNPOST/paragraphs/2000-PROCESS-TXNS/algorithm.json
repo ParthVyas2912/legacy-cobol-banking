@@ -1,0 +1,23 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "This paragraph reads a transaction to be processed.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a transaction record",
+      "details": "Reads the next transaction record from the file or source being processed."
+    }
+  ],
+  "inputs": [
+    "transaction-file"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "internal transaction buffer",
+      "description": "Populates the transaction buffer with the record read from the file."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

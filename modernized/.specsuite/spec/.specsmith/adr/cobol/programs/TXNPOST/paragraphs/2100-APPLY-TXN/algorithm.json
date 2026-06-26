@@ -1,0 +1,43 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "This paragraph applies a transaction to the accounts-receivable system, potentially modifying internal state and writing output.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values",
+      "details": "Moves data into specific fields or variables for processing."
+    },
+    {
+      "action": "add transaction amounts",
+      "details": "Incorporates a transaction amount into a total or balance."
+    },
+    {
+      "action": "perform external call",
+      "details": "Invokes an external routine or subprogram."
+    },
+    {
+      "action": "write to file",
+      "details": "Writes processed transaction data to an output file or log."
+    }
+  ],
+  "inputs": [
+    "Transaction Record",
+    "Accounts Receivable Table"
+  ],
+  "outputs": [
+    "Updated Record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "Transaction Log",
+      "description": "Logs transaction details after processing."
+    },
+    {
+      "kind": "sql-write",
+      "target": "Accounts Receivable Table",
+      "description": "Updates accounts-receivable balances based on the processed transaction."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

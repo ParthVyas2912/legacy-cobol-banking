@@ -1,0 +1,7 @@
+Paragraph: 2000-INT-STEP
+Lines: 26-29
+Statements: 3
+
+1. call
+2. unknown
+3. go-to

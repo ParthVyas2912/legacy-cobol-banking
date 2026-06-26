@@ -1,0 +1,4 @@
+# ACCTMGR
+This program manages account operations including creation, reading, updating, and closing of customer accounts.
+Business domain: customer-management
+Architectural role: online

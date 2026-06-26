@@ -1,0 +1,6 @@
+Paragraph: 3000-FETCH-LOOP
+Lines: 91-98
+Statements: 2
+
+1. exec-block
+2. if

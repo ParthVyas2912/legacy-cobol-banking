@@ -1,0 +1,30 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph appears to finalize processing by freezing an account, likely as a fraud-prevention measure.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move-value",
+      "details": "Set specific flags or indicators related to account status."
+    },
+    {
+      "action": "execute-CICS-block",
+      "details": "Perform procedural logic involving transactional or system-level operations."
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "system-environment"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts-table",
+      "description": "Freezes the account by updating a record in the database to indicate its restricted status."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

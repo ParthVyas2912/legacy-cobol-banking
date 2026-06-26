@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph processes and sends data, potentially involving a terminal output operation.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Transfers data to a working storage variable or output area."
+    },
+    {
+      "action": "execute CICS command",
+      "details": "Handles a screen interaction or messaging operation."
+    }
+  ],
+  "inputs": [
+    "working-storage-area"
+  ],
+  "outputs": [
+    "user-terminal"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "user-terminal",
+      "description": "Sends a message or data to the terminal."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

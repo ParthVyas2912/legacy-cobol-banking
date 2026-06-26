@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes a transaction post-validation, performing necessary data movements and executing a single external action or operation.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values between variables",
+      "details": "4 move statements"
+    },
+    {
+      "action": "execute external operation",
+      "details": "1 exec-block statement"
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "processed-txn-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "online interface",
+      "description": "Potential external message or interaction with the online system"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

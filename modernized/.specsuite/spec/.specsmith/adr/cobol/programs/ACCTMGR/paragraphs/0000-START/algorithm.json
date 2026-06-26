@@ -1,0 +1,28 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "Begins the program logic by evaluating a condition and possibly executing an external procedure.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Determines branch or behavior based on some criteria."
+    },
+    {
+      "action": "execute external block",
+      "details": "Calls an external logic block or system command."
+    }
+  ],
+  "inputs": [
+    "unknown"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external procedure or block",
+      "description": "Executes an external logic segment for further processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

@@ -1,0 +1,29 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph appears to execute a call, potentially perform an unknown operation, and transfer control via a GO TO statement.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "invoke external routine",
+      "details": "Executes a CALL statement"
+    },
+    {
+      "action": "unknown operation",
+      "details": "One statement has unidentified behavior"
+    },
+    {
+      "action": "redirect control flow",
+      "details": "Transfers control using GO TO"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external routine",
+      "description": "Side effects depend on the invoked routine or unknown statement"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

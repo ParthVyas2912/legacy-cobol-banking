@@ -1,0 +1,29 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes processing, displays a message, and transfers control to a loop for data fetching.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Set initial values to prepare for loop execution."
+    },
+    {
+      "action": "display message",
+      "details": "Output a message to indicate start of processing."
+    },
+    {
+      "action": "perform loop",
+      "details": "Control transferred to a data-fetching loop."
+    },
+    {
+      "action": "exit program",
+      "details": "End program execution via GOBACK."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "console message"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

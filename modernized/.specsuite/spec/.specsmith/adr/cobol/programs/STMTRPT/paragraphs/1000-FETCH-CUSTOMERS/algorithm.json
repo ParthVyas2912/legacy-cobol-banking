@@ -1,0 +1,23 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "Fetch the customer data and prepare for iteration in subsequent processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Assign a value to a variable possibly as preparation for iteration."
+    },
+    {
+      "action": "perform",
+      "details": "Invoke another paragraph to process or fetch customer data."
+    }
+  ],
+  "inputs": [
+    "customer-related-variable"
+  ],
+  "outputs": [
+    "next-paragraph-control"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

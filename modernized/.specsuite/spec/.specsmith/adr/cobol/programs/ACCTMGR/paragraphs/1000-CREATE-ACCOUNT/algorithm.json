@@ -1,0 +1,36 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph sets up an account by initializing data, performing a database-related operation, and branching to the next processing step.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "initialize account data",
+      "details": "Moves values into fields to set up account data."
+    },
+    {
+      "action": "interact with database",
+      "details": "Executes a block for data insertion or validation."
+    },
+    {
+      "action": "conditional branching",
+      "details": "Checks a condition to control flow to the next step."
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-DETAILS",
+    "DB-CONNECTION"
+  ],
+  "outputs": [
+    "ACCOUNT-RECORD",
+    "ERROR-FLAG"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "ACCOUNT-RECORD",
+      "description": "Writes the new account information into the database."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

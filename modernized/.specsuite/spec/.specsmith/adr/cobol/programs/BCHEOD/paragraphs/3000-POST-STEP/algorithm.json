@@ -1,0 +1,33 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph performs a call operation, followed by an unknown action, and then transfers control to another step via a GO TO statement.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call an external routine",
+      "details": "The purpose or target of the call is not specified."
+    },
+    {
+      "action": "perform an unknown operation",
+      "details": "The specifics of this operation are not provided."
+    },
+    {
+      "action": "transfer control",
+      "details": "Redirect control to 1000-NEXT-STEP using a GO TO statement."
+    }
+  ],
+  "inputs": [
+    "unknown"
+  ],
+  "outputs": [
+    "control transfer"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external program or routine",
+      "description": "A call to an external routine or program is made."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

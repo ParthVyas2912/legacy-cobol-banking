@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "The 9100-FATAL paragraph likely handles fatal error situations within the program and contains a single EXEC block.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "execute external logic",
+      "details": "Handles an EXEC block that may trigger external processing or error handling."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "program",
+      "description": "Potentially terminates the program execution due to a fatal error."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

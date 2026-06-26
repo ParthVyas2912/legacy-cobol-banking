@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "The 0000-MAIN paragraph initializes the program, performs a customer data retrieval routine, and ensures proper resource handling before ending the program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "open resources",
+      "details": "Opens files or prepares resources for processing."
+    },
+    {
+      "action": "perform subroutine",
+      "details": "Calls the 1000-FETCH-CUSTOMERS paragraph for data retrieval."
+    },
+    {
+      "action": "close resources",
+      "details": "Closes files or releases resources after processing."
+    },
+    {
+      "action": "terminate program",
+      "details": "Ends the program using GOBACK."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "opened/closed file resources",
+      "description": "Manages file handles or associated resources being opened and closed during the execution."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

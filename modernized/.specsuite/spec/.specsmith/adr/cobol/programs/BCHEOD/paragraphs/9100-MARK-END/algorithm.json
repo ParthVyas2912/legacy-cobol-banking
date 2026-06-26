@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "Marks the end of some operation or process, likely as part of an infrastructure batch program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute block",
+      "details": "Performs system-level or low-level action, likely related to marking the completion of a process."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

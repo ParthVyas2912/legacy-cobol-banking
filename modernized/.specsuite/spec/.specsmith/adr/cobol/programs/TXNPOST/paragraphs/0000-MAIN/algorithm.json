@@ -1,0 +1,23 @@
+{
+  "name": "0000-MAIN",
+  "description": "The paragraph orchestrates the main processing logic by opening files, processing transactions, and then closing files.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "invoke 1000-OPEN-FILES to initialize resources"
+    },
+    {
+      "action": "perform-until",
+      "details": "process transactions in 2000-PROCESS-TXNS until a condition is met"
+    },
+    {
+      "action": "perform",
+      "details": "invoke 3000-CLOSE-FILES to release resources"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

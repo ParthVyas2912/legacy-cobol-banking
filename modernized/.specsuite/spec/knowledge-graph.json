@@ -1,0 +1,34 @@
+{
+  "specforge_knowledge_graph": "1.0.0",
+  "project": "source",
+  "entities": [
+    {
+      "id": "project:root",
+      "name": "source",
+      "type": "project",
+      "description": "A standalone backend COBOL application likely designed for data processing, transaction management, and generating reports. Operates in a legacy environment with limited configurability and no external package dependencies.",
+      "sourceFiles": [],
+      "domain": "Enterprise Data Management",
+      "properties": {
+        "type": "backend",
+        "totalFiles": 20,
+        "sourceFiles": 19
+      },
+      "tags": [
+        "project"
+      ],
+      "confidence": 1
+    }
+  ],
+  "relationships": [],
+  "metadata": {
+    "totalEntities": 1,
+    "totalRelationships": 0,
+    "entityTypeCounts": {
+      "project": 1
+    },
+    "relationshipTypeCounts": {},
+    "averageConfidence": 1,
+    "generatedAt": "2026-06-26T04:02:16.883Z"
+  }
+}

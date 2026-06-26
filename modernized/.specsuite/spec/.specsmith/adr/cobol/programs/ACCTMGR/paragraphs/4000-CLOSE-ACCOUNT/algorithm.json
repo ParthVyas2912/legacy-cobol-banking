@@ -1,0 +1,35 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph finalizes the process of closing an account, potentially involving a status update and a business operation.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "move a value to a variable",
+      "details": "Set a specific status or flag related to account closure."
+    },
+    {
+      "action": "execute a procedural block",
+      "details": "Perform an operation via a linked processing block or external routine."
+    },
+    {
+      "action": "conditional check",
+      "details": "Determine subsequent actions based on account-specific conditions."
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "transaction-context"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "accounts-table",
+      "description": "Persist changes to the account's status in the database."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

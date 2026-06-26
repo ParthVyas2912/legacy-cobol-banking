@@ -1,0 +1,5 @@
+{
+  "name": "CUSTDB",
+  "segmentCount": 3,
+  "description": "This IMS database employs a Hierarchical Indexed Direct Access Method (HIDAM) and comprises three segments representing customer data, account links, and addresses."
+}

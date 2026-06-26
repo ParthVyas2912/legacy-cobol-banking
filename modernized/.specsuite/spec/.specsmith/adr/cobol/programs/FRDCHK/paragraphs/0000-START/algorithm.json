@@ -1,0 +1,37 @@
+{
+  "name": "0000-START",
+  "description": "Executes initial checks and determines subsequent fraud-detection processes to invoke.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "check fraud detection parameters",
+      "details": "assess input conditions with if statement"
+    },
+    {
+      "action": "invoke velocity computation",
+      "details": "perform 1000-COMPUTE-VELOCITY"
+    },
+    {
+      "action": "invoke risk scoring",
+      "details": "perform 2000-SCORE-RISK"
+    },
+    {
+      "action": "invoke account freezing",
+      "details": "perform 3000-FREEZE-ACCOUNT if certain conditions are met"
+    }
+  ],
+  "inputs": [
+    "fraud-check-parameters"
+  ],
+  "outputs": [
+    "control-flow state"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "system control flow",
+      "description": "Alters program execution to follow subsequent paragraphs like 1000-COMPUTE-VELOCITY or others."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

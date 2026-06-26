@@ -1,0 +1,150 @@
+{
+  "name": "BANKEOD",
+  "sourceFile": "jcl/BANKEOD.jcl",
+  "stepCount": 2,
+  "description": "This job performs end-of-day banking tasks by calculating interest accrual and posting queued transactions.",
+  "businessPurpose": "End-of-day financial processing for banking operations.",
+  "steps": [
+    {
+      "name": "STEP010",
+      "kind": "pgm",
+      "program": "BCHEOD",
+      "options": {
+        "PGM": "BCHEOD",
+        "COND": "(0,NE)"
+      },
+      "conditions": [
+        {
+          "rc": 0,
+          "op": "ne"
+        }
+      ],
+      "symbolicOverrides": {},
+      "dds": [
+        {
+          "ddname": "ACCTFILE",
+          "concatenated": [],
+          "sourceLine": 10,
+          "dsn": "BANK.PROD.ACCT",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "TXNIN",
+          "concatenated": [],
+          "sourceLine": 11,
+          "dsn": "BANK.DAILY.TXN.QUEUE",
+          "disp": {
+            "status": "OLD",
+            "normal": "DELETE",
+            "abnormal": "KEEP"
+          }
+        },
+        {
+          "ddname": "INTJRNL",
+          "concatenated": [],
+          "sourceLine": 12,
+          "dsn": "&&INTJRNL",
+          "disp": {
+            "status": "NEW",
+            "normal": "PASS"
+          },
+          "unit": "SYSDA",
+          "space": "(CYL,(10,5))",
+          "dcb": {
+            "RECFM": "FB",
+            "LRECL": "180",
+            "BLKSIZE": "18000"
+          }
+        },
+        {
+          "ddname": "AUDITOUT",
+          "concatenated": [],
+          "sourceLine": 15,
+          "dsn": "BANK.DAILY.AUDIT",
+          "disp": {
+            "status": "NEW",
+            "normal": "CATLG",
+            "abnormal": "DELETE"
+          },
+          "unit": "SYSDA",
+          "space": "(CYL,(5,2))",
+          "dcb": {
+            "RECFM": "FB",
+            "LRECL": "200",
+            "BLKSIZE": "20000"
+          }
+        },
+        {
+          "ddname": "SYSOUT",
+          "concatenated": [],
+          "sourceLine": 18,
+          "sysout": "*"
+        },
+        {
+          "ddname": "SYSPRINT",
+          "concatenated": [],
+          "sourceLine": 19,
+          "sysout": "*"
+        }
+      ],
+      "description": "This step executes the BCHEOD program, which calculates interest accrual and processes queued transactions as part of end-of-day banking operations.",
+      "intent": "Perform end-of-day interest calculations and transaction postings.",
+      "enrichmentConfidence": 0.95
+    },
+    {
+      "name": "STEP020",
+      "kind": "pgm",
+      "program": "STMTRPT",
+      "options": {
+        "PGM": "STMTRPT",
+        "COND": "(0,NE,STEP010)"
+      },
+      "conditions": [
+        {
+          "rc": 0,
+          "op": "ne",
+          "step": "STEP010"
+        }
+      ],
+      "symbolicOverrides": {},
+      "dds": [
+        {
+          "ddname": "STMTOUT",
+          "concatenated": [],
+          "sourceLine": 22,
+          "dsn": "BANK.DAILY.STMT",
+          "disp": {
+            "status": "NEW",
+            "normal": "CATLG",
+            "abnormal": "DELETE"
+          },
+          "unit": "SYSDA",
+          "space": "(CYL,(5,2))",
+          "dcb": {
+            "RECFM": "FB",
+            "LRECL": "120",
+            "BLKSIZE": "12000"
+          }
+        },
+        {
+          "ddname": "SYSOUT",
+          "concatenated": [],
+          "sourceLine": 25,
+          "sysout": "*"
+        }
+      ],
+      "description": "This step executes the STMTRPT program, which generates statements or reports, contingent upon the successful completion of the prior step (STEP010).",
+      "intent": "generate statements or reports based on the outcomes of prior processing",
+      "enrichmentConfidence": 0.95
+    }
+  ],
+  "parameters": {
+    "_POS1": "EOD BATCH",
+    "CLASS": "A",
+    "MSGCLASS": "X",
+    "NOTIFY": "&SYSUID",
+    "REGION": "0M"
+  }
+}

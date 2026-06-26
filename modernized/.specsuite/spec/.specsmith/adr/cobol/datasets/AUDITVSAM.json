@@ -1,0 +1,7 @@
+{
+  "ddname": "AUDITVSAM",
+  "usedBy": [
+    "AUDITSRV"
+  ],
+  "organization": "indexed"
+}

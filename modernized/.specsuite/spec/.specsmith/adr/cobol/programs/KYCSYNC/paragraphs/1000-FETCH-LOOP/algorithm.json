@@ -1,0 +1,25 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "This paragraph retrieves or processes customer data and prepares it for the next processing step.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch data",
+      "details": "This could involve retrieving customer data via a call statement."
+    }
+  ],
+  "inputs": [
+    "customer-record"
+  ],
+  "outputs": [
+    "customer-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "customer-table",
+      "description": "Potential update to the customer database as part of the fetch or a subsequent operation."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

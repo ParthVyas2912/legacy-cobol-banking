@@ -1,0 +1,19 @@
+{
+  "name": "1000-COMPUTE-VELOCITY",
+  "description": "Computes velocity, likely for fraud detection purposes.",
+  "purpose": "computation",
+  "algorithm": [
+    {
+      "action": "compute velocity",
+      "details": "executes a block of COBOL code to derive velocity-related information"
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "velocity-score"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}
