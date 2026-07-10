@@ -1,0 +1,23 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "This paragraph initializes a variable and transitions control for further processing of customer data.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "move value to variable",
+      "details": "Initializes a variable for subsequent processing."
+    },
+    {
+      "action": "perform another paragraph",
+      "details": "Delegates work to 1100-IMS-GN-LOOP."
+    }
+  ],
+  "inputs": [
+    "variable"
+  ],
+  "outputs": [
+    "control-state"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

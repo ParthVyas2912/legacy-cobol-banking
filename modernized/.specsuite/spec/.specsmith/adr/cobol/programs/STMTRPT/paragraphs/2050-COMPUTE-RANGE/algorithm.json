@@ -1,0 +1,19 @@
+{
+  "name": "2050-COMPUTE-RANGE",
+  "description": "This paragraph evaluates a condition using an IF statement and passes control to the next operation.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "The IF statement checks a specific condition to determine the next step in the execution flow."
+    }
+  ],
+  "inputs": [
+    "unknown"
+  ],
+  "outputs": [
+    "fallthrough-to-3000-FETCH-LOOP"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

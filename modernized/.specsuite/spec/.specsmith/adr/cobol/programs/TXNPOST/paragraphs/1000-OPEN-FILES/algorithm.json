@@ -1,0 +1,25 @@
+{
+  "name": "1000-OPEN-FILES",
+  "description": "This paragraph opens the necessary files for processing in the batch accounts-receivable program.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open files",
+      "details": "Opens input/output files required for subsequent transaction processing"
+    }
+  ],
+  "inputs": [
+    "file"
+  ],
+  "outputs": [
+    "file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "system file handles",
+      "description": "Allocates system resources to maintain open file descriptors"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

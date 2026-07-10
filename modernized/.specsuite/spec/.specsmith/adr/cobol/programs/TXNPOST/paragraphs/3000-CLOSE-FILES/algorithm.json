@@ -1,0 +1,21 @@
+{
+  "name": "3000-CLOSE-FILES",
+  "description": "This paragraph closes files that were opened earlier in the program.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close files",
+      "details": "Ensures that all open files are properly closed to release resources."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "multiple files",
+      "description": "Closes open files, flushing any pending changes to disk."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

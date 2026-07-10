@@ -1,0 +1,25 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "Reads a record from the input file as part of transaction processing in the accounts-receivable domain.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a record",
+      "details": "Reads the next transaction record from the input file."
+    }
+  ],
+  "inputs": [
+    "transaction file"
+  ],
+  "outputs": [
+    "transaction record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-read",
+      "target": "transaction file",
+      "description": "Advances the file pointer to the next record."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

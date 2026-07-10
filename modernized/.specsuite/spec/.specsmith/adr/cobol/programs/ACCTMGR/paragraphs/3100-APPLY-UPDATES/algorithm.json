@@ -1,0 +1,21 @@
+{
+  "name": "3100-APPLY-UPDATES",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph applies updates to account data by moving values into variables.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values",
+      "details": "Update specific account-related fields by assigning values to variables."
+    }
+  ],
+  "inputs": [
+    "account-data",
+    "update-values"
+  ],
+  "outputs": [
+    "updated-account-data"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

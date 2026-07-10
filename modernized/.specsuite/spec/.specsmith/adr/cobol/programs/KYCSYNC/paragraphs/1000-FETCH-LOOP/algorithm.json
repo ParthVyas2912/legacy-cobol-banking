@@ -1,0 +1,25 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "Fetches data within a loop and performs an unknown operation or computation.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "fetch",
+      "details": "Fetches data from an unspecified source"
+    }
+  ],
+  "inputs": [
+    "unknown"
+  ],
+  "outputs": [
+    "unknown"
+  ],
+  "sideEffects": [
+    {
+      "kind": "unknown",
+      "target": "unknown",
+      "description": "An unknown side effect occurs"
+    }
+  ],
+  "enrichmentConfidence": 0.8500000000000001
+}

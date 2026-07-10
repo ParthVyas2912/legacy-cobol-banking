@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph manages a procedural step with a combination of calling functionality, unknown processing, and transferring control.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call external routine",
+      "details": "Executes a subroutine through a CALL statement"
+    },
+    {
+      "action": "unknown operation",
+      "details": "An undefined statement is involved in the logic"
+    },
+    {
+      "action": "transfer control via GO TO",
+      "details": "Directs control back to 1000-NEXT-STEP"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph initiates control by performing a setup or logging action and directs processing to another step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform subprogram",
+      "details": "Performs the 9000-MARK-START paragraph, likely for initialization or logging."
+    },
+    {
+      "action": "direct flow",
+      "details": "Transfers control to 1000-NEXT-STEP for further processing."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

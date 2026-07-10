@@ -1,0 +1,13 @@
+Paragraph: 0000-START
+Lines: 41-58
+Statements: 9
+
+1. move
+2. move
+3. move
+4. move
+5. move
+6. move
+7. exec-block
+8. if
+9. exec-block

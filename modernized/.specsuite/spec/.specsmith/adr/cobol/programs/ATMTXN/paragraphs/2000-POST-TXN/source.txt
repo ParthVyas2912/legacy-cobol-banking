@@ -1,0 +1,9 @@
+Paragraph: 2000-POST-TXN
+Lines: 44-49
+Statements: 5
+
+1. move
+2. move
+3. move
+4. move
+5. exec-block

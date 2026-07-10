@@ -1,0 +1,4 @@
+# TXNPOST
+Processes transaction records, posts them to the TXN_LEDGER SQL table, and writes audit logs to a file.
+Business domain: accounts-receivable
+Architectural role: batch

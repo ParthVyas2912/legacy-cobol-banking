@@ -1,0 +1,4 @@
+# AUDITSRV
+This program handles writing to an audit file and returning control to the CICS environment.
+Business domain: infrastructure
+Architectural role: online

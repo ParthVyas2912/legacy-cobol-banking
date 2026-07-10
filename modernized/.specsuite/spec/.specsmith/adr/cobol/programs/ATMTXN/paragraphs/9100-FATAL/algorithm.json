@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "This paragraph handles situations resulting in unrecoverable errors and likely terminates the transaction.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "terminate transaction",
+      "details": "Executes a command to end processing due to a fatal error"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "transaction",
+      "description": "Abnormal termination of the transaction"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,19 @@
+{
+  "name": "9000-MAP-ERROR",
+  "description": "This paragraph maps an error message or details for further processing.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "move value to a variable",
+      "details": "Assigns an error-related value to a specific target variable."
+    }
+  ],
+  "inputs": [
+    "source-variable"
+  ],
+  "outputs": [
+    "target-variable"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

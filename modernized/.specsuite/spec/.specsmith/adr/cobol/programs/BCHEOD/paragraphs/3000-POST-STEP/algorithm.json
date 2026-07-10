@@ -1,0 +1,19 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph executes a call and redirects control flow to the next step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "execute external procedure",
+      "details": "Calls an external program or routine."
+    },
+    {
+      "action": "redirect flow",
+      "details": "Transfers control to the 1000-NEXT-STEP paragraph."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

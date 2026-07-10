@@ -1,0 +1,34 @@
+{
+  "specforge_knowledge_graph": "1.0.0",
+  "project": "source",
+  "entities": [
+    {
+      "id": "project:root",
+      "name": "source",
+      "type": "project",
+      "description": "The 'source' application is a backend system developed in COBOL, likely designed for legacy data processing or transactional operations commonly found in older enterprise systems. Its potential use case could involve batch processing, financial calculations, or maintenance of an existing database for regulatory or archival purposes. A reengineering effort would require detailed domain analysis and a shift towards modularity and modern standards while preserving critical legacy workflows.",
+      "sourceFiles": [],
+      "domain": "legacy enterprise systems",
+      "properties": {
+        "type": "backend",
+        "totalFiles": 20,
+        "sourceFiles": 19
+      },
+      "tags": [
+        "project"
+      ],
+      "confidence": 1
+    }
+  ],
+  "relationships": [],
+  "metadata": {
+    "totalEntities": 1,
+    "totalRelationships": 0,
+    "entityTypeCounts": {
+      "project": 1
+    },
+    "relationshipTypeCounts": {},
+    "averageConfidence": 1,
+    "generatedAt": "2026-07-10T17:36:58.151Z"
+  }
+}

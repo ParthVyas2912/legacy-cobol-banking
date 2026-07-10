@@ -1,0 +1,324 @@
+{
+  "programId": "STMTRPT",
+  "sourceFile": "programs/STMTRPT.cbl",
+  "inputs": [
+    {
+      "kind": "sql-row",
+      "name": "TXN_LEDGER",
+      "sampleValue": {
+        "__placeholder": "<row of TXN_LEDGER>"
+      },
+      "resource": "TXN_LEDGER"
+    }
+  ],
+  "expectedOutputs": [
+    {
+      "kind": "file-record",
+      "name": "STMT-FILE",
+      "layout": {
+        "level": 1,
+        "name": "STMT-LINE",
+        "usage": {
+          "kind": "display"
+        },
+        "conditionNames": [],
+        "children": [
+          {
+            "level": 5,
+            "name": "STMT-ACCT-NUM",
+            "picture": {
+              "raw": "9(10)",
+              "class": "numeric",
+              "integerDigits": 10,
+              "fractionalDigits": 0,
+              "length": 10,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 10
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 10,
+            "sourceFile": "",
+            "sourceLine": 17,
+            "description": "A unique numeric identifier for the customer's account associated with the statement.",
+            "businessMeaning": "Account Number",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "FILLER",
+            "picture": {
+              "raw": "X(02)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 2,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 2
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "value": {
+              "raw": "SPACE",
+              "kind": "figurative",
+              "figurative": "space",
+              "literal": "SPACE"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 2,
+            "sourceFile": "",
+            "sourceLine": 18
+          },
+          {
+            "level": 5,
+            "name": "STMT-DESCRIPTION",
+            "picture": {
+              "raw": "X(40)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 40,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 40
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 40,
+            "sourceFile": "",
+            "sourceLine": 19,
+            "description": "Free-text field providing a description of the statement or transaction details.",
+            "businessMeaning": "Statement Description",
+            "domainContext": "free-text",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "FILLER",
+            "picture": {
+              "raw": "X(02)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 2,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 2
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "value": {
+              "raw": "SPACE",
+              "kind": "figurative",
+              "figurative": "space",
+              "literal": "SPACE"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 2,
+            "sourceFile": "",
+            "sourceLine": 20
+          },
+          {
+            "level": 5,
+            "name": "STMT-AMOUNT",
+            "picture": {
+              "raw": "-Z(11)9.99",
+              "class": "numeric-edited",
+              "integerDigits": 3,
+              "fractionalDigits": 0,
+              "length": 16,
+              "sign": "trailing",
+              "symbols": [
+                {
+                  "char": "-",
+                  "count": 1
+                },
+                {
+                  "char": "Z",
+                  "count": 11
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                },
+                {
+                  "char": ".",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "sign": {
+              "position": "trailing",
+              "separate": false
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 16,
+            "sourceFile": "",
+            "sourceLine": 21,
+            "description": "Represents the monetary amount for the current transaction or statement item.",
+            "businessMeaning": "Statement Amount",
+            "domainContext": "monetary-amount",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "STMT-BALANCE",
+            "picture": {
+              "raw": "-Z(13)9.99",
+              "class": "numeric-edited",
+              "integerDigits": 3,
+              "fractionalDigits": 0,
+              "length": 18,
+              "sign": "trailing",
+              "symbols": [
+                {
+                  "char": "-",
+                  "count": 1
+                },
+                {
+                  "char": "Z",
+                  "count": 13
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                },
+                {
+                  "char": ".",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "sign": {
+              "position": "trailing",
+              "separate": false
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 18,
+            "sourceFile": "",
+            "sourceLine": 22,
+            "description": "The running balance after applying the transaction amount to the account.",
+            "businessMeaning": "Statement Balance",
+            "domainContext": "monetary-amount",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "FILLER",
+            "picture": {
+              "raw": "X(20)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 20,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 20
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "value": {
+              "raw": "SPACE",
+              "kind": "figurative",
+              "figurative": "space",
+              "literal": "SPACE"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 20,
+            "sourceFile": "",
+            "sourceLine": 23
+          }
+        ],
+        "byteLength": 108,
+        "sourceFile": "",
+        "sourceLine": 16,
+        "description": "STMT-LINE represents a record used to generate statement reports. It contains key details about account numbers, descriptions, and monetary amounts relevant to individual statements.",
+        "businessMeaning": "Statement Line Record",
+        "domainContext": "other",
+        "enrichmentConfidence": 0.9
+      },
+      "expectedValue": {
+        "STMT-ACCT-NUM": "0000000001",
+        "STMT-DESCRIPTION": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "STMT-AMOUNT": "001",
+        "STMT-BALANCE": "001"
+      },
+      "resource": "STMTOUT"
+    }
+  ],
+  "expectedSideEffects": [
+    {
+      "kind": "file-write",
+      "target": "STMTOUT",
+      "description": "WRITE / REWRITE / DELETE on STMT-FILE (DD STMTOUT)."
+    }
+  ],
+  "setupSteps": [
+    "Insert at least one row into TXN_LEDGER before running."
+  ],
+  "teardownSteps": [
+    "Truncate TXN_LEDGER after the test."
+  ],
+  "cases": [
+    {
+      "id": "stmtrpt-happy-path",
+      "title": "STMTRPT: happy path"
+    }
+  ],
+  "confidence": 1,
+  "notes": []
+}

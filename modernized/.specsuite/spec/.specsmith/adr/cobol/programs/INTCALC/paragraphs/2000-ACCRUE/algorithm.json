@@ -1,0 +1,17 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "This paragraph evaluates a condition using an IF statement, potentially influencing the program's next actions.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Executes an IF statement to check a specific condition."
+    }
+  ],
+  "inputs": [
+    "unspecified-variable"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

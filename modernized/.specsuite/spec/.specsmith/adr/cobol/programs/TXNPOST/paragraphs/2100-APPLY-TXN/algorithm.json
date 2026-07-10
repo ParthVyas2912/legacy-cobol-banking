@@ -1,0 +1,39 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "This paragraph processes a transaction by performing a combination of data assignments, computations, and a single external call before writing the results.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "assign values to variables",
+      "details": "via MOVE statements"
+    },
+    {
+      "action": "perform computation",
+      "details": "via ADD statement"
+    },
+    {
+      "action": "invoke external processing",
+      "details": "via CALL statement"
+    },
+    {
+      "action": "record transaction outcome",
+      "details": "via WRITE statement"
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "additional-context"
+  ],
+  "outputs": [
+    "processed-data",
+    "transaction-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "transaction-record",
+      "description": "Writes the processed transaction to an output file."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

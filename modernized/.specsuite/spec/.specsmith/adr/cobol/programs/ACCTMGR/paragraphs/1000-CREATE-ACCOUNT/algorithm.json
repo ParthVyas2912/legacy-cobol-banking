@@ -1,0 +1,29 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes data for creating a new account and prepares for subsequent processing.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move initial values to variables",
+      "details": "The paragraph assigns initial values to key variables needed for account creation."
+    },
+    {
+      "action": "execute a block of external logic",
+      "details": "An EXEC block likely triggers an external program or service for initialization or validation."
+    },
+    {
+      "action": "conditional logic",
+      "details": "Checks a condition that may determine further processing or initialization outcomes."
+    }
+  ],
+  "inputs": [
+    "account-related variables",
+    "environment parameters"
+  ],
+  "outputs": [
+    "initialized variables"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 1
+}

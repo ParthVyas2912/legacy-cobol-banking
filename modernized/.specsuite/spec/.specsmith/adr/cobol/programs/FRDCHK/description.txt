@@ -1,0 +1,4 @@
+# FRDCHK
+This program evaluates transaction data to detect potential fraud and applies account-level actions such as freezing accounts if necessary.
+Business domain: fraud-detection
+Architectural role: online

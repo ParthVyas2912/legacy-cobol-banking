@@ -1,0 +1,29 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph serves as the main entry point of the program and orchestrates the high-level flow by performing key steps to open files, process transactions, and close files.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Initiates file opening routine."
+    },
+    {
+      "action": "perform-until",
+      "details": "Executes transaction processing loop."
+    },
+    {
+      "action": "perform",
+      "details": "Closes files and performs cleanup."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "accounts-receivable files",
+      "description": "Manages file operations for processing transactions."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

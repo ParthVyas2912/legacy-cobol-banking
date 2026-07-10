@@ -1,0 +1,35 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes I/O operations, calls a routine to fetch customer data, and prepares for program termination.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open file for processing",
+      "details": "Opens a file or resource required for subsequent operations"
+    },
+    {
+      "action": "perform fetch operation",
+      "details": "Calls 1000-FETCH-CUSTOMERS to retrieve customer data"
+    },
+    {
+      "action": "close file",
+      "details": "Closes the file or resource previously opened"
+    },
+    {
+      "action": "terminate program",
+      "details": "Passes control back via a program return"
+    }
+  ],
+  "inputs": [
+    "file-resource"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file-resource",
+      "description": "Opens and closes a file as part of operations"
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

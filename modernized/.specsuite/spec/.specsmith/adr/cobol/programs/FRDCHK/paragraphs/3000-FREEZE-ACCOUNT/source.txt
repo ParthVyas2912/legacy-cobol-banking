@@ -1,0 +1,8 @@
+Paragraph: 3000-FREEZE-ACCOUNT
+Lines: 54-62
+Statements: 4
+
+1. move
+2. move
+3. exec-block
+4. exec-block

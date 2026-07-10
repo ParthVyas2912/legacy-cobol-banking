@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "Handles the final preparation of transaction data before passing control to the next operation.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Assigns values to variables for transaction processing."
+    },
+    {
+      "action": "invoke external function",
+      "details": "Executes an external block of code for transaction-related processing."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "prepared-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "next system module",
+      "description": "Passes modified transaction data to the subsequent operation."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

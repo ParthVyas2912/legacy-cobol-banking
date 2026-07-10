@@ -1,0 +1,39 @@
+{
+  "name": "3000-UPDATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph updates account information by performing conditional checks and executing business logic.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Assigns a value to a variable."
+    },
+    {
+      "action": "if",
+      "details": "Performs conditional checks on specific criteria."
+    },
+    {
+      "action": "exec-block",
+      "details": "Executes a specialized task, potentially calling external code or resources."
+    },
+    {
+      "action": "if",
+      "details": "Performs additional conditional checks or branching logic."
+    }
+  ],
+  "inputs": [
+    "account-data",
+    "input-parameters"
+  ],
+  "outputs": [
+    "updated-account-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-table",
+      "description": "Updates the account data in the database."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

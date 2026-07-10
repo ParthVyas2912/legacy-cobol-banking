@@ -1,0 +1,23 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "The 2000-SCORE-RISK paragraph evaluates conditions and moves a value based on fraud-detection risk criteria.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions to determine fraud risk",
+      "details": null
+    },
+    {
+      "action": "move a value based on fraud risk evaluation",
+      "details": null
+    }
+  ],
+  "inputs": [
+    "fraud risk factors"
+  ],
+  "outputs": [
+    "fraud risk score"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

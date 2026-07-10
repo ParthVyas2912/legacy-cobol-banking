@@ -1,0 +1,35 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph reads account information and prepares it for subsequent processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "read account record",
+      "details": "fetch account details from the database"
+    },
+    {
+      "action": "move data",
+      "details": "transfer fetched account data into a program variable for later use"
+    },
+    {
+      "action": "check condition",
+      "details": "verify the success of the read operation or validate the fetched details"
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-ID",
+    "ACCOUNT-TABLE"
+  ],
+  "outputs": [
+    "ACCOUNT-RECORD"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "TEMP-TABLE",
+      "description": "May perform intermediate logging or updates during the process"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

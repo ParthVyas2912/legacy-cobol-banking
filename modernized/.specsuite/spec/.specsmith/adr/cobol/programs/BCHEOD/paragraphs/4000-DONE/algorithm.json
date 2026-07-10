@@ -1,0 +1,19 @@
+{
+  "name": "4000-DONE",
+  "description": "This paragraph marks the end of processing by performing cleanup and transferring control to the end-of-program logic.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Invokes paragraph 9100-MARK-END for marking the end."
+    },
+    {
+      "action": "goback",
+      "details": "Returns control to the calling environment."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

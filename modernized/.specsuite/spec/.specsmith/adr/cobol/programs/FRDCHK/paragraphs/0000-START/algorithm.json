@@ -1,0 +1,27 @@
+{
+  "name": "0000-START",
+  "description": "Initiates fraud check processing by conditionally performing a specific set of business logic based on initial evaluation.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Check an 'if' condition to determine the flow."
+    },
+    {
+      "action": "invoke velocity calculation",
+      "details": "Perform 1000-COMPUTE-VELOCITY."
+    },
+    {
+      "action": "invoke risk scoring",
+      "details": "Perform 2000-SCORE-RISK."
+    },
+    {
+      "action": "invoke account freezing",
+      "details": "Perform 3000-FREEZE-ACCOUNT in certain scenarios."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

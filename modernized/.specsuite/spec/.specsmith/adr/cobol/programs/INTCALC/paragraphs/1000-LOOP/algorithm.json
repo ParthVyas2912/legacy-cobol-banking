@@ -1,0 +1,19 @@
+{
+  "name": "1000-LOOP",
+  "description": "This paragraph reads data from a file and serves as the loop header for iterating over records.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read",
+      "details": "Reads a record from an input file"
+    }
+  ],
+  "inputs": [
+    "input-file"
+  ],
+  "outputs": [
+    "read-record"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

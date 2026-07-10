@@ -1,0 +1,33 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes variables and performs basic setup operations.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Moves values into variables to prepare for subsequent processing."
+    },
+    {
+      "action": "execute embedded commands",
+      "details": "Handles system-level operations using EXEC blocks."
+    },
+    {
+      "action": "conditional check",
+      "details": "Evaluates a condition to determine further processing steps."
+    }
+  ],
+  "inputs": [
+    "initialization-data"
+  ],
+  "outputs": [
+    "setup-output-variable"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "runtime-environment",
+      "description": "Executes system-level commands via EXEC blocks for setup purposes."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

@@ -1,0 +1,37 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes file handling, delegates processing to another paragraph via a perform statement, and concludes execution cleanly.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "open a resource",
+      "details": "open a file for processing"
+    },
+    {
+      "action": "delegate via perform",
+      "details": "perform 1000-LOOP for processing logic"
+    },
+    {
+      "action": "close a resource",
+      "details": "close the file after processing"
+    },
+    {
+      "action": "terminate program",
+      "details": "terminate the program with a GOBACK statement"
+    }
+  ],
+  "inputs": [
+    "File1"
+  ],
+  "outputs": [
+    "File1"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "File1",
+      "description": "File1 may be written to or processed based on the subsequent logic"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

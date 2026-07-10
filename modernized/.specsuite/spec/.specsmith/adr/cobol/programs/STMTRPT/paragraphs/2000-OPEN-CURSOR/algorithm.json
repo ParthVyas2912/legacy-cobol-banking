@@ -1,0 +1,29 @@
+{
+  "name": "2000-OPEN-CURSOR",
+  "description": "This paragraph initializes and opens a SQL cursor, preparing for subsequent data processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "open SQL cursor",
+      "details": "Executes a DB2 SQL cursor open operation to prepare for fetching rows."
+    },
+    {
+      "action": "prepare range computation",
+      "details": "Transitions control to the range computation logic via PERFORM."
+    }
+  ],
+  "inputs": [
+    "SQL cursor"
+  ],
+  "outputs": [
+    "status-code"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "SQL cursor state",
+      "description": "The SQL cursor is opened for query operations on the database."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

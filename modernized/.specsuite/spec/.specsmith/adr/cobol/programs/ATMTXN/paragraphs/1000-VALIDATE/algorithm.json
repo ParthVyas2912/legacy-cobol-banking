@@ -1,0 +1,29 @@
+{
+  "name": "1000-VALIDATE",
+  "description": "This paragraph validates input or program state, then proceeds with execution.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "check or manipulate state",
+      "details": "Checks and moves values to ensure readiness for subsequent processing."
+    },
+    {
+      "action": "call external service",
+      "details": "Executes a block of external code for additional validation or processing."
+    }
+  ],
+  "inputs": [
+    "working-storage variables"
+  ],
+  "outputs": [
+    "working-storage variables"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": null,
+      "description": "No side effects detected in this paragraph."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

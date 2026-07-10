@@ -1,0 +1,643 @@
+{
+  "programId": "TXNPOST",
+  "sourceFile": "programs/TXNPOST.cbl",
+  "inputs": [
+    {
+      "kind": "file-record",
+      "name": "TXN-IN",
+      "layout": {
+        "level": 1,
+        "name": "TXN-RECORD",
+        "usage": {
+          "kind": "display"
+        },
+        "conditionNames": [],
+        "children": [
+          {
+            "level": 5,
+            "name": "TXN-ID",
+            "picture": {
+              "raw": "9(12)",
+              "class": "numeric",
+              "integerDigits": 12,
+              "fractionalDigits": 0,
+              "length": 12,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 12
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 12,
+            "sourceFile": "",
+            "sourceLine": 2,
+            "description": "A unique identifier for the transaction, used to ensure it is distinct within the batch.",
+            "businessMeaning": "Transaction ID",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-ACCT-NUMBER",
+            "picture": {
+              "raw": "9(10)",
+              "class": "numeric",
+              "integerDigits": 10,
+              "fractionalDigits": 0,
+              "length": 10,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 10
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 10,
+            "sourceFile": "",
+            "sourceLine": 3,
+            "description": "The account number associated with the transaction, determining which customer account is affected.",
+            "businessMeaning": "Account Number",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-POST-DATE",
+            "picture": {
+              "raw": "9(8)",
+              "class": "numeric",
+              "integerDigits": 8,
+              "fractionalDigits": 0,
+              "length": 8,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 8
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 4,
+            "description": "The date the transaction is officially posted to the ledger, used to track when the financial event occurs in the system.",
+            "businessMeaning": "Posting Date",
+            "domainContext": "date",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-EFFECTIVE-DATE",
+            "picture": {
+              "raw": "9(8)",
+              "class": "numeric",
+              "integerDigits": 8,
+              "fractionalDigits": 0,
+              "length": 8,
+              "symbols": [
+                {
+                  "char": "9",
+                  "count": 8
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 5,
+            "description": "The date on which the transaction is considered effective from a financial standpoint, potentially differing from the posting date.",
+            "businessMeaning": "Effective Date",
+            "domainContext": "date",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-AMOUNT",
+            "picture": {
+              "raw": "S9(11)V99",
+              "class": "numeric",
+              "integerDigits": 11,
+              "fractionalDigits": 2,
+              "length": 13,
+              "sign": "trailing",
+              "symbols": [
+                {
+                  "char": "S",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 11
+                },
+                {
+                  "char": "V",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                }
+              ]
+            },
+            "usage": {
+              "kind": "comp-3"
+            },
+            "sign": {
+              "position": "trailing",
+              "separate": false
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 7,
+            "sourceFile": "",
+            "sourceLine": 6,
+            "description": "The monetary amount of the transaction, representing the value being transferred or posted.",
+            "businessMeaning": "Transaction Amount",
+            "domainContext": "monetary-amount",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-CODE",
+            "picture": {
+              "raw": "X(03)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 3,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 3
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [
+              {
+                "name": "TXN-DEPOSIT",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "DEP"
+                  }
+                ],
+                "sourceLine": 8
+              },
+              {
+                "name": "TXN-WITHDRAWAL",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "WDR"
+                  }
+                ],
+                "sourceLine": 9
+              },
+              {
+                "name": "TXN-TRANSFER",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "XFR"
+                  }
+                ],
+                "sourceLine": 10
+              },
+              {
+                "name": "TXN-FEE",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "FEE"
+                  }
+                ],
+                "sourceLine": 11
+              },
+              {
+                "name": "TXN-INTEREST",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "INT"
+                  }
+                ],
+                "sourceLine": 12
+              },
+              {
+                "name": "TXN-REVERSAL",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "REV"
+                  }
+                ],
+                "sourceLine": 13
+              }
+            ],
+            "children": [],
+            "byteLength": 3,
+            "sourceFile": "",
+            "sourceLine": 7,
+            "description": "The type of transaction, encoded as a short identifier (e.g., deposit, withdrawal, or fee).",
+            "businessMeaning": "Transaction Type",
+            "domainContext": "enum-flag",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-CHANNEL",
+            "picture": {
+              "raw": "X(04)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 4,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 4
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [
+              {
+                "name": "TXN-ATM",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "ATM "
+                  }
+                ],
+                "sourceLine": 15
+              },
+              {
+                "name": "TXN-BRANCH",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "BRCH"
+                  }
+                ],
+                "sourceLine": 16
+              },
+              {
+                "name": "TXN-ONLINE",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "ONLN"
+                  }
+                ],
+                "sourceLine": 17
+              },
+              {
+                "name": "TXN-BATCH",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "BTCH"
+                  }
+                ],
+                "sourceLine": 18
+              }
+            ],
+            "children": [],
+            "byteLength": 4,
+            "sourceFile": "",
+            "sourceLine": 14,
+            "description": "The channel through which the transaction was initiated, such as ATM, branch, or online.",
+            "businessMeaning": "Transaction Channel",
+            "domainContext": "enum-flag",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-REF-NUMBER",
+            "picture": {
+              "raw": "X(20)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 20,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 20
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 20,
+            "sourceFile": "",
+            "sourceLine": 19,
+            "description": "A reference or external identifier associated with the transaction, often used for reconciliation purposes.",
+            "businessMeaning": "Reference Number",
+            "domainContext": "identifier",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-DESCRIPTION",
+            "picture": {
+              "raw": "X(40)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 40,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 40
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 40,
+            "sourceFile": "",
+            "sourceLine": 20,
+            "description": "A free-text field providing additional details or context about the transaction.",
+            "businessMeaning": "Transaction Description",
+            "domainContext": "free-text",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-STATUS",
+            "picture": {
+              "raw": "X(01)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 1,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 1
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [
+              {
+                "name": "TXN-PENDING",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "P"
+                  }
+                ],
+                "sourceLine": 22
+              },
+              {
+                "name": "TXN-POSTED",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "O"
+                  }
+                ],
+                "sourceLine": 23
+              },
+              {
+                "name": "TXN-FAILED",
+                "values": [
+                  {
+                    "kind": "eq",
+                    "from": "F"
+                  }
+                ],
+                "sourceLine": 24
+              }
+            ],
+            "children": [],
+            "byteLength": 1,
+            "sourceFile": "",
+            "sourceLine": 21,
+            "description": "The current state of the transaction, such as pending, posted, or failed.",
+            "businessMeaning": "Transaction Status",
+            "domainContext": "status-code",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-BALANCE-AFTER",
+            "picture": {
+              "raw": "S9(13)V99",
+              "class": "numeric",
+              "integerDigits": 13,
+              "fractionalDigits": 2,
+              "length": 15,
+              "sign": "trailing",
+              "symbols": [
+                {
+                  "char": "S",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 13
+                },
+                {
+                  "char": "V",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                },
+                {
+                  "char": "9",
+                  "count": 1
+                }
+              ]
+            },
+            "usage": {
+              "kind": "comp-3"
+            },
+            "sign": {
+              "position": "trailing",
+              "separate": false
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 25,
+            "description": "The account balance immediately after the transaction is applied, useful for tracking running totals.",
+            "businessMeaning": "Balance After Transaction",
+            "domainContext": "monetary-amount",
+            "enrichmentConfidence": 0.9
+          },
+          {
+            "level": 5,
+            "name": "TXN-USER-ID",
+            "picture": {
+              "raw": "X(08)",
+              "class": "alphanumeric",
+              "integerDigits": 0,
+              "fractionalDigits": 0,
+              "length": 8,
+              "symbols": [
+                {
+                  "char": "X",
+                  "count": 8
+                }
+              ]
+            },
+            "usage": {
+              "kind": "display"
+            },
+            "conditionNames": [],
+            "children": [],
+            "byteLength": 8,
+            "sourceFile": "",
+            "sourceLine": 26,
+            "description": "The identifier of the user who initiated or processed the transaction, often used for audit and accountability.",
+            "businessMeaning": "User ID",
+            "domainContext": "audit-field",
+            "enrichmentConfidence": 0.9
+          }
+        ],
+        "byteLength": 129,
+        "sourceFile": "",
+        "sourceLine": 1,
+        "description": "A structured record representing an accounts-receivable transaction, containing fields critical for reconciling transactions, logging audit data, and posting entries to the ledger.",
+        "businessMeaning": "Transaction Record",
+        "domainContext": "other",
+        "enrichmentConfidence": 0.9
+      },
+      "sampleValue": {
+        "TXN-ID": "000000000001",
+        "TXN-ACCT-NUMBER": "0000000001",
+        "TXN-POST-DATE": "00000001",
+        "TXN-EFFECTIVE-DATE": "00000001",
+        "TXN-AMOUNT": "12222222222.34",
+        "TXN-CODE": "AAA",
+        "TXN-CHANNEL": "AAAA",
+        "TXN-REF-NUMBER": "AAAAAAAAAAAAAAAAAAAA",
+        "TXN-DESCRIPTION": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+        "TXN-STATUS": "A",
+        "TXN-BALANCE-AFTER": "1222222222222.34",
+        "TXN-USER-ID": "AAAAAAAA"
+      },
+      "resource": "TXNIN"
+    }
+  ],
+  "expectedOutputs": [
+    {
+      "kind": "file-record",
+      "name": "AUDIT-OUT",
+      "layout": {
+        "level": 1,
+        "name": "AUDIT-RECORD",
+        "picture": {
+          "raw": "X(200)",
+          "class": "alphanumeric",
+          "integerDigits": 0,
+          "fractionalDigits": 0,
+          "length": 200,
+          "symbols": [
+            {
+              "char": "X",
+              "count": 200
+            }
+          ]
+        },
+        "usage": {
+          "kind": "display"
+        },
+        "conditionNames": [],
+        "children": [],
+        "byteLength": 200,
+        "sourceFile": "",
+        "sourceLine": 23,
+        "description": "The AUDIT-RECORD group is used to log transaction details for audit purposes, ensuring accountability and traceability for records processed in the batch job.",
+        "businessMeaning": "Audit record for transaction processing",
+        "domainContext": "audit-field",
+        "enrichmentConfidence": 0.85
+      },
+      "expectedValue": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "resource": "AUDITOUT"
+    },
+    {
+      "kind": "sql-row",
+      "name": "TXN_LEDGER",
+      "expectedValue": {
+        "__placeholder": "<expected row(s) in TXN_LEDGER>"
+      },
+      "resource": "TXN_LEDGER"
+    }
+  ],
+  "expectedSideEffects": [
+    {
+      "kind": "file-write",
+      "target": "AUDITOUT",
+      "description": "WRITE / REWRITE / DELETE on AUDIT-OUT (DD AUDITOUT)."
+    },
+    {
+      "kind": "sql-write",
+      "target": "TXN_LEDGER",
+      "description": "INSERT / UPDATE / DELETE on TXN_LEDGER."
+    }
+  ],
+  "setupSteps": [
+    "Seed sequential file TXN-IN (DD TXNIN) with at least one record."
+  ],
+  "teardownSteps": [
+    "Delete or truncate TXN-IN after the test."
+  ],
+  "cases": [
+    {
+      "id": "txnpost-happy-path",
+      "title": "TXNPOST: happy path"
+    },
+    {
+      "id": "txnpost-empty-file",
+      "title": "TXNPOST: empty input file",
+      "inputOverrides": {
+        "TXN-IN": []
+      }
+    }
+  ],
+  "confidence": 1,
+  "notes": []
+}
