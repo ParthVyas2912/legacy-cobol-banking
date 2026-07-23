@@ -1,0 +1,29 @@
+{
+  "name": "3000-FETCH-LOOP",
+  "description": "This paragraph fetches the next row using a database cursor and conditionally determines the next action based on the success of the fetch.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch-next-row",
+      "details": "Uses a database cursor to retrieve the next result from a query."
+    },
+    {
+      "action": "conditional-check",
+      "details": "Validates the success or failure of the fetch to decide further processing."
+    }
+  ],
+  "inputs": [
+    "database-cursor"
+  ],
+  "outputs": [
+    "fetch-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "cursor",
+      "description": "Advances the database cursor position by one."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

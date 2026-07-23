@@ -1,0 +1,25 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph performs initialization tasks with a series of data moves and potentially invokes external logic blocks.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move values to variables",
+      "details": "Sets up initial values or states for program execution"
+    },
+    {
+      "action": "execute external logic blocks",
+      "details": "Calls external routines or blocks of logic"
+    }
+  ],
+  "inputs": [
+    "input-variable-1",
+    "input-variable-2"
+  ],
+  "outputs": [
+    "output-variable-1",
+    "output-variable-2"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 1
+}

@@ -1,0 +1,1304 @@
+# ═══════════════════════════════════════════════════════
+# DBForge Database Specification — source_modern
+# Generated: 2026-07-23T18:04:30.781Z
+# Engine: postgresql
+# Source: MainframeForge COBOL data migration (Phase 4)
+# ═══════════════════════════════════════════════════════
+dbforge: 1.0.0
+database:
+  name: source_modern
+  engine: postgresql
+  version: latest
+  encoding: UTF-8
+  schemas:
+    - public
+  source:
+    type: migrations
+    analyzedAt: 2026-07-23T18:04:30.781Z
+schemas:
+  public:
+    description: Migrated mainframe schema — 15 tables from VSAM/QSAM/IMS/DB2 sources
+    tables:
+      acctfile:
+        description: "Migrated from VSAM KSDS file ACCTFILE (record layout: ACCT-RECORD). Used by: ACCTMGR, INTCALC."
+        columns:
+          acct_number:
+            type: VARCHAR(10)
+            universalType: string
+            nullable: false
+            primaryKey: true
+            unique: true
+            default: null
+            description: "Account Number [COBOL: ACCT-NUMBER PIC 9(10)] (identifier)"
+            sensitive: false
+          acct_customer_id:
+            type: VARCHAR(8)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Customer ID [COBOL: ACCT-CUSTOMER-ID PIC 9(8)] (foreign-key)"
+            sensitive: false
+          acct_opened_date:
+            type: DATE
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Opened Date [COBOL: ACCT-OPENED-DATE PIC 9(8)] (date)"
+            sensitive: false
+          acct_type:
+            type: VARCHAR(2)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Type [COBOL: ACCT-TYPE PIC X(02)] (status-code)"
+            sensitive: false
+          acct_status:
+            type: VARCHAR(1)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Status [COBOL: ACCT-STATUS PIC X(01)] (status-code)"
+            sensitive: false
+          acct_balance:
+            type: NUMERIC(15, 2)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Balance [COBOL: ACCT-BALANCE PIC S9(13)V99 COMP-3] (monetary-amount)"
+            sensitive: false
+          acct_avail_bal:
+            type: NUMERIC(15, 2)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Available Balance [COBOL: ACCT-AVAIL-BAL PIC S9(13)V99 COMP-3] (monetary-amount)"
+            sensitive: false
+          acct_int_rate:
+            type: NUMERIC(6, 4)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Interest Rate [COBOL: ACCT-INT-RATE PIC 9(2)V9(4) COMP-3] (rate)"
+            sensitive: false
+          acct_last_txn_dt:
+            type: DATE
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Last Transaction Date [COBOL: ACCT-LAST-TXN-DT PIC 9(8)] (date)"
+            sensitive: false
+          acct_currency:
+            type: VARCHAR(3)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Currency Code [COBOL: ACCT-CURRENCY PIC X(03)] (identifier)"
+            sensitive: false
+          acct_branch_code:
+            type: VARCHAR(4)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Branch Code [COBOL: ACCT-BRANCH-CODE PIC 9(4)] (identifier)"
+            sensitive: false
+          acct_flags:
+            type: VARCHAR(4)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Flags [COBOL: ACCT-FLAGS PIC X(04)] (enum-flag)"
+            sensitive: false
+          acct_filler:
+            type: VARCHAR(50)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Reserved Space [COBOL: ACCT-FILLER PIC X(50)] (reserved-filler)"
+            sensitive: false
+        indexes: []
+        constraints:
+          - name: pk_acctfile
+            type: primary_key
+            columns:
+              - acct_number
+          - name: chk_acctfile_acct_type
+            type: check
+            columns:
+              - acct_type
+            expression: "\"acct_type\" IN ('CK', 'SV', 'LN'"
+          - name: chk_acctfile_acct_status
+            type: check
+            columns:
+              - acct_status
+            expression: "\"acct_status\" IN ('A', 'F', 'C'"
+          - name: chk_acctfile_acct_flags
+            type: check
+            columns:
+              - acct_flags
+            expression: "\"acct_flags\" IN ('YYYY', 'YYNN', 'YYYN'"
+        triggers: []
+        policies: []
+        businessDomain: accounts
+        confidence: 0.85
+      auditvsam:
+        description: "Migrated from VSAM KSDS file AUDITVSAM (record layout: AUDIT-RECORD). Used by: AUDITSRV."
+        columns:
+          audit_key:
+            type: VARCHAR(20)
+            universalType: string
+            nullable: false
+            primaryKey: true
+            unique: true
+            default: null
+            description: "Audit Record Key [COBOL: AUDIT-KEY PIC X(20)] (identifier)"
+            sensitive: false
+          audit_acct_number:
+            type: VARCHAR(10)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Number [COBOL: AUDIT-ACCT-NUMBER PIC 9(10)] (identifier)"
+            sensitive: false
+          audit_action:
+            type: VARCHAR(16)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Audit Action [COBOL: AUDIT-ACTION PIC X(16)] (enum-flag)"
+            sensitive: false
+          audit_user:
+            type: VARCHAR(8)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "User ID [COBOL: AUDIT-USER PIC X(08)] (identifier)"
+            sensitive: false
+          audit_ts:
+            type: TIMESTAMPTZ
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Timestamp [COBOL: AUDIT-TS PIC X(26)] (timestamp)"
+            sensitive: false
+          audit_detail:
+            type: VARCHAR(120)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Audit Details [COBOL: AUDIT-DETAIL PIC X(120)] (free-text)"
+            sensitive: false
+        indexes:
+          - name: idx_auditvsam_audit_acct_number
+            columns:
+              - audit_acct_number
+            unique: false
+        constraints:
+          - name: pk_auditvsam
+            type: primary_key
+            columns:
+              - audit_key
+        triggers: []
+        policies: []
+        businessDomain: audit
+        confidence: 0.85
+      intjrnl:
+        description: "Migrated from QSAM sequential file INTJRNL (record layout: TXN-RECORD). Used by: INTCALC."
+        columns:
+          txn_id:
+            type: VARCHAR(12)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction ID [COBOL: TXN-ID PIC 9(12)] (identifier)"
+            sensitive: false
+          txn_acct_number:
+            type: VARCHAR(10)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Number [COBOL: TXN-ACCT-NUMBER PIC 9(10)] (identifier)"
+            sensitive: false
+          txn_post_date:
+            type: DATE
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Posting Date [COBOL: TXN-POST-DATE PIC 9(8)] (date)"
+            sensitive: false
+          txn_effective_date:
+            type: DATE
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Effective Date [COBOL: TXN-EFFECTIVE-DATE PIC 9(8)] (date)"
+            sensitive: false
+          txn_amount:
+            type: NUMERIC(13, 2)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Amount [COBOL: TXN-AMOUNT PIC S9(11)V99 COMP-3] (monetary-amount)"
+            sensitive: false
+          txn_code:
+            type: VARCHAR(3)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Type [COBOL: TXN-CODE PIC X(03)] (enum-flag)"
+            sensitive: false
+          txn_channel:
+            type: VARCHAR(4)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Channel [COBOL: TXN-CHANNEL PIC X(04)] (enum-flag)"
+            sensitive: false
+          txn_ref_number:
+            type: VARCHAR(20)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Reference Number [COBOL: TXN-REF-NUMBER PIC X(20)] (identifier)"
+            sensitive: false
+          txn_description:
+            type: VARCHAR(40)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Description [COBOL: TXN-DESCRIPTION PIC X(40)] (free-text)"
+            sensitive: false
+          txn_status:
+            type: VARCHAR(1)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Status [COBOL: TXN-STATUS PIC X(01)] (status-code)"
+            sensitive: false
+          txn_balance_after:
+            type: NUMERIC(15, 2)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Balance After Transaction [COBOL: TXN-BALANCE-AFTER PIC S9(13)V99 COMP-3] (monetary-amount)"
+            sensitive: false
+          txn_user_id:
+            type: VARCHAR(8)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "User ID [COBOL: TXN-USER-ID PIC X(08)] (identifier)"
+            sensitive: false
+        indexes: []
+        constraints:
+          - name: chk_intjrnl_txn_code
+            type: check
+            columns:
+              - txn_code
+            expression: "\"txn_code\" IN ('DEP', 'WDR', 'XFR', 'FEE', 'INT', 'REV'"
+          - name: chk_intjrnl_txn_channel
+            type: check
+            columns:
+              - txn_channel
+            expression: "\"txn_channel\" IN ('ATM ', 'BRCH', 'ONLN', 'BTCH'"
+          - name: chk_intjrnl_txn_status
+            type: check
+            columns:
+              - txn_status
+            expression: "\"txn_status\" IN ('P', 'O', 'F'"
+        triggers: []
+        policies: []
+        businessDomain: mainframe
+        confidence: 0.85
+      stmtout:
+        description: "Migrated from QSAM sequential file STMTOUT (record layout: STMT-LINE). Used by: STMTRPT."
+        columns:
+          stmt_acct_num:
+            type: VARCHAR(10)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Number [COBOL: STMT-ACCT-NUM PIC 9(10)] (identifier)"
+            sensitive: false
+          stmt_description:
+            type: VARCHAR(40)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Description [COBOL: STMT-DESCRIPTION PIC X(40)] (free-text)"
+            sensitive: false
+          stmt_amount:
+            type: NUMERIC(3, 0)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Amount [COBOL: STMT-AMOUNT PIC -Z(11)9.99] (monetary-amount)"
+            sensitive: false
+          stmt_balance:
+            type: NUMERIC(3, 0)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Balance [COBOL: STMT-BALANCE PIC -Z(13)9.99] (monetary-amount)"
+            sensitive: false
+        indexes: []
+        constraints: []
+        triggers: []
+        policies: []
+        businessDomain: reporting
+        confidence: 0.85
+      txnin:
+        description: "Migrated from QSAM sequential file TXNIN (record layout: TXN-RECORD). Used by: TXNPOST."
+        columns:
+          txn_id:
+            type: VARCHAR(12)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction ID [COBOL: TXN-ID PIC 9(12)] (identifier)"
+            sensitive: false
+          txn_acct_number:
+            type: VARCHAR(10)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Account Number [COBOL: TXN-ACCT-NUMBER PIC 9(10)] (identifier)"
+            sensitive: false
+          txn_post_date:
+            type: DATE
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Posting Date [COBOL: TXN-POST-DATE PIC 9(8)] (date)"
+            sensitive: false
+          txn_effective_date:
+            type: DATE
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Effective Date [COBOL: TXN-EFFECTIVE-DATE PIC 9(8)] (date)"
+            sensitive: false
+          txn_amount:
+            type: NUMERIC(13, 2)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Amount [COBOL: TXN-AMOUNT PIC S9(11)V99 COMP-3] (monetary-amount)"
+            sensitive: false
+          txn_code:
+            type: VARCHAR(3)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Type [COBOL: TXN-CODE PIC X(03)] (enum-flag)"
+            sensitive: false
+          txn_channel:
+            type: VARCHAR(4)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Channel [COBOL: TXN-CHANNEL PIC X(04)] (enum-flag)"
+            sensitive: false
+          txn_ref_number:
+            type: VARCHAR(20)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Reference [COBOL: TXN-REF-NUMBER PIC X(20)] (identifier)"
+            sensitive: false
+          txn_description:
+            type: VARCHAR(40)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Description [COBOL: TXN-DESCRIPTION PIC X(40)] (free-text)"
+            sensitive: false
+          txn_status:
+            type: VARCHAR(1)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Transaction Status [COBOL: TXN-STATUS PIC X(01)] (status-code)"
+            sensitive: false
+          txn_balance_after:
+            type: NUMERIC(15, 2)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "Balance After [COBOL: TXN-BALANCE-AFTER PIC S9(13)V99 COMP-3] (monetary-amount)"
+            sensitive: false
+          txn_user_id:
+            type: VARCHAR(8)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "User ID [COBOL: TXN-USER-ID PIC X(08)] (identifier)"
+            sensitive: false
+        indexes: []
+        constraints:
+          - name: chk_txnin_txn_code
+            type: check
+            columns:
+              - txn_code
+            expression: "\"txn_code\" IN ('DEP', 'WDR', 'XFR', 'FEE', 'INT', 'REV'"
+          - name: chk_txnin_txn_channel
+            type: check
+            columns:
+              - txn_channel
+            expression: "\"txn_channel\" IN ('ATM ', 'BRCH', 'ONLN', 'BTCH'"
+          - name: chk_txnin_txn_status
+            type: check
+            columns:
+              - txn_status
+            expression: "\"txn_status\" IN ('P', 'O', 'F'"
+        triggers: []
+        policies: []
+        businessDomain: transactions
+        confidence: 0.85
+      auditout:
+        description: "Migrated from QSAM sequential file AUDITOUT (record layout: AUDIT-RECORD). Used by: TXNPOST."
+        columns: {}
+        indexes: []
+        constraints: []
+        triggers: []
+        policies: []
+        businessDomain: audit
+        confidence: 0.85
+      custdb_customer:
+        description: "Migrated from IMS hierarchical database segment CUSTDB.CUSTOMER. Used by: (unknown)."
+        columns:
+          customer_id:
+            type: BIGSERIAL
+            universalType: integer
+            nullable: false
+            primaryKey: true
+            unique: true
+            default: null
+            description: Surrogate PK — replaces IMS hierarchical positioning for CUSTOMER
+            sensitive: false
+          custid:
+            type: VARCHAR(8)
+            universalType: string
+            nullable: false
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: CUSTID]"
+            sensitive: false
+          lastname:
+            type: VARCHAR(30)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: LASTNAME]"
+            sensitive: false
+          firstname:
+            type: VARCHAR(20)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: FIRSTNAME]"
+            sensitive: false
+          taxid:
+            type: VARCHAR(9)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: TAXID]"
+            sensitive: true
+          kycstat:
+            type: CHAR(1)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: KYCSTAT]"
+            sensitive: false
+          riskscr:
+            type: NUMERIC(3, 0)
+            universalType: float
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: RISKSCR]"
+            sensitive: false
+        indexes:
+          - name: idx_custdb_customer_custid
+            columns:
+              - custid
+            unique: true
+        constraints:
+          - name: pk_custdb_customer
+            type: primary_key
+            columns:
+              - customer_id
+        triggers: []
+        policies: []
+        businessDomain: customers
+        confidence: 0.85
+      custdb_acctlnk:
+        description: "Migrated from IMS hierarchical database segment CUSTDB.ACCTLNK. Used by: (unknown)."
+        columns:
+          acctlnk_id:
+            type: BIGSERIAL
+            universalType: integer
+            nullable: false
+            primaryKey: true
+            unique: true
+            default: null
+            description: Surrogate PK — replaces IMS hierarchical positioning for ACCTLNK
+            sensitive: false
+          customer_id:
+            type: BIGINT
+            universalType: integer
+            nullable: false
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: (FK → CUSTOMER)]"
+            sensitive: false
+            references:
+              table: custdb_customer
+              column: customer_id
+          acctnum:
+            type: VARCHAR(10)
+            universalType: string
+            nullable: false
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ACCTNUM]"
+            sensitive: false
+          role:
+            type: VARCHAR(2)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ROLE]"
+            sensitive: false
+        indexes:
+          - name: idx_custdb_acctlnk_acctnum
+            columns:
+              - acctnum
+            unique: true
+        constraints:
+          - name: pk_custdb_acctlnk
+            type: primary_key
+            columns:
+              - acctlnk_id
+          - name: fk_custdb_acctlnk_customer
+            type: foreign_key
+            columns:
+              - customer_id
+            referencesTable: custdb_customer
+            referencesColumns:
+              - customer_id
+            onDelete: restrict
+            onUpdate: restrict
+        triggers: []
+        policies: []
+        businessDomain: accounts
+        confidence: 0.85
+      custdb_address:
+        description: "Migrated from IMS hierarchical database segment CUSTDB.ADDRESS. Used by: (unknown)."
+        columns:
+          address_id:
+            type: BIGSERIAL
+            universalType: integer
+            nullable: false
+            primaryKey: true
+            unique: true
+            default: null
+            description: Surrogate PK — replaces IMS hierarchical positioning for ADDRESS
+            sensitive: false
+          customer_id:
+            type: BIGINT
+            universalType: integer
+            nullable: false
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: (FK → CUSTOMER)]"
+            sensitive: false
+            references:
+              table: custdb_customer
+              column: customer_id
+          effdate:
+            type: VARCHAR(8)
+            universalType: string
+            nullable: false
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: EFFDATE]"
+            sensitive: false
+          street:
+            type: VARCHAR(40)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: STREET]"
+            sensitive: false
+          city:
+            type: VARCHAR(25)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: CITY]"
+            sensitive: false
+          state:
+            type: VARCHAR(2)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: STATE]"
+            sensitive: false
+          zip:
+            type: VARCHAR(5)
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ZIP]"
+            sensitive: false
+        indexes:
+          - name: idx_custdb_address_effdate
+            columns:
+              - effdate
+            unique: true
+        constraints:
+          - name: pk_custdb_address
+            type: primary_key
+            columns:
+              - address_id
+          - name: fk_custdb_address_customer
+            type: foreign_key
+            columns:
+              - customer_id
+            referencesTable: custdb_customer
+            referencesColumns:
+              - customer_id
+            onDelete: restrict
+            onUpdate: restrict
+        triggers: []
+        policies: []
+        businessDomain: customers
+        confidence: 0.85
+      acct_audit:
+        description: "Migrated from DB2 z/OS table ACCT_AUDIT. Used by: ACCTMGR."
+        columns:
+          acct_num:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ACCT_NUM]"
+            sensitive: false
+          action:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ACTION]"
+            sensitive: false
+          actor:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ACTOR]"
+            sensitive: false
+          ts:
+            type: TIMESTAMPTZ
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: TS]"
+            sensitive: false
+          acct_number:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ACCT_NUMBER]"
+            sensitive: false
+          comm_function:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: COMM_FUNCTION]"
+            sensitive: false
+        indexes: []
+        constraints: []
+        triggers: []
+        policies: []
+        businessDomain: accounts
+        confidence: 0.85
+      customer:
+        description: "Migrated from DB2 z/OS table CUSTOMER. Used by: ACCTMGR."
+        columns:
+          active_acct_count:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ACTIVE_ACCT_COUNT]"
+            sensitive: false
+          acct_customer_id:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ACCT_CUSTOMER_ID]"
+            sensitive: false
+        indexes: []
+        constraints: []
+        triggers: []
+        policies: []
+        businessDomain: customers
+        confidence: 0.85
+      eod_runs:
+        description: "Migrated from DB2 z/OS table EOD_RUNS. Used by: BCHEOD."
+        columns:
+          started_at:
+            type: TIMESTAMPTZ
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: STARTED_AT]"
+            sensitive: false
+          status:
+            type: TIMESTAMPTZ
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: STATUS]"
+            sensitive: false
+          ended_at:
+            type: TIMESTAMPTZ
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ENDED_AT]"
+            sensitive: false
+          ws_status_code:
+            type: TIMESTAMPTZ
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: WS_STATUS_CODE]"
+            sensitive: false
+        indexes: []
+        constraints: []
+        triggers: []
+        policies: []
+        businessDomain: operations
+        confidence: 0.85
+      txn_ledger:
+        description: "Migrated from DB2 z/OS table TXN_LEDGER. Used by: FRDCHK, TXNPOST."
+        columns:
+          count:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: COUNT]"
+            sensitive: false
+          coalesce:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: COALESCE]"
+            sensitive: false
+          ws_velocity_count:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: WS_VELOCITY_COUNT]"
+            sensitive: false
+          ws_velocity_amt:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: WS_VELOCITY_AMT]"
+            sensitive: false
+          txn_acct_number:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: TXN_ACCT_NUMBER]"
+            sensitive: false
+          ws_current_acct:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: WS_CURRENT_ACCT]"
+            sensitive: false
+          txn_id:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: TXN_ID]"
+            sensitive: false
+          acct:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ACCT]"
+            sensitive: false
+          amount:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: AMOUNT]"
+            sensitive: false
+          code:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: CODE]"
+            sensitive: false
+          posted_at:
+            type: TIMESTAMPTZ
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: POSTED_AT]"
+            sensitive: false
+          txn_amount:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: TXN_AMOUNT]"
+            sensitive: false
+          txn_code:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: TXN_CODE]"
+            sensitive: false
+        indexes: []
+        constraints: []
+        triggers: []
+        policies: []
+        businessDomain: transactions
+        confidence: 0.85
+      fraud_flags:
+        description: "Migrated from DB2 z/OS table FRAUD_FLAGS. Used by: FRDCHK."
+        columns:
+          acct:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: ACCT]"
+            sensitive: false
+          score:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: SCORE]"
+            sensitive: false
+          reason:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: REASON]"
+            sensitive: false
+          ts:
+            type: TIMESTAMPTZ
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: TS]"
+            sensitive: false
+          txn_acct_number:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: TXN_ACCT_NUMBER]"
+            sensitive: false
+          ws_risk_score:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: WS_RISK_SCORE]"
+            sensitive: false
+        indexes: []
+        constraints: []
+        triggers: []
+        policies: []
+        businessDomain: risk-management
+        confidence: 0.85
+      kyc_audit:
+        description: "Migrated from DB2 z/OS table KYC_AUDIT. Used by: KYCSYNC."
+        columns:
+          cust_id:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: CUST_ID]"
+            sensitive: false
+          cust_kyc_status:
+            type: TIMESTAMPTZ
+            universalType: datetime
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: CUST_KYC_STATUS]"
+            sensitive: false
+          cust_risk_score:
+            type: TEXT
+            universalType: string
+            nullable: true
+            primaryKey: false
+            unique: false
+            default: null
+            description: "[COBOL: CUST_RISK_SCORE]"
+            sensitive: false
+        indexes: []
+        constraints: []
+        triggers: []
+        policies: []
+        businessDomain: audit
+        confidence: 0.85
+storedProcedures: {}
+functions: {}
+views: {}
+migrations:
+  tool: raw
+  history: []
+  pendingChanges: []
+queryPatterns:
+  - name: ACCTMGR:INSERT:acct_audit
+    frequency: medium
+    query: |-
+      INSERT INTO ACCT_AUDIT
+                         (ACCT_NUM, ACTION, ACTOR, TS)
+                      VALUES (:ACCT-NUMBER, 'CREATE',
+                              :COMM-FUNCTION, CURRENT_TIMESTAMP)
+    tables:
+      - acct_audit
+    calledBy:
+      - cobolPrograms.ACCTMGR
+  - name: ACCTMGR:UPDATE:customer
+    frequency: medium
+    query: |-
+      UPDATE CUSTOMER
+                         SET ACTIVE_ACCT_COUNT = ACTIVE_ACCT_COUNT - 1
+                       WHERE CUST_ID = :ACCT-CUSTOMER-ID
+    tables:
+      - customer
+    calledBy:
+      - cobolPrograms.ACCTMGR
+  - name: BCHEOD:INSERT:eod_runs
+    frequency: medium
+    query: |-
+      INSERT INTO EOD_RUNS (STARTED_AT, STATUS)
+                   VALUES (CURRENT_TIMESTAMP, 'RUN')
+    tables:
+      - eod_runs
+    calledBy:
+      - cobolPrograms.BCHEOD
+  - name: BCHEOD:UPDATE:eod_runs
+    frequency: medium
+    query: "UPDATE EOD_RUNS
+
+      \                SET ENDED_AT = CURRENT_TIMESTAMP,
+
+      \                    STATUS   = :WS-STATUS-CODE
+
+      \              WHERE STARTED_AT = (SELECT MAX(STARTED_AT)
+
+      \                              "
+    tables:
+      - eod_runs
+    calledBy:
+      - cobolPrograms.BCHEOD
+  - name: FRDCHK:SELECT:txn_ledger
+    frequency: medium
+    query: |-
+      SELECT COUNT(*), COALESCE(SUM(AMOUNT),0)
+                INTO :WS-VELOCITY-COUNT, :WS-VELOCITY-AMT
+                FROM TXN_LEDGER
+               WHERE ACCT = :TXN-ACCT-NUMBER
+                 AND POSTED_AT >= CURRENT_TIMEST
+    tables:
+      - txn_ledger
+    calledBy:
+      - cobolPrograms.FRDCHK
+  - name: FRDCHK:INSERT:fraud_flags
+    frequency: medium
+    query: |-
+      INSERT INTO FRAUD_FLAGS
+                      (ACCT, SCORE, REASON, TS)
+                   VALUES (:TXN-ACCT-NUMBER,
+                           :WS-RISK-SCORE,
+                           'AUTO-FREEZE',
+                           C
+    tables:
+      - fraud_flags
+    calledBy:
+      - cobolPrograms.FRDCHK
+  - name: KYCSYNC:MERGE:kyc_audit
+    frequency: medium
+    query: |-
+      MERGE INTO KYC_AUDIT AS T
+                      USING (VALUES (:CUST-ID,
+                                     :CUST-KYC-STATUS,
+                                     :CUST-RISK-SCORE,
+                                     CURR
+    tables:
+      - kyc_audit
+    calledBy:
+      - cobolPrograms.KYCSYNC
+  - name: STMTRPT:DECLARE-CURSOR:txn_ledger
+    frequency: medium
+    query: |-
+      DECLARE STMT-CSR CURSOR WITH HOLD FOR
+              SELECT ACCT, AMOUNT, BALANCE_AFTER, DESCRIPTION
+                FROM TXN_LEDGER
+               WHERE ACCT = :WS-CURRENT-ACCT
+                 AND POSTED_AT >= CURRENT_DATE 
+    tables:
+      - txn_ledger
+    calledBy:
+      - cobolPrograms.STMTRPT
+  - name: TXNPOST:INSERT:txn_ledger
+    frequency: medium
+    query: "INSERT INTO TXN_LEDGER
+
+      \                   (TXN_ID, ACCT, AMOUNT, CODE, POSTED_AT)
+
+      \                VALUES (:TXN-ID, :TXN-ACCT-NUMBER,
+
+      \                        :TXN-AMOUNT, :TXN-CODE,
+
+      \                   "
+    tables:
+      - txn_ledger
+    calledBy:
+      - cobolPrograms.TXNPOST
+relationships:
+  - from: public.custdb_customer.customer_id
+    to: public.custdb_acctlnk.customer_id
+    type: one-to-many
+    enforced: true
+    confidence: 1
+    onDelete: restrict
+    onUpdate: restrict
+  - from: public.custdb_customer.customer_id
+    to: public.custdb_address.customer_id
+    type: one-to-many
+    enforced: true
+    confidence: 1
+    onDelete: restrict
+    onUpdate: restrict
+security:
+  roles: []
+  rowLevelSecurity: false
+  columnEncryption: []
+  auditLogging:
+    enabled: false
+    events: []
+performance:
+  partitioning: []
+_metadata:
+  analysisDate: 2026-07-23T18:04:30.781Z
+  dbforgeVersion: 1.0.0
+  engine: postgresql
+  totalTables: 15
+  totalIndexes: 4
+  totalProcedures: 0
+  totalViews: 0
+  totalRelationships: 2
+  overallConfidence: 0.85
+  analysisTime: 0s

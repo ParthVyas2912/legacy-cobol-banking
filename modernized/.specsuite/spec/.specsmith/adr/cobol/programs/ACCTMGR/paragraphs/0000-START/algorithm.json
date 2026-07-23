@@ -1,0 +1,20 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph evaluates a condition and executes a block of statements based on it.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate condition",
+      "details": "Determines the flow of execution based on specific criteria."
+    },
+    {
+      "action": "execute block",
+      "details": "Performs operations based on the evaluated condition."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

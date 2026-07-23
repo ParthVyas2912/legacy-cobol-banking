@@ -1,0 +1,10 @@
+{
+  "name": "ACCTREC",
+  "usedBy": [
+    "ACCTMGR",
+    "INTCALC"
+  ],
+  "isDclgen": false,
+  "description": "The ACCTREC copybook defines the layout of account record fields used in COBOL programs.",
+  "businessMeaning": "Account master record structure containing details required for account management and interest calculations."
+}

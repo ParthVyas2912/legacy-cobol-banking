@@ -1,0 +1,9 @@
+{
+  "name": "ATMMAP",
+  "usedBy": [
+    "ATMTXN"
+  ],
+  "isDclgen": false,
+  "description": "This copybook likely defines the structure of the ATM transaction interface or communication area used in the ATMTXN program.",
+  "businessMeaning": "ATM transaction commarea containing data fields for processing ATM-related transactions."
+}

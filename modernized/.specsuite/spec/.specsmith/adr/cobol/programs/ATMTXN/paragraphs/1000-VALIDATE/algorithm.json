@@ -1,0 +1,29 @@
+{
+  "name": "1000-VALIDATE",
+  "description": "This paragraph performs basic validation and directs control flow toward the next transaction processing step.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "move values to local variables",
+      "details": "Transfers data to prepare for validation."
+    },
+    {
+      "action": "execute a code block",
+      "details": "Performs specific validation or side-effect steps."
+    }
+  ],
+  "inputs": [
+    "input-data"
+  ],
+  "outputs": [
+    "validation-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "internal-state",
+      "description": "Updates intermediary variables or flags used in validation."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

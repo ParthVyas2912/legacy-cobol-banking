@@ -1,0 +1,4 @@
+# INTCALC
+This program calculates daily interest accruals for accounts and updates account balances in batch mode.
+Business domain: accounts-receivable
+Architectural role: batch

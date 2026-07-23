@@ -1,0 +1,38 @@
+{
+  "name": "0000-MAIN",
+  "description": "Initializes and sets up key resources, then transitions control to the main processing loop.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open a resource",
+      "details": "likely refers to a file or database connection for subsequent processing"
+    },
+    {
+      "action": "perform a loop",
+      "details": "control transferred to 1000-LOOP in a perform-until structure"
+    },
+    {
+      "action": "close a resource",
+      "details": "closes a file or connection after use"
+    },
+    {
+      "action": "terminate program",
+      "details": "gracefully exits the program with GOBACK"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "an open file resource",
+      "description": "potential file operations during open/close"
+    },
+    {
+      "kind": "commit",
+      "target": "transactional resource",
+      "description": "implicit finalization or flushing of resources"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

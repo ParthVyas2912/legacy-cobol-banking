@@ -1,0 +1,34 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "Applies transaction data to update the accounts-receivable system, possibly modifying variables and writing output.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move data to processing variables",
+      "details": "prepares data for processing"
+    },
+    {
+      "action": "call a routine",
+      "details": "likely performs an external operation or validation"
+    },
+    {
+      "action": "write output",
+      "details": "records transaction details"
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "processing-parameters"
+  ],
+  "outputs": [
+    "report-file"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "report-file",
+      "description": "Logs the outcome of processing the transaction"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

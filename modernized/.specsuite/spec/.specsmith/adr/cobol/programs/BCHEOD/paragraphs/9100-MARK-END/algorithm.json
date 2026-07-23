@@ -1,0 +1,15 @@
+{
+  "name": "9100-MARK-END",
+  "description": "This paragraph marks the end of a process or operation in the program, likely performing a finalization step.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "mark end of process",
+      "details": "executes a finalization or infrastructure-specific task"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

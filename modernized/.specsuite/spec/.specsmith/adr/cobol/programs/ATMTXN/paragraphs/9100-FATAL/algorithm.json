@@ -1,0 +1,21 @@
+{
+  "name": "9100-FATAL",
+  "description": "Handles fatal errors, potentially resulting in program termination or structured error handling.",
+  "purpose": "error-handler",
+  "algorithm": [
+    {
+      "action": "handle-fatal-error",
+      "details": "Executes a block to address a critical error condition."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "abend",
+      "target": "program execution",
+      "description": "Initiates abnormal termination of the program."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

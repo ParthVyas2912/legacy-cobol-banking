@@ -1,0 +1,30 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph serves as the main entry point to the program and initializes the processing by moving to the FETCH loop.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "move",
+      "details": "Initialize or prepare a value/state for further processing."
+    },
+    {
+      "action": "perform",
+      "details": "Transition control to the 1000-FETCH-LOOP paragraph for iterative processing."
+    },
+    {
+      "action": "display",
+      "details": "Output a message or status to the screen or log."
+    },
+    {
+      "action": "goback",
+      "details": "Return control to the calling environment, indicating program termination."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "display-output",
+    "return-control"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

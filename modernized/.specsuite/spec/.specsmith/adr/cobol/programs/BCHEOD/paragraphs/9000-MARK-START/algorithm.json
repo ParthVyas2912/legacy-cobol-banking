@@ -1,0 +1,15 @@
+{
+  "name": "9000-MARK-START",
+  "description": "This paragraph marks the start of an operational process or batch step by executing a block of code.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "execute operational block",
+      "details": "Executes setup operations relevant for marking the start of a process."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

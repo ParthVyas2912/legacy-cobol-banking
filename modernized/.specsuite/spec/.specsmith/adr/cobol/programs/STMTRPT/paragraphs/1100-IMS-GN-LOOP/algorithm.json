@@ -1,0 +1,34 @@
+{
+  "name": "1100-IMS-GN-LOOP",
+  "description": "This paragraph retrieves data in a loop, performing a call to an external routine and potentially iterating further or transitioning control to the next paragraph.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "retrieve data using IMS GN call",
+      "details": "loop continues until a condition is met"
+    },
+    {
+      "action": "invoke external routine",
+      "details": "specific purpose of the call is unclear"
+    }
+  ],
+  "inputs": [
+    "IMS database"
+  ],
+  "outputs": [
+    "processing result"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external routine",
+      "description": "Execution of external routine may have broader effects"
+    },
+    {
+      "kind": "sql-read",
+      "target": "IMS database",
+      "description": "Reading records from the database"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

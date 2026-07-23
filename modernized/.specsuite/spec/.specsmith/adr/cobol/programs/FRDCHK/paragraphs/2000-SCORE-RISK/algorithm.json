@@ -1,0 +1,24 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "This paragraph evaluates risk by checking specific conditions and moves data as part of the fraud-detection process.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Uses IF statements to check risk-related conditions."
+    },
+    {
+      "action": "assign data",
+      "details": "Moves a value based on the evaluated conditions."
+    }
+  ],
+  "inputs": [
+    "RISK-INDICATOR",
+    "CUSTOMER-DATA"
+  ],
+  "outputs": [
+    "RISK-SCORE"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

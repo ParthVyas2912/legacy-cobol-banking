@@ -1,0 +1,19 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes program execution and directs control flow to subsequent validation, processing, and communication routines.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize execution",
+      "details": "sets initial state for the transaction"
+    },
+    {
+      "action": "direct control",
+      "details": "performs specific operations in sequence"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

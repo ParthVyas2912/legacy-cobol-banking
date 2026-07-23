@@ -1,0 +1,21 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph executes a subroutine and then unconditionally transfers control to another step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call a subroutine",
+      "details": "Calls a program or routine to perform an operation"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "subroutine",
+      "description": "Potential side effects depend on the called subroutine"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

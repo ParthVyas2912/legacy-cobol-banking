@@ -1,0 +1,7 @@
+Paragraph: 2000-READ-ACCOUNT (section MAIN-ROUTINE)
+Lines: 76-83
+Statements: 3
+
+1. move
+2. exec-block
+3. if

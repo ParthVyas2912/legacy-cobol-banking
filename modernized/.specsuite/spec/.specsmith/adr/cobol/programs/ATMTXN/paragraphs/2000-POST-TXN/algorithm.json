@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph posts a transaction by preparing data with MOVE statements and executing a block of external functionality.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "prepare data",
+      "details": "Uses MOVE statements to set up necessary fields for transaction posting."
+    },
+    {
+      "action": "invoke external functionality",
+      "details": "Executes an external block for transaction posting purposes."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "post-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "next screen",
+      "description": "Prepares the next screen display after posting the transaction."
+    }
+  ],
+  "enrichmentConfidence": 1
+}

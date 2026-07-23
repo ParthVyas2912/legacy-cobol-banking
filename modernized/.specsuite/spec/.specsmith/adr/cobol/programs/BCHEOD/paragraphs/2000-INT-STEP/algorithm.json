@@ -1,0 +1,23 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "Executes a call, performs an unknown operation, and transfers control to another step in the batch program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "call external code",
+      "details": "Calls a function or subroutine for an unspecified purpose."
+    },
+    {
+      "action": "perform unknown operation",
+      "details": "The exact operation is not identifiable."
+    },
+    {
+      "action": "transfer control",
+      "details": "Uses GO TO to route the flow to another program step."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,23 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "This paragraph initializes customer-related processing and then delegates control to a looping routine for further customer handling.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Initializes or sets a variable with a value."
+    },
+    {
+      "action": "perform paragraph",
+      "details": "Transfers control to a looping routine for customer processing."
+    }
+  ],
+  "inputs": [
+    "customer-related variable"
+  ],
+  "outputs": [
+    "control flow to 1100-IMS-GN-LOOP"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

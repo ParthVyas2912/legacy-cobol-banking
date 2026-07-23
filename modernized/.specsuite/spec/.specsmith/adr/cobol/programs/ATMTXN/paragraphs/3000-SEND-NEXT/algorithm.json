@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "This paragraph sends a message or transaction to a specific output destination, potentially related to user infrastructure interactions.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Moves a value to a destination variable or field."
+    },
+    {
+      "action": "execute external block",
+      "details": "Executes an external command or API call, likely for transmitting data."
+    }
+  ],
+  "inputs": [
+    "transaction-data"
+  ],
+  "outputs": [
+    "output-terminal"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "output-terminal",
+      "description": "Sends data to the end user's screen or terminal in a CICS-managed system."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

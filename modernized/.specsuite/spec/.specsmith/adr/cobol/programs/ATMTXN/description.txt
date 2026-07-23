@@ -1,0 +1,4 @@
+# ATMTXN
+This program handles ATM online transactions, validates inputs, processes the transaction, and interacts with a CICS frontend.
+Business domain: infrastructure
+Architectural role: online

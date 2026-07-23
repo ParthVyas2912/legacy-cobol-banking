@@ -1,0 +1,30 @@
+{
+  "programId": "ATMTXN",
+  "sourceFile": "programs/ATMTXN.cbl",
+  "dialect": "enterprise",
+  "usingParameters": [],
+  "callsTo": [],
+  "filesRead": [],
+  "filesWritten": [],
+  "sqlTables": [],
+  "cicsVerbs": [
+    "HANDLE",
+    "RECEIVE",
+    "RETURN",
+    "LINK",
+    "SEND",
+    "ABEND"
+  ],
+  "imsFunctionCodes": [],
+  "copybooksUsed": [
+    "ATMMAP",
+    "TXNREC"
+  ],
+  "paragraphCount": 6,
+  "modernizationFindingCount": 6,
+  "controlFlow": {
+    "cyclomaticComplexity": 4,
+    "deadParagraphs": 0,
+    "goToClusters": 0
+  }
+}

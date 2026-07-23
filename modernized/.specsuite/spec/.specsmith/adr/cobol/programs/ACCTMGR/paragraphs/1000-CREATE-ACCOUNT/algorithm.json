@@ -1,0 +1,35 @@
+{
+  "name": "1000-CREATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph initializes an account creation process, potentially setting up required variables and executing a database or system-related operation.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "move values into variables",
+      "details": "sets initial values for account-related data"
+    },
+    {
+      "action": "execute system or database command",
+      "details": "invokes an external operation to create or prepare account data"
+    },
+    {
+      "action": "conditional check",
+      "details": "evaluates a condition related to account setup"
+    }
+  ],
+  "inputs": [
+    "account-data",
+    "system-command"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "AccountTable",
+      "description": "Inserts or updates a record in the account database"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

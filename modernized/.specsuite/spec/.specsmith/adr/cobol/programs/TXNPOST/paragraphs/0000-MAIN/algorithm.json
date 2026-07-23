@@ -1,0 +1,39 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph orchestrates the execution of the main tasks in a batch accounts-receivable program by performing file setup, transaction processing, and cleanup sequentially.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Call 1000-OPEN-FILES to prepare files for processing."
+    },
+    {
+      "action": "perform-until",
+      "details": "Iteratively process transactions in 2000-PROCESS-TXNS."
+    },
+    {
+      "action": "perform",
+      "details": "Call 3000-CLOSE-FILES to finalize and close all open files."
+    },
+    {
+      "action": "display",
+      "details": "Output information to the console or log for tracking or debugging."
+    },
+    {
+      "action": "goback",
+      "details": "End the program execution and return control to the operating system."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "console"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "various files involved in accounts-receivable processing",
+      "description": "Files are opened, processed, and closed for batch operations."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

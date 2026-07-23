@@ -1,0 +1,8 @@
+Paragraph: 0000-MAIN
+Lines: 35-40
+Statements: 4
+
+1. open
+2. perform
+3. close
+4. goback

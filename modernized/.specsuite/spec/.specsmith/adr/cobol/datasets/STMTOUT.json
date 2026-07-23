@@ -1,0 +1,7 @@
+{
+  "ddname": "STMTOUT",
+  "usedBy": [
+    "STMTRPT"
+  ],
+  "organization": "sequential"
+}

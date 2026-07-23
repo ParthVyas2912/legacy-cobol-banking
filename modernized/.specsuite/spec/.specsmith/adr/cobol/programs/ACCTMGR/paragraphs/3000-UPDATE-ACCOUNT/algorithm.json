@@ -1,0 +1,35 @@
+{
+  "name": "3000-UPDATE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "The paragraph updates account information by processing conditions and executing a database-related block.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Checks conditions to determine the logic flow."
+    },
+    {
+      "action": "move data",
+      "details": "Assigns new values to update account details."
+    },
+    {
+      "action": "execute database operations",
+      "details": "Processes database updates within an EXEC block."
+    }
+  ],
+  "inputs": [
+    "ACCOUNT-RECORD",
+    "UPDATE-FLAG"
+  ],
+  "outputs": [
+    "ACCOUNT-RECORD"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "ACCOUNT-TABLE",
+      "description": "Updates the database record for the account."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

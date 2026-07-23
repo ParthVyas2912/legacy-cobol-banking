@@ -1,0 +1,23 @@
+{
+  "name": "1000-OPEN-FILES",
+  "description": "This paragraph opens a file to prepare it for subsequent processing.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open a file",
+      "details": "Open an accounts-receivable related file for batch processing"
+    }
+  ],
+  "inputs": [
+    "accounts-receivable file"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "accounts-receivable file",
+      "description": "Marks the file as open for access during processing"
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

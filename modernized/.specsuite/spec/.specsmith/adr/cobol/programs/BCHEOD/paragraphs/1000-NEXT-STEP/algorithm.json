@@ -1,0 +1,15 @@
+{
+  "name": "1000-NEXT-STEP",
+  "description": "This paragraph facilitates control flow by transferring execution to another paragraph.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "jump to another paragraph",
+      "details": "Transfers control to 2000-INT-STEP"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,17 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "This paragraph evaluates a condition and likely influences subsequent processing within the accounts-receivable batch program.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate a condition",
+      "details": "The IF statement assesses a particular condition related to accounts-receivable processing."
+    }
+  ],
+  "inputs": [
+    "conditional-variable"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

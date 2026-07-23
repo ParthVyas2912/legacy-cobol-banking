@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph starts the execution by performing a setup or initialization routine and directing control to the next logical step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform a setup or initialization routine",
+      "details": "Calls 9000-MARK-START paragraph using PERFORM."
+    },
+    {
+      "action": "direct control",
+      "details": "Transfers control to 1000-NEXT-STEP using GO TO."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,15 @@
+{
+  "name": "0000-START",
+  "description": "Initiates fraud detection logic by directing control to key processing routines.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform processing logic",
+      "details": "calls multiple paragraph routines in sequence to analyze and respond to scenarios"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

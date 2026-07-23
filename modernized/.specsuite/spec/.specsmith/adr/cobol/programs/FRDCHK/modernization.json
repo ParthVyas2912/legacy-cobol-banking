@@ -1,0 +1,146 @@
+[
+  {
+    "id": "frdchk/comp-3-decimal/_/6",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "FRDCHK",
+    "location": {
+      "line": 6
+    },
+    "title": "COMP-3 field TXN-AMOUNT → DECIMAL(13,2)",
+    "description": "Packed-decimal COMP-3 field TXN-AMOUNT PIC S9(11)V99. Modern equivalent: SQL DECIMAL(13,2) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 TXN-AMOUNT PIC S9(11)V99 COMP-3.",
+    "suggestedReplacement": "// SQL:   txn-amount DECIMAL(13,2)\n// Java:  BigDecimal txnAmount;\n// C#:    decimal TxnAmount;\n// Python: txnAmount: Decimal",
+    "detail": {
+      "precision": 13,
+      "scale": 2,
+      "sqlType": "DECIMAL(13,2)",
+      "picture": "S9(11)V99"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "frdchk/comp-3-decimal/_/10",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "FRDCHK",
+    "location": {
+      "line": 10
+    },
+    "title": "COMP-3 field WS-VELOCITY-COUNT → DECIMAL(5,0)",
+    "description": "Packed-decimal COMP-3 field WS-VELOCITY-COUNT PIC 9(05). Modern equivalent: SQL DECIMAL(5,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-VELOCITY-COUNT PIC 9(05) COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-velocity-count DECIMAL(5,0)\n// Java:  BigDecimal wsVelocityCount;\n// C#:    decimal WsVelocityCount;\n// Python: wsVelocityCount: Decimal",
+    "detail": {
+      "precision": 5,
+      "scale": 0,
+      "sqlType": "DECIMAL(5,0)",
+      "picture": "9(05)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "frdchk/comp-3-decimal/_/11",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "FRDCHK",
+    "location": {
+      "line": 11
+    },
+    "title": "COMP-3 field WS-VELOCITY-AMT → DECIMAL(13,2)",
+    "description": "Packed-decimal COMP-3 field WS-VELOCITY-AMT PIC S9(11)V99. Modern equivalent: SQL DECIMAL(13,2) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-VELOCITY-AMT PIC S9(11)V99 COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-velocity-amt DECIMAL(13,2)\n// Java:  BigDecimal wsVelocityAmt;\n// C#:    decimal WsVelocityAmt;\n// Python: wsVelocityAmt: Decimal",
+    "detail": {
+      "precision": 13,
+      "scale": 2,
+      "sqlType": "DECIMAL(13,2)",
+      "picture": "S9(11)V99"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "frdchk/comp-3-decimal/_/12",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "FRDCHK",
+    "location": {
+      "line": 12
+    },
+    "title": "COMP-3 field WS-RISK-SCORE → DECIMAL(3,0)",
+    "description": "Packed-decimal COMP-3 field WS-RISK-SCORE PIC 9(03). Modern equivalent: SQL DECIMAL(3,0) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "1 WS-RISK-SCORE PIC 9(03) COMP-3.",
+    "suggestedReplacement": "// SQL:   ws-risk-score DECIMAL(3,0)\n// Java:  BigDecimal wsRiskScore;\n// C#:    decimal WsRiskScore;\n// Python: wsRiskScore: Decimal",
+    "detail": {
+      "precision": 3,
+      "scale": 0,
+      "sqlType": "DECIMAL(3,0)",
+      "picture": "9(03)"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "frdchk/comp-3-decimal/_/25",
+    "category": "data",
+    "kind": "comp-3-decimal",
+    "severity": "low",
+    "programId": "FRDCHK",
+    "location": {
+      "line": 25
+    },
+    "title": "COMP-3 field TXN-BALANCE-AFTER → DECIMAL(15,2)",
+    "description": "Packed-decimal COMP-3 field TXN-BALANCE-AFTER PIC S9(13)V99. Modern equivalent: SQL DECIMAL(15,2) or language-native fixed-point (Java BigDecimal / C# decimal / Python Decimal).",
+    "currentCode": "5 TXN-BALANCE-AFTER PIC S9(13)V99 COMP-3.",
+    "suggestedReplacement": "// SQL:   txn-balance-after DECIMAL(15,2)\n// Java:  BigDecimal txnBalanceAfter;\n// C#:    decimal TxnBalanceAfter;\n// Python: txnBalanceAfter: Decimal",
+    "detail": {
+      "precision": 15,
+      "scale": 2,
+      "sqlType": "DECIMAL(15,2)",
+      "picture": "S9(13)V99"
+    },
+    "tags": [
+      "data",
+      "comp-3",
+      "decimal"
+    ]
+  },
+  {
+    "id": "frdchk/missing-sqlca-check/_/31",
+    "category": "io",
+    "kind": "missing-sqlca-check",
+    "severity": "medium",
+    "programId": "FRDCHK",
+    "location": {
+      "line": 31,
+      "column": 5
+    },
+    "title": "EXEC SQL without SQLCODE / SQLSTATE check",
+    "description": "Embedded SQL with no SQLCODE / SQLSTATE inspection after the call and no WHENEVER directive in effect. Unhandled SQL errors are a common source of silent data corruption in COBOL.",
+    "currentCode": "EXEC SQL ... END-EXEC.",
+    "suggestedReplacement": "EXEC SQL ... END-EXEC.\n    IF SQLCODE NOT = ZERO\n        PERFORM HANDLE-SQL-ERROR\n    END-IF.",
+    "tags": [
+      "sql",
+      "error-handling"
+    ]
+  }
+]

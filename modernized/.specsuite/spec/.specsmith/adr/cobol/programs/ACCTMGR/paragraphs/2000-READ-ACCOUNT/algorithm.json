@@ -1,0 +1,35 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph reads an account record and prepares it for processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "read account data",
+      "details": "retrieve account information from a database or file"
+    },
+    {
+      "action": "move data",
+      "details": "store retrieved data into working variables"
+    },
+    {
+      "action": "conditional check",
+      "details": "validate or assess the data for further operations"
+    }
+  ],
+  "inputs": [
+    "account-id",
+    "account-record"
+  ],
+  "outputs": [
+    "account-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-read",
+      "target": "account-record",
+      "description": "Reads data from the account database or file"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

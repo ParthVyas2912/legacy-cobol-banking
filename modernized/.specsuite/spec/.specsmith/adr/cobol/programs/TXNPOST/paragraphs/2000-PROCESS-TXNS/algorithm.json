@@ -1,0 +1,29 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "This paragraph reads a transaction record and initiates its application process.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read transaction record",
+      "details": "Reads the next record from the transaction input file."
+    },
+    {
+      "action": "perform apply transaction",
+      "details": "Invokes the next paragraph to process the read transaction."
+    }
+  ],
+  "inputs": [
+    "transaction file"
+  ],
+  "outputs": [
+    "current transaction record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": "",
+      "description": "No external side effects occur directly within this paragraph."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

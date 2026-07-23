@@ -1,0 +1,51 @@
+{
+  "programs": [
+    "ACCTMGR",
+    "ATMTXN",
+    "AUDITSRV",
+    "BCHEOD",
+    "FRDCHK",
+    "INTCALC",
+    "KYCSYNC",
+    "STMTRPT",
+    "TXNPOST"
+  ],
+  "copybooks": [
+    "ACCTREC",
+    "ATMMAP",
+    "CUSTREC",
+    "TXNREC"
+  ],
+  "jclJobs": [
+    "BANKEOD",
+    "KYCSYNCJ"
+  ],
+  "bmsMapsets": [
+    "ATMMSET"
+  ],
+  "imsPsbs": [
+    "KYCSYNCP"
+  ],
+  "imsDatabases": [
+    "CUSTDB"
+  ],
+  "datasets": [
+    "ACCTFILE",
+    "AUDITOUT",
+    "AUDITVSAM",
+    "INTJRNL",
+    "STMTOUT",
+    "TXNIN"
+  ],
+  "cicsTransactions": [],
+  "counts": {
+    "programs": 9,
+    "copybooks": 4,
+    "jclJobs": 2,
+    "bmsMapsets": 1,
+    "imsPsbs": 1,
+    "imsDatabases": 1,
+    "datasets": 6,
+    "cicsTransactions": 0
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "name": "KYCSYNCP",
+  "pcbCount": 2,
+  "description": "This IMS Program Specification Block defines access to the CUSTDB database with two program communication blocks, both configured for read-only (G) operations and sensitivity to two segments."
+}

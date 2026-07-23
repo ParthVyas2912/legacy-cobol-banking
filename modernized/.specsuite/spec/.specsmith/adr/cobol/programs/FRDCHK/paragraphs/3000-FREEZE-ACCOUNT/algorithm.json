@@ -1,0 +1,35 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph freezes a user account by manipulating internal state and possibly invoking external resources.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values into variables",
+      "details": "Sets account status to 'frozen' or updates relevant fields."
+    },
+    {
+      "action": "execute external command or system block",
+      "details": "Performs system-specific actions to enforce the freeze."
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "external-flag"
+  ],
+  "outputs": [
+    "account-status"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account database",
+      "description": "Records the freeze operation in the persistence layer."
+    },
+    {
+      "kind": "cics-send",
+      "target": "user-facing interface",
+      "description": "Informs related systems about the account freeze status."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

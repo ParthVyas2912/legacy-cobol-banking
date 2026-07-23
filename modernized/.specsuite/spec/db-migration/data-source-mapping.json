@@ -1,0 +1,819 @@
+{
+  "generatedAt": "2026-07-23T18:04:30.820Z",
+  "dialect": "postgres",
+  "schema": "public",
+  "sources": [
+    {
+      "sourceKind": "vsam-ksds",
+      "sourceId": "ACCTFILE",
+      "recordLayout": "ACCT-RECORD",
+      "usedBy": [
+        "ACCTMGR",
+        "INTCALC"
+      ],
+      "targetTable": "public.acctfile",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "ACCT-NUMBER": {
+          "targetColumn": "acct_number",
+          "sqlType": "VARCHAR(10)",
+          "cobolPic": "9(10)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Account Number"
+        },
+        "ACCT-CUSTOMER-ID": {
+          "targetColumn": "acct_customer_id",
+          "sqlType": "VARCHAR(8)",
+          "cobolPic": "9(8)",
+          "cobolUsage": "display",
+          "domainContext": "foreign-key",
+          "businessMeaning": "Customer ID"
+        },
+        "ACCT-OPENED-DATE": {
+          "targetColumn": "acct_opened_date",
+          "sqlType": "DATE",
+          "cobolPic": "9(8)",
+          "cobolUsage": "display",
+          "domainContext": "date",
+          "businessMeaning": "Account Opened Date"
+        },
+        "ACCT-TYPE": {
+          "targetColumn": "acct_type",
+          "sqlType": "VARCHAR(2)",
+          "cobolPic": "X(02)",
+          "cobolUsage": "display",
+          "domainContext": "status-code",
+          "businessMeaning": "Account Type"
+        },
+        "ACCT-STATUS": {
+          "targetColumn": "acct_status",
+          "sqlType": "VARCHAR(1)",
+          "cobolPic": "X(01)",
+          "cobolUsage": "display",
+          "domainContext": "status-code",
+          "businessMeaning": "Account Status"
+        },
+        "ACCT-BALANCE": {
+          "targetColumn": "acct_balance",
+          "sqlType": "NUMERIC(15, 2)",
+          "cobolPic": "S9(13)V99",
+          "cobolUsage": "comp-3",
+          "domainContext": "monetary-amount",
+          "businessMeaning": "Account Balance"
+        },
+        "ACCT-AVAIL-BAL": {
+          "targetColumn": "acct_avail_bal",
+          "sqlType": "NUMERIC(15, 2)",
+          "cobolPic": "S9(13)V99",
+          "cobolUsage": "comp-3",
+          "domainContext": "monetary-amount",
+          "businessMeaning": "Available Balance"
+        },
+        "ACCT-INT-RATE": {
+          "targetColumn": "acct_int_rate",
+          "sqlType": "NUMERIC(6, 4)",
+          "cobolPic": "9(2)V9(4)",
+          "cobolUsage": "comp-3",
+          "domainContext": "rate",
+          "businessMeaning": "Interest Rate"
+        },
+        "ACCT-LAST-TXN-DT": {
+          "targetColumn": "acct_last_txn_dt",
+          "sqlType": "DATE",
+          "cobolPic": "9(8)",
+          "cobolUsage": "display",
+          "domainContext": "date",
+          "businessMeaning": "Last Transaction Date"
+        },
+        "ACCT-CURRENCY": {
+          "targetColumn": "acct_currency",
+          "sqlType": "VARCHAR(3)",
+          "cobolPic": "X(03)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Currency Code"
+        },
+        "ACCT-BRANCH-CODE": {
+          "targetColumn": "acct_branch_code",
+          "sqlType": "VARCHAR(4)",
+          "cobolPic": "9(4)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Branch Code"
+        },
+        "ACCT-FLAGS": {
+          "targetColumn": "acct_flags",
+          "sqlType": "VARCHAR(4)",
+          "cobolPic": "X(04)",
+          "cobolUsage": "display",
+          "domainContext": "enum-flag",
+          "businessMeaning": "Account Flags"
+        },
+        "ACCT-FILLER": {
+          "targetColumn": "acct_filler",
+          "sqlType": "VARCHAR(50)",
+          "cobolPic": "X(50)",
+          "cobolUsage": "display",
+          "domainContext": "reserved-filler",
+          "businessMeaning": "Reserved Space"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "Acctfile",
+      "primaryKey": [
+        "acct_number"
+      ],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "vsam-ksds",
+      "sourceId": "AUDITVSAM",
+      "recordLayout": "AUDIT-RECORD",
+      "usedBy": [
+        "AUDITSRV"
+      ],
+      "targetTable": "public.auditvsam",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "AUDIT-KEY": {
+          "targetColumn": "audit_key",
+          "sqlType": "VARCHAR(20)",
+          "cobolPic": "X(20)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Audit Record Key"
+        },
+        "AUDIT-ACCT-NUMBER": {
+          "targetColumn": "audit_acct_number",
+          "sqlType": "VARCHAR(10)",
+          "cobolPic": "9(10)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Account Number"
+        },
+        "AUDIT-ACTION": {
+          "targetColumn": "audit_action",
+          "sqlType": "VARCHAR(16)",
+          "cobolPic": "X(16)",
+          "cobolUsage": "display",
+          "domainContext": "enum-flag",
+          "businessMeaning": "Audit Action"
+        },
+        "AUDIT-USER": {
+          "targetColumn": "audit_user",
+          "sqlType": "VARCHAR(8)",
+          "cobolPic": "X(08)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "User ID"
+        },
+        "AUDIT-TS": {
+          "targetColumn": "audit_ts",
+          "sqlType": "TIMESTAMPTZ",
+          "cobolPic": "X(26)",
+          "cobolUsage": "display",
+          "domainContext": "timestamp",
+          "businessMeaning": "Timestamp"
+        },
+        "AUDIT-DETAIL": {
+          "targetColumn": "audit_detail",
+          "sqlType": "VARCHAR(120)",
+          "cobolPic": "X(120)",
+          "cobolUsage": "display",
+          "domainContext": "free-text",
+          "businessMeaning": "Audit Details"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "Auditvsam",
+      "primaryKey": [
+        "audit_key"
+      ],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "qsam",
+      "sourceId": "INTJRNL",
+      "recordLayout": "TXN-RECORD",
+      "usedBy": [
+        "INTCALC"
+      ],
+      "targetTable": "public.intjrnl",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "TXN-ID": {
+          "targetColumn": "txn_id",
+          "sqlType": "VARCHAR(12)",
+          "cobolPic": "9(12)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Transaction ID"
+        },
+        "TXN-ACCT-NUMBER": {
+          "targetColumn": "txn_acct_number",
+          "sqlType": "VARCHAR(10)",
+          "cobolPic": "9(10)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Account Number"
+        },
+        "TXN-POST-DATE": {
+          "targetColumn": "txn_post_date",
+          "sqlType": "DATE",
+          "cobolPic": "9(8)",
+          "cobolUsage": "display",
+          "domainContext": "date",
+          "businessMeaning": "Posting Date"
+        },
+        "TXN-EFFECTIVE-DATE": {
+          "targetColumn": "txn_effective_date",
+          "sqlType": "DATE",
+          "cobolPic": "9(8)",
+          "cobolUsage": "display",
+          "domainContext": "date",
+          "businessMeaning": "Effective Date"
+        },
+        "TXN-AMOUNT": {
+          "targetColumn": "txn_amount",
+          "sqlType": "NUMERIC(13, 2)",
+          "cobolPic": "S9(11)V99",
+          "cobolUsage": "comp-3",
+          "domainContext": "monetary-amount",
+          "businessMeaning": "Transaction Amount"
+        },
+        "TXN-CODE": {
+          "targetColumn": "txn_code",
+          "sqlType": "VARCHAR(3)",
+          "cobolPic": "X(03)",
+          "cobolUsage": "display",
+          "domainContext": "enum-flag",
+          "businessMeaning": "Transaction Type"
+        },
+        "TXN-CHANNEL": {
+          "targetColumn": "txn_channel",
+          "sqlType": "VARCHAR(4)",
+          "cobolPic": "X(04)",
+          "cobolUsage": "display",
+          "domainContext": "enum-flag",
+          "businessMeaning": "Transaction Channel"
+        },
+        "TXN-REF-NUMBER": {
+          "targetColumn": "txn_ref_number",
+          "sqlType": "VARCHAR(20)",
+          "cobolPic": "X(20)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Reference Number"
+        },
+        "TXN-DESCRIPTION": {
+          "targetColumn": "txn_description",
+          "sqlType": "VARCHAR(40)",
+          "cobolPic": "X(40)",
+          "cobolUsage": "display",
+          "domainContext": "free-text",
+          "businessMeaning": "Transaction Description"
+        },
+        "TXN-STATUS": {
+          "targetColumn": "txn_status",
+          "sqlType": "VARCHAR(1)",
+          "cobolPic": "X(01)",
+          "cobolUsage": "display",
+          "domainContext": "status-code",
+          "businessMeaning": "Transaction Status"
+        },
+        "TXN-BALANCE-AFTER": {
+          "targetColumn": "txn_balance_after",
+          "sqlType": "NUMERIC(15, 2)",
+          "cobolPic": "S9(13)V99",
+          "cobolUsage": "comp-3",
+          "domainContext": "monetary-amount",
+          "businessMeaning": "Balance After Transaction"
+        },
+        "TXN-USER-ID": {
+          "targetColumn": "txn_user_id",
+          "sqlType": "VARCHAR(8)",
+          "cobolPic": "X(08)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "User ID"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "Intjrnl",
+      "primaryKey": [],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "qsam",
+      "sourceId": "STMTOUT",
+      "recordLayout": "STMT-LINE",
+      "usedBy": [
+        "STMTRPT"
+      ],
+      "targetTable": "public.stmtout",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "STMT-ACCT-NUM": {
+          "targetColumn": "stmt_acct_num",
+          "sqlType": "VARCHAR(10)",
+          "cobolPic": "9(10)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Account Number"
+        },
+        "STMT-DESCRIPTION": {
+          "targetColumn": "stmt_description",
+          "sqlType": "VARCHAR(40)",
+          "cobolPic": "X(40)",
+          "cobolUsage": "display",
+          "domainContext": "free-text",
+          "businessMeaning": "Transaction Description"
+        },
+        "STMT-AMOUNT": {
+          "targetColumn": "stmt_amount",
+          "sqlType": "NUMERIC(3, 0)",
+          "cobolPic": "-Z(11)9.99",
+          "cobolUsage": "display",
+          "domainContext": "monetary-amount",
+          "businessMeaning": "Transaction Amount"
+        },
+        "STMT-BALANCE": {
+          "targetColumn": "stmt_balance",
+          "sqlType": "NUMERIC(3, 0)",
+          "cobolPic": "-Z(13)9.99",
+          "cobolUsage": "display",
+          "domainContext": "monetary-amount",
+          "businessMeaning": "Account Balance"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "Stmtout",
+      "primaryKey": [],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "qsam",
+      "sourceId": "TXNIN",
+      "recordLayout": "TXN-RECORD",
+      "usedBy": [
+        "TXNPOST"
+      ],
+      "targetTable": "public.txnin",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "TXN-ID": {
+          "targetColumn": "txn_id",
+          "sqlType": "VARCHAR(12)",
+          "cobolPic": "9(12)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Transaction ID"
+        },
+        "TXN-ACCT-NUMBER": {
+          "targetColumn": "txn_acct_number",
+          "sqlType": "VARCHAR(10)",
+          "cobolPic": "9(10)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Account Number"
+        },
+        "TXN-POST-DATE": {
+          "targetColumn": "txn_post_date",
+          "sqlType": "DATE",
+          "cobolPic": "9(8)",
+          "cobolUsage": "display",
+          "domainContext": "date",
+          "businessMeaning": "Posting Date"
+        },
+        "TXN-EFFECTIVE-DATE": {
+          "targetColumn": "txn_effective_date",
+          "sqlType": "DATE",
+          "cobolPic": "9(8)",
+          "cobolUsage": "display",
+          "domainContext": "date",
+          "businessMeaning": "Effective Date"
+        },
+        "TXN-AMOUNT": {
+          "targetColumn": "txn_amount",
+          "sqlType": "NUMERIC(13, 2)",
+          "cobolPic": "S9(11)V99",
+          "cobolUsage": "comp-3",
+          "domainContext": "monetary-amount",
+          "businessMeaning": "Transaction Amount"
+        },
+        "TXN-CODE": {
+          "targetColumn": "txn_code",
+          "sqlType": "VARCHAR(3)",
+          "cobolPic": "X(03)",
+          "cobolUsage": "display",
+          "domainContext": "enum-flag",
+          "businessMeaning": "Transaction Type"
+        },
+        "TXN-CHANNEL": {
+          "targetColumn": "txn_channel",
+          "sqlType": "VARCHAR(4)",
+          "cobolPic": "X(04)",
+          "cobolUsage": "display",
+          "domainContext": "enum-flag",
+          "businessMeaning": "Transaction Channel"
+        },
+        "TXN-REF-NUMBER": {
+          "targetColumn": "txn_ref_number",
+          "sqlType": "VARCHAR(20)",
+          "cobolPic": "X(20)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "Transaction Reference"
+        },
+        "TXN-DESCRIPTION": {
+          "targetColumn": "txn_description",
+          "sqlType": "VARCHAR(40)",
+          "cobolPic": "X(40)",
+          "cobolUsage": "display",
+          "domainContext": "free-text",
+          "businessMeaning": "Description"
+        },
+        "TXN-STATUS": {
+          "targetColumn": "txn_status",
+          "sqlType": "VARCHAR(1)",
+          "cobolPic": "X(01)",
+          "cobolUsage": "display",
+          "domainContext": "status-code",
+          "businessMeaning": "Transaction Status"
+        },
+        "TXN-BALANCE-AFTER": {
+          "targetColumn": "txn_balance_after",
+          "sqlType": "NUMERIC(15, 2)",
+          "cobolPic": "S9(13)V99",
+          "cobolUsage": "comp-3",
+          "domainContext": "monetary-amount",
+          "businessMeaning": "Balance After"
+        },
+        "TXN-USER-ID": {
+          "targetColumn": "txn_user_id",
+          "sqlType": "VARCHAR(8)",
+          "cobolPic": "X(08)",
+          "cobolUsage": "display",
+          "domainContext": "identifier",
+          "businessMeaning": "User ID"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "Txnin",
+      "primaryKey": [],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "qsam",
+      "sourceId": "AUDITOUT",
+      "recordLayout": "AUDIT-RECORD",
+      "usedBy": [
+        "TXNPOST"
+      ],
+      "targetTable": "public.auditout",
+      "targetDialect": "postgres",
+      "columnMap": {},
+      "dataMigrationStatus": "pending",
+      "ormEntity": "Auditout",
+      "primaryKey": [],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "ims-segment",
+      "sourceId": "CUSTDB.CUSTOMER",
+      "usedBy": [],
+      "targetTable": "public.custdb_customer",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "CUSTID": {
+          "targetColumn": "custid",
+          "sqlType": "VARCHAR(8)"
+        },
+        "LASTNAME": {
+          "targetColumn": "lastname",
+          "sqlType": "VARCHAR(30)"
+        },
+        "FIRSTNAME": {
+          "targetColumn": "firstname",
+          "sqlType": "VARCHAR(20)"
+        },
+        "TAXID": {
+          "targetColumn": "taxid",
+          "sqlType": "VARCHAR(9)"
+        },
+        "KYCSTAT": {
+          "targetColumn": "kycstat",
+          "sqlType": "CHAR(1)"
+        },
+        "RISKSCR": {
+          "targetColumn": "riskscr",
+          "sqlType": "NUMERIC(3, 0)"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "CustdbCustomer",
+      "primaryKey": [
+        "customer_id"
+      ],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "ims-segment",
+      "sourceId": "CUSTDB.ACCTLNK",
+      "usedBy": [],
+      "targetTable": "public.custdb_acctlnk",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "ACCTNUM": {
+          "targetColumn": "acctnum",
+          "sqlType": "VARCHAR(10)"
+        },
+        "ROLE": {
+          "targetColumn": "role",
+          "sqlType": "VARCHAR(2)"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "CustdbAcctlnk",
+      "primaryKey": [
+        "acctlnk_id"
+      ],
+      "foreignKeys": [
+        {
+          "column": "customer_id",
+          "referencesTable": "public.custdb_customer",
+          "referencesColumn": "customer_id"
+        }
+      ]
+    },
+    {
+      "sourceKind": "ims-segment",
+      "sourceId": "CUSTDB.ADDRESS",
+      "usedBy": [],
+      "targetTable": "public.custdb_address",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "EFFDATE": {
+          "targetColumn": "effdate",
+          "sqlType": "VARCHAR(8)"
+        },
+        "STREET": {
+          "targetColumn": "street",
+          "sqlType": "VARCHAR(40)"
+        },
+        "CITY": {
+          "targetColumn": "city",
+          "sqlType": "VARCHAR(25)"
+        },
+        "STATE": {
+          "targetColumn": "state",
+          "sqlType": "VARCHAR(2)"
+        },
+        "ZIP": {
+          "targetColumn": "zip",
+          "sqlType": "VARCHAR(5)"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "CustdbAddress",
+      "primaryKey": [
+        "address_id"
+      ],
+      "foreignKeys": [
+        {
+          "column": "customer_id",
+          "referencesTable": "public.custdb_customer",
+          "referencesColumn": "customer_id"
+        }
+      ]
+    },
+    {
+      "sourceKind": "db2-table",
+      "sourceId": "ACCT_AUDIT",
+      "usedBy": [
+        "ACCTMGR"
+      ],
+      "targetTable": "public.acct_audit",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "ACCT_NUM": {
+          "targetColumn": "acct_num",
+          "sqlType": "TEXT"
+        },
+        "ACTION": {
+          "targetColumn": "action",
+          "sqlType": "TEXT"
+        },
+        "ACTOR": {
+          "targetColumn": "actor",
+          "sqlType": "TEXT"
+        },
+        "TS": {
+          "targetColumn": "ts",
+          "sqlType": "TIMESTAMPTZ"
+        },
+        "ACCT_NUMBER": {
+          "targetColumn": "acct_number",
+          "sqlType": "TEXT"
+        },
+        "COMM_FUNCTION": {
+          "targetColumn": "comm_function",
+          "sqlType": "TEXT"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "AcctAudit",
+      "primaryKey": [],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "db2-table",
+      "sourceId": "CUSTOMER",
+      "usedBy": [
+        "ACCTMGR"
+      ],
+      "targetTable": "public.customer",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "ACTIVE_ACCT_COUNT": {
+          "targetColumn": "active_acct_count",
+          "sqlType": "TEXT"
+        },
+        "ACCT_CUSTOMER_ID": {
+          "targetColumn": "acct_customer_id",
+          "sqlType": "TEXT"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "Customer",
+      "primaryKey": [],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "db2-table",
+      "sourceId": "EOD_RUNS",
+      "usedBy": [
+        "BCHEOD"
+      ],
+      "targetTable": "public.eod_runs",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "STARTED_AT": {
+          "targetColumn": "started_at",
+          "sqlType": "TIMESTAMPTZ"
+        },
+        "STATUS": {
+          "targetColumn": "status",
+          "sqlType": "TIMESTAMPTZ"
+        },
+        "ENDED_AT": {
+          "targetColumn": "ended_at",
+          "sqlType": "TIMESTAMPTZ"
+        },
+        "WS_STATUS_CODE": {
+          "targetColumn": "ws_status_code",
+          "sqlType": "TIMESTAMPTZ"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "EodRuns",
+      "primaryKey": [],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "db2-table",
+      "sourceId": "TXN_LEDGER",
+      "usedBy": [
+        "FRDCHK",
+        "TXNPOST"
+      ],
+      "targetTable": "public.txn_ledger",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "COUNT": {
+          "targetColumn": "count",
+          "sqlType": "TEXT"
+        },
+        "COALESCE": {
+          "targetColumn": "coalesce",
+          "sqlType": "TEXT"
+        },
+        "WS_VELOCITY_COUNT": {
+          "targetColumn": "ws_velocity_count",
+          "sqlType": "TEXT"
+        },
+        "WS_VELOCITY_AMT": {
+          "targetColumn": "ws_velocity_amt",
+          "sqlType": "TEXT"
+        },
+        "TXN_ACCT_NUMBER": {
+          "targetColumn": "txn_acct_number",
+          "sqlType": "TEXT"
+        },
+        "WS_CURRENT_ACCT": {
+          "targetColumn": "ws_current_acct",
+          "sqlType": "TEXT"
+        },
+        "TXN_ID": {
+          "targetColumn": "txn_id",
+          "sqlType": "TEXT"
+        },
+        "ACCT": {
+          "targetColumn": "acct",
+          "sqlType": "TEXT"
+        },
+        "AMOUNT": {
+          "targetColumn": "amount",
+          "sqlType": "TEXT"
+        },
+        "CODE": {
+          "targetColumn": "code",
+          "sqlType": "TEXT"
+        },
+        "POSTED_AT": {
+          "targetColumn": "posted_at",
+          "sqlType": "TIMESTAMPTZ"
+        },
+        "TXN_AMOUNT": {
+          "targetColumn": "txn_amount",
+          "sqlType": "TEXT"
+        },
+        "TXN_CODE": {
+          "targetColumn": "txn_code",
+          "sqlType": "TEXT"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "TxnLedger",
+      "primaryKey": [],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "db2-table",
+      "sourceId": "FRAUD_FLAGS",
+      "usedBy": [
+        "FRDCHK"
+      ],
+      "targetTable": "public.fraud_flags",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "ACCT": {
+          "targetColumn": "acct",
+          "sqlType": "TEXT"
+        },
+        "SCORE": {
+          "targetColumn": "score",
+          "sqlType": "TEXT"
+        },
+        "REASON": {
+          "targetColumn": "reason",
+          "sqlType": "TEXT"
+        },
+        "TS": {
+          "targetColumn": "ts",
+          "sqlType": "TIMESTAMPTZ"
+        },
+        "TXN_ACCT_NUMBER": {
+          "targetColumn": "txn_acct_number",
+          "sqlType": "TEXT"
+        },
+        "WS_RISK_SCORE": {
+          "targetColumn": "ws_risk_score",
+          "sqlType": "TEXT"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "FraudFlags",
+      "primaryKey": [],
+      "foreignKeys": []
+    },
+    {
+      "sourceKind": "db2-table",
+      "sourceId": "KYC_AUDIT",
+      "usedBy": [
+        "KYCSYNC"
+      ],
+      "targetTable": "public.kyc_audit",
+      "targetDialect": "postgres",
+      "columnMap": {
+        "CUST_ID": {
+          "targetColumn": "cust_id",
+          "sqlType": "TEXT"
+        },
+        "CUST_KYC_STATUS": {
+          "targetColumn": "cust_kyc_status",
+          "sqlType": "TIMESTAMPTZ"
+        },
+        "CUST_RISK_SCORE": {
+          "targetColumn": "cust_risk_score",
+          "sqlType": "TEXT"
+        }
+      },
+      "dataMigrationStatus": "pending",
+      "ormEntity": "KycAudit",
+      "primaryKey": [],
+      "foreignKeys": []
+    }
+  ]
+}
