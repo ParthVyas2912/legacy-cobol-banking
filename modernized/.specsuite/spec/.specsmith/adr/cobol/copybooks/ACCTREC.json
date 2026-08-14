@@ -1,0 +1,10 @@
+{
+  "name": "ACCTREC",
+  "usedBy": [
+    "ACCTMGR",
+    "INTCALC"
+  ],
+  "isDclgen": false,
+  "description": "Defines the data structure for account records, including fields such as account number, balance, and status.",
+  "businessMeaning": "Account master record layout used for financial operations or account management."
+}

@@ -1,0 +1,15 @@
+{
+  "schemaValid": false,
+  "referentialIntegrity": {
+    "totalRefs": 0,
+    "resolvedRefs": 0,
+    "brokenRefs": []
+  },
+  "completeness": {
+    "score": 100,
+    "missingEntities": []
+  },
+  "confidenceDistribution": {
+    "no-data": "100%"
+  }
+}

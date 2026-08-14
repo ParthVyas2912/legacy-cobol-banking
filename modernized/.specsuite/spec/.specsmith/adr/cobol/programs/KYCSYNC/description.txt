@@ -1,0 +1,4 @@
+# KYCSYNC
+The KYCSYNC program synchronizes customer information into the KYC_AUDIT table using IMS calls and SQL operations.
+Business domain: customer-management
+Architectural role: batch

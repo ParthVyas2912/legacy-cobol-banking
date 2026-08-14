@@ -1,0 +1,4 @@
+# ATMTXN
+Processes ATM transactions by interacting with CICS services and handles errors during inputs or processing.
+Business domain: infrastructure
+Architectural role: online

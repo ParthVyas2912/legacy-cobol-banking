@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes the program, performs the main processing routine, and ensures proper closure before exiting.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open file",
+      "details": "Opens the required files for processing"
+    },
+    {
+      "action": "perform routine",
+      "details": "Transitions control to the main processing paragraph to fetch and handle customer records"
+    },
+    {
+      "action": "close file",
+      "details": "Closes the files opened after processing"
+    },
+    {
+      "action": "terminate program",
+      "details": "Exits the program cleanly with a GOBACK"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "reporting file",
+      "description": "Handles writing of report output during processing"
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

@@ -1,0 +1,4 @@
+# AUDITSRV
+This program processes audit records by writing them to a file and interacts with a CICS environment.
+Business domain: infrastructure
+Architectural role: online

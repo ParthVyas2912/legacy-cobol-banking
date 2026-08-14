@@ -1,0 +1,34 @@
+{
+  "name": "2000-READ-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph reads an account record and performs a conditional operation based on its contents.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "read account record",
+      "details": "executes a database read operation for an account"
+    },
+    {
+      "action": "evaluate account data",
+      "details": "uses an IF statement to check specific conditions on the account record"
+    },
+    {
+      "action": "move data",
+      "details": "assigns values to a variable based on the condition"
+    }
+  ],
+  "inputs": [
+    "account-key"
+  ],
+  "outputs": [
+    "account-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account database",
+      "description": "Potentially modifies or flags an account based on conditions"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

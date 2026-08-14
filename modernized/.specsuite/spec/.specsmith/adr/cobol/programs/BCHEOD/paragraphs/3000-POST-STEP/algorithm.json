@@ -1,0 +1,23 @@
+{
+  "name": "3000-POST-STEP",
+  "description": "This paragraph performs an unknown operation, makes a subprogram call, and transitions control to the next step in the program.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "call a subprogram",
+      "details": "The specific subprogram and purpose are not identified."
+    },
+    {
+      "action": "unknown action",
+      "details": "The functionality of this step is not clear."
+    },
+    {
+      "action": "transfer control to another paragraph",
+      "details": "Transfers execution to 1000-NEXT-STEP."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

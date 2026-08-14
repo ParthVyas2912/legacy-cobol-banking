@@ -1,0 +1,33 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes resources, performs a looping operation, and cleans up before returning control.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "open resources",
+      "details": "Opens a file or resource for operations."
+    },
+    {
+      "action": "perform looping operation",
+      "details": "Executes a loop defined in 1000-LOOP."
+    },
+    {
+      "action": "close resources",
+      "details": "Closes a file or resource after operations are complete."
+    },
+    {
+      "action": "return control",
+      "details": "Returns control to the calling entity or terminates execution."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "unknown file",
+      "description": "Potentially writes to a file during execution."
+    }
+  ],
+  "enrichmentConfidence": 0.85
+}

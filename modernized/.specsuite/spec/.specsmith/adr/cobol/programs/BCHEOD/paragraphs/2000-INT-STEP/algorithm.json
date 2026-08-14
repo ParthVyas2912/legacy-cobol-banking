@@ -1,0 +1,15 @@
+{
+  "name": "2000-INT-STEP",
+  "description": "This paragraph performs an unknown operation, makes a call, and redirects control flow using a GO TO.",
+  "purpose": "unknown",
+  "algorithm": [
+    {
+      "action": "unknown",
+      "details": "The exact operations are unclear due to the presence of an 'unknown' statement kind."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.75
+}

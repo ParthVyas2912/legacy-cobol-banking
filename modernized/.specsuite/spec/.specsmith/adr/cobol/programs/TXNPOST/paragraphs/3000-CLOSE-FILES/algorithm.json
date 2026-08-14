@@ -1,0 +1,23 @@
+{
+  "name": "3000-CLOSE-FILES",
+  "description": "This paragraph closes open files used in the batch process.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close open files",
+      "details": "Calls the COBOL CLOSE statement to release file resources"
+    }
+  ],
+  "inputs": [
+    "open files"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "file system",
+      "description": "Ensures all buffered data is written and file access is terminated"
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

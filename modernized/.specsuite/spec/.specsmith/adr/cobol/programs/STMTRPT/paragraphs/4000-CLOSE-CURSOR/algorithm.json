@@ -1,0 +1,23 @@
+{
+  "name": "4000-CLOSE-CURSOR",
+  "description": "Closes the SQL cursor to release database resources after processing.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "close cursor",
+      "details": "Executes a SQL statement to close the open cursor."
+    }
+  ],
+  "inputs": [
+    "cursor-name"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "database",
+      "description": "Releases the resources associated with the SQL cursor."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

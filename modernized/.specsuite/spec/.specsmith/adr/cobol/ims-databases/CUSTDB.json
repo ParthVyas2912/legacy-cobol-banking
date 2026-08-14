@@ -1,0 +1,5 @@
+{
+  "name": "CUSTDB",
+  "segmentCount": 3,
+  "description": "A hierarchical IMS database using the HIDAM access method with a root CUSTOMER segment and two dependent segments: ACCTLNK for accounts and ADDRESS for customer addresses."
+}

@@ -1,0 +1,27 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph serves as the starting point for initiating fraud detection logic by invoking downstream processing routines.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform 1000-COMPUTE-VELOCITY",
+      "details": "Initiates velocity computation for transactional analysis."
+    },
+    {
+      "action": "perform 2000-SCORE-RISK",
+      "details": "Scores the risk of the transaction based on predefined criteria."
+    },
+    {
+      "action": "perform 3000-FREEZE-ACCOUNT",
+      "details": "Freezes the account if any fraudulent activity is detected."
+    },
+    {
+      "action": "if condition check",
+      "details": "Conditionally decides flow based on upstream logic."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

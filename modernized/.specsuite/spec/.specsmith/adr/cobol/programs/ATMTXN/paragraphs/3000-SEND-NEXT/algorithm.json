@@ -1,0 +1,29 @@
+{
+  "name": "3000-SEND-NEXT",
+  "description": "Prepares and sends a follow-up or next item for processing, handling any errors that occur.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move a value to a variable",
+      "details": "Sets a value in preparation for output or further processing."
+    },
+    {
+      "action": "execute a block",
+      "details": "Invokes an external operation, likely involving I/O or external system interaction."
+    }
+  ],
+  "inputs": [
+    "working-storage variable"
+  ],
+  "outputs": [
+    "message or transaction data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "external system or screen",
+      "description": "Transmits a message or transaction information to an external system or display."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

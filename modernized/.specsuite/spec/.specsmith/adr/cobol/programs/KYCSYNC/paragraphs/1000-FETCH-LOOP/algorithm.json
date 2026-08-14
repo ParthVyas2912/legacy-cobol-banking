@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-LOOP",
+  "description": "Iterates through a loop to fetch relevant KYC data and invokes a subroutine for further processing.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch data",
+      "details": "likely retrieves data from a database or cursor"
+    },
+    {
+      "action": "perform subroutine",
+      "details": "invokes 2000-UPSERT-KYC for processing"
+    }
+  ],
+  "inputs": [
+    "KYC-cursor"
+  ],
+  "outputs": [
+    "processed-record"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "KYC-table",
+      "description": "The invoked subroutine modifies or upserts records into the KYC database table."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

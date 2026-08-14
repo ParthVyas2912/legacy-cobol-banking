@@ -1,0 +1,19 @@
+{
+  "name": "0000-DRIVE",
+  "description": "This paragraph initiates a control flow by performing a specific routine and transitions to the next procedural step.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Performs the 9000-MARK-START routine."
+    },
+    {
+      "action": "go-to",
+      "details": "Transfers control to the 1000-NEXT-STEP paragraph."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

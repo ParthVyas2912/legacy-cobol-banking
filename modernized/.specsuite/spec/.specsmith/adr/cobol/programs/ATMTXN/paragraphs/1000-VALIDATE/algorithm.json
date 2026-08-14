@@ -1,0 +1,30 @@
+{
+  "name": "1000-VALIDATE",
+  "description": "This paragraph performs validation checks and prepares data for further processing.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "move values to variables",
+      "details": "Prepares input for further routines."
+    },
+    {
+      "action": "execute external block",
+      "details": "Possibly performs additional business rule checks or setups."
+    }
+  ],
+  "inputs": [
+    "input-field1",
+    "input-field2"
+  ],
+  "outputs": [
+    "status-flag"
+  ],
+  "sideEffects": [
+    {
+      "kind": "other",
+      "target": "external process or subroutine",
+      "description": "Executes a subroutine that may have implications on the program’s flow or behavior."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": "__entry__",
+      "isEntry": true,
+      "statementCount": 0
+    },
+    {
+      "id": "0000-START",
+      "isEntry": false,
+      "statementCount": 5
+    },
+    {
+      "id": "1000-COMPUTE-VELOCITY",
+      "isEntry": false,
+      "statementCount": 1
+    },
+    {
+      "id": "2000-SCORE-RISK",
+      "isEntry": false,
+      "statementCount": 7
+    },
+    {
+      "id": "3000-FREEZE-ACCOUNT",
+      "isEntry": false,
+      "statementCount": 4
+    }
+  ],
+  "edges": [
+    {
+      "from": "__entry__",
+      "to": "0000-START",
+      "kind": "entry"
+    },
+    {
+      "from": "0000-START",
+      "to": "1000-COMPUTE-VELOCITY",
+      "kind": "perform",
+      "location": {
+        "line": 26,
+        "column": 5
+      }
+    },
+    {
+      "from": "0000-START",
+      "to": "2000-SCORE-RISK",
+      "kind": "perform",
+      "location": {
+        "line": 27,
+        "column": 5
+      }
+    },
+    {
+      "from": "0000-START",
+      "to": "3000-FREEZE-ACCOUNT",
+      "kind": "perform",
+      "location": {
+        "line": 29,
+        "column": 9
+      }
+    },
+    {
+      "from": "0000-START",
+      "to": "1000-COMPUTE-VELOCITY",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "1000-COMPUTE-VELOCITY",
+      "to": "2000-SCORE-RISK",
+      "kind": "fallthrough"
+    },
+    {
+      "from": "2000-SCORE-RISK",
+      "to": "3000-FREEZE-ACCOUNT",
+      "kind": "fallthrough"
+    }
+  ],
+  "entries": [
+    "__entry__"
+  ],
+  "dead": [],
+  "loopHeaders": [],
+  "goToClusters": [],
+  "cyclomaticComplexity": 4
+}

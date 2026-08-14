@@ -1,0 +1,23 @@
+{
+  "name": "1000-OPEN-FILES",
+  "description": "Opens necessary files for processing in the batch accounts-receivable program.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "open files",
+      "details": "Opens all required files to prepare for transaction processing."
+    }
+  ],
+  "inputs": [
+    "file-handles"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "system file table",
+      "description": "Files are opened and made ready for read/write operations."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

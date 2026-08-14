@@ -1,0 +1,23 @@
+{
+  "name": "2000-SCORE-RISK",
+  "description": "Evaluates risk scoring conditions and determines whether to proceed with account freezing.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Assess risk levels using IF statements"
+    },
+    {
+      "action": "set state",
+      "details": "Move value to a variable depending on conditions"
+    }
+  ],
+  "inputs": [
+    "input-risk-values"
+  ],
+  "outputs": [
+    "risk-score"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

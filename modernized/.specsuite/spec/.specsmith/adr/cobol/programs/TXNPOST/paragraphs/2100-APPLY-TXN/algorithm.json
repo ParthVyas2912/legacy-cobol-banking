@@ -1,0 +1,34 @@
+{
+  "name": "2100-APPLY-TXN",
+  "description": "This paragraph applies a transaction to accounts-receivable data, performing necessary computations and updates.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "update accounts-receivable data",
+      "details": "Modify variables or records to reflect posted transactions"
+    },
+    {
+      "action": "perform addition",
+      "details": "Calculate new balances or totals based on transaction data"
+    },
+    {
+      "action": "external interaction",
+      "details": "Possibly triggers a call to another routine"
+    }
+  ],
+  "inputs": [
+    "transaction-data",
+    "accounts-receivable-records"
+  ],
+  "outputs": [
+    "updated-accounts-receivable"
+  ],
+  "sideEffects": [
+    {
+      "kind": "file-write",
+      "target": "output-file",
+      "description": "Writes updated records or logs the transaction"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

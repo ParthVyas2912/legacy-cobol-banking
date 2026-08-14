@@ -1,0 +1,39 @@
+{
+  "name": "4000-CLOSE-ACCOUNT",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph handles finalizing the process of closing a customer account, executing necessary actions and validations.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "move account status to a variable",
+      "details": "sets a flag or status indicating the account is being closed"
+    },
+    {
+      "action": "execute block",
+      "details": "calls an external routine or performs a database operation to finalize the closure"
+    },
+    {
+      "action": "conditional check",
+      "details": "verifies the success or failure of the close operation and branches accordingly"
+    }
+  ],
+  "inputs": [
+    "account-status"
+  ],
+  "outputs": [
+    "close-confirmation"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "account-table",
+      "description": "updates the account record to mark it as closed"
+    },
+    {
+      "kind": "commit",
+      "target": "database",
+      "description": "commits the changes made for the account closure operation"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

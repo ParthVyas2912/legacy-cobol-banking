@@ -1,0 +1,150 @@
+{
+  "name": "BANKEOD",
+  "sourceFile": "jcl/BANKEOD.jcl",
+  "stepCount": 2,
+  "description": "This job performs end-of-day banking operations by accruing interest and posting queued transactions, followed by generating a statement report.",
+  "businessPurpose": "Daily end-of-day processing and reporting for banking transactions.",
+  "steps": [
+    {
+      "name": "STEP010",
+      "kind": "pgm",
+      "program": "BCHEOD",
+      "options": {
+        "PGM": "BCHEOD",
+        "COND": "(0,NE)"
+      },
+      "conditions": [
+        {
+          "rc": 0,
+          "op": "ne"
+        }
+      ],
+      "symbolicOverrides": {},
+      "dds": [
+        {
+          "ddname": "ACCTFILE",
+          "concatenated": [],
+          "sourceLine": 10,
+          "dsn": "BANK.PROD.ACCT",
+          "disp": {
+            "status": "SHR"
+          }
+        },
+        {
+          "ddname": "TXNIN",
+          "concatenated": [],
+          "sourceLine": 11,
+          "dsn": "BANK.DAILY.TXN.QUEUE",
+          "disp": {
+            "status": "OLD",
+            "normal": "DELETE",
+            "abnormal": "KEEP"
+          }
+        },
+        {
+          "ddname": "INTJRNL",
+          "concatenated": [],
+          "sourceLine": 12,
+          "dsn": "&&INTJRNL",
+          "disp": {
+            "status": "NEW",
+            "normal": "PASS"
+          },
+          "unit": "SYSDA",
+          "space": "(CYL,(10,5))",
+          "dcb": {
+            "RECFM": "FB",
+            "LRECL": "180",
+            "BLKSIZE": "18000"
+          }
+        },
+        {
+          "ddname": "AUDITOUT",
+          "concatenated": [],
+          "sourceLine": 15,
+          "dsn": "BANK.DAILY.AUDIT",
+          "disp": {
+            "status": "NEW",
+            "normal": "CATLG",
+            "abnormal": "DELETE"
+          },
+          "unit": "SYSDA",
+          "space": "(CYL,(5,2))",
+          "dcb": {
+            "RECFM": "FB",
+            "LRECL": "200",
+            "BLKSIZE": "20000"
+          }
+        },
+        {
+          "ddname": "SYSOUT",
+          "concatenated": [],
+          "sourceLine": 18,
+          "sysout": "*"
+        },
+        {
+          "ddname": "SYSPRINT",
+          "concatenated": [],
+          "sourceLine": 19,
+          "sysout": "*"
+        }
+      ],
+      "description": "This step runs the BCHEOD program to process end-of-day banking operations, including accruing interest and posting queued transactions.",
+      "intent": "process and finalize end-of-day banking transactions",
+      "enrichmentConfidence": 0.95
+    },
+    {
+      "name": "STEP020",
+      "kind": "pgm",
+      "program": "STMTRPT",
+      "options": {
+        "PGM": "STMTRPT",
+        "COND": "(0,NE,STEP010)"
+      },
+      "conditions": [
+        {
+          "rc": 0,
+          "op": "ne",
+          "step": "STEP010"
+        }
+      ],
+      "symbolicOverrides": {},
+      "dds": [
+        {
+          "ddname": "STMTOUT",
+          "concatenated": [],
+          "sourceLine": 22,
+          "dsn": "BANK.DAILY.STMT",
+          "disp": {
+            "status": "NEW",
+            "normal": "CATLG",
+            "abnormal": "DELETE"
+          },
+          "unit": "SYSDA",
+          "space": "(CYL,(5,2))",
+          "dcb": {
+            "RECFM": "FB",
+            "LRECL": "120",
+            "BLKSIZE": "12000"
+          }
+        },
+        {
+          "ddname": "SYSOUT",
+          "concatenated": [],
+          "sourceLine": 25,
+          "sysout": "*"
+        }
+      ],
+      "description": "This step generates statement reports based on the posted banking transactions and accrued interest processed earlier in the job.",
+      "intent": "generate customer statement reports",
+      "enrichmentConfidence": 0.95
+    }
+  ],
+  "parameters": {
+    "_POS1": "EOD BATCH",
+    "CLASS": "A",
+    "MSGCLASS": "X",
+    "NOTIFY": "&SYSUID",
+    "REGION": "0M"
+  }
+}

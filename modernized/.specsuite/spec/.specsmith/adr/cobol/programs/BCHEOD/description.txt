@@ -1,0 +1,4 @@
+# BCHEOD
+This program manages the end-of-day process by recording the start and end of the run and performing EOD-specific calculations and postings.
+Business domain: infrastructure
+Architectural role: batch

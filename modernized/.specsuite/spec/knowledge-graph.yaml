@@ -1,0 +1,26 @@
+specforge_knowledge_graph: 1.0.0
+project: source
+entities:
+  - id: project:root
+    name: source
+    type: project
+    description: A monolithic COBOL-based backend system likely designed for internal workflows, batch processing, or
+      constrained operational tasks, with potential integration needs for external systems.
+    sourceFiles: []
+    domain: legacy_backend_operations
+    properties:
+      type: backend
+      totalFiles: 20
+      sourceFiles: 19
+    tags:
+      - project
+    confidence: 1
+relationships: []
+metadata:
+  totalEntities: 1
+  totalRelationships: 0
+  entityTypeCounts:
+    project: 1
+  relationshipTypeCounts: {}
+  averageConfidence: 1
+  generatedAt: 2026-08-14T17:29:30.549Z

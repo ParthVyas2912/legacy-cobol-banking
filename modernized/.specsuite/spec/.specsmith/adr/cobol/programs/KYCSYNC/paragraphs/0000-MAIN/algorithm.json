@@ -1,0 +1,29 @@
+{
+  "name": "0000-MAIN",
+  "description": "This paragraph initializes the program, performs an iterative fetch operation, displays a message, and exits execution.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "initialize variables or state",
+      "details": "A move statement is used to establish initial values or program state."
+    },
+    {
+      "action": "perform iteration",
+      "details": "A perform statement triggers the 1000-FETCH-LOOP."
+    },
+    {
+      "action": "display message",
+      "details": "A display statement is used to output information to the screen or log."
+    },
+    {
+      "action": "terminate program",
+      "details": "A goback statement is issued to terminate execution."
+    }
+  ],
+  "inputs": [],
+  "outputs": [
+    "screen-output"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

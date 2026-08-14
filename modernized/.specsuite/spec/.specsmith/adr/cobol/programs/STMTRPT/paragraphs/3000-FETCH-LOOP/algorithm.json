@@ -1,0 +1,29 @@
+{
+  "name": "3000-FETCH-LOOP",
+  "description": "This paragraph fetches data from a database cursor and processes a conditional check.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch data from SQL cursor",
+      "details": "Retrieves the next row of data for processing."
+    },
+    {
+      "action": "evaluate conditional logic",
+      "details": "Checks a condition based on the fetched data and determines the subsequent control flow."
+    }
+  ],
+  "inputs": [
+    "SQL-CURSOR"
+  ],
+  "outputs": [
+    "working-storage variables"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": "N/A",
+      "description": "This paragraph does not directly cause side effects like writes or commits."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

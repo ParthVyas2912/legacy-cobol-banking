@@ -1,0 +1,19 @@
+{
+  "name": "4000-DONE",
+  "description": "This paragraph performs routine cleanup and terminates control flow by returning to the caller.",
+  "purpose": "cleanup",
+  "algorithm": [
+    {
+      "action": "perform",
+      "details": "Executes routine 9100-MARK-END for marking the end of processing"
+    },
+    {
+      "action": "goback",
+      "details": "Returns control to the caller, ending the program"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

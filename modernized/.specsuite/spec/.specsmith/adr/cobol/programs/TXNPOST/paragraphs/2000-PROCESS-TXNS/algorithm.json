@@ -1,0 +1,27 @@
+{
+  "name": "2000-PROCESS-TXNS",
+  "description": "Processes a transaction by reading a record and initiating its application.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "read a record",
+      "details": "Reads transaction data from a file or input medium."
+    },
+    {
+      "action": "initiate transaction application",
+      "details": "Performs further processing of the transaction by calling another paragraph."
+    }
+  ],
+  "inputs": [
+    "transaction-file"
+  ],
+  "outputs": [],
+  "sideEffects": [
+    {
+      "kind": "file-read",
+      "target": "transaction-file",
+      "description": "Reads a single transaction record for processing."
+    }
+  ],
+  "enrichmentConfidence": 0.9
+}

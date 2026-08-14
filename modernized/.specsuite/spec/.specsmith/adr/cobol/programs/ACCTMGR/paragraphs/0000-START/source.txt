@@ -1,0 +1,6 @@
+Paragraph: 0000-START (section MAIN-ROUTINE)
+Lines: 41-54
+Statements: 2
+
+1. evaluate
+2. exec-block

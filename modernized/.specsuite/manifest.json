@@ -1,0 +1,44 @@
+{
+  "build_id": "71",
+  "source_repo": "legacy-cobol-banking",
+  "source_branch": "main",
+  "target_stack": "csharp-aspnet-efcore",
+  "target_subdir": "modernized/csharp-aspnet-efcore",
+  "generated_at": "2026-08-14T18:45:30Z",
+  "token_usage": {
+  "runId": "71",
+  "targetStack": "csharp-aspnet-efcore",
+  "deployment": "gpt-4o",
+  "pricing": {
+    "inputPerMillionUSD": 2.5,
+    "outputPerMillionUSD": 10.0
+  },
+  "tokenSource": "azure-openai-metrics",
+  "specforge": {
+    "inputTokens": 0,
+    "outputTokens": 0,
+    "totalTokens": 0,
+    "source": "unavailable",
+    "authoritative": false,
+    "llmCalls": 169,
+    "estimatedCostUSD": 0.0
+  },
+  "specsmith": {
+    "inputTokens": 93525,
+    "outputTokens": 29955,
+    "totalTokens": 123480,
+    "source": "azure-openai-metrics",
+    "authoritative": true,
+    "llmCalls": 58,
+    "estimatedCostUSD": 0.5334
+  },
+  "total": {
+    "inputTokens": 93525,
+    "outputTokens": 29955,
+    "totalTokens": 123480,
+    "llmCalls": 227,
+    "estimatedCostUSD": 0.5334
+  }
+},
+  "pipeline": "specsuite-modernization-pipeline"
+}

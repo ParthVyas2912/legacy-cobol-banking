@@ -1,0 +1,36 @@
+{
+  "name": "3000-FREEZE-ACCOUNT",
+  "description": "This paragraph freezes a user's account if certain conditions are met during fraud detection processing.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "freeze account",
+      "details": "Updates the status of the account to indicate it is frozen"
+    },
+    {
+      "action": "log transaction",
+      "details": "Keeps a record of the freeze action in a transaction log"
+    }
+  ],
+  "inputs": [
+    "account-status",
+    "fraud-risk-score"
+  ],
+  "outputs": [
+    "account-status",
+    "transaction-log"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "transaction-log",
+      "description": "Inserts a record of the freeze action"
+    },
+    {
+      "kind": "sql-write",
+      "target": "account-status-table",
+      "description": "Updates the account's status in the database"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

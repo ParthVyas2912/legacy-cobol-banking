@@ -1,0 +1,29 @@
+{
+  "name": "2000-POST-TXN",
+  "description": "This paragraph processes a transaction by moving data and executing a single external operation.",
+  "purpose": "io",
+  "algorithm": [
+    {
+      "action": "move data",
+      "details": "Transfers values between variables"
+    },
+    {
+      "action": "execute external operation",
+      "details": "Performs a predefined action in an exec block"
+    }
+  ],
+  "inputs": [
+    "transaction-details"
+  ],
+  "outputs": [
+    "output-data"
+  ],
+  "sideEffects": [
+    {
+      "kind": "cics-send",
+      "target": "transaction-server",
+      "description": "Sends transaction details to an external system for processing"
+    }
+  ],
+  "enrichmentConfidence": 1
+}

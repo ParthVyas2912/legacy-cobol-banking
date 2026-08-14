@@ -1,0 +1,12 @@
+{
+  "name": "TXNREC",
+  "usedBy": [
+    "ATMTXN",
+    "FRDCHK",
+    "INTCALC",
+    "TXNPOST"
+  ],
+  "isDclgen": false,
+  "description": "This copybook defines the record layout for handling transaction data in COBOL programs.",
+  "businessMeaning": "Transaction record structure for processing and data interchange."
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "auditsrv/vsam-to-relational/_/9",
+    "category": "io",
+    "kind": "vsam-to-relational",
+    "severity": "high",
+    "programId": "AUDITSRV",
+    "location": {
+      "line": 9
+    },
+    "title": "VSAM/KSDS file AUDIT-FILE → relational table",
+    "description": "Indexed file AUDIT-FILE (DD AUDITVSAM) keyed on AUDIT-KEY plus 1 alternate key(s). Migrate to a relational table; preserve the primary key, project the COBOL record layout onto columns, and translate access patterns into SQL.",
+    "currentCode": "SELECT AUDIT-FILE ASSIGN TO AUDITVSAM ORGANIZATION INDEXED RECORD KEY AUDIT-KEY",
+    "suggestedReplacement": "CREATE TABLE audit-file (\n    audit_key VARCHAR(20) PRIMARY KEY,\n    audit_acct_number BIGINT,\n    audit_action VARCHAR(16),\n    audit_user VARCHAR(8),\n    audit_ts VARCHAR(26),\n    audit_detail VARCHAR(120)\n);\nCREATE INDEX idx_audit-file_audit_acct_number ON audit-file(audit_acct_number);",
+    "detail": {
+      "logicalName": "AUDIT-FILE",
+      "dd": "AUDITVSAM",
+      "primaryKey": "AUDIT-KEY",
+      "alternateKeys": [
+        {
+          "name": "AUDIT-ACCT-NUMBER",
+          "duplicates": true
+        }
+      ]
+    },
+    "tags": [
+      "io",
+      "vsam",
+      "database"
+    ]
+  }
+]

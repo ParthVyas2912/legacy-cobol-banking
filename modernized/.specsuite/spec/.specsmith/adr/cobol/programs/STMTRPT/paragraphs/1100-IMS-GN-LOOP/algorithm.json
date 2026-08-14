@@ -1,0 +1,33 @@
+{
+  "name": "1100-IMS-GN-LOOP",
+  "description": "The paragraph processes IMS database records in a GN (Get Next) loop, and transitions control based on the results.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "fetch next IMS record",
+      "details": "uses IMS GN call to retrieve the next record"
+    },
+    {
+      "action": "handle record",
+      "details": "process or evaluate the fetched record in some way"
+    },
+    {
+      "action": "determine next step",
+      "details": "either continue looping or transition control to another paragraph"
+    }
+  ],
+  "inputs": [
+    "IMS database record"
+  ],
+  "outputs": [
+    "processed-record-state"
+  ],
+  "sideEffects": [
+    {
+      "kind": "sql-write",
+      "target": "IMS database",
+      "description": "potential update to IMS data based on processing"
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

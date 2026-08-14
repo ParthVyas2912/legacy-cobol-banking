@@ -1,0 +1,29 @@
+{
+  "name": "1000-FETCH-CUSTOMERS",
+  "description": "Fetches customer data and prepares it for processing in the subsequent paragraph.",
+  "purpose": "db-access",
+  "algorithm": [
+    {
+      "action": "initialize customer data",
+      "details": "Move operation to set up variables for customer data."
+    },
+    {
+      "action": "begin retrieval loop",
+      "details": "Perform operation to initiate IMS data retrieval loop."
+    }
+  ],
+  "inputs": [
+    "customer-data-area"
+  ],
+  "outputs": [
+    "customer-data-area"
+  ],
+  "sideEffects": [
+    {
+      "kind": "none",
+      "target": "",
+      "description": "No side effects detected."
+    }
+  ],
+  "enrichmentConfidence": 0.9500000000000001
+}

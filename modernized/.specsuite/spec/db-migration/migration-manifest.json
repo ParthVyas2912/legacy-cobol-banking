@@ -1,0 +1,217 @@
+{
+  "generatedAt": "2026-08-14T17:29:25.979Z",
+  "dialect": "postgres",
+  "schema": "public",
+  "tables": [
+    {
+      "tableName": "acctfile",
+      "source": "vsam",
+      "sourceId": "ACCTFILE",
+      "recordLayout": "ACCT-RECORD",
+      "usedBy": [
+        "ACCTMGR",
+        "INTCALC"
+      ],
+      "columnCount": 13,
+      "primaryKey": [
+        "acct_number"
+      ]
+    },
+    {
+      "tableName": "auditvsam",
+      "source": "vsam",
+      "sourceId": "AUDITVSAM",
+      "recordLayout": "AUDIT-RECORD",
+      "usedBy": [
+        "AUDITSRV"
+      ],
+      "columnCount": 6,
+      "primaryKey": [
+        "audit_key"
+      ]
+    },
+    {
+      "tableName": "intjrnl",
+      "source": "qsam",
+      "sourceId": "INTJRNL",
+      "recordLayout": "TXN-RECORD",
+      "usedBy": [
+        "INTCALC"
+      ],
+      "columnCount": 12
+    },
+    {
+      "tableName": "stmtout",
+      "source": "qsam",
+      "sourceId": "STMTOUT",
+      "recordLayout": "STMT-LINE",
+      "usedBy": [
+        "STMTRPT"
+      ],
+      "columnCount": 4
+    },
+    {
+      "tableName": "txnin",
+      "source": "qsam",
+      "sourceId": "TXNIN",
+      "recordLayout": "TXN-RECORD",
+      "usedBy": [
+        "TXNPOST"
+      ],
+      "columnCount": 12
+    },
+    {
+      "tableName": "auditout",
+      "source": "qsam",
+      "sourceId": "AUDITOUT",
+      "recordLayout": "AUDIT-RECORD",
+      "usedBy": [
+        "TXNPOST"
+      ],
+      "columnCount": 0
+    },
+    {
+      "tableName": "custdb_customer",
+      "source": "ims",
+      "sourceId": "CUSTDB.CUSTOMER",
+      "usedBy": [],
+      "columnCount": 7,
+      "primaryKey": [
+        "customer_id"
+      ]
+    },
+    {
+      "tableName": "custdb_acctlnk",
+      "source": "ims",
+      "sourceId": "CUSTDB.ACCTLNK",
+      "usedBy": [],
+      "columnCount": 4,
+      "primaryKey": [
+        "acctlnk_id"
+      ]
+    },
+    {
+      "tableName": "custdb_address",
+      "source": "ims",
+      "sourceId": "CUSTDB.ADDRESS",
+      "usedBy": [],
+      "columnCount": 7,
+      "primaryKey": [
+        "address_id"
+      ]
+    },
+    {
+      "tableName": "acct_audit",
+      "source": "db2",
+      "sourceId": "ACCT_AUDIT",
+      "usedBy": [
+        "ACCTMGR"
+      ],
+      "columnCount": 6
+    },
+    {
+      "tableName": "customer",
+      "source": "db2",
+      "sourceId": "CUSTOMER",
+      "usedBy": [
+        "ACCTMGR"
+      ],
+      "columnCount": 2
+    },
+    {
+      "tableName": "eod_runs",
+      "source": "db2",
+      "sourceId": "EOD_RUNS",
+      "usedBy": [
+        "BCHEOD"
+      ],
+      "columnCount": 4
+    },
+    {
+      "tableName": "txn_ledger",
+      "source": "db2",
+      "sourceId": "TXN_LEDGER",
+      "usedBy": [
+        "FRDCHK",
+        "TXNPOST"
+      ],
+      "columnCount": 13
+    },
+    {
+      "tableName": "fraud_flags",
+      "source": "db2",
+      "sourceId": "FRAUD_FLAGS",
+      "usedBy": [
+        "FRDCHK"
+      ],
+      "columnCount": 6
+    },
+    {
+      "tableName": "kyc_audit",
+      "source": "db2",
+      "sourceId": "KYC_AUDIT",
+      "usedBy": [
+        "KYCSYNC"
+      ],
+      "columnCount": 3
+    }
+  ],
+  "indexes": [
+    {
+      "indexName": "idx_auditvsam_audit_acct_number",
+      "tableName": "auditvsam",
+      "columns": [
+        "audit_acct_number"
+      ],
+      "unique": false
+    },
+    {
+      "indexName": "idx_custdb_customer_custid",
+      "tableName": "custdb_customer",
+      "columns": [
+        "custid"
+      ],
+      "unique": true
+    },
+    {
+      "indexName": "idx_custdb_acctlnk_acctnum",
+      "tableName": "custdb_acctlnk",
+      "columns": [
+        "acctnum"
+      ],
+      "unique": true
+    },
+    {
+      "indexName": "idx_custdb_address_effdate",
+      "tableName": "custdb_address",
+      "columns": [
+        "effdate"
+      ],
+      "unique": true
+    }
+  ],
+  "constraintCount": 11,
+  "enumCount": 9,
+  "sourcePrograms": [
+    "ACCTMGR",
+    "ATMTXN",
+    "AUDITSRV",
+    "BCHEOD",
+    "FRDCHK",
+    "INTCALC",
+    "KYCSYNC",
+    "STMTRPT",
+    "TXNPOST"
+  ],
+  "imsDatabases": [
+    "CUSTDB"
+  ],
+  "db2Tables": [
+    "ACCT_AUDIT",
+    "CUSTOMER",
+    "EOD_RUNS",
+    "TXN_LEDGER",
+    "FRAUD_FLAGS",
+    "KYC_AUDIT"
+  ]
+}

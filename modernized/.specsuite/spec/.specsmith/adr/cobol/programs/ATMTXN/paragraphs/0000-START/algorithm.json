@@ -1,0 +1,23 @@
+{
+  "name": "0000-START",
+  "description": "This paragraph initializes processing by orchestrating validation, transaction posting, and sending the next response or action sequence.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "perform validation",
+      "details": "Delegates to 1000-VALIDATE"
+    },
+    {
+      "action": "perform transaction posting",
+      "details": "Delegates to 2000-POST-TXN"
+    },
+    {
+      "action": "send next step",
+      "details": "Delegates to 3000-SEND-NEXT"
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

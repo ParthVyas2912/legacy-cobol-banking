@@ -1,0 +1,17 @@
+{
+  "name": "2000-ACCRUE",
+  "description": "Evaluates a condition to make a decision, but does not produce outputs or side effects.",
+  "purpose": "validation",
+  "algorithm": [
+    {
+      "action": "evaluate a condition",
+      "details": "Checks a specific condition based on input values."
+    }
+  ],
+  "inputs": [
+    "condition-variable"
+  ],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9
+}

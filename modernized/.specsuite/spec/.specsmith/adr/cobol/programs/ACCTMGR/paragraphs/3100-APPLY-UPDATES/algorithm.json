@@ -1,0 +1,22 @@
+{
+  "name": "3100-APPLY-UPDATES",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph applies updates by moving values to target variables.",
+  "purpose": "business-logic",
+  "algorithm": [
+    {
+      "action": "move values between variables",
+      "details": "Moves values into specific variables as part of applying updates"
+    }
+  ],
+  "inputs": [
+    "source-variable-1",
+    "source-variable-2"
+  ],
+  "outputs": [
+    "target-variable-1",
+    "target-variable-2"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.9500000000000001
+}

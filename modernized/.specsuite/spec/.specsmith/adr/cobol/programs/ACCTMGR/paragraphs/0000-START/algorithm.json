@@ -1,0 +1,20 @@
+{
+  "name": "0000-START",
+  "section": "MAIN-ROUTINE",
+  "description": "This paragraph begins the main execution flow, evaluating initial conditions and executing a command block.",
+  "purpose": "control-flow",
+  "algorithm": [
+    {
+      "action": "evaluate conditions",
+      "details": "Executes a COBOL EVALUATE statement to decide the flow of execution."
+    },
+    {
+      "action": "execute command block",
+      "details": "Performs a predefined action within an EXEC block."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}

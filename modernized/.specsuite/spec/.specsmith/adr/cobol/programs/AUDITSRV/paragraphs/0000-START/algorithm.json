@@ -1,0 +1,23 @@
+{
+  "name": "0000-START",
+  "description": "Initializes variables and sets up the program's starting state for subsequent processing.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initialize variables",
+      "details": "Move statements set initial values."
+    },
+    {
+      "action": "prepare for execution",
+      "details": "Exec-block statements might perform setup-related tasks."
+    }
+  ],
+  "inputs": [
+    "environment variables"
+  ],
+  "outputs": [
+    "program state"
+  ],
+  "sideEffects": [],
+  "enrichmentConfidence": 1
+}

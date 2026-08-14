@@ -1,0 +1,15 @@
+{
+  "name": "9000-MARK-START",
+  "description": "Marks the initiation of a process or operation related to the batch program's infrastructure domain.",
+  "purpose": "setup",
+  "algorithm": [
+    {
+      "action": "initiate mark operation",
+      "details": "Marks the start of a process or setup phase."
+    }
+  ],
+  "inputs": [],
+  "outputs": [],
+  "sideEffects": [],
+  "enrichmentConfidence": 0.85
+}
