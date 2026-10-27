@@ -19,9 +19,7 @@
        WORKING-STORAGE SECTION.
        01  WS-ACCT-FS              PIC X(02).
        01  WS-RESPONSE-CODE        PIC S9(04) COMP.
-       01  WS-MAP-AREA.
            COPY ACCTREC REPLACING ==ACCT-== BY ==MAP-ACCT-==.
-       01  WS-CUST-LOOKUP-AREA.
            COPY CUSTREC.
        01  WS-SQL-STATE            PIC X(05).
            EXEC SQL INCLUDE SQLCA END-EXEC.

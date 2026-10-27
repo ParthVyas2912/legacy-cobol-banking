@@ -7,8 +7,8 @@
        DATA DIVISION.
        WORKING-STORAGE SECTION.
        01  WS-IMS-FUNC             PIC X(04).
-       01  WS-CUST-IO-AREA.
-           COPY CUSTREC.
+           COPY CUSTREC REPLACING ==CUST-RECORD==
+                        BY ==WS-CUST-IO-AREA==.
        01  WS-PCB-MASK.
            05  PCB-DBD-NAME        PIC X(08).
            05  PCB-LEVEL           PIC X(02).

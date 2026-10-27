@@ -26,8 +26,8 @@
        01  WS-CURRENT-ACCT         PIC 9(10) VALUE 0.
        01  WS-SQLCODE-MIRROR       PIC S9(9) COMP.
        01  WS-IMS-FUNC             PIC X(04).
-       01  WS-CUST-IO-AREA.
-           COPY CUSTREC.
+           COPY CUSTREC REPLACING ==CUST-RECORD==
+                        BY ==WS-CUST-IO-AREA==.
        01  WS-CUST-PCB-MASK.
            05  CUST-DBD-NAME       PIC X(08).
            05  CUST-LEVEL          PIC X(02).

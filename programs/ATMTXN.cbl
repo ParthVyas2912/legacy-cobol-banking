@@ -11,10 +11,8 @@
            05  CALL-FUNCTION       PIC X(04).
            05  CALL-ACCT-NUMBER    PIC 9(10).
            05  CALL-RESULT-CODE    PIC 9(02).
-       01  WS-MAP-DATA.
-           COPY ATMMAP.
-       01  WS-TXN-DATA.
-           COPY TXNREC.
+           COPY ATMMAP REPLACING ==ATM-MAP-DATA== BY ==WS-MAP-DATA==.
+           COPY TXNREC REPLACING ==TXN-RECORD== BY ==WS-TXN-DATA==.
 
        PROCEDURE DIVISION.
        0000-START.
